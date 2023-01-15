@@ -1,0 +1,342 @@
+#################   SYMBOL FILE FOR TEXT COMPILER   ##################
+# SYMBOL IS SYMBOL NAME, VAL. IS NUMERICAL VALUE AND POS. IS POSITION
+# IN DEFINITION IN WHICH SYMBOL IS ALLOWED TO BE FOUND. POSITIONS START
+# WITH COL 1. COMMENTS ARE PRECEDED BY '#' MARKS.
+#
+# SYMBOL     VAL.  POS.
+#=====================================================================
+#
+# Planet and names of angles
+ASCEND        0    1 PLAN  Text for Ascendant
+RISING        0    1 PLAN Text for Ascendant
+SUN           1    1 PLAN Text for Planet
+MOON          2    1 PLAN Text for Planet
+MERCURY       3    1 PLAN Text for Planet
+VENUS         4    1 PLAN Text for Planet
+MARS          5    1 PLAN Text for Planet
+JUPITER       6    1 PLAN Text for Planet
+SATURN        7    1 PLAN Text for Planet
+URANUS        8    1 PLAN Text for Planet
+NEPTUNE       9    1 PLAN Text for Planet
+PLUTO         10   1 PLAN Text for Planet
+NORTH_NODE    11   1 PLAN Text for Node
+SOUTH_NODE    12   1 PLAN Text for Node
+MED_COELI     13   1 ANG Text for Angle
+IM_COELI      14   1 ANG Text for Angle
+PART_FORTUNE  15   1 PLAN Text for Angle
+VERTEX        16   1 PLAN Text for Angle
+EAST_POINT    17   1 PLAN Text for Angle
+CUPIDO        18   1 PLAN Text for Asteroid
+HADES         19   1 PLAN Text for Asteroid
+KRONOS        20   1 PLAN Text for Asteroid
+APOLLON       21   1 PLAN Text for Asteroid
+ADMETOS       22   1 PLAN Text for Asteroid
+VULKANUS      23   1 PLAN Text for Asteroid
+POSIDON       24   1 PLAN Text for Asteroid
+CERES         25   1 PLAN Text for Asteroid
+PALLAS        26   1 PLAN Text for Asteroid
+JUNO          27   1 PLAN Text for Asteroid
+VESTA         28   1 PLAN Text for Asteroid
+CHIRON        29   1 PLAN Text for Asteroid
+# House Names for signs in Houses file and aspects.
+HOUSE_1       1    1 HOUSE House 1 is in Sign
+HOUSE_2       2    1 HOUSE House 2 is in Sign
+HOUSE_3       3    1 HOUSE House 3 is in Sign
+HOUSE_4       4    1 HOUSE House 4 is in Sign
+HOUSE_5       5    1 HOUSE House 5 is in Sign
+HOUSE_6       6    1 HOUSE House 6 is in Sign
+HOUSE_7       7    1 HOUSE House 7 is in Sign
+HOUSE_8       8    1 HOUSE House 8 is in Sign
+HOUSE_9       9    1 HOUSE House 9 is in Sign
+HOUSE_10      10   1 HOUSE House 10 is in Sign
+HOUSE_11      11   1 HOUSE House 11 is in Sign
+HOUSE_12      12   1 HOUSE House 12 is in Sign
+# Symbols for decanates of signs
+DECANT_1      30   1 DEC  Decanate 1
+DECANT_2      31   1 DEC  Decanate 2
+DECANT_3      32   1 DEC  Decanate 3
+# The twelve signs
+ARIES         0    2 SIGN  Text for Sign
+TAURUS        1    2 SIGN  Text for Sign
+GEMINI        2    2 SIGN  Text for Sign
+CANCER        3    2 SIGN  Text for Sign
+LEO           4    2 SIGN  Text for Sign
+VIRGO         5    2 SIGN  Text for Sign
+LIBRA         6    2 SIGN  Text for Sign
+SCORPIO       7    2 SIGN  Text for Sign
+SAGITARIUS    8    2 SIGN  Text for Sign
+CAPRICORN     9    2 SIGN  Text for Sign
+AQUARIUS      10   2 SIGN  Text for Sign
+PISCES        11   2 SIGN  Text for Sign
+# Text symbol for planets in retrograde motion
+RETROGRADE    12   2 RETG  Text Planet in Rx Motion
+# Symbols for planets in houses, and aspects
+PLA_HOUSE_1   1    2 PHSE Planet in House 1
+PLA_HOUSE_2   2    2 PHSE Planet in House 2
+PLA_HOUSE_3   3    2 PHSE Planet in House 3
+PLA_HOUSE_4   4    2 PHSE Planet in House 4
+PLA_HOUSE_5   5    2 PHSE Planet in House 5
+PLA_HOUSE_6   6    2 PHSE Planet in House 6
+PLA_HOUSE_7   7    2 PHSE Planet in House 7
+PLA_HOUSE_8   8    2 PHSE Planet in House 8
+PLA_HOUSE_9   9    2 PHSE Planet in House 9
+PLA_HOUSE_10  10   2 PHSE Planet in House 10
+PLA_HOUSE_11  11   2 PHSE Planet in House 11
+PLA_HOUSE_12  12   2 PHSE Planet in House 12
+# Aspect Names
+CONJUNCT      0    3 ASP Text for Aspect
+SEXTILE       1    3 ASP Text for Aspect
+TRINE         2    3 ASP Text for Aspect
+OPPOSITION    3    3 ASP Text for Aspect
+SQUARED       4    3 ASP Text for Aspect
+SEMISEXT      5    3 ASP Text for Aspect
+SEMISQUARE    6    3 ASP Text for Aspect
+SEMISESQUAD   7    3 ASP Text for Aspect
+QUINCUNX      8    3 ASP Text for Aspect
+BIQUINTILE    9    3 ASP Text for Aspect
+QUINTILE      10   3 ASP Text for Aspect
+TREDECILE     11   3 ASP Text for Aspect
+DECILE        12   3 ASP Text for Aspect
+SEPTILE       13   3 ASP Text for Aspect
+# Summary Types
+# Aspect Summary
+AS_SUMMARY    0    2 SUM  Aspect Summary
+# Element Summary
+EL_SUMMARY    1    2 SUM  Element Summary
+# Gender Summary
+GE_SUMMARY    2    2 SUM  Genders Summary
+# Qualties Summary
+QA_SUMMARY    3    2 SUM  Quality Summary
+# Hemisphere Summary
+HE_SUMMARY    4    2 SUM  Hemisphere Summary
+# Scout Planet
+SC_PLANET     5    2 SUM  Scout Planet
+# General Symbol for Balanced in a Summary
+BALANCED      0    1 SUM  Summary Balanced
+# Elements for summary
+FIRE          1    1 SUM  Summary Fire
+EARTH         2    1 SUM  Summary Earth
+AIR           3    1 SUM  Summary Air
+WATER         4    1 SUM  Summary Water
+# Genders for summary
+MASCULINE     1    1 SUM  Summary Masculine
+FEMININE      2    1 SUM  Summary Feminine
+# Qualities for Summary
+CARDINAL      1    1 SUM  Summary Cardinal
+FIXED         2    1 SUM  Summary Fixed
+MUTABLE       3    1 SUM  Summary Mutable
+# Hemispheres for Summary
+EAST          1    1 SUM  Summary East
+WEST          2    1 SUM  Summary West
+NORTH         3    1 SUM  Summary North
+SOUTH         4    1 SUM  Summary South
+# Summary Symbols for Functional Houses
+INDIVIDUAL    1    1 SUM  Summary Individual
+TEMPORAL      2    1 SUM  Summary Temporal
+RELATIVE      3    1 SUM  Summary Relative
+TERMINAL      4    1 SUM  Summary Terminal
+# Summary Symbols for Modal Houses
+ANGULAR       1    1 SUM  Summary Angular
+SUCCEDENT     2    1 SUM  Summary Succedent
+CADENT        3    1 SUM  Summary Cadent
+# Aspects For Summary
+S_CONJUNCT    0    1 SUM  Summary Conjunct
+S_SEXTILE     1    1 SUM  Summary Sextile
+S_TRINE       2    1 SUM  Summary Trine
+S_OPPOSITION  3    1 SUM  Summary Opposition
+S_SQUARED     4    1 SUM  Summary Squared
+# Compatibility Summary Cross Elements
+C_FIRE        0    2 COSM  Compatability Sumry Fire
+C_EARTH       1    2 COSM  Compatability Sumry Earth
+C_AIR         2    2 COSM  Compatability Sumry Air
+C_WATER       3    2 COSM  Compatability Sumry Water
+# Compatibility Summary
+# Both Are Most Same Gender
+C_SAME_GEN    1    1 COSM  Compat. Sumry Same Genders
+# Both are Mostly Different Genders
+C_DIFF_GEN    2    1 COSM  Compat. Sumry Different Genders
+# Compatibility Summary Cross Sumry Qualities
+C_CARDINAL    4    2 COSM  Compatability Sumry Cardinal
+C_FIXED       5    2 COSM  Compatability Sumry Fixed
+C_MUTABLE     6    2 COSM  Compatability Sumry Mutable
+# Compatibility Summary Genders
+C_GENDER      7    2 COSM  Compatability Sumry Genders
+# Compatibilities Hemispheres for summary
+C_EAST        8    2 COSM  Compatability Sumry East
+C_WEST        9    2 COSM  Compatability Sumry West
+C_NORTH       10   2 COSM  Compatability Sumry North
+C_SOUTH       11   2 COSM  Compatability Sumry South
+# Summary Cross Symbols for Functional Houses
+C_INDIVIDUAL  12   2 COSM  Compatability Sumry Individual
+C_TEMPORAL    13   2 COSM  Compatability Sumry Temporal
+C_RELATIVE    14   2 COSM  Compatability Sumry Relative
+C_TERMINAL    15   2 COSM  Compatability Sumry Terminal
+# Summary Cross Symbols for Functional Houses
+C_ANGULAR     16   2 COSM  Compatability Sumry Angular
+C_SUCCEDENT   17   2 COSM  Compatability Sumry Succedent
+C_CADENT      18   2 COSM  Compatability Sumry Cadent
+# Transit General Text Symbol
+TRA_GENERAL   12   2 TRG  Transits General Text
+# Transit Houses
+X_HOUSE_1     0    2 COTHS  Compat & Transit Houses
+X_HOUSE_2     1    2 COTHS Compat & Transit Houses
+X_HOUSE_3     2    2 COTHS  Compat & Transit Houses
+X_HOUSE_4     3    2 COTHS  Compat & Transit Houses
+X_HOUSE_5     4    2 COTHS  Compat & Transit Houses
+X_HOUSE_6     5    2 COTHS  Compat & Transit Houses
+X_HOUSE_7     6    2 COTHS  Compat & Transit Houses
+X_HOUSE_8     7    2 COTHS  Compat & Transit Houses
+X_HOUSE_9     8    2 COTHS  Compat & Transit Houses
+X_HOUSE_10    9    2 COTHS  Compat & Transit Houses
+X_HOUSE_11    10   2 COTHS  Compat & Transit Houses
+X_HOUSE_12    11   2 COTHS  Compat & Transit Houses
+ASCEND        0    4 PLN Text for Ascendant
+RISING        0    4 PLN Text for Ascendant
+SUN           1    4 PLN Text for Planet
+MOON          2    4 PLN Text for Planet
+MERCURY       3    4 PLN Text for Planet
+VENUS         4    4 PLN Text for Planet
+MARS          5    4 PLN Text for Planet
+JUPITER       6    4 PLN Text for Planet
+SATURN        7    4 PLN Text for Planet
+URANUS        8    4 PLN Text for Planet
+NEPTUNE       9    4 PLN Text for Planet
+PLUTO         10   4 PLN Text for Planet
+NORTH_NODE    11   4 PLN Text for Node
+SOUTH_NODE    12   4 PLN Text for Node
+MED_COELI     13   4 PLN Text for Angle
+IM_COELI      14   4 PLN Text for Angle
+PART_FORTUNE  15   4 PLN Text for Angle
+VERTEX        16   4 PLN Text for Angle
+EAST_POINT    17   4 PLN Text for Angle
+CUPIDO        18   4 PLAN Text for Asteroid
+HADES         19   4 PLAN Text for Asteroid
+KRONOS        20   4 PLAN Text for Asteroid
+APOLLON       21   4 PLAN Text for Asteroid
+ADMETOS       22   4 PLAN Text for Asteroid
+VULKANUS      23   4 PLAN Text for Asteroid
+POSIDON       24   4 PLAN Text for Asteroid
+CERES         25   4 PLAN Text for Asteroid
+PALLAS        26   4 PLAN Text for Asteroid
+JUNO          27   4 PLAN Text for Asteroid
+VESTA         28   4 PLAN Text for Asteroid
+CHIRON        29   4 PLAN Text for Asteroid
+MP_ARIES      0    3 MDPS  Text for Midpoint Sign
+MP_TAURUS     1    3 MDPS  Text for Midpoint Sign
+MP_GEMINI     2    3 MDPS  Text for Midpoint Sign
+MP_CANCER     3    3 MDPS  Text for Midpoint Sign
+MP_LEO        4    3 MDPS  Text for Midpoint Sign
+MP_VIRGO      5    3 MDPS  Text for Midpoint Sign
+MP_LIBRA      6    3 MDPS  Text for Midpoint Sign
+MP_SCORPIO    7    3 MDPS  Text for Midpoint Sign
+MP_SAGITARIUS 8    3 MDPS  Text for Midpoint Sign
+MP_CAPRICORN  9    3 MDPS  Text for Midpoint Sign
+MP_AQUARIUS   10   3 MDPS  Text for Midpoint Sign
+MP_PISCES     11   3 MDPS  Text for Midpoint Sign
+#fixed Stars
+FIX_Alpheratz   0   1   FIXED   Alpheratz Planet Text
+FIX_Ankaa   1   1   FIXED   Ankaa Planet Text
+FIX_Schedar   2   1   FIXED   Schedar Planet Text
+FIX_Diphda   3   1   FIXED   Diphda Planet Text
+FIX_Achernar   4   1   FIXED   Achernar Planet Text
+FIX_Hamal   5   1   FIXED   Hamal Planet Text
+FIX_Acamar   6   1   FIXED   Acamar Planet Text
+FIX_Menkar   7   1   FIXED   Menkar Planet Text
+FIX_Mirfak   8   1   FIXED   Mirfak Planet Text
+FIX_Aldebara   9   1   FIXED   Aldebara Planet Text
+FIX_Rigel   10   1   FIXED   Rigel Planet Text
+FIX_Capella   11   1   FIXED   Capella Planet Text
+FIX_Bellatrix   12   1   FIXED   Bellatrix Planet Text
+FIX_Elnath   13   1   FIXED   Elnath Planet Text
+FIX_Alnilam   14   1   FIXED   Alnilam Planet Text
+FIX_Betelgeuse   15   1   FIXED   Betelgeuse Planet Text
+FIX_Canopus   16   1   FIXED   Canopus Planet Text
+FIX_Sirius   17   1   FIXED   Sirius Planet Text
+FIX_Adhara   18   1   FIXED   Adhara Planet Text
+FIX_Procyon   19   1   FIXED   Procyon Planet Text
+FIX_Pollux   20   1   FIXED   Pollux Planet Text
+FIX_Avior   21   1   FIXED   Avior Planet Text
+FIX_Suhail   22   1   FIXED   Suhail Planet Text
+FIX_Miaplacidus   23   1   FIXED   Miaplacidus Planet Text
+FIX_Alphard   24   1   FIXED   Alphard Planet Text
+FIX_Regulus   25   1   FIXED   Regulus Planet Text
+FIX_Dubhe   26   1   FIXED   Dubhe Planet Text
+FIX_Denebola   27   1   FIXED   Denebola Planet Text
+FIX_Gienah   28   1   FIXED   Gienah Planet Text
+FIX_Acrux   29   1   FIXED   Acrux Planet Text
+FIX_Gacrux   30   1   FIXED   Gacrux Planet Text
+FIX_Alioth   31   1   FIXED   Alioth Planet Text
+FIX_Spica   32   1   FIXED   Spica Planet Text
+FIX_Alkaid   33   1   FIXED   Alkaid Planet Text
+FIX_Hadar   34   1   FIXED   Hadar Planet Text
+FIX_Menkent   35   1   FIXED   Menkent Planet Text
+FIX_Arcturus   36   1   FIXED   Arcturus Planet Text
+FIX_Rigil   37   1   FIXED   Rigil Planet Text
+FIX_Zubenelgen   38   1   FIXED   Zubenelgen Planet Text
+FIX_Kochab   39   1   FIXED   Kochab Planet Text
+FIX_Alphecca   40   1   FIXED   Alphecca Planet Text
+FIX_Antares   41   1   FIXED   Antares Planet Text
+FIX_Atria   42   1   FIXED   Atria Planet Text
+FIX_Sabik   43   1   FIXED   Sabik Planet Text
+FIX_Shaula   44   1   FIXED   Shaula Planet Text
+FIX_Rasalhague   45   1   FIXED   Rasalhague Planet Text
+FIX_Eltanin   46   1   FIXED   Eltanin Planet Text
+FIX_Kaus_Aust   47   1   FIXED   Kaus Aust Planet Text
+FIX_Vega   48   1   FIXED   Vega Planet Text
+FIX_Nunki   49   1   FIXED   Nunki Planet Text
+FIX_Altair   50   1   FIXED   Altair Planet Text
+FIX_Peacock   51   1   FIXED   Peacock Planet Text
+FIX_Deneb   52   1   FIXED   Deneb Planet Text
+FIX_Enif   53   1   FIXED   Enif Planet Text
+FIX_Al_nair   54   1   FIXED   Al na'ir Planet Text
+FIX_Fomalhaut   55   1   FIXED   Fomalhaut Planet Text
+FIX_Markab   56   1   FIXED   Markab Planet Text
+FIX_Polaris   57   1   FIXED   Polaris Planet Text
+#Arabic Parts
+ARAP_Commerce		0	1	ARAB	Part of Commerce (Caduceus)
+ARAP_Love		1	1	ARAB	Part of Love (Heart)
+ARAP_Passion		2	1	ARAB	Part of Passion (Sword)
+ARAP_Increase		3	1	ARAB	Part of Increase (Pomegranate)
+ARAP_FateResp		4	1	ARAB	Part of Fate or Part of Responsibility (Hourglass)
+ARAP_Catastrophe		5	1	ARAB	Part of Catastrophe (Lightning Flash)
+ARAP_Treachery		6	1	ARAB	Part of Treachery (Trident)
+ARAP_Organization		7	1	ARAB	Part of Organization (Gavel)
+ARAP_Spirit		8	1	ARAB	Part of Spirit
+ARAP_Faith		9	1	ARAB	Part of Faith
+ARAP_FemaleChildren		10	1	ARAB	Part of Female Children
+ARAP_MaleChildren		11	1	ARAB	Part of Male Children
+ARAP_Servants		12	1	ARAB	Part of Servants
+ARAP_Understanding		13	1	ARAB	Part of Understanding
+ARAP_theMother		14	1	ARAB	Part of the Mother
+ARAP_FortuneHusbandry		x	1	ARAB	Part of Fortune of Husbandry
+ARAP_Drama		15	1	ARAB	Part of Drama (Plays)
+ARAP_Discord		16	1	ARAB	Part of Discord
+ARAP_Inheritance		17	1	ARAB	Part of Inheritance
+ARAP_the Father		18	1	ARAB	Part of the Father
+ARAP_Profession		19	1	ARAB	Part of Profession
+ARAP_Sickness		20	1	ARAB	Part of Sickness
+ARAP_BrothersSis		21	1	ARAB	Part of Brothers and Sisters (Brethren)
+ARAP_SuddenAdvance		22	1	ARAB	Part of Sudden Advancement
+ARAP_Friends		23	1	ARAB	Part of Friends
+ARAP_Imprisonmen		24	1	ARAB	Part of Imprisonment (or Confinement) and Sorrow
+ARAP_Death		25	1	ARAB	Part of Death
+ARAP_Life		26	1	ARAB	Part of Life
+ARAP_Marriage		27	1	ARAB	Part of Marriage
+ARAP_Peril		28	1	ARAB	Part of Peril
+ARAP_JourneysWater		29	1	ARAB	Part of Journeys By Water
+ARAP_Goods		30	1	ARAB	Part of Goods (Possessions)
+ARAP_Divorce		31	1	ARAB	Part of Divorce
+ARAP_TravelLand		32	1	ARAB	Part of Travel By Land
+ARAP_PrivateEnemies		33	1	ARAB	Part of Private Enemies
+A_HOUSE_1     0    4 ASPHS  Houses for Aspects
+A_HOUSE_2     1    4 ASPHS Houses for Aspects
+A_HOUSE_3     2    4 ASPHS  Houses for Aspects
+A_HOUSE_4     3    4 ASPHS  Houses for Aspects
+A_HOUSE_5     4    4 ASPHS  Houses for Aspects
+A_HOUSE_6     5    4 ASPHS  Houses for Aspects
+A_HOUSE_7     6    4 ASPHS  Houses for Aspects
+A_HOUSE_8     7    4 ASPHS  Houses for Aspects
+A_HOUSE_9     8    4 ASPHS  Houses for Aspects
+A_HOUSE_10    9    4 ASPHS  Houses for Aspects
+A_HOUSE_11    10   4 ASPHS  Houses for Aspects
+A_HOUSE_12    11   4 ASPHS  Houses for Aspects

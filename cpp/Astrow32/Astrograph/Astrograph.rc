@@ -1,0 +1,828 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Astrograph.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME1           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&Graphics"
+    BEGIN
+        MENUITEM "Show Sign Names",             ID_GRAPH_SHOWSIGNNAME
+        MENUITEM "Show House Numbers",          ID_GRAPH_SHOWHOUSENUMBERS
+        MENUITEM "Show House Degrees",          ID_GRAPH_SHOWHOUSEDEGREES
+        MENUITEM "Show Aspects",                ID_GRAPH_SHOWASPECTS, GRAYED
+        MENUITEM "Show Aspect Grid",            ID_GRAPH_SHOWASPECTGRID
+        , GRAYED
+        MENUITEM "UseGlyphs",                   ID_GRAPH_USEGLYPHS
+        MENUITEM "Show Sign Lines",             ID_GRAPH_SHOWSIGNLINES
+        MENUITEM "Show Sign Name",              ID_GRAPH_SHOWSIGNNAME
+        MENUITEM "Inner House Cusps",           ID_GRAPHICS_INNEROUTERHOUSECUSPS
+
+        MENUITEM "Sign Tick Wheel",             ID_GRAPHICS_SIGNTICKWHEEL
+        MENUITEM "Decan Tick Wheel",            ID_GRAPHICS_DECANTICKWHEEL
+        MENUITEM "Degree Tick Wheel",           ID_GRAPHICS_DEGREETICKWHEEL
+        MENUITEM "House Numbers Outside",       ID_GRAPHICS_HOUSENUMBERSOUTSIDE
+
+        MENUITEM "Plot Classically",            ID_GRAPHICS_PLOTCLASSICALLY
+        MENUITEM "Show Planet Degrees",         ID_GRAPHICS_SHOWPLANETDEGREES
+
+        MENUITEM "Use Next Chart\t]",           ID_GRAPHICS_USENEXTCHART
+        , GRAYED
+        MENUITEM "Use Prev Chart\t[",           ID_GRAPHICS_USEPREVCHART
+        , GRAYED
+        MENUITEM "Use First Chart\t=",          ID_GRAPHICS_USEFIRSTCHART
+        , GRAYED
+        MENUITEM "Increase House Cusps\t>",     ID_GRAPHICS_INCREASEHOUSECUSPS
+
+        MENUITEM "Decrease House Cusps \t<",    ID_GRAPHICS_DECREASEHOUSECUSPS
+
+        MENUITEM "Normal House Cusps\t@",       ID_GRAPHICS_NORMALHOUSECUSPS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Zoom In\t+",                  ID_VIEW_ZOOMIN
+        MENUITEM "Zoom Out\t---",               ID_VIEW_ZOOMOUT
+        MENUITEM "Fit Window",                  ID_VIEW_FITWIN
+        MENUITEM "Larger Font\t{",              ID_VIEW_LARGERFONT
+        MENUITEM "Smaller Font\t}",             ID_VIEW_SMALLERFONT
+        MENUITEM "Status Bar",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Directories",                 ID_OPTIONS_DIRECTORIES
+        MENUITEM "Graphic Options",             ID_OPTIONS_GRAPHICOPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Astrograph...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME1 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&Graphics"
+    BEGIN
+        MENUITEM "Show Sign Names",             ID_GRAPH_SHOWSIGNNAME
+        MENUITEM "Show House Numbers",          ID_GRAPH_SHOWHOUSENUMBERS
+        MENUITEM "Show House Degrees",          ID_GRAPH_SHOWHOUSEDEGREES
+        MENUITEM "Show Aspects",                ID_GRAPH_SHOWASPECTS, GRAYED
+        MENUITEM "Show Aspect Grid",            ID_GRAPH_SHOWASPECTGRID
+        , GRAYED
+        MENUITEM "UseGlyphs",                   ID_GRAPH_USEGLYPHS
+        MENUITEM "Show Sign Lines",             ID_GRAPH_SHOWSIGNLINES
+        MENUITEM "Show Sign Name",              ID_GRAPH_SHOWSIGNNAME
+        MENUITEM "Inner House Cusps",           ID_GRAPHICS_INNEROUTERHOUSECUSPS
+
+        MENUITEM "Sign Tick Wheel",             ID_GRAPHICS_SIGNTICKWHEEL
+        MENUITEM "Decan Tick Wheel",            ID_GRAPHICS_DECANTICKWHEEL
+        MENUITEM "Degree Tick Wheel",           ID_GRAPHICS_DEGREETICKWHEEL
+        MENUITEM "House Numbers Outside",       ID_GRAPHICS_HOUSENUMBERSOUTSIDE
+
+        MENUITEM "Plot Classically",            ID_GRAPHICS_PLOTCLASSICALLY
+        MENUITEM "Show Planet Degrees",         ID_GRAPHICS_SHOWPLANETDEGREES
+
+        MENUITEM "Use Next Chart\t]",           ID_GRAPHICS_USENEXTCHART
+        , GRAYED
+        MENUITEM "Use Prev Chart\t[",           ID_GRAPHICS_USEPREVCHART
+        , GRAYED
+        MENUITEM "Use First Chart\t=",          ID_GRAPHICS_USEFIRSTCHART
+        , GRAYED
+        MENUITEM "Increase House Cusps\t>",     ID_GRAPHICS_INCREASEHOUSECUSPS
+
+        MENUITEM "Decrease House Cusps \t<",    ID_GRAPHICS_DECREASEHOUSECUSPS
+
+        MENUITEM "Normal House Cusps\t@",       ID_GRAPHICS_NORMALHOUSECUSPS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Zoom In\t+",                  ID_VIEW_ZOOMIN
+        MENUITEM "Zoom Out\t---",               ID_VIEW_ZOOMOUT
+        MENUITEM "Fit Window",                  ID_VIEW_FITWIN
+        MENUITEM "Larger Font\t{",              ID_VIEW_LARGERFONT
+        MENUITEM "Smaller Font\t}",             ID_VIEW_SMALLERFONT
+        MENUITEM "Status Bar",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Graphic Options",             ID_OPTIONS_GRAPHICOPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Astrograph...",        ID_APP_ABOUT
+    END
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "<",            ID_GRAPHICS_DECREASEHOUSECUSPS, ASCII, NOINVERT
+    "=",            ID_GRAPHICS_USEFIRSTCHART, ASCII, NOINVERT
+    ">",            ID_GRAPHICS_INCREASEHOUSECUSPS, ASCII, NOINVERT
+    "@",            ID_GRAPHICS_NORMALHOUSECUSPS, ASCII, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_VIEW_ZOOMIN,         VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SUBTRACT,    ID_VIEW_ZOOMOUT,        VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "[",            ID_GRAPHICS_USEPREVCHART, ASCII, NOINVERT
+    "]",            ID_GRAPHICS_USENEXTCHART, ASCII, NOINVERT
+    "{",            ID_VIEW_LARGERFONT,     ASCII,  NOINVERT
+    "}",            ID_VIEW_SMALLERFONT,    ASCII,  NOINVERT
+END
+
+IDR_MAINFRAME1 ACCELERATORS
+BEGIN
+    "<",            ID_GRAPHICS_DECREASEHOUSECUSPS, ASCII, NOINVERT
+    "=",            ID_GRAPHICS_USEFIRSTCHART, ASCII, NOINVERT
+    ">",            ID_GRAPHICS_INCREASEHOUSECUSPS, ASCII, NOINVERT
+    "@",            ID_GRAPHICS_NORMALHOUSECUSPS, ASCII, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_VIEW_ZOOMIN,         VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SUBTRACT,    ID_VIEW_ZOOMOUT,        VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "[",            ID_GRAPHICS_USEPREVCHART, ASCII, NOINVERT
+    "]",            ID_GRAPHICS_USENEXTCHART, ASCII, NOINVERT
+    "{",            ID_VIEW_LARGERFONT,     ASCII,  NOINVERT
+    "}",            ID_VIEW_SMALLERFONT,    ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 226, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Astrograph"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Astro For Windows Graphics Viewer Version 1.0",IDC_STATIC,42,
+                    14,131,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2005",IDC_STATIC,40,32,119,8
+    DEFPUSHBUTTON   "OK",IDOK,187,7,32,14,WS_GROUP
+END
+
+IDD_POPUP DIALOG  0, 0, 195, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "You Clicked On..."
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,94,50,14,BS_CENTER
+    EDITTEXT        IDC_EDIT1,7,7,181,84,ES_MULTILINE | ES_AUTOVSCROLL |
+                    ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_GRAFONT DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Graphics Fonts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Data Font...",ID_DATAFNT,53,10,79,17
+    PUSHBUTTON      "&Glyph Font...",ID_GLYPHFNT,53,39,80,17
+    DEFPUSHBUTTON   "OK",IDOK,20,70,40,14
+    PUSHBUTTON      "Help",ID_HELP,73,70,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,70,40,14
+    CONTROL         "",108,"Static",SS_BLACKRECT,55,31,77,4
+END
+
+IDD_GRACOLORS DIALOGEX 0, 0, 220, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Graphics Colors"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "&Background Color...",ID_GCBACK,14,11,87,14
+    PUSHBUTTON      "&Sign Color...",ID_GCSIGN,14,36,87,14
+    PUSHBUTTON      "&House Color...",ID_GCHOUSE,14,61,87,14
+    PUSHBUTTON      "&Planet Color...",IDC_GCPLAN,14,85,87,14
+    PUSHBUTTON      "&Ascend Color...",ID_GCASCEND,117,11,87,14
+    PUSHBUTTON      "Bright S&ign Color...",ID_GCBSIGN,117,36,87,14
+    PUSHBUTTON      "Bright H&ouse Color...",ID_GCBHOUSE,117,61,87,14
+    PUSHBUTTON      "&Bright Planet Color...",ID_GCBPLAN,117,85,87,14
+    PUSHBUTTON      "&Circle Color...",ID_GCCIRC,67,108,87,14
+    DEFPUSHBUTTON   "OK",IDOK,36,145,40,14
+    PUSHBUTTON      "Help",ID_HELP,89,145,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,145,40,14
+    CONTROL         "",110,"Static",SS_BLACKRECT,68,103,86,2
+    CONTROL         "",112,"Static",SS_BLACKRECT,107,10,2,94
+    CONTROL         "",114,"Static",SS_BLACKRECT,14,29,190,3
+    CONTROL         "",117,"Static",SS_BLACKRECT,14,54,190,3
+    CONTROL         "",118,"Static",SS_BLACKRECT,14,79,190,3
+    CONTROL         "Reverse Colors For Printer",IDC_REVCOLOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,130,194,9
+END
+
+IDD_GRAPHOPT DIALOG  0, 0, 241, 189
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Graphic Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Show &Sign Names.",ID_GOSIGN_NAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,7,74,10
+    CONTROL         "Show &House Cusp Degrees.",ID_GOHOUSE_DEG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,21,103,10
+    CONTROL         "Show House Cusp &Numbers.",ID_GOHOUSE_NUM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,35,104,10
+    CONTROL         "Show Sign &Lines.",ID_GOSIGLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,49,69,10
+    CONTROL         "Show &Aspect Lines.",ID_GOSHOW_ASPT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,63,77,10
+    CONTROL         "Show Aspect G&rid",ID_GOSHOW_AGRID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,78,80,10
+    CONTROL         "Use &Glyphs.",ID_GOUSE_GLYPHS,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,7,94,52,10
+    CONTROL         "House Numbers &Outside.",ID_GOHSNUM_OUTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,108,93,10
+    CONTROL         "Plot &Classically.",ID_GOPLOT_CLASS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,124,64,10
+    CONTROL         "Show Planet Degrees.",ID_GOSHOW_PDEG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,80,10
+    GROUPBOX        "&Tick Wheel Options.",109,123,8,108,65
+    CONTROL         "S&ign Tick Wheel.",ID_GOSIGN_TICK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,23,69,10
+    CONTROL         "D&ecan Tick Wheel.",ID_GODEC_TICK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,38,76,10
+    CONTROL         "&Degree Tick Wheel.",ID_GODEG_TICK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,53,78,10
+    LTEXT           "F&ont Size Factor:",113,127,97,57,8
+    EDITTEXT        ID_GOFONTSIZE,197,96,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Colors...",ID_GOCOLORS,113,121,57,17
+    PUSHBUTTON      "&Fonts...",ID_GOFONTS,179,121,51,17
+    PUSHBUTTON      "OK",IDOK,7,165,65,17
+    PUSHBUTTON      "Help",ID_HELP,87,165,65,17
+    PUSHBUTTON      "Cancel",IDCANCEL,169,165,65,17
+END
+
+IDD_GRA_FIL_OP DIALOG  0, 0, 242, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Graphic File Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Graphic File &Format:",102,7,8,67,8
+    COMBOBOX        ID_GFFORMAT,83,7,150,94,CBS_DROPDOWNLIST | WS_VSCROLL |
+                    WS_TABSTOP
+    LTEXT           "Image Size &Units:",107,7,30,58,8
+    COMBOBOX        ID_GFUNITS,73,28,79,49,CBS_DROPDOWNLIST | WS_VSCROLL |
+                    WS_TABSTOP
+    LTEXT           "Image &Resolution:",111,7,50,60,8
+    COMBOBOX        ID_GFRES,77,49,66,51,CBS_DROPDOWNLIST | WS_VSCROLL |
+                    WS_TABSTOP
+    LTEXT           "&Height (units):",ID_GFHTU,7,70,47,8
+    EDITTEXT        ID_GFHEIGHT,61,68,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Width (units):",ID_GFWDU,105,70,45,8
+    EDITTEXT        ID_GFWIDTH,159,69,32,12,ES_AUTOHSCROLL
+    CONTROL         "R&everse Graphic.",ID_GFREVGRA,"Button",BS_AUTOCHECKBOX |
+                    WS_GROUP | WS_TABSTOP,7,89,90,10
+    PUSHBUTTON      "OK",IDOK,9,113,51,14,WS_GROUP
+    PUSHBUTTON      "Help",ID_HELP,93,113,51,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,113,51,14
+END
+
+IDD_DIRECTORIES DIALOG  0, 0, 282, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Setup Directories"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Main Directory:",101,13,17,51,8
+    EDITTEXT        ID_DMAIN,93,15,176,12,ES_AUTOHSCROLL
+    LTEXT           "&Help Directory:",102,13,37,50,8
+    EDITTEXT        ID_DHELP,93,35,176,12,ES_AUTOHSCROLL
+    LTEXT           "Data&base Directory:",103,13,57,66,8
+    EDITTEXT        ID_DDATABASE,93,55,176,12,ES_AUTOHSCROLL
+    LTEXT           "&Data Directory:",104,13,77,51,8
+    EDITTEXT        ID_DDATA,93,76,176,12,ES_AUTOHSCROLL
+    LTEXT           "&User Directory:",105,13,97,50,8
+    EDITTEXT        ID_DUSER,93,97,176,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,13,123,72,19
+    PUSHBUTTON      "Help",ID_HELP,104,123,72,19
+    PUSHBUTTON      "Cancel",IDCANCEL,195,123,72,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "ASTRO For Windows 95/98 Graphics Application"
+            VALUE "CompanyName", "Christopher J. Noyes Software"
+            VALUE "FileDescription", "ASTROGRAPH MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ASTROGRAPH"
+            VALUE "LegalCopyright", "Copyright © 1998 Christopher J. Noyes Software"
+            VALUE "OriginalFilename", "ASTROGRAPH.EXE"
+            VALUE "ProductName", "ASTROGRAPH Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_POPUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_GRAFONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GRACOLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_GRAPHOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_GRA_FIL_OP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DIRECTORIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Graph.ico"
+IDR_MAINFRAME1          ICON                    "res\\Graph.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GRA_FIL_OP DLGINIT
+BEGIN
+    ID_GFFORMAT, 0x403, 37, 0
+0x6c50, 0x6361, 0x6165, 0x6c62, 0x2065, 0x6f4d, 0x6f6e, 0x5720, 0x6e69,
+0x6f64, 0x7377, 0x4d20, 0x7465, 0x6661, 0x6c69, 0x2065, 0x572e, 0x464d,
+"\000"
+    ID_GFFORMAT, 0x403, 38, 0
+0x6c50, 0x6361, 0x6165, 0x6c62, 0x2065, 0x6f43, 0x6f6c, 0x2072, 0x6957,
+0x646e, 0x776f, 0x2073, 0x654d, 0x6174, 0x6966, 0x656c, 0x2e20, 0x4d57,
+0x0046,
+    ID_GFFORMAT, 0x403, 27, 0
+0x6f4d, 0x6f6e, 0x5720, 0x6e69, 0x6f64, 0x7377, 0x4d20, 0x7465, 0x6661,
+0x6c69, 0x2065, 0x572e, 0x464d, "\000"
+    ID_GFFORMAT, 0x403, 28, 0
+0x6f43, 0x6f6c, 0x2072, 0x6957, 0x646e, 0x776f, 0x2073, 0x654d, 0x6174,
+0x6966, 0x656c, 0x2e20, 0x4d57, 0x0046,
+    ID_GFFORMAT, 0x403, 18, 0
+0x6f4d, 0x6f6e, 0x6863, 0x6f72, 0x656d, 0x4220, 0x7469, 0x616d, 0x0070,
+
+    ID_GFFORMAT, 0x403, 13, 0
+0x6f43, 0x6f6c, 0x2072, 0x6942, 0x6d74, 0x7061, "\000"
+    ID_GFFORMAT, 0x403, 11, 0
+0x6f43, 0x6f6c, 0x2072, 0x452e, 0x5350, "\000"
+    ID_GFFORMAT, 0x403, 10, 0
+0x6f43, 0x6f6c, 0x2072, 0x4947, 0x0046,
+    ID_GFFORMAT, 0x403, 16, 0
+0x6f4d, 0x6f6e, 0x6863, 0x6f72, 0x656d, 0x2e20, 0x4350, 0x0058,
+    ID_GFFORMAT, 0x403, 11, 0
+0x6f43, 0x6f6c, 0x2072, 0x502e, 0x5843, "\000"
+    ID_GFFORMAT, 0x403, 16, 0
+0x6f4d, 0x6f6e, 0x6863, 0x6f72, 0x656d, 0x5420, 0x4649, 0x0046,
+    ID_GFFORMAT, 0x403, 26, 0
+0x6f43, 0x6f6c, 0x2072, 0x4954, 0x4646, 0x2820, 0x6e55, 0x6f63, 0x706d,
+0x6572, 0x7373, 0x6465, 0x0029,
+    ID_GFFORMAT, 0x403, 24, 0
+0x6f43, 0x6f6c, 0x2072, 0x4954, 0x4646, 0x2820, 0x6f43, 0x706d, 0x6572,
+0x7373, 0x6465, 0x0029,
+    ID_GFUNITS, 0x403, 5, 0
+0x6f44, 0x7374, "\000"
+    ID_GFUNITS, 0x403, 7, 0
+0x6e49, 0x6863, 0x7365, "\000"
+    ID_GFUNITS, 0x403, 12, 0
+0x694d, 0x6c6c, 0x6d69, 0x7469, 0x7265, 0x0073,
+    ID_GFRES, 0x403, 11, 0
+0x6353, 0x6572, 0x6e65, 0x5220, 0x7365, "\000"
+    ID_GFRES, 0x403, 8, 0
+0x3031, 0x2030, 0x7064, 0x0069,
+    ID_GFRES, 0x403, 8, 0
+0x3531, 0x2030, 0x7064, 0x0069,
+    ID_GFRES, 0x403, 8, 0
+0x3831, 0x2030, 0x7064, 0x0069,
+    ID_GFRES, 0x403, 8, 0
+0x3033, 0x2030, 0x7064, 0x0069,
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ASTRO For Windows Graphic Viewer\n\nAstrog\nASTRO Graphic Files (*.gra)\n.GRA\nAstrograph.Document\nAstro Graphic Document"
+    IDR_MAINFRAME1          "ASTRO For Windows Graphic Viewer\n\nNAstrog\nNew ASTRO Graphic Files (*.ASGRA)\n.ASGRA\nNAstrograph.Document\nNAstro Graphic Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Astro For Windows Graphics Viewier"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_ZOOMIN          "Zoom In On Graph"
+    ID_VIEW_FITWIN          "Scale to Fit Window Size"
+    ID_GRAPH_SHOWSIGNNAME   "Show or Hide the Sign Names"
+    ID_GRAPH_SHOWHOUSENUMBERS "Show or Hide the House Numbers"
+    ID_GRAPH_SHOWHOUSEDEGREES "Show or Hide the House Degrees"
+    ID_GRAPH_SHOWASPECTS    "Show or Hide the Aspect Lines"
+    ID_GRAPH_SHOWASPECTGRID "Show Or Hide the Aspect Grid"
+    ID_GRAPH_SHOWSIGNLINES  "Show or Hide the Sign Lines"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GRAPHICS_INNEROUTERHOUSECUSPS "Toggle Inner or Outer House Cusps"
+    ID_GRAPHICS_SIGNTICKWHEEL "Show or Hide Sign Tick Wheel"
+    ID_GRAPHICS_DECANTICKWHEEL "Show or Hide a Decan Tick Wheel"
+    ID_GRAPHICS_DEGREETICKWHEEL "Show or Hide the Degree Tick Wheel"
+    ID_GRAPHICS_HOUSENUMBERSOUTSIDE "Put the House Numbers Outside the Wheel"
+    ID_GRAPHICS_PLOTCLASSICALLY "Plot the Wheel Classically"
+    ID_GRAPHICS_SHOWPLANETDEGREES "Show or Hide the Planet Degrees"
+    ID_GRAPHICS_USENEXTCHART "Use the Next Transit Chart"
+    ID_GRAPHICS_USEPREVCHART "Use Previous Chart"
+    ID_GRAPHICS_INCREASEHOUSECUSPS "Increase House Cusps One Degree"
+    ID_FILE_EXPORT          "Export a File to a Graphics File"
+    ID_VIEW_LARGERFONT      "Make Fonts Larger"
+    ID_VIEW_SMALLERFONT     "Make Fonts Smaller"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GRAPH_USEGLYPHS      "Use Glyphs or Use Letter Abreviations"
+    ID_OPTIONS_GRAPHICOPTIONS "Setup Graphic Options"
+    ID_OPTIONS_GRAPHICFILECONVERSIONOPTIONS
+                            "Setup Graphic File Formats and Conversion Info"
+    ID_OPTIONS_DIRECTORIES  "Setup The Program's Directories"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Astrograph.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,46 @@
+@ Rapports numériques
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+deftabsNatal Impression Numérique Pour Nom: {$1}, Commentaire: {$2}.$_
+# CH__ASPECT
+$1 |$2 |Orbe: $3$6' (Orbe Exact).'.' (Orbe large).'$_
+# CH__MID_PLANET
+$un |$2$_
+# CH__MID_HOUSE
+Maison: $3, $5' |Sur cuspide de maison |'Pas sur cuspide de maison |'$7'Intercepted "$ _
+# CH__MID_ASPT
+
+Étiquettes |60|3|12|24|36|
+{Aspects à Milieu:} $ _
+# CH__MID_ASPE
+|$1|$2|Orbe: $3.$_
+# CH__MISC
+|$c'Decan: "$ E |$f'Critical |''$h'Anaretic "$ _
+# CH__PLANET
+$_
+Étiquettes |60|4|12|24|36|48|$_
+[VOTRE $ ^ $1:] $ _
+$_
+$9|$b'Direct'Retrograde'Still' |Déclinaison: X° $ $ y' |$c' Decan: E$f $"' Critique.''$h' Anaretic.''$_
+# CH__PLAN_HOUSE
+Maison: $2 |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted "$ _
+# CH__ASPECT_HD
+
+Étiquettes |60|3|12|24|36|$_
+{ASPECTS:} $ _
+$_
+# CH__MIDPT_HD
+Étiquettes |60|3|10|20|40|$_
+{MILIEUX:} $ _
+$_
+# CH__PLAN_EXT
+Étiquettes |66|6|10|15|31|45|65|$_
+Decan: |$1|Souverain Decan: |$3|$4'Decan Sous-souverain: |''$6$_
+Navasma: |$7|Navasma signent: |$9$_
+Duad: |$un |Souverain Duad: |$c |$Sous-souverain du d'Duad: |''$f$_
+$g'Combust |''$i'Home |''$k'Detriment |''$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: S$_ $"
+$_

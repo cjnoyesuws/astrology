@@ -1,0 +1,28 @@
+@ Tableau de la compatibilité
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression de la compatibilité pour les noms: {$1} et {$2}, Commentaire: {$3}.
+# CH__ASPECT
+$4's $0 |$1|$9's $2 |Orbe: $3 Degrees$_
+# CH__PLAN_HOUSE
+Étiquettes |66|3|20|35|50|$_
+[$ ^ $8' S $ ^ $1:] $ _
+$_
+dans c's $ $3 Maison |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted "$ _
+# CH__ASPECT_HD
+Étiquettes |66|3|20|35|50|$_
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+étiquettes |66|3|19|34|53|$_
+[$ ^ $1' les S MAISON CUSPIDES SONT:] $ _
+@ TB$_
+# CHH_COMPAT_YB
+NAISSANCE POUR $ ^ $1--$
+# CH__COMP_REL
+
+[$ ^ $1 RELATIF À $ ^ $2:] $ _
+$_

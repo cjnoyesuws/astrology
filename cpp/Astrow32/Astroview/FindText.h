@@ -1,0 +1,37 @@
+// FindText.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// CFindText dialog
+
+class CFindText : public CDialog
+{
+// Construction
+public:
+	void GetData(CString &t);
+	void SetData(CString &t);
+	CFindText(CWnd* pParent = NULL);   // standard constructor
+
+// Dialog Data
+	//{{AFX_DATA(CFindText)
+	enum { IDD = IDD_FIND };
+	CString	m_text;
+	//}}AFX_DATA
+
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CFindText)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+
+	// Generated message map functions
+	//{{AFX_MSG(CFindText)
+		// NOTE: the ClassWizard will add member functions here
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};

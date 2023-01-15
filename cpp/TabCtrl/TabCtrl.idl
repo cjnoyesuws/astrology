@@ -1,0 +1,55 @@
+// TabCtrl.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (TabCtrl.tlb) that will become a resource in
+// TabCtrl.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(D4912B41-0111-42D0-86F4-16EB0E2DBF4D), version(1.0),
+  helpfile("TabCtrl.hlp"),
+  helpstring("TabCtrl ActiveX Control module"),
+  control ]
+library TabCtrlLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CTabCtrlCtrl
+
+	[ uuid(D1F60DF7-733E-4C91-8643-7A0C49B3ABE6),
+	  helpstring("Dispatch interface for TabCtrl Control")]
+	dispinterface _DTabCtrl
+	{
+		properties:
+		[id(1), helpstring("property TabString")] BSTR TabString;
+		[id(0), helpstring("property TabString")] BSTR _TabString;
+methods:
+		[id(2), helpstring("method DoTheClick")] void DoTheClick(SHORT xpos);
+	};
+
+	//  Event dispatch interface for CTabCtrlCtrl
+
+	[ uuid(11CFF31B-719B-440F-9363-7DFD7CD822BD),
+	  helpstring("Event interface for Tab Control") ]
+	dispinterface _DTabCtrlEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+		[id(1), helpstring("method DoClick")] void DoClick(OLE_XPOS_PIXELS xpos);
+	};
+
+
+	//  Class information for CTabCtrlCtrl
+
+	[ uuid(5230206E-3E6A-454C-9999-EADA11AE4F32), licensed,
+	  helpstring("TabCtrl Control"), control ]
+	coclass TabCtrl
+	{
+		[default] dispinterface _DTabCtrl;
+		[default, source] dispinterface _DTabCtrlEvents;
+	};
+
+};

@@ -1,0 +1,16 @@
+LIBRARY WPCVT
+
+DESCRIPTION		'DLL template'
+CODE			PRELOAD MOVEABLE DISCARDABLE
+DATA			PRELOAD SINGLE
+
+EXPORTS     TPHVersion			@1 
+			TPHCompatibility	@2
+			TPHTimeStamp		@3
+			TPHEntry			@4
+			TPHExit				@5
+			TPHHandleTokenValReturn @6
+			TPHValidateToken	@7
+			
+
+			

@@ -1,0 +1,26 @@
+* ephem database.
+*
+* these are sorted for easy reading but they don't have to be in any order.
+* things will run faster if you put the objects you use nearer the top.
+*
+* elliptical format (e < 1):
+*	i = inclination, degrees
+*	O = longitude of ascending node, degrees
+*	o = argument of perihelion, degrees
+*	a = mean distance (aka semi-major axis), AU
+*	n = daily motion, degrees per day
+*	e = eccentricity,
+*	M = mean anomaly (ie, degrees from perihelion),
+*	E = epoch date (ie, time of M),
+*	D = the equinox year (ie, time of i/O/o).
+*	g/k or H/G = magnitude model
+*	s = angular size at 1 AU, arc seconds, optional
+* updated elements for Pluto
+Pluto,e,17.1519,110.2183,113.5202,39.37210,.00398953,0.24678,0.1782,10/1/1989,2000.0,g6.3,0.0,8.1
+Vesta,e,7.139,104.015,149.986,2.3607,0.27174,0.0906,152.190,11/5/1990,2000.0,3.16,0.34
+Vesta89,e,7.139,104.015,150.175,2.3613,0.27163,0.0906,43.314,10/1/1989,2000.0,3.16,0.34
+Ceres,e,10.607,80.702,71.274,2.7685,0.21396,0.0780,287.265,10/1/1989,2000.0,3.32,0.11
+Pallas,e,34.804,173.323,309.796,2.7703,0.21375,0.2347,273.779,10/1/1989,2000.0,4.13,0.15
+Juno,e,12.991,170.542,246.787,2.6692,0.22601,0.2575,205.808,11/5/1990,2000.0,5.31,0.30
+Juno89,e,12.993,170.556,246.744,2.6682,0.22614,0.2580,115.411,10/1/1989,2000.0,5.31,0.30
+

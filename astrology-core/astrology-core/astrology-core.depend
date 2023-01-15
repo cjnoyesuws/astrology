@@ -1,0 +1,812 @@
+# depslib dependency file v1.0
+1653347548 source:/home/cnoyes/astrology/astroweb/core/anomaly.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"utl.h"
+	<float.h>
+	"lngdbl.h"
+
+1655999649 /home/cnoyes/astrology/astroweb/include/astro.h
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+
+1656000225 /home/cnoyes/astrology/astroweb/include/compute.fns
+
+1651536676 /home/cnoyes/astrology/astroweb/include/utl.h
+
+1651536676 /home/cnoyes/astrology/astroweb/include/lngdbl.h
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/ascend.cpp
+	<math.h>
+	"astro.h"
+	<stdlib.h>
+	"compute.fns"
+	"datetime.fns"
+	"julian.h"
+	"utl.h"
+	"lngdbl.h"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/datetime.fns
+
+1651724269 /home/cnoyes/astrology/astroweb/include/julian.h
+	"lngdbl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/astduad.cpp
+	"astro.h"
+	"compute.fns"
+	"utlduad.h"
+	"flags.h"
+
+1655003831 /home/cnoyes/astrology/astroweb/include/utlduad.h
+
+1651957619 /home/cnoyes/astrology/astroweb/include/flags.h
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/asthelio.cpp
+	<stdio.h>
+	<string.h>
+	<float.h>
+	<errno.h>
+	<math.h>
+	<setjmp.h>
+	<memory.h>
+	<signal.h>
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"compute.fns"
+	"datetime.fns"
+	"errors.fns"
+	"utl.h"
+	"julian.h"
+	"dataext.h"
+	"lngdbl.h"
+	"setjmp.h"
+
+1673147652 /home/cnoyes/astrology/astroweb/include/useri.h
+
+1651952705 /home/cnoyes/astrology/astroweb/include/errors.fns
+
+1668890344 /home/cnoyes/astrology/astroweb/include/dataext.h
+	"astro.h"
+	"useri.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/astutl.cpp
+	"astro.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/cmphouse.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"ascend.h"
+	"lngdbl.h"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/ascend.h
+	"utl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/dohouse.cpp
+	<string.h>
+	"astro.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/eqhouse.cpp
+	"astro.h"
+	<stdio.h>
+	<stdlib.h>
+	"compute.fns"
+
+1653876919 source:/home/cnoyes/astrology/astroweb/core/hstoramc.cpp
+	<math.h>
+	"astro.h"
+	"ascend.h"
+	"compute.fns"
+	"flags.h"
+	"lngdbl.h"
+
+1655492119 source:/home/cnoyes/astrology/astroweb/core/jtype.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"plans.h"
+	<assert.h>
+	"utl.h"
+	"julian.h"
+	<errno.h>
+	"planpert.fns"
+	"errors.fns"
+	"lngdbl.h"
+
+1655492096 /home/cnoyes/astrology/astroweb/include/plans.h
+	"lngdbl.h"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/planpert.fns
+
+1654648715 source:/home/cnoyes/astrology/astroweb/core/julian.cpp
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	"julian.h"
+	"astro.h"
+	<math.h>
+	"datetime.fns"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/julutil.cpp
+	"julian.h"
+	"astro.h"
+	<math.h>
+	"datetime.fns"
+	"lngdbl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/kochhous.cpp
+	<math.h>
+	"astro.h"
+	"ascend.h"
+	"compute.fns"
+	"lngdbl.h"
+
+1651786882 source:/home/cnoyes/astrology/astroweb/core/mctosidt.cpp
+	"stdafx.h"
+	<math.h>
+	"astro.h"
+	"ascend.h"
+	"compute.fns"
+	"datetime.fns"
+	"ascend.h"
+	"lngdbl.h"
+
+1651723084 /home/cnoyes/astrology/astroweb/include/stdafx.h
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/moon.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"astro.h"
+	"utl.h"
+	"julian.h"
+	"lngdbl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/morhouse.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"ascend.h"
+	"lngdbl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/pelemenx.cpp
+	<stdio.h>
+	<string.h>
+	<malloc.h>
+	<errno.h>
+	<math.h>
+	"paths.hpp"
+	"errors.fns"
+	"astro.h"
+	"useri.h"
+	"julian.h"
+	"utl.h"
+	"plans.h"
+	"planpert.fns"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/paths.hpp
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/pertjs.cpp
+	<math.h>
+	"astro.h"
+	"utl.h"
+	"julian.h"
+	"plans.h"
+	"planpert.fns"
+	"lngdbl.h"
+
+1653347548 source:/home/cnoyes/astrology/astroweb/core/pertmvm.cpp
+	"math.h"
+	"utl.h"
+	"julian.h"
+	"plans.h"
+	"planpert.fns"
+	"lngdbl.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/core/perturnp.cpp
+	<math.h>
+	"plans.h"
+	"julian.h"
+	"planpert.fns"
+	"utl.h"
+	"lngdbl.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/core/plachous.cpp
+	<math.h>
+	"astro.h"
+	"ascend.h"
+	"compute.fns"
+	"lngdbl.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/core/planets.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"astro.h"
+	"julian.h"
+	"utl.h"
+	"plans.h"
+	<assert.h>
+	"planpert.fns"
+	"lngdbl.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/core/reghouse.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"ascend.h"
+	"lngdbl.h"
+
+1653348890 source:/home/cnoyes/astrology/astroweb/core/house.cpp
+	"astro.h"
+	<stdio.h>
+	<stdlib.h>
+	"compute.fns"
+
+1653348890 source:/home/cnoyes/astrology/astroweb/core/plutocrx.cpp
+	"julian.h"
+	"utl.h"
+	"compute.fns"
+
+1654563544 source:/home/cnoyes/astrology/astroweb/core/sidereal.cpp
+	<stdio.h>
+	<assert.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	"astro.h"
+	"datetime.fns"
+	"compute.fns"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/core/sun.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"astro.h"
+	"ascend.h"
+	"compute.fns"
+	"datetime.fns"
+	"julian.h"
+	"utl.h"
+	"lngdbl.h"
+
+1651536676 source:/home/cnoyes/astrology/astroweb/engine/anomaly.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"utl.h"
+	<float.h>
+	"lngdbl.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/aspects.cpp
+	"flags.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"aspect.h"
+	"compute.fns"
+	<stdlib.h>
+	"errors.fns"
+
+1653161707 /home/cnoyes/astrology/astroweb/include/aspect.h
+
+1653942405 source:/home/cnoyes/astrology/astroweb/engine/asteroidcalc.cpp
+	"astro.h"
+	"julian.h"
+	"utl.h"
+	"lngdbl.h"
+	"asteroiddata.h"
+	"errors.fns"
+	"compute.fns"
+	"asteroidcalc.h"
+	<math.h>
+
+1655000677 /home/cnoyes/astrology/astroweb/include/asteroiddata.h
+
+1651536738 /home/cnoyes/astrology/astroweb/include/asteroidcalc.h
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/asthelio.cpp
+	<errno.h>
+	<math.h>
+	<setjmp.h>
+	<memory.h>
+	<signal.h>
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"compute.fns"
+	"datetime.fns"
+	"errors.fns"
+	"utl.h"
+	"julian.h"
+	"dataext.h"
+	<setjmp.h>
+
+1656000925 source:/home/cnoyes/astrology/astroweb/engine/arabpt.cpp
+	<stdlib.h>
+	<memory.h>
+	"astro.h"
+	"arabpt.h"
+	"compute.fns"
+	"errors.fns"
+	"flags.h"
+	"utl.h"
+	"aspect.h"
+	"charcons.h"
+
+1653154341 /home/cnoyes/astrology/astroweb/include/arabpt.h
+
+1653933667 /home/cnoyes/astrology/astroweb/include/charcons.h
+
+1673149639 source:/home/cnoyes/astrology/astroweb/engine/astmisc.cpp
+	"astro.h"
+	"compute.fns"
+	"charcons.h"
+	"useri.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/compat.cpp
+	"astro.h"
+	"misccalc.h"
+	"flags.h"
+	"compute.fns"
+	<memory.h>
+	"dataext.h"
+
+1655000722 /home/cnoyes/astrology/astroweb/include/misccalc.h
+
+1656001064 source:/home/cnoyes/astrology/astroweb/engine/compos.cpp
+	"astro.h"
+	"misccalc.h"
+	"flags.h"
+	"compute.fns"
+	"datetime.fns"
+	"dataext.h"
+	"utlduad.h"
+	"utl.h"
+
+1673149415 source:/home/cnoyes/astrology/astroweb/engine/docalc.cpp
+	<errno.h>
+	<math.h>
+	<signal.h>
+	<float.h>
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"compute.fns"
+	"datetime.fns"
+	"errors.fns"
+	"ascend.h"
+	"julian.h"
+	"dataext.h"
+	"utlduad.h"
+	<setjmp.h>
+	"asteroiddata.h"
+	"asteroidcalc.h"
+	<string.h>
+	"output.fns"
+
+1656001370 source:/home/cnoyes/astrology/astroweb/engine/harmonic.cpp
+	<stdafx.h>
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"dataext.h"
+	"compute.fns"
+	<cstring>
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/intrhous.cpp
+	"astro.h"
+	"flags.h"
+	"compute.fns"
+	<string.h>
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/loadorbs.cpp
+	"astro.h"
+	"useri.h"
+	"aspect.h"
+	"errors.fns"
+	<string.h>
+	"paths.hpp"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/memmgr.cpp
+	"astro.h"
+	"flags.h"
+	"useri.h"
+	"dataext.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/midpoint.cpp
+	"astro.h"
+	"aspect.h"
+	"flags.h"
+	"errors.fns"
+	"compute.fns"
+	<string.h>
+
+1654468852 source:/home/cnoyes/astrology/astroweb/engine/misccalc.cpp
+	"astro.h"
+	"misccalc.h"
+	"flags.h"
+	"compute.fns"
+	"aspect.h"
+	<string>
+	<string.h>
+
+1668924114 source:/home/cnoyes/astrology/astroweb/engine/mktmdt.cpp
+	<string.h>
+	<stdlib.h>
+	"astro.h"
+
+1651536738 source:/home/cnoyes/astrology/astroweb/engine/newhouse.cpp
+	<stdafx.h>
+	<math.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"utl.h"
+	"compute.fns"
+	"ascend.h"
+
+1651536738 source:/home/cnoyes/astrology/astroweb/engine/polarfixup.cpp
+	<stdafx.h>
+	"astro.h"
+	"flags.h"
+
+1656001191 source:/home/cnoyes/astrology/astroweb/engine/progress.cpp
+	"astro.h"
+	"flags.h"
+	"julian.h"
+	"compute.fns"
+	"datetime.fns"
+	"dataext.h"
+	"errors.fns"
+	"math.h"
+	<assert.h>
+	<memory.h>
+	<string.h>
+
+1653937623 source:/home/cnoyes/astrology/astroweb/engine/realoc.cpp
+	<assert.h>
+	<stdio.h>
+	<cstring>
+
+1656001409 source:/home/cnoyes/astrology/astroweb/engine/solararc.cpp
+	"astro.h"
+	"flags.h"
+	"julian.h"
+	"compute.fns"
+	"datetime.fns"
+	"dataext.h"
+	"errors.fns"
+	"math.h"
+	<string.h>
+
+1653349051 source:/home/cnoyes/astrology/astroweb/engine/transits.cpp
+	"astro.h"
+	"flags.h"
+	"compute.fns"
+	"datetime.fns"
+	"dataext.h"
+	"errors.fns"
+	<string.h>
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/jup404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651948841 /home/cnoyes/astrology/astroweb/jplcore/plantbl.h
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/kepler.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651948987 /home/cnoyes/astrology/astroweb/jplcore/kep.h
+	<stdio.h>
+	"plantbl.h"
+	"protos.h"
+
+1653877581 /home/cnoyes/astrology/astroweb/jplcore/protos.h
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/lonlat.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/mar404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/mer404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/messierele.cpp
+	<stdio.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/mlat404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/mlr404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/nep404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/newplan.cpp
+	<stdafx.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"kep.h"
+	"astro.h"
+
+1651536676 source:/home/cnoyes/astrology/astroweb/jplcore/newsun.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/nutate.cpp
+	<stdafx.h>
+	<math.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/plu404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/precess.cpp
+	<stdafx.h>
+	<math.h>
+
+1653862402 source:/home/cnoyes/astrology/astroweb/jplcore/rplanet.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/rstar.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1653350664 source:/home/cnoyes/astrology/astroweb/jplcore/newplanets.cpp
+	<stdafx.h>
+	<stdio.h>
+	<stdlib.h>
+	"astro.h"
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/sat404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/sidrlt.cpp
+	<stdafx.h>
+	<math.h>
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/starele.cpp
+	<stdafx.h>
+	<stdio.h>
+	<math.h>
+	"kep.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/jplcore/stdafx.cpp
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/sun.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/ura404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/utilfnc.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/vearth.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/ven404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/zatan2.cpp
+	<stdafx.h>
+	<math.h>
+
+1653933648 source:/home/cnoyes/astrology/astroweb/uiutil/charcons.cpp
+	<stdio.h>
+	"charcons.h"
+
+1653796713 source:/home/cnoyes/astrology/astroweb/uiutil/ConfigHelper.cpp
+	"astro.h"
+	"flags.h"
+	"useri.h"
+	"dataext.h"
+	"ConfigHelper.h"
+	"cstring"
+	<string.h>
+	<assert.h>
+
+1653843944 /home/cnoyes/astrology/astroweb/include/ConfigHelper.h
+
+1653347967 source:/home/cnoyes/astrology/astroweb/uiutil/dataname.cpp
+	<stdio.h>
+	<string.h>
+	"paths.hpp"
+
+1653856522 source:/home/cnoyes/astrology/astroweb/uiutil/files.cpp
+	<stdafx.h>
+	<stdio.h>
+	<files.h>
+	"errors.fns"
+	<paths.hpp>
+	<stdlib.h>
+	<string.h>
+
+1653870815 /home/cnoyes/astrology/astroweb/include/files.h
+
+1651536676 source:/home/cnoyes/astrology/astroweb/uiutil/globals.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"utlduad.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/uiutil/makename.cpp
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<assert.h>
+	"paths.hpp"
+
+1653848803 source:/home/cnoyes/astrology/astroweb/uiutil/ProgramOptions.cpp
+	<string>
+	"ProgramOptions.h"
+	<stdio.h>
+
+1653850539 /home/cnoyes/astrology/astroweb/include/ProgramOptions.h
+	<string>
+
+1653856519 source:/home/cnoyes/astrology/astroweb/uiutil/setpath.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	"paths.hpp"
+	"ConfigLoader.h"
+	"ConfigData.h"
+
+1653348004 source:/home/cnoyes/astrology/astroweb/uiutil/strclip.cpp
+	<string.h>
+
+1653346027 source:/home/cnoyes/astrology/astrology-core/astrology-core/main.c
+
+1653359517 source:/home/cnoyes/astrology/astroweb/uiutil/errors.cpp
+	<stdarg.h>
+	<assert.h>
+	<stdlib.h>
+	<errno.h>
+	"errors.fns"
+	"charcons.h"
+	<stdio.h>
+	"files.h"
+	<string.h>
+
+1653800153 /home/cnoyes/astrology/astroweb/include/ConfigLoader.h
+	<string>
+	"ConfigData.h"
+
+1653801273 /home/cnoyes/astrology/astroweb/include/ConfigData.h
+	<string>
+
+1654471404 source:/home/cnoyes/astrology/astroweb/jplcore/aa.cpp
+	<stdafx.h>
+	<stdlib.h>
+	<string.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/angles.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/Anomaly.cpp
+	<math.h>
+	"astro.h"
+	"compute.fns"
+	"utl.h"
+	<float.h>
+	"lngdbl.h"
+
+1654468792 source:/home/cnoyes/astrology/astroweb/jplcore/arcdot.cpp
+	<stdafx.h>
+	<math.h>
+
+1653876919 source:/home/cnoyes/astrology/astroweb/jplcore/deltat.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/domoon.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/ear404.cpp
+	<stdafx.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/epsiln.cpp
+	<stdafx.h>
+	<math.h>
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/fk4fk5.cpp
+	<stdafx.h>
+	<math.h>
+	"kep.h"
+
+1654468793 source:/home/cnoyes/astrology/astroweb/jplcore/gplan.cpp
+	<stdafx.h>
+	<math.h>
+	"plantbl.h"
+
+1651536739 source:/home/cnoyes/astrology/astroweb/jplcore/Julian.cpp
+	<stdafx.h>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	"julian.h"
+	"astro.h"
+	<math.h>
+	"datetime.fns"
+
+1651948516 source:/home/cnoyes/astrology/astroweb/io/ChartWriter.cpp
+	<stdio.h>
+	<string.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"ChartWriter.h"
+
+1653769976 /home/cnoyes/astrology/astroweb/include/ChartWriter.h
+
+1653933648 source:/home/cnoyes/astrology/astroweb/apputil/charcons.cpp
+	<stdio.h>
+	"charcons.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/apputil/dataname.cpp
+	<stdio.h>
+	<string.h>
+	"paths.hpp"
+
+1653359517 source:/home/cnoyes/astrology/astroweb/apputil/errors.cpp
+	<stdarg.h>
+	<assert.h>
+	<stdlib.h>
+	<errno.h>
+	"errors.fns"
+	"charcons.h"
+	<stdio.h>
+	"files.h"
+	<string.h>
+
+1668365837 source:/home/cnoyes/astrology/astroweb/apputil/globals.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"utlduad.h"
+
+1673148598 /home/cnoyes/astrology/astroweb/include/output.fns
+

@@ -1,0 +1,8 @@
+writotxt.cpp
+writotxt.cpp(27) : error C2059: syntax error : '*'
+writotxt.cpp(32) : error C2065: 'in' : undeclared identifier
+writotxt.cpp(32) : error C2446: '=' : no conversion from 'int ' to 'char __near *'
+writotxt.cpp(65) : error C2065: 'buf' : undeclared identifier
+writotxt.cpp(65) : error C2664: 'strlen' : cannot convert parameter 1 from 'int ' to 'const char __near *'
+writotxt.cpp(70) : warning C4508: 'convert' : function should return a value; 'void' return type assumed
+writotxt.cpp(88) : error C2143: syntax error : missing ')' before '{'

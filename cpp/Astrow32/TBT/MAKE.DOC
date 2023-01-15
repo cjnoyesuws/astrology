@@ -1,0 +1,801 @@
+
+
+
+
+
+
+
+
+
+			MAKE.DOC Version  1.0 17 February 1990
+
+	  Introduction
+
+	  MAKE is a 'free' utility and this is it's documentation file.
+
+	  This program was originally based on Neil Russell's public domain
+	  make utility, but has been extensively rewritten  and enhanced by
+	  many authors.
+
+	  MAKE	is distributed	without any  warranty of  any kind,  either
+	  expressed  or implied.  Neither  the authors nor  anyone else who
+	  has been involved in the creation, production or delivery of this
+	  program shall  be liable for any  direct, indirect, consequential
+	  or incidental damages arising out of the use	of, or inability to
+	  use, this program.
+
+
+	  Recognition:
+
+	  This version	of MAKE is  based on the  public domain  version of
+	  make, and  includes ideas presented  in a version  called PAMAKE.
+	  The  latter  is  distributed	 with  Roundhill  Computer  Systems
+	  software. This version claims  no rights to the MAKE	source code
+	  or to the  name 'MAKE'.  Permission is granted  to reproduce  the
+	  text	of this file  in connection with  personal use	of MAKE. We
+	  respectfully	ask  that if you  modify the MAKE  source code	and
+	  then republish  the source   code, you should  use a name  other
+	  than	'MAKE' to identify it, and write your own documentation for
+	  it. Alternatively, if you tell us about changes and  enhancements
+	  you make, we would be pleased to consider incorporating them them
+	  in a	future version.  That way everyone can benefit from all the
+	  enhancements.
+
+
+	  History
+
+	  Being a  user of a  public domain  version of a  MAKE utility,  I
+	  found  that it required some enhancements and bug fixes. When the
+	  source was found to not be available, a public domain MAKE source
+	  was  revised	along with  substantial  enhancements  to meet	the
+	  minimum requirements for  my own development.  The result is	the
+	  enclosed  MAKE program  which is  now included  with the  library
+	  source for DOS. It is easily extended to OS2.
+
+	  The  source code for Neil Russell's make  is available on BIX and
+	  elsewhere,  both in its original form and as modified by Cheyenne
+	  Wills and others.
+
+	  The  source code for MAKE is included with this documentation, as
+	  well	as a  utility 'LIBMAKE'  which  can be  used  to build  and
+	  maintain Microsoft Library  or Zortech files.
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     2	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  What's New
+
+
+	  This version fixes a	problem involving the recursive application
+	  of dependency rules.	 Earlier versions would not apply  a second
+	  dependency rule  automatically if multiple steps  were needed to
+	  build  a target when only the first  file was present. Also added
+	  is the '%exit'  special command, and the $(HOME)  builtin macro,
+	  and a default of 'MAKE' for the $(MAKE) macro.
+
+	  This version added a test for selected DOS internal commands, and
+	  also command-line redirection. The -t option now creates a  'zero
+	  byte directory entry'  target file,  if one is  not present.  The
+	  objective being to permit the erasure of unnecessary object files
+	  that	have been inserted into libraries.   We also added a SIGINT
+	  trap. In addition, we modified the source so that we could  build
+	  a 'family' (DOS and OS/2 combined) version, if necessary.
+
+	  This version has enhancements  to the touch command, where,  if a
+	  target does  not exist, a zero length file will be created in the
+	  directory.
+
+	  A  libmake.exe programme  was  included to  help build  microsoft
+	  libraries.  It is used to  build the library	containing the make
+	  objects.
+
+	  The principal  enhancements incorporated  include the ability  to
+	  set  DOS  environment  variables  from  within  MAKE	(which	are
+	  required  from time to  time to handle  the different environment
+	  settings of the many compilers), the ability:
+
+		  to support development  when the source files  are in one
+		  subdirectory and the objects and libraries are in others,
+
+
+		  for MAKE include files and conditional execution
+
+		  and a 'local input file' feature.
+
+	  Some of  the features  require considerable  changes	to the	way
+	  inference rules and special macros  are processed, but the result
+	  is as compatible with Unix make as possible.
+
+	  The 'local input file'  allows link and library command  files to
+	  be set up dynamically  (and macro-expanded). This feature ensures
+	  that all the	commands to build a project can  be included in one
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     3	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  makefile,  and thus  avoids having  to use  the DOS  echo command
+	  (with a consequent reduction in efficiency).
+
+
+
+	  Operation of Make
+
+	  The operation of MAKE is closely modelled on the Unix 'make', and
+	  in  particular is completely different  from the operation of the
+	  make	utility  currently  supplied  with Microsoft  C  5.1.  MAKE
+	  processing is tree structured,  and requires the principal target
+	  to be listed first (or named	on the command line). In  execution
+	  the  algorithm   recursively	tests  all  the     other  makefile
+	  statements to determine automatically the particular	commands to
+	  execute and the appropriate sequence.
+
+
+	  Using MAKE
+
+	  The command line syntax can be determined by executing:
+
+		      MAKE -?
+
+	  and the built-in macros, rules and suffixes by executing:
+
+		      MAKE -f - -p <NUL
+
+	  This	documentation  file  contains  full  details  of  the  MAKE
+	  enhancements, and a brief summary of the  principles of operation
+	  of a traditional  Unix make utility.	For a  full explanation of
+	  the  operation of a  'make' you are referred  to a standard Unix
+	  reference manual.  The  principal  make  features  not  currently
+	  included in MAKE are the following:
+
+	      - The $% special macro [library member name]
+	      - The D  and F  special macro  modifiers [directory part	and
+		file part]
+	      - SCCS file and archive file support
+	      - The -k and -b command-line switches
+	      - There are no built-in macros such as CC=cc
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     4	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  MAKE special features
+
+	  Enhancements in MAKE and differences from Unix 'make' include the
+	  following:
+
+	      - If a macro name begins with '+' then the '+' is removed and
+		the macro  definition is  also placed in  the 'environment'
+		for the  commands executed  by MAKE.   This feature  allows
+		setting of  command paths, include file  paths, and special
+		compiler   environment	variable   switches  automatically,
+		instead of in an AUTOEXEC file or manually.
+
+	      - Nested	macros	 in  the  environment  variable  value	are
+		expanded at the time it is defined,  that is once, when the
+		macro  is first processed.  If the  macro is also used as a
+		regular macro any nested macros are expanded in  the normal
+		way at	the time the macro  is used.   Macro names starting
+		with '+' are  placed in the  execution environment even  if
+		the -e switch prevents	their overriding a macro definition
+		of   the  same	 name  already	 present  in   the  initial
+		environment. if a  macro name  begins with '+'  the '+'  is
+		ignored.
+
+	      - Whitespace  is deleted	between  a macro  definition and  a
+		comment  starting with	#.  This makes	it  much easier  to
+		document makefiles.  Many Unix 'makes' do not do this.
+
+	      - If a  command line starts with '+' then it is invoked using
+		a  'system' function  instead  of  being spawned  directly.
+		This  enables internal DOS commands  to be used.   The most
+		often  used  DOS  and	OS/2  commands	are  also  detected
+		automatically.	Currently this list includes:
+
+		  "COPY","DEL","ECHO","ERASE","FOR","IF","MD","MKDIR","RD",
+		  "REN","RENAME","RMDIR", "TYPE",
+
+	  If you  need other DOS  commands, you  should either	use '+'  or
+	  modify the source.  No DOS error code is available from  commands
+	  executed through  the 'system' function, but OS/2  does pass back
+	  error information.
+
+	      - MAKE handles redirection for commands not  executed through
+		'system'. The  symbols processed are "<",  ">", ">>", "2>",
+		and "2>>". The  handle '2' refers to stderr.   Redirection
+		of  both stdout and stderr, requires the use of a different
+		filename for each file.  Note  that the use the '+' flag or
+		one of	the automatically recognised DOS  or OS/2 commands,
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     5	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+		will cause MAKE to pass the command to the shell to process
+		the redirection.
+
+
+	      - The Unix  'make' only invokes the  commands associated with
+		inference rules (eg with ".c.obj:") either when no specific
+		dependency  appears in	the makefile  or when  the specific
+		dependency exactly  matches what  would have  been inferred
+		(e.g. "foo.obj:  foo.c") and no command  lines follow. MAKE
+		extends the  'exact match' to allow  the inferred dependent
+		name  to be a substring of the actual dependent name. This
+		may make little sense without an example, but its effect is
+		to allow  inference rules and corresponding  commands to be
+		used even if the  source file is in a  different directory.
+		Here is the example:
+
+		      .c.obj:
+			      cl /c $<;
+
+		      MYSRC=c:\mysrc
+
+		      foo.exe: foo1.obj foo2.obj
+			      link
+
+		      foo1.obj: $(MYSRC)\foo1.c
+
+		The  Unix make	would execute  the cl  command for  foo2 if
+	  foo2.c is  in the current directory, but would not execute cl for
+	  foo1 even if foo1.c  is in the mysrc directory. MAKE will execute
+	  the cl command automatically for both.  Note: case is significant
+	  in determining whether a substring condition exists.
+
+	      - The  $< $*  $@ and  $? macros  are always  evaluated before
+		processing a command. In Unix make the first two only apply
+		to  inference rules  and the  second  two only	to explicit
+		dependency  lists.   The  $<  evaluates  to   the  complete
+		'inferred'  filename if  an inference  rule has  been used.
+		Otherwise (i.e. if an explicit command line was supplied or
+		if no inference  rule could  be made) $<  evaluates to	the
+		FIRST  dependency file	 listed  for this  target. $*  on a
+		command line  always evaluates to  the filename part  of $<
+		(i.e. less the extension).
+
+	      - The special  macro $-  indicates, when found  on a  command
+		line, that the immediately  following lines in the makefile
+		are  to  be  written  to   a  temporary  file  (with  macro
+		expansion) immediately	prior  to executing  the  command.
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     6	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+		This 'local input file' must  be terminated in the makefile
+		by a line containing the character '<' in the first column.
+		The $- macro  is	expanded  on the command line,	and
+		defaults  to   a  value  of  'TEMP_LIF.TMP'   (but  can  be
+		redefined). This macro	expansion is used as  the file name
+		for  the  temporary file,  so take  care  that it  does not
+		designate  a file requires retaining. If  $- evaluates to a
+		null string, the default  filename TEMP_LIF.TMP is used for
+		the  file name but the macro expansion	is left as null.  A
+		typical command  line could  be 'LIB  @$-' which  tells LIB
+		that  the  filename  TEMP_LIF.TMP  contains  the  librarian
+		commands. The  temporary file is deleted  after the command
+		has finished, and is not created  if the -n switch has been
+		given.	  The string  '\n' in  a local  input file  line is
+		converted into an extra newline.
+
+	      - A  special macro '$\' has  been added which  evaluates to a
+		backslash ('\'). You  should use this  macro to separate  a
+		path and  a filename  in your  makefiles, instead  of hard-
+		coding	a  backslash.  The  reason this  macro	is  created
+		internally  is that  it  is difficult  to  define it  in  a
+		makefile (think about how you would do it, and remember the
+		line continuation feature).
+
+	      -  A special  expansion of the  macro '$*' is  performed when
+		the macro  occurs  in  a  dependency  name.  The  macro  is
+		expanded  to  the base	name  of the  current  target. This
+		allows makefiles of the form:
+
+			OBJS= obj1.obj obj2.obj ...
+			$(OBJS): \other\$*.c hdr.h
+				cl -Fo$@ $<
+
+		In the above example, $* evaluates to 'obj1' for the target
+	  'obj1.obj', and to 'obj2' for the target 'obj2.obj' etc. When the
+	  command is  actually performed,  '$<' expands  to '\other\obj1.c'
+	  etc.
+
+	      -  A line starting (in  column 1) with the string:   #include
+		is a  signal to  the input  routine to	attempt to open  an
+		'include'  file.  The whole  of the remainder  of the input
+		line  is taken to  be the  file name,  which should  NOT be
+		enclosed in double quote characters or angle brackets. MAKE
+		does not search  multiple directories for the file:   since
+		the makefile specifies all such directories, we assume that
+		at the	very   least  you know where the  include files are
+		when  you write  the makefile.	For convenience,  MAKE does
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     7	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+		accept	and expand  any macros	in the	filename.   Include
+		files may be nested to a depth of four levels. The #include
+		line  may be  placed  anywhere	in  the input  file  except
+		immediately following a  line ending  in '\'.   If the  '#'
+		does  not start in  column 1 it  will be taken	as a normal
+		comment. If you need  to start a line with  '#include' (for
+		example  in  a	local input  file)  the  use  of an  escape
+		('\#include') will allow this.
+
+	      - Conditional  processing  of  makefile lines  is  supported.
+		Special 'comment' lines starting '#if', '#ifn', '#else' and
+		'#endif' have the effect you would expect on the lines they
+		enclose.   The syntax for the statement on '#if' and '#ifn'
+		lines  is  exactly  the  same as  a  macro  definition	and
+		currently  you	can only  test macro  values, and  only for
+		equality.   Note  that a  single equals sign is  used as in
+		the following example:
+
+			#if M=s
+			MODEL=small
+			#endif
+
+		The macro name on the left of the equality statement should
+	  NOT have a '$' in front of it.  This conditional processing takes
+	  place when the makefile is first read in, and a macro name on the
+	  left	of  the  conditional  takes  its  value  at  the  time	the
+	  conditional is processed.  The right side  of the conditional  is
+	  macro-expanded before the test. Conditionals	may be nested up to
+	  ten levels deep.
+
+	      - Conditional  processing  of  command  lines  is  supported.
+		Special command lines  starting '%if', '%ifn',  '%else' and
+		'%endif'  (following  a tab)    have the  effect  you would
+		expect on  the command lines  they enclose.  In addition  a
+		'%set'  command  line  can  be  used  to  specify  a  macro
+		definition  which is made dynamically.	 The syntax for the
+		statement on	     '%if' and '%ifn' lines is  exactly the
+		same  as a macro definition and currently you can only test
+		macro  values, and only for  equality.	Note  that a single
+		equals sign is used as in the following example:
+
+			%if @=foo.obj
+			%set CFLAGS=$(SPECIALFLAGS)
+			%else
+			%set CFLAGS=$(DEFAULTFLAGS)
+			%endif
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     8	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+		The macro name on the left of the equality statement should
+	  NOT have a '$' in front of it.  This conditional processing takes
+	  place when the  command lines are executed,  and a macro name  on
+	  the  left of	the  conditional takes	its value  at the  time the
+	  conditional is  processed. The right	side of the  conditional is
+	  macro-expanded before the test. Conditionals may  be nested up to
+	  ten levels deep.   Note  that each set  of commands is  processed
+	  separately and  must	be completed  with  the correct  number  of
+	  '%endif' statements,  or  the  processing of  the  MAKE  will  be
+	  terminated.  Macros defined with  the '%set' command stay defined
+	  for  any further commands executed  in the MAKE  run. The special
+	  command '%exit' causes the make to be terminated immediately.  If
+	  a numeric value follows (e.g. '%exit  1') then it will be used as
+	  the exit code.
+
+	      -  Special code has been inserted to handle the  expansion of
+		'$$'  in a  macro.    Many  Unix  'make'  programs  do  not
+		correctly handle file names  including a '$' character when
+		the needed '$$' is in a macro which gets expanded more than
+		once.  The internal  macro '$=$' which is normally  used to
+		expand the '$$'  has been changed  in MAKE to set  the high
+		bit  of the  replacement character,  and the high  bits are
+		then stripped  off before  the result  is actually  used by
+		MAKE.  If you have  the MAKE  source code, and if you never
+		need the '$' in your makefiles, you  can save a little time
+		and memory by  undefining the  symbol DOLLAR in  H.H.	The
+		'$$' macro  call will  still work, but  only if  it is  not
+		expanded more than once.
+
+	      - The  '-t'  switch for  'touch'  has  been incorporated  for
+		MSDOS. After one has safely built a library, one can delete
+		the obj files and follow up by reinvoking MAKE with  the -t
+		option. Zero length files will be  placed in the directory,
+		and no excess disk space consumed. The timestamps  of other
+		files will be revised to reflect the new situation.
+
+	  'Make' Overview
+
+	  For the benefit of users who are unfamiliar with make  and do not
+	  have access to Unix manuals, a very brief description of the MAKE
+	  features follows. These  features are common to  most full 'make'
+	  implementations.
+
+	  Command-line syntax:
+
+	      MAKE [-f filename] [-deinpqrst] [macro=value ...] [target(s) ...]
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			     9	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	      Command-line  switches  can  be  combined in  one  string  or
+	  entered  as individual tokens  in any  order and  intermixed with
+	  macro  definitions. If the -f switch is given, the next following
+	  command line token  will be taken as the file  name.	If entered,
+	  target names must follow all the switches and macro definitions.
+
+	  Command-line switches:
+
+	      -f filename   Name of makefile (default is "makefile", "-" is
+			    stdin)
+	      -d	    Print  timestamps of files as they are analysed
+
+	      -e	    Environment has priority over makefile macros
+	      -i	    Ignore all exit status values
+	      -n	    Execute no commands except $(MAKE)
+	      -p	    Print all macros and targets
+	      -q	    Question  if target  is up-to-date,  exit(1) if
+			    not
+	      -r	    Do not use the inbuilt rules
+	      -s	    Make silently
+	      -t	    Touch files instead of making them
+	      -v	    Prints version information
+
+	  The MAKEFLAGS environment variable:
+
+		The  environment  variable MAKEFLAGS  can contain  a string
+	  consisting  of '-' followed by  any of the  flags 'einqrst' which
+	  are processed  as if	they  appeared on  the	command line.	 An
+	  environment variable MAKEFLAGS containing the current settings of
+	  these flags is always passed on to commands executed by MAKE.
+
+	  Macros:
+
+		On  the command  line,	or in  the  makefile, you  can	use
+	  "str1=str2"  to define  a macro.   Macros  are expanded  with the
+	  syntax "$(str1)".   The parentheses may be  omitted if str1 is  a
+	  single character.  Case is significant.  If str1 is preceded by a
+	  '+' it  is put in the DOS or OS/2 environment as "STR1=str2", for
+	  the duration of the make execution only. Any existing environment
+	  variables at	the start  of the  MAKE run  are also available  as
+	  macros.
+
+	  Macro redefinition and priority:
+
+		A  macro given	on the	command line  cannot  be redefined.
+	  Macros defined  in the  makefile  override environment  variables
+	  with the  same name unless  the '-e'  flag is given,  but do  not
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			    10	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  override the environment  used for the commands  executed by make
+	  unless they are preceded by a '+'.
+
+	  Macro value substitution:
+
+	  Macros in the makefile may also be expanded using the syntax:
+
+		    $(str1:subst1=subst2)
+
+		The above expression that  the macro named 'string1' should
+	  be  expanded, and that in  the expansion text  all occurrences of
+	  'subst1' should be  replaced by 'subst2'.  If the equals sign and
+	  second substitution string are omitted then 'subst1' is deleted.
+
+	  Target - Dependency - Commands specification:
+
+	  The basic syntax in the makefile is as follows:
+
+		      target:  dep1 dep2 dep3 ...
+			command1
+			command2
+			...
+
+		Command  lines must  start with  a tab.   Target/Dependency
+	  lines may  be continued by  placing '\' at  the end of  the line.
+	  Comments start with '#' and continue to the  end of the line.  If
+	  '#' is required in a makefile line it must be escaped as '\#'.
+
+		MAKE executes the commands to make the target if any of the
+	  dependent files have a later timestamp than the target, or if the
+	  target is not found. If  no targets are specified on the  command
+	  line MAKE  builds the first  target encountered in  the makefile.
+	  The makefile is analysed recursively so  that any dependencies of
+	  a target are also built in the correct sequence.
+
+		In a line not beginning with a tab, the first ':' character
+	  delimits the target name.  A colon in a target name (e.g. a drive
+	  separator)  can  be escaped  as '\:'.    Colons are  permitted in
+	  dependancy names.
+
+	  Multiple command sequences:
+
+		Multiple target:dependancy sets may be defined for a single
+	  target, but normally	a target  may only be  associated with	one
+	  list	of  commands.  If  the	target	and  dependancy  names	are
+	  separated with '::' instead  of ':', however, each such  line may
+	  be followed by a set of commands.  The first such set of commands
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			    11	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  is executed for which a dependancy name is later than the target.
+	  This	allows	for  alternatative  methods of	building  a  target
+	  depending on what files have changed.
+
+
+	  Special command prefixes:
+
+		If a  command is  preceded by a  special prefix  character,
+	  special  processing occurs.	Multiple  prefix characters  may be
+	  used.  The characters are as follows:
+
+		  + execute this command through the command processor
+		  - ignore error exit codes for this command
+		  @ execute this command silently
+
+		If you need  to use a command which starts  with one of the
+	  special prefix  characters,  you can	escape	it with  '\'.  This
+	  feature may be  needed to run  a VMS command	file using the	'@'
+	  command.
+
+
+	  Inference rules:
+
+		The special  target ".suff1.suff2" specifies how  to make a
+	  file with suffix suff2  from a file with a matching  basename and
+	  with the suffix suff1.
+
+		As  explained above, MAKE  interprets 'a matching basename'
+	  to mean that	the target  basename should be	a substring of	the
+	  dependency file basename.
+
+		When  the dependency file is  in the same  directory as the
+	  target, it  is unnecessary  to specify the  dependency explicitly
+	  because MAKE	will use the  builtin or supplied  inference rules
+	  and suffixes list (see below) to determine the correct command to
+	  execute.
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			    12	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  Special macros:
+
+		$<    Expands to the main  dependency filename which caused
+		      the current actions to be carried out (see above).
+
+		$*    On a  command line, expands to  the basename, without
+		      the suffix, of $<.   In a dependency, expands  to the
+		      basename, without the suffix,  of the current target.
+		      In  the  latter  case,  the  expanded  name  will  be
+		      different for each of multiple targets.
+
+		$@    The current target
+
+		$?    The list (whitespace-separated)  of dependency  names
+		      which are out-of-date with respect to the target
+
+		$-    Defaults	to expand  to TEMP_LIF.TMP.   In  a command
+		      line,  indicates that the immediately following lines
+		      up to and not including  the first line starting with
+		      '<' in column 1 are to be placed in a file which will
+		      have a name which  is the expansion of the  $- macro.
+		      This   file  will   be  created	immediately  before
+		      executing the  command in  which the $-  appears, and
+		      deleted afterwards.  If the $- macro  evaluates to a
+		      null  string, the  default name TEMP_LIF.TMP  is used
+		      for the file name instead of the macro expansion.
+
+		$(MAKE)
+		      If specified in a command,  causes the command to  be
+		      executed	even if '-n' has been given.  This allows a
+		      'supermake'  to call  nested MAKE  commands, passing
+		      the  '-n' flag through MAKEFLAGS. $(MAKE) defaults to
+		      a value of 'make'.
+
+		$(HOME)
+		      The current working drive and directory when the make
+		      started.
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			    13	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+	  Special targets:
+
+		.PRECIOUS
+		      Dependents of  this target  will not be  removed when
+		      the  make is interrupted.
+		      Break (control-C) and command errors cause the target
+		      being worked on to be deleted if it's been changed
+		      unless it's a prerequisite of the target `.PRECIOUS'.
+		      For example:
+
+				   .PRECIOUS: nerase.exe
+
+		.SILENT
+		      Same as -s option
+
+		.IGNORE
+		     Commands returning nonzero status (ie. the errorlevel)
+		     cause MAKE to terminate unless the special target
+		     `.IGNORE' is in the makefile. or the command begins
+		     with a - hypen).  The `-i' option gives the same effect.
+
+		.DEFAULT
+		      Used  to specify commands to be used when a target is
+		      to  be built  and  no explicit  commands or  built-in
+		      rules can be applied.
+
+		.SUFFIXES
+		      The dependants of  .SUFFIXES are	suffixes which	are
+		      applied  in turn to  the basename until  one is found
+		      for  which an inference rule is present for which the
+		      created file  exists. If dependants of  .SUFFIXES are
+		      present they are added to the built-in suffixes list;
+		      otherwise the list is cleared.
+
+
+	  Built-in rules:
+
+		MAKE  has a number  of built-in  rules for  creating object
+	  files  from  various different  types of  source  file.   All are
+	  implemented using macros (eg the  command for  .c.obj:  is  $(CC)
+	  $(CFLAGS) $(CFILES) ).  Unlike Unix make, the  definitions of the
+	  macros  such as O and CC are	not built-in and must be defined in
+	  the makefile.   This allows for the variety of command and suffix
+	  names found outside  the Unix  environment. There is	a rule	for
+	  code generation  for suffixes such as .c, .cpp .asm .pas and .for
+	  .
+
+
+	  Performance issues:
+
+		The number of suffixes	directly affects the performance of
+	  MAKE: To speed up  MAKE, you can remove the  unnecessary suffixes
+	  by   specifying an empty '.SUFFIXES' and then one containing only
+	  .c (and .asm, if needed).  For example:
+
+		  .SUFFIXES:		  # clear suffixes list
+
+
+
+
+
+
+
+	  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+	  ³		   MAKE.EXE PROGRAMME			    14	 ³
+	  ³		   Documentation				 ³
+	  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+		   .SUFFIXES: .c .asm	  # search only for these
+
+	  Postscript
+
+	  Unix is  a trademark of  AT&T Bell  Labs. DOS is  a trademake  of
+	  Microsoft..
+
+	  Acknowledgements
+
+	  Roundhill Computer Systems Limited
+	  POB 14 Marlborough Wiltshire SN8 1LG England
+	  BIX: join roundhill
+
+	  Erwin McDonald for the $* as a dependency name.
+
+

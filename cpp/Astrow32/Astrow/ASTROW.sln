@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Astrow", "Asx\Asx.vcproj", "{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debuguniver = Debuguniver
+		Deluxe = Deluxe
+		DeluxeDebug = DeluxeDebug
+		DeluxeDemo = DeluxeDemo
+		DeluxeUniver = DeluxeUniver
+		Lite = Lite
+		LiteDebug = LiteDebug
+		ProDemo = ProDemo
+		ProDemoDebug = ProDemoDebug
+		ProDemoUni = ProDemoUni
+		ProUniver = ProUniver
+		Release = Release
+		Shareware = Shareware
+		SharewareDebug = SharewareDebug
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Debug.ActiveCfg = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Debug.Build.0 = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Debuguniver.ActiveCfg = Debuguniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Debuguniver.Build.0 = Debuguniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Deluxe.ActiveCfg = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Deluxe.Build.0 = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeDebug.ActiveCfg = DeluxeDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeDebug.Build.0 = DeluxeDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeDemo.ActiveCfg = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeDemo.Build.0 = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeUniver.ActiveCfg = DeluxeUniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.DeluxeUniver.Build.0 = DeluxeUniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Lite.ActiveCfg = Lite|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Lite.Build.0 = Lite|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.LiteDebug.ActiveCfg = LiteDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.LiteDebug.Build.0 = LiteDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemo.ActiveCfg = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemo.Build.0 = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemoDebug.ActiveCfg = ProDemoDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemoDebug.Build.0 = ProDemoDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemoUni.ActiveCfg = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProDemoUni.Build.0 = Debug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProUniver.ActiveCfg = ProUniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.ProUniver.Build.0 = ProUniver|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Release.ActiveCfg = Release|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Release.Build.0 = Release|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Shareware.ActiveCfg = Shareware|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.Shareware.Build.0 = Shareware|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.SharewareDebug.ActiveCfg = SharewareDebug|Win32
+		{FDF4CBD6-6E03-4025-A8B5-6E119CB3F7A3}.SharewareDebug.Build.0 = SharewareDebug|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+
+
+sscanf( dbuf, "%d/%d/%d", &m, &d, &y );
+
+sprintf( dbuf, "AsT%d$%d@%dRoW", d+100, y+1000, m+500 );
+
+HKEY hkSub;
+
+DWORD dwDisposition;
+
+strcpy( pthbuf, "Software\\Christopher J. Noyes Software" );
+
+char *pstr = strrchr(lpCmdLine, ' ');
+
+if ( !strcmpi( pstr, "ASTROW" ) || !strlen(pstr) )
+
+strcat( pthbuf, "\\Astro For Windows\\");
+
+else if (!strcmpi(pstr,"NUMEROW") )
+
+strcat( pthbuf, "\\Numerow For Windows\\");
+
+else if ( !strcmpi(pstr, "BIO") )
+
+strcat( pthbuf, "\\Biorythms\\");
+

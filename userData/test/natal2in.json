@@ -1,0 +1,54 @@
+{
+  "Birth": {
+    "name": "David",
+    "country": "USA",
+    "state": "California",
+    "location": "Los Angeles",
+    "date": "3/27/1966",
+    "time": "13:47:00",
+    "long": "-118 15 W",
+    "lat": "34 4 N",
+    "tzhours": -8,
+    "tzminutes": 0
+  },
+  "Comp": {
+    "date": "3/29/1958",
+    "time": "17:35:00",
+    "long": "-75 35 W",
+    "lat": "40 25 N",
+    "tzhours": -5,
+    "tzminutes": 0
+  },
+  "Trans": {
+    "date": null,
+    "time": null,
+    "long": null,
+    "lat": null,
+    "tzhours": null,
+    "tzminutes": null
+  },
+  "BirthRect": {
+    "known": 1,
+    "system": 0
+  },
+  "CompRect": {
+    "known": 1,
+    "system": 0
+  },
+  "TransData": {
+    "count": null,
+    "start": null,
+    "end": null,
+    "offset": null
+  },
+  "ProgrData": {
+    "system": null,
+    "date": null
+  },
+  "Reloc": {
+    "long": "-75 35 W",
+    "lat": "40 25 N",
+    "tzhours": -5,
+    "tzminutes": 0
+  }
+}

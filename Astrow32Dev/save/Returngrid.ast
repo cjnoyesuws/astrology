@@ -1,0 +1,17 @@
+# CHR_RETURN_HD
+
+[$2' les RECETTES de SUN'MOON:]
+@ TB
+Aucun |{DATE:} |{TEMPS:} @ TR
+# CHR_RETURN_ITM
+$5:|$2|$3@TR
+# CHH_TITLE
+deftabs {$2' le Retour de Solar'Lunar} Impression Pour Nom: {$1}, Commentaire: {$3}.$_
+# CHR_RETURN_DATA
+Commencer une date: {$2}, date de la fin: {$3}.
+
+$4'Progressed "{$5} $6' années, "{$7} $8' mois et "{$9} $ un' jours. Le Système de la progression est "{$ b' "Secondaire (jour pour une année)" ' "Tertiaire (jour pour un mois Lunaire)" ' "Mineur (mois Lunaire pour une année)" "} $ f.'
+''$_
+# CHH_BIRTH
+Date de naissance: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+

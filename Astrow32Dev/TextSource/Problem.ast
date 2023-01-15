@@ -1,0 +1,27 @@
+@ @ Specific Stuff for Problem Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Astrological Problem Printout For Name: {$1}, Comment: {$2}.$_
+# CHPR_HOUSE
+{$1} is in House {#$3}$8' and €'.€'
+# CHPR_ASPECT
+{$1} is {$4} to {$2}$8' and €'.€'
+# CHPR_SIGN
+{$1} is in the Sign {$5}$8' and €'.€'
+# CHPR_SIGN_HOUSE
+{$1} is in the Sign {$5} and is in the {$6} House$8' and €'.€'
+# CHPR_HSE_CUSP_SIGN
+House Cusp {#$3} in the Sign {$5}$8' and €'.€'
+# CHPR_PLAN_HOUSE
+{$1} and {$2} are in House {#3}$8' and €'.€'
+# CHPR_PLAN_SIGN
+{$1} and {$2} are in the Sign {$5}$8' and €'.€'
+# CHPR_RESULT
+Resulting in {$7}.$_
+
+
+

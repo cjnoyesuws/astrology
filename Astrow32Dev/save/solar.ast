@@ -1,0 +1,44 @@
+@ Rapport du direced solaire
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du tableau dirigée solaire pour nom: {$1}, Commentaire: {$2}.$_
+# CH__ASPECT
+
+Votre $0 Natal est $1 à Votre Natal $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+# CHSO_ASPECT
+
+Votre $0 Natal est $1 à Votre Solaire $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+
+# CH__MISC
+$le c'It est dans le "$ e.$d' Decan.''$f' C'est dans un < Degré Critique > le faire une planète pour regarder.''$h' C'est un < Degré Anaretic > indiquer un < Urgent > ayez besoin de travailler avec les énergies de cette planète.''$_
+# CH__PLANET
+
+[VOTRE $ ^ $ P $ ^ $1:] $ _
+$_
+Votre $ p $1 est $5' sur la cuspide Entre "$4$6' et ', $8$7', "$2.$^$3 degrés, et est dans $ un mouvement.$_
+# CH__PLAN_HOUSE
+$_
+Votre $9 $1 est dans Votre $3 Maison Natale, $4' Sur Cuspide de Maison et Plus d'Important'Not Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON SONT:] $ _
+@ TB$_
+# CHH_BIRTH
+Date de naissance: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+
+Time Used sidéral Pour les Calculs de Maison Était {m:$n:$o $}.$_
+# CHSO_DATA
+Système de la direction solaire: $5' jour pour un Year'Degree pour un Système Year'Nabod' Dirigé: Années, {$2} mois, {$3} jours {$4} les a'Target $ Datent ".
+# CH__HS_SGN_HED
+$_
+[VOS CUSPIDES DE MAISON ET LES SIGNES ILS SONT DANS:] $ _
+
+# CH__HOUSE_SIGN
+
+Votre $8 Cuspide de Maison est $2 $4' sur la Cuspide Entre "$3$5' et "$7.$_

@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TBT32", "TBT32.vcproj", "{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert", "convert\convert.vcproj", "{E83B676D-512C-44F2-8B20-D01AA8B57C9B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode release = Unicode release
+		Unidebug = Unidebug
+		UniRelease = UniRelease
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Debug.ActiveCfg = Debug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Debug.Build.0 = Debug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Release.ActiveCfg = Release|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Release.Build.0 = Release|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unicode release.ActiveCfg = Unicode release|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unicode release.Build.0 = Unicode release|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unidebug.ActiveCfg = Unidebug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.Unidebug.Build.0 = Unidebug|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.UniRelease.ActiveCfg = UniRelease|Win32
+		{EC4CF747-AFB1-49D9-8805-AB585E8CBADE}.UniRelease.Build.0 = UniRelease|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Debug.ActiveCfg = Debug|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Release.ActiveCfg = Release|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Release.Build.0 = Release|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Unicode Debug.ActiveCfg = Debug|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Unicode Debug.Build.0 = Debug|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Unicode release.ActiveCfg = Release|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Unicode release.Build.0 = Release|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.Unidebug.ActiveCfg = Unidebug|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.UniRelease.ActiveCfg = UniRelease|Win32
+		{E83B676D-512C-44F2-8B20-D01AA8B57C9B}.UniRelease.Build.0 = UniRelease|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

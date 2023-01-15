@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<CUSTOMLANGUAGE>
+
+  <LANGUAGE name="english">
+    <MESSAGE id="IDS_GENERAL_OK">OK, proceed!</MESSAGE>
+    <MESSAGE id="IDS_GENERAL_CANCEL">No, stop it!</MESSAGE>
+  </LANGUAGE>
+
+  <LANGUAGE name="dutch">
+    <MESSAGE id="IDS_GENERAL_OK">OK, ga door!</MESSAGE>
+    <MESSAGE id="IDS_GENERAL_CANCEL">Nee, stop maar!</MESSAGE>
+    <MESSAGE id="IDS_STATUS_INITIALIZING">Bezig met het initialiseren...</MESSAGE>
+  </LANGUAGE>
+
+</CUSTOMLANGUAGE>

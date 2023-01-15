@@ -1,0 +1,60 @@
+// GraphOpts.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// CGraphOpts dialog
+
+class CGraphOpts : public CDialog
+{
+// Construction
+public:
+	void SetData( unsigned short flg, int fs );
+	void GetData( unsigned short &flg, int &fs );
+	void SetGraphicFonts( GraphicFonts *p );
+	void SetGraphicColors( GraphicColors *p);
+	BOOL getOpt(unsigned short o, unsigned short dm) {return(dm & o?TRUE:FALSE);}
+    void setOpt(unsigned short o,BOOL v,unsigned short &dm) { if (v) dm |= o; else dm &= (o^0xffff); }
+   	CGraphOpts(CWnd* pParent = NULL);   // standard constructor
+
+// Dialog Data
+	//{{AFX_DATA(CGraphOpts)
+	enum { IDD = IDD_GRAPHOPT };
+	BOOL	m_dectick;
+	BOOL	m_degtick;
+	int		m_fontsize;
+	BOOL	m_housedeg;
+	BOOL	m_housenum;
+	BOOL	m_hsnumouts;
+	BOOL	m_plotclass;
+	BOOL	m_showagrid;
+	BOOL	m_showaspt;
+	BOOL	m_showpdeg;
+	BOOL	m_sigline;
+	BOOL	m_signname;
+	BOOL	m_signtick;
+	BOOL	m_useglyphs;
+	//}}AFX_DATA
+
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CGraphOpts)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+
+	// Generated message map functions
+	//{{AFX_MSG(CGraphOpts)
+	afx_msg void OnGocolors();
+	afx_msg void OnGofonts();
+	virtual void OnOK();
+	afx_msg void OnHelp();
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+private:
+	GraphicFonts *pgf;
+	GraphicColors *pgc;
+};

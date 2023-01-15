@@ -1,0 +1,61 @@
+@ Rapport de la progression
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Progressé impression du tableau pour nom: {$1}, Commentaire: {$2}.$_
+# CH__ASPECT
+
+Votre a Progressé le $0 est $1 à Vos $7' Progressed'Natal $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+# CH__MISC
+$le c'It est dans le "$ e.$d' Decan.''$f' C'est dans un < Degré Critique > le faire une planète pour regarder.''$h' C'est un < Degré Anaretic > indiquer un < Urgent > ayez besoin de travailler avec les énergies de cette planète.''$_
+# CH__PLANET
+
+[VOTRE $ ^ $1:] $ _
+$_
+Votre a Progressé $1 est $5' sur la cuspide Entre "$4$6' et ', $8$7', "$2.$^$3 degrés, et est dans $ un mouvement.$_
+# CH__PLAN_HOUSE
+$_
+Votre a Progressé $1 est dans Votre $3 Maison Natale, $4' Sur Cuspide de Maison et Plus d'Important'Not Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS AUX PLANÈTES NATALES:} $ _
+# CHP_ASPECT_PRHD
+
+{ASPECTS À A PROGRESSÉ PLANÈTES:} $ _
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON SONT:] $ _
+$_
+# CHP_PRHOUSE_HEAD
+[VOTRE A PROGRESSÉ LES CUSPIDES DE MAISON SONT:] $ _
+$_ 
+# CHP_MS_HEAD
+
+[SÉRIE DE LUNE]: $ _
+
+Flânez la série pour 4 mois avant date demandée à 1 année après date demandée et aspects à vos planètes natales.$_
+$_
+# CHP_PROG_NOTE
+
+Votre a progressé planètes et aspects à vos planètes natales.$_
+Les progressions N'invalident pas l'information affichée dans un Tableau Natal Mais Ajouter à l'Information et Montre le Growth$_ Personnel de l'Individu
+$_
+<Les aspects qui ne correspondent pas aux planètes avec les aspects dans Votre Tableau Natal Ont Petit Pouvoir et devraient Être ignorés.>$_
+
+# CHP_MS_MISC
+$le c'It est dans l'e$d $"' Decan.''$f' Votre Lune est dans un < Degré Critique > le faire une planète pour regarder. '$h' Votre Lune est un < Degré Anaretic > indiquer un < Urgent > ayez besoin de travailler avec les énergies de la Lune.''$_
+# CHP_MS_PLANET
+
+
+[VOTRE A PROGRESSÉ LUNE POUR LE MOIS $ ^ K $:] $ _
+$_
+Votre a Progressé Lune Pour Le mois $ k est $5' sur la cuspide Entre "$4$6' et ', $8 $7', "$2.$^$3 degrés.$_
+# CHP_PLAN_HOUSE
+$_
+Votre a Progressé la Lune est dans Votre $3 House$4 Natal, Sur Cuspide de Maison et plus Important', Pas Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

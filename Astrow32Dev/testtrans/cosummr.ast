@@ -1,0 +1,145 @@
+@ variables are coded as $C where C is the variable.
+@ variable can be either a cap or a lower case letter or a number
+@ $$  = dolar sign
+@ $^ = makes string result of next variable caps or left fills a number
+@      variable with either 0 or space which
+# CHS_SUMARY_TITLE
+
+TABS|48|3|18|24|43|$_
+[﻿Resumen:]$_
+
+# CHS_GENDER_COUNT
+
+{Recuento de planetas en los sexos:}$_
+<$^$1...>$_
+@TB
+Señales masculinas|$^$3|Señales femeninas|$^$4@TB$_
+
+<$^$2...>$_
+@TB
+Señales masculinas|$^$5|Señales femeninas|$^$6@TB$_
+# CHS_ELEMENT_COUNT
+
+{Recuento de planetas en elementos:}$_
+<$^$1...>$_
+@TB
+Señales de fuego|$^$3|Señales de tierra|$^$4@TR$_
+Señales de aire|$^$5|Señales de agua|$^$6@TB$_
+
+<$^$2...>$_
+@TB
+Señales de fuego|$^$7|Señales de tierra|$^$8@TR$_
+Señales de aire|$^$9|Señales de agua|$^$A@TB$_
+# CHS_QUALITIES_COUNT
+
+{Recuento de planetas en las cualidades:}$_
+<$^$1...>$_
+@TB
+Señales cardinales|$^$3|Señales fijas|$^$4@TR$_
+Señales variables|$^$5|@TB$_
+
+<$^$2...>$_
+@TB
+Señales cardinales|$^$6|Señales fijas|$^$7@TR$_
+Señales variables|$^$8|@TB$_
+# CHS_HEMISPHERES_COUNT
+
+{Recuento de planetas en hemisferios varios:}$_
+<$^$1...>$_
+@TB
+Casas de norte|$^$3|Casas de sur|$^$4@TR$_
+Casas de este|$^$5|Casas de oeste|$^$6@TB$_
+
+<$^$2...>$_
+@TB
+Casas de norte|$^$7|Casas de sur|$^$8@TR$_
+Casas de este|$^$9|Casas de oeste|$^$A@TB$_
+# CHS_FUNCTIONAL_COUNT
+
+{Recuento de casas funcionales:}$_
+<$^$1...>$_
+@TB
+Casas individuales|$^$3|Respectivas casas|$^$4@TR$_
+Casas temporales|$^$5|Casas finales|$^$6@TB$_
+
+<$^$2...>$_
+@TB
+Casas individuales|$^$7|Respectivas casas|$^$8@TR$_
+Casas temporales|$^$9|Casas finales|$^$A@TB$_
+# CHS_MODAL_COUNT
+
+{Recuento de casas de modal:}$_
+<$^$1...>$_
+@TB
+Casas de Cadent|$^$3|Casas angulosas|$^$4@TR$_
+Casas de Succedent|$^$5|@TB$_
+
+<$^$2...>$_
+@TB
+Casas de Cadent|$^$6|Casas angulosas|$^$7@TR$_
+Casas de Succedent|$^$8|@TB$_
+# CHS_ASPECT_COUNT
+
+{Recuento de los aspectos:}$_
+<$^$1...>$_
+@TB
+Conjunct|$^$3|Sextile|$^$4@TR$_
+Trine|$^$5|Se oponer|$^$6@TR$_
+Alinear|$^$7|Semisextile|$^$8@TR$_
+Sesquiquadrate|$^$9|Semisquare|$^$a@TR$_
+Quincunx|$^$b|Biquintile|$^$c@TR$_
+Quintile|$^$d|Tredecile|$^$e@TR$_
+Decile|$^$f|@TB$_
+
+<$^$2...>$_
+@TB
+Conjunct|$^$H|Sextile|$^$I@TR$_
+Trine|$^$J|Se oponer|$^$K@TR$_
+Alinear|$^$L|Semisextile|$^$M@TR$_
+Sesquiquadrate|$^$N|Semisquare|$^$O@TR$_
+Quincunx|$^$P|Biquintile|$^$Q@TR$_
+Quintile|$^$R|Tredecile|$^$S@TR$_
+Decile|$^$T|@TB$_
+# CHS_SIGN_COUNT
+
+{Recuento de señales:}$_
+<$^$1...>$_
+@TB
+Aries|$^$3|Taurus|$^$4@TR$_
+Gemini|$^$5|Cáncer|$^$6@TR$_
+Leo|$^$7|Virgo|$^$8@TR$_
+Libra|$^$9|Scorpio|$^$a@TR$_
+Sagittarius|$^$b|Capricorniano|$^$c@TR$_
+Aquarius|$^$d|Pisces|$^$e@TB$_
+
+<$^$2...>$_
+@TB
+Aries|$^$f|Taurus|$^$g@TR$_
+Gemini|$^$h|Cáncer|$^$i@TR$_
+Leo|$^$j|Virgo|$^$k@TR$_
+Libra|$^$l|Scorpio|$^$m@TR$_
+Sagittarius|$^$n|Capricorniano|$^$o@TR$_
+Aquarius|$^$p|Pisces|$^$q@TB$_
+# CHS_HOUSE_COUNT
+
+{Recuento de casas:}$_
+<$^$1...>$_
+@TB
+# 1 de Cámara|$^$3|# 2 de Cámara|$^$4@TR$_
+# 3 de Cámara|$^$5|# 4 de Cámara|$^$6@TR$_
+# 5 de Cámara|$^$7|# 6 de Cámara|$^$8@TR$_
+# 7 de Cámara|$^$9|# 8 de Cámara|$^$a@TR$_
+# 9 de Cámara|$^$b|# 10 de Cámara|$^$c@TR$_
+# 11 de Cámara|$^$d|# 12 de Cámara|$^$e@TB$_
+
+<$^$2...>$_
+@TB
+# 1 de Cámara|$^$f|# 2 de Cámara|$^$g@TR$_
+# 3 de Cámara|$^$h|# 4 de Cámara|$^$i@TR$_
+# 5 de Cámara|$^$j|# 6 de Cámara|$^$k@TR$_
+# 7 de Cámara|$^$l|# 8 de Cámara|$^$m@TR$_
+# 9 de Cámara|$^$n|# 10 de Cámara|$^$o@TR$_
+# 11 de Cámara|$^$p|# 12 de Cámara|$^$q@TB$_
+
+
+�

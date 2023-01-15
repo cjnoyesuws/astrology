@@ -1,0 +1,55 @@
+@ Rapport des passages
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du tableau du passage pour nom: {$1}, Commentaire: {$2}.$_
+# CHH_BIRTH
+ Date: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+
+Time Used sidéral Pour les Calculs de Maison Était {m:$n:$o $}.
+
+# CHT_TRANS_PARAM
+Transite les paramètres sont--nombre de passages: {$1}, Planète Initiale: {$2}, Planète de la fin: {$3}, période de la Séparation: {$4} mois et {$5} jours.
+
+# CHT_TRANS_NOTE
+{NOTE:} ... indique texte affiché dans un passage précédent.$_
+# CHT_TRANS_YB
+VOTRE NAISSANCE--Naissance
+# CHT_TRANS_TD
+PASSAGES--début
+# CH__ASPECT
+
+Votre $0 Transitant est $1 à Votre Natal $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+# CH__PLANET
+
+[VOTRE $ ^ $1:] $ _
+$_
+Votre en transiter $1 est $5' sur la cuspide Entre "$4$6' et ', $8$7', "$2.$^$3 degrés, et est dans $ un mouvement.$_
+# CH__PLAN_HOUSE
+Votre en transiter $1 est dans Votre $3 House$4 Natal, Sur Cuspide de Maison et plus Important', Pas Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+étiquettes |60|3|19|34|53|$_
+[VOS CUSPIDES DE MAISON NATALES SONT:] $ _
+@ TB$_
+# CHT_HOUSE_TRHEAD
+étiquettes |60|3|19|34|53|$_
+[VOS CUSPIDES DE MAISON POUR LE PASSAGE SONT:] $ _
+@ TB$_
+# CHT_TRANS_ID
+$_
+
+[* * * * * NOMBRE DU PASSAGE: $1 * * * * *] $ _
+[Date pour les passages: $2] $ _
+
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

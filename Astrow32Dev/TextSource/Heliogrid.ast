@@ -1,0 +1,11 @@
+@ Heliocentric Reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Natal Numeric Heliocentric Chart Grid Report For Name: {$1}, Comment: {$2}.$_
+# CH__PLANET
+$k |$9 $c'|Declination: $x° $y'|Decan: ''$e@TR
+

@@ -1,0 +1,537 @@
+[ver]
+	4
+[sty]
+	
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[toc]
+	TOC 1
+	TOC 2
+	TOC 3
+	
+	
+	
+	63
+[prn]
+	HP LaserJet Series II
+[lang]
+	1
+[desc]
+	Source Text File For ASTRO For Windows
+	
+	
+	
+	
+	761096658
+	1
+	761096430
+	2
+	2
+	0
+	0
+	0
+	0
+	Astrology Text Source
+	
+	
+	
+	
+	
+	0
+[fopts]
+	4
+	1
+	2880
+	0
+[lnopts]
+	0
+	Body Text
+	1
+[docopts]
+	5
+	2
+[tag]
+	TOC 3
+	2
+	[fnt]
+		Courier
+		240
+		0
+		32768
+	[algn]
+		0
+		1
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		1
+		0
+		0
+		1
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		1
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		1
+		1
+		0
+		2
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		.
+		,
+		$
+	TOC 3
+	0
+	0
+[tag]
+	Body Text
+	3
+	[fnt]
+		Courier
+		240
+		0
+		32768
+	[algn]
+		0
+		1
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		1
+		0
+		0
+		1
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		1
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		1
+		1
+		0
+		2
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		.
+		,
+		$
+	Body Text
+	0
+	0
+[tag]
+	TOC 1
+	4
+	[fnt]
+		Courier
+		240
+		0
+		32768
+	[algn]
+		0
+		1
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		1
+		0
+		0
+		1
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		1
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		1
+		1
+		0
+		2
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		.
+		,
+		$
+	TOC 1
+	0
+	0
+[tag]
+	TOC 2
+	5
+	[fnt]
+		Courier
+		240
+		0
+		32768
+	[algn]
+		0
+		1
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		1
+		0
+		0
+		1
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		1
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		1
+		1
+		0
+		2
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		.
+		,
+		$
+	TOC 2
+	0
+	0
+[tag]
+	Body Text
+	6
+	[fnt]
+		Tms Rmn
+		240
+		0
+		49152
+	[algn]
+		1
+		1
+		0
+		0
+		0
+	[spc]
+		17
+		0
+		1
+		0
+		0
+		1
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		1
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		1
+		0
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		.
+		,
+		$
+	Body Text
+	0
+	0
+[lay]
+	Standard
+	513
+	[rght]
+		15840
+		12240
+		1
+		1440
+		1440
+		1
+		1440
+		2160
+		2
+		1
+		0
+		1
+		0
+		2
+		1
+		1440
+		10080
+		10
+		1
+		720
+		1
+		1440
+		1
+		2160
+		1
+		2880
+		1
+		3600
+		1
+		4320
+		1
+		5040
+		1
+		5760
+		1
+		6480
+		1
+		7200
+	[hrght]
+	[lyfrm]
+		1
+		11200
+		0
+		0
+		12240
+		1440
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		1
+	[frmlay]
+		1440
+		12240
+		1
+		1440
+		72
+		1
+		360
+		2160
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10080
+		0
+	[txt]
+>
+	[frght]
+	[lyfrm]
+		1
+		13248
+		0
+		14400
+		12240
+		15840
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		2
+	[frmlay]
+		15840
+		12240
+		1
+		1440
+		360
+		1
+		14472
+		2160
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10080
+		0
+	[txt]
+>
+[elay]
+[l1]
+	0
+[edoc]
+<+@><:#289,8640><:f240,2Times New Roman,0,0,0>
+
+@ Common Stuff used by all reports
+
+<+@>@ # starts each item.
+
+<+@>@ $$ = $
+
+<+@>@ $_ = no page break at end of line
+
+<+@>@ $^ = Caps in text or left fill numbers with space or 0
+
+<+@>@
+
+<+@># CHH_TITLE
+
+<+@>Natal Zodiac Printout For Name: <+!>$1<-!>, Comment: <+!>$2<-!>.$_
+
+<+@># CHH_BIRTH
+
+<+@>Birth Date: <+!>$2<-!>, Time: <+!>$3<-!>. Country: <+!>$4<-!>, State or Region: <+!>$5<-!>, Location: <+!>$6<-!>. 
+Geographic Coordinates <+!>$7.$8 $9, $b.$c $d<-!>, Time Zone = <+!>$f<-!>, Special Code = <+!>
+$g<-!>. GMT Difference = <+!>$h:$k<-!>.
+
+<+@>
+
+<+@>Sidereal Time Used For House Calculations Was <+!>$m:$n:$o<-!>.
+
+<+@>
+
+<+@># CHH_RECT
+
+<+@>
+
+<+@>
+
+<+@><+!>WARNING! Birth Time Is Unknown!<-!> Ascendant, Med Coeli, Immun Coeli, and 
+Part of Fortune, as Well as Vertex and East Point <+">May Not Be Accurate<-">. Houses, 
+Moon, Mercury, and Related Aspects <+">May Also Not be Accurate.<-"> Houses Determined 
+by "$2".$_
+
+<+@>Trial Birth Time: <+!>$3<-!>.$_
+
+<+@>$4'Based on Angle ''<+!>$5<-!>$6' using ''<+!>$7<-!>$8'.
+
+<+@>''
+
+<+@># CHH_RELOC_DAT
+
+<+@>Chart is Relocated to: Country: <+!>$2<-!>, State or Region: <+!>$3<-!>, Location: <+!>$4<-!>. Geographic 
+Coordinates <+!>$5.$6 $7, $9.$a $b<-!>, Time Zone = <+!>$d<-!>, Special Code = <+!>$e<-!> GMT Difference 
+= <+!>$f:$i<-!>.
+
+<+@># CHH_PROG
+
+<+@>Progressed <+!>$2<-!> Years, <+!>$3<-!> Months and <+!>$4<-!> days. Progression System: <+!>"$5'Secondary 
+(Day for a Year)'Tertiary (Day for a Lunar Month)'Minor (Lunar Month for 
+a Year)'"<-!>.
+
+<+@>
+
+<+@># CHH_TS_HOUSE
+
+<+@>This is a $2'Sidereal'Tropical' Zodiac. House Method is $3.
+
+<+@>
+
+<+@># CH__HOUSE_CS
+
+<+@>House Cusp #$^$1:|$2|House Cusp #$^$3:|$4$_
+
+<+@># CH__HOUSE_HEAD
+
+<+@>tabs|60|3|19|34|53|
+
+<+@>
+
+<+B>YOUR NATAL HOUSE CUSPS:<+@>$_
+
+<+@>
+
+>
+

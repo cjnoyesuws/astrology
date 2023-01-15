@@ -1,0 +1,152 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: instcalc, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Astrow32Dev\instcalc\Release\RSP000001.rsp" with contents
+[
+/O2 /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_USRDLL" /D "_ATL_ATTRIBUTES" /D "INSTCALC" /D "_WINDLL" /D "_ATL_STATIC_REGISTRY" /D "_MBCS" /FD /EHsc /MT /GS /Yu"stdafx.h" /Fp"Release/instcalc.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+.\AstInstCalc2.cpp
+]
+Creating command line "cl.exe @c:\Astrow32Dev\instcalc\Release\RSP000001.rsp /nologo"
+Creating temporary file "c:\Astrow32Dev\instcalc\Release\RSP000002.rsp" with contents
+[
+/OUT:"Release/instcalc.dll" /INCREMENTAL:NO /NOLOGO /DLL /DELAYLOAD:"OleAcc.dll" /IDLOUT:"_instcalc.idl" /DEBUG /PDB:"Release/instcalc.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /IMPLIB:"Release/instcalc.lib" /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\Release\aa.obj
+.\Release\angles.obj
+.\Release\Anomaly1.obj
+.\Release\arcdot.obj
+.\Release\Ascend.obj
+.\Release\AstInstCalc2.obj
+.\Release\Charcons.obj
+.\Release\Dataname.obj
+.\Release\deltat.obj
+.\Release\Docalc.obj
+.\Release\domoon.obj
+.\Release\ear404.obj
+.\Release\epsiln.obj
+.\Release\Errors.obj
+.\Release\gplan.obj
+.\Release\House.obj
+.\Release\instcalc.obj
+.\Release\Jtype.obj
+.\Release\Julian1.obj
+.\Release\Julutil.obj
+.\Release\jup404.obj
+.\Release\kepler.obj
+.\Release\lonlat.obj
+.\Release\mar404.obj
+.\Release\mer404.obj
+.\Release\mlat404.obj
+.\Release\mlr404.obj
+.\Release\Moon.obj
+.\Release\nep404.obj
+.\Release\newplan.obj
+.\Release\nutate.obj
+.\Release\Pelement.obj
+.\Release\Pertjs.obj
+.\Release\Pertmvm.obj
+.\Release\Perturnp.obj
+.\Release\Planets.obj
+.\Release\plu404.obj
+.\Release\Plutocrx.obj
+.\Release\precess.obj
+.\Release\rplanet.obj
+.\Release\sat404.obj
+.\Release\Sidereal.obj
+.\Release\sidrlt.obj
+.\Release\stdafx1.obj
+.\Release\stdafx.obj
+.\Release\sun1.obj
+.\Release\sun2.obj
+.\Release\ura404.obj
+.\Release\utilfnc.obj
+.\Release\vearth.obj
+.\Release\ven404.obj
+.\Release\zatan2.obj
+.\Release\instcalc.res
+]
+Creating command line "link.exe @c:\Astrow32Dev\instcalc\Release\RSP000002.rsp"
+Creating temporary file "c:\Astrow32Dev\instcalc\Release\BAT000003.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\Astrow32Dev\instcalc\Release\instcalc.dll"
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "c:\Astrow32Dev\instcalc\Release\BAT000003.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+AstInstCalc2.cpp
+AstInstCalc2.cpp(130) : warning C4244: '=' : conversion from 'LONG' to 'short', possible loss of data
+AstInstCalc2.cpp(131) : warning C4244: '=' : conversion from 'LONG' to 'short', possible loss of data
+AstInstCalc2.cpp(132) : warning C4244: '=' : conversion from 'LONG' to 'short', possible loss of data
+AstInstCalc2.cpp(133) : warning C4244: '=' : conversion from 'LONG' to 'short', possible loss of data
+AstInstCalc2.cpp(134) : warning C4244: '=' : conversion from 'LONG' to 'short', possible loss of data
+Linking...
+   Creating library Release/instcalc.lib and object Release/instcalc.exp
+Microsoft (R) 32b/64b MIDL Compiler Version 6.00.0361 
+Copyright (c) Microsoft Corporation 1991-2002. All rights reserved.
+Processing .\_instcalc.idl
+_instcalc.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl
+prsht.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\basetsd.h
+basetsd.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\guiddef.h
+guiddef.h
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl
+mshtml.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\ocidl.idl
+ocidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oleidl.idl
+oleidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\servprov.idl
+servprov.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\urlmon.idl
+urlmon.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\msxml.idl
+msxml.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\dimm.idl
+dimm.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl
+mshtmhst.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\docobj.idl
+docobj.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl
+exdisp.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl
+objsafe.idl
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oaidl.acf
+oaidl.acf
+Processing C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\ocidl.acf
+ocidl.acf
+LINK : warning LNK4199: /DELAYLOAD:OleAcc.dll ignored; no imports found from OleAcc.dll
+Performing registration
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Astrow32Dev\instcalc\Release\BuildLog.htm"
+instcalc - 0 error(s), 6 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

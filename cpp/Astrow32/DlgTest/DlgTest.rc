@@ -1,0 +1,1636 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\DlgTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DlgTest.ico"
+IDR_DLGTESTYPE          ICON    DISCARDABLE     "res\\DlgTestDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Dialogs"
+    BEGIN
+        MENUITEM "Archive Files",               ID_DIALOGS_ARCHIVEFILES
+        MENUITEM "Cover Page Data",             ID_DIALOGS_COVERPAGEDATA
+        MENUITEM "Customize",                   ID_DIALOGS_CUSTOMIZE
+        MENUITEM "File Data Edit",              ID_DIALOGS_FILEDATAEDIT
+        MENUITEM "Kill a File",                 ID_DIALOGS_KILLAFILE
+        MENUITEM "File Name",                   ID_DIALOGS_FILENAME
+        MENUITEM "Options",                     ID_DIALOGS_OPTIONS
+        MENUITEM "Orb Edit",                    ID_DIALOGS_ORBEDIT
+        MENUITEM "Print Options",               ID_DIALOGS_PRINTOPTIONS
+        MENUITEM "Progress Data",               ID_DIALOGS_PROGRESSDATA
+        MENUITEM "QDT Options",                 ID_DIALOGS_QDTOPTIONS
+        MENUITEM "Rectification",               ID_DIALOGS_RECTIFICATION
+        MENUITEM "Return Data",                 ID_DIALOGS_RETURNDATA
+        MENUITEM "Transit Data",                ID_DIALOGS_TRANSITDATA
+        MENUITEM "Directories",                 ID_DIALOGS_DIRECTORIES
+    END
+    POPUP "&Data"
+    BEGIN
+        MENUITEM "Relocation",                  ID_DATARELOCATION
+        MENUITEM "Transit Info",                ID_DATA_TRANSITINFO
+        MENUITEM "Birth Info",                  ID_DATA_BIRTHINFO
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About DlgTest...",           ID_APP_ABOUT
+    END
+END
+
+LOCAT MENU DISCARDABLE 
+BEGIN
+    POPUP "&Location Database"
+    BEGIN
+        MENUITEM "&Get A Location From Database.", ID_GETLOCAT, GRAYED
+        MENUITEM "&Add A New Location To Database.", ID_ADDLOCAT, GRAYED
+        MENUITEM "&Replace A Location In Database.", ID_REPLACELOCAT, GRAYED
+        MENUITEM "&Delete A Location From Database.", ID_DELETELOCAT, GRAYED
+        MENUITEM "&Copy Location.",             ID_COPYLOCAT
+        MENUITEM "&Paste Location.",            ID_PASTELOCAT
+        MENUITEM "C&lear Location.",            ID_CLEARLOCAT
+        MENUITEM "R&eturn.",                    ID_RETURN
+    END
+END
+
+BIRTH MENU DISCARDABLE 
+BEGIN
+    POPUP "&Birth Database"
+    BEGIN
+        MENUITEM "&Get A Birth From Database.", ID_GETBIRTH, GRAYED
+        MENUITEM "&Add A New Birth To Database.", ID_ADDBIRTH, GRAYED
+        MENUITEM "&Replace A Birth In Database.", ID_REPLACEBIRTH, GRAYED
+        MENUITEM "&Delete A Birth In Database.", ID_DELETEBIRTH, GRAYED
+        MENUITEM "&Make Popup.",                ID_MAKEPOPUP
+        MENUITEM "&Copy Birth.",                ID_COPYBIRTH
+        MENUITEM "&Paste Birth.",               ID_PASTEBIRTH
+        MENUITEM "C&lear Birth.",               ID_CLEARBIRTH
+        MENUITEM "R&eturn.",                    ID_RETURN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DlgTest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DlgTest Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © 1999",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_TRANS_DATA DIALOG DISCARDABLE  0, 0, 209, 159
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Transit Data"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Number of Transit Charts To Do:",101,18,15,107,8
+    EDITTEXT        ID_TDNUM,147,14,27,12
+    LTEXT           "Planet Range To Work With--",103,19,33,98,8
+    LTEXT           "&Starting Planet:",104,19,49,52,8
+    COMBOBOX        ID_TDSTART,91,47,99,91,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Ending Planet:",106,20,69,49,8
+    COMBOBOX        ID_TDEND,91,67,99,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Separation Period Between Each Transit Chart--",108,20,
+                    91,157,8
+    LTEXT           "&Months:",109,21,109,27,8
+    EDITTEXT        ID_TDMO,61,108,25,12
+    LTEXT           "&Days:",111,105,110,20,8
+    EDITTEXT        ID_TDDAY,141,108,26,12
+    DEFPUSHBUTTON   "OK",IDOK,15,130,52,17
+    PUSHBUTTON      "Help",IDHELP,77,130,52,17
+    PUSHBUTTON      "Cancel",IDCANCEL,141,130,52,17
+END
+
+IDD_RETURN_DATA DIALOG DISCARDABLE  0, 0, 222, 206
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter Return Chart Data"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Body of Interest:",101,10,11,58,8
+    COMBOBOX        ID_RDBODY,86,9,59,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Starting Date--",103,11,26,49,8
+    LTEXT           "Month:",104,11,40,22,8
+    EDITTEXT        ID_RDSMO,46,38,24,12
+    LTEXT           "Day:",106,82,39,16,8
+    EDITTEXT        ID_RDSDAY,111,37,23,12
+    LTEXT           "Year:",108,146,40,19,8
+    EDITTEXT        ID_RDSYEAR,176,38,28,12
+    LTEXT           "&Ending Date--",110,11,58,46,8
+    LTEXT           "Month:",111,11,72,22,8
+    EDITTEXT        ID_RDEMO,47,70,24,12
+    LTEXT           "Day:",113,84,71,16,8
+    EDITTEXT        ID_RDEDAY,113,69,23,12
+    LTEXT           "Year:",115,148,72,19,8
+    EDITTEXT        ID_RDEYEAR,181,70,27,12
+    CONTROL         "",117,"Static",SS_BLACKRECT,10,91,197,2
+    CONTROL         "&Progress Return Chart?",ID_RDPROG,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,99,88,10
+    LTEXT           "Progression &System:",119,11,118,67,8
+    COMBOBOX        ID_RDPROGSYS,91,116,111,54,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Progression &Offset:",121,12,136,63,8
+    LTEXT           "Months:",122,12,149,27,8
+    EDITTEXT        ID_RDPMO,47,147,25,12
+    LTEXT           "Days:",124,87,149,20,8
+    EDITTEXT        ID_RDPDAY,117,147,25,12
+    LTEXT           "Years:",126,157,149,22,8
+    EDITTEXT        ID_RDPYEAR,185,147,22,12
+    CONTROL         "Date  Above is &Target Date",ID_RDTARGET,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,165,102,10
+    DEFPUSHBUTTON   "OK",IDOK,14,183,55,14
+    PUSHBUTTON      "Help",IDHELP,85,183,55,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,183,55,14
+END
+
+IDD_RECT_DATA DIALOG DISCARDABLE  0, 0, 255, 147
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Rectification Data"
+FONT 8, "Helv"
+BEGIN
+    CONTROL         "Check if Birth time is &Known to Within ±1 hour?",
+                    ID_RDCHECK,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,14,6,166,10
+    LTEXT           "&Birth Rectification Method:",102,14,24,88,8
+    COMBOBOX        ID_RDMETHOD,113,24,121,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Trial Birth Time To Use--",104,14,43,81,8
+    LTEXT           "Hours:",105,14,57,23,8
+    EDITTEXT        ID_RDHRS,48,55,24,12,ES_AUTOHSCROLL
+    LTEXT           "Minutes:",107,83,57,29,8
+    EDITTEXT        ID_RDMIN,124,55,28,12,ES_AUTOHSCROLL
+    LTEXT           "AM or PM",109,163,57,33,8
+    COMBOBOX        ID_RDAMPM,204,54,32,29,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Known &Angle To Use:",111,14,79,72,8
+    COMBOBOX        ID_RDKNOWNANGL,98,79,137,67,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sign:",113,15,98,18,8
+    COMBOBOX        ID_RDKSIGN,43,95,34,50,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Degrees:",115,91,98,31,8
+    EDITTEXT        ID_RDKDEG,134,97,26,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Minutes:",117,172,99,29,8
+    EDITTEXT        ID_RDKMIN,212,98,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,14,123,60,14
+    PUSHBUTTON      "Help",IDHELP,96,123,60,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,123,60,14
+END
+
+IDD_QDT_OPTIONS DIALOG DISCARDABLE  0, 0, 221, 149
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Quick Daily Transits Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Run &Once Per Day?",ID_QDONCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,15,76,10
+    CONTROL         "&Restrict Time When Run?",ID_QDRESTRICTTIM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,34,97,10
+    LTEXT           "&First Time Allowed:",103,14,56,84,8
+    LTEXT           "Hours:",104,14,70,23,8
+    EDITTEXT        ID_QDFHR,43,68,21,12
+    LTEXT           "Minutes:",106,70,71,29,8
+    EDITTEXT        ID_QDFMIN,104,68,23,12
+    LTEXT           "AM or PM:",108,135,71,35,8
+    COMBOBOX        ID_QDFAMPM,175,70,32,34,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Last Time Allowed:",110,15,88,63,8
+    LTEXT           "Hours:",111,14,103,23,8
+    EDITTEXT        ID_QDLHR,43,101,21,12
+    LTEXT           "Minutes:",113,70,103,29,8
+    EDITTEXT        ID_QDLMIN,104,101,23,12
+    LTEXT           "AM or PM:",115,135,103,35,8
+    COMBOBOX        ID_QDLAMPM,174,101,32,35,CBS_DROPDOWNLIST | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,15,125,50,14
+    DEFPUSHBUTTON   "Help",IDHELP,85,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,125,50,14
+END
+
+IDD_PROGRESS_DATA DIALOG DISCARDABLE  0, 0, 240, 103
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Progressions Data"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Progression System:",101,12,16,67,8
+    COMBOBOX        ID_PDSYSTEM,92,14,140,54,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Months:",103,13,38,27,8
+    EDITTEXT        ID_PDMO,46,36,25,12
+    LTEXT           "&Days:",105,87,38,20,8
+    EDITTEXT        ID_PDDAY,115,36,25,12
+    LTEXT           "&Years:",107,155,38,22,8
+    EDITTEXT        ID_PDYEAR,182,36,22,12
+    CONTROL         "Date Above is &Target Date",ID_PDTARGET,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,57,102,10
+    DEFPUSHBUTTON   "OK",IDOK,17,78,60,14
+    PUSHBUTTON      "Help",IDHELP,93,78,56,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,78,57,14
+END
+
+IDD_PRINT_OPT DIALOG DISCARDABLE  0, 0, 236, 98
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Print Options."
+FONT 8, "Helv"
+BEGIN
+    CONTROL         "&Print Cover Page.",ID_POCOVER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,12,70,10
+    CONTROL         "Print &Comments.",ID_POCMT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,29,63,10
+    CONTROL         "&Header on Page 1.",ID_POHDP1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,46,74,10
+    CONTROL         "Comments &Before Text.",ID_CMTB4T,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,113,12,86,10
+    CONTROL         "Ce&nter Heads.",ID_POCTRHD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,29,59,10
+    DEFPUSHBUTTON   "OK",IDOK,12,68,47,17
+    PUSHBUTTON      "Help",IDHELP,66,68,47,17
+    PUSHBUTTON      "&Styles...",ID_POSTYLES,119,68,47,17
+    PUSHBUTTON      "Cancel",IDCANCEL,172,68,47,17
+END
+
+IDD_ORB_EDIT DIALOG DISCARDABLE  25, 5, 312, 193
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Aspect Orbs"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Aspect Context:",101,85,9,53,8
+    COMBOBOX        ID_AOCONTEXT,149,7,81,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Aspect:",103,12,26,24,8
+    LTEXT           "Degrees:Minutes:",104,60,26,58,8
+    LTEXT           "Include:",105,124,26,28,8
+    LTEXT           "Aspect:",106,164,26,24,8
+    LTEXT           "Degrees:Minutes:",107,211,26,58,8
+    LTEXT           "Include:",108,276,26,28,8
+    CONTROL         "",145,"Static",SS_BLACKRECT,12,37,288,1
+    LTEXT           "&Conjunct",109,12,43,32,8
+    EDITTEXT        ID_AODCONJUNCT,73,41,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOICONJUNCT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,42,10,10
+    LTEXT           "&Sextile",112,12,58,23,8
+    EDITTEXT        ID_AODSEXTILE,73,56,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOISEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,
+                    57,10,10
+    LTEXT           "&Trine",115,12,73,18,8
+    EDITTEXT        ID_AODTRINE,73,71,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOITRINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,
+                    72,10,10
+    LTEXT           "&Opposed",118,12,88,30,8
+    EDITTEXT        ID_AODOPPOSE,73,86,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIOPPOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,87,10,10
+    LTEXT           "S&quared",121,12,103,28,8
+    EDITTEXT        ID_AODSQUARE,73,101,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOISQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,102,10,10
+    LTEXT           "S&emi-Sextile",124,12,118,41,8
+    EDITTEXT        ID_AODSSEXT,73,116,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOISSEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,
+                    117,10,10
+    LTEXT           "S&emi-Square",127,12,133,41,8
+    EDITTEXT        ID_AODSSQARE,73,131,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOISSQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,132,10,10
+    LTEXT           "Se&misequiquad.",130,12,148,52,8
+    EDITTEXT        ID_AODSSESQUIQ,73,146,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOISSESQUIQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,147,10,10
+    LTEXT           "Q&uincunx",133,167,43,32,8
+    EDITTEXT        ID_AODQUIN,228,41,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIQUINCUNX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,42,10,10
+    LTEXT           "B&i-Quintile",136,166,58,35,8
+    EDITTEXT        ID_AODBIQUI,228,56,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIBQUINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,57,10,10
+    LTEXT           "Qui&ntile",139,166,73,26,8
+    EDITTEXT        ID_AODQUINTILE,228,71,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIQUINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,288,
+                    72,10,10
+    LTEXT           "Tredec&ile",142,166,88,32,8
+    EDITTEXT        ID_AODTREDEC,228,86,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOITREDEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,87,10,10
+    LTEXT           "&Decile",199,166,104,22,8
+    EDITTEXT        ID_AODDECILE,228,102,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIDECILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,103,10,10
+    CONTROL         "",151,"Static",SS_BLACKRECT,166,122,134,2
+    LTEXT           "Non-&Planet Orb:",152,166,133,54,8
+    EDITTEXT        ID_AODNONPLAN,228,131,30,12,ES_AUTOHSCROLL
+    LTEXT           "&House Cusp Orb:",154,166,149,56,8
+    EDITTEXT        ID_AODHSCUSP,228,147,30,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_AOIHSCUSP,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,286,148,9,10
+    DEFPUSHBUTTON   "OK",IDOK,12,169,62,14
+    PUSHBUTTON      "Help",IDHELP,125,169,62,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,169,62,14
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 234, 204
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Birth Options"
+FONT 8, "Helv"
+BEGIN
+    GROUPBOX        "&Chart Type",ID_OPCTGRP,15,9,86,48,WS_GROUP
+    CONTROL         "Tropical Chart.",ID_OPTROPICAL,"Button",
+                    BS_AUTORADIOBUTTON,22,23,61,10
+    CONTROL         "Sidereal Chart.",ID_OPSIDEREAL,"Button",
+                    BS_AUTORADIOBUTTON,22,38,61,10
+    LTEXT           "House &Procedure:",104,109,12,60,8
+    COMBOBOX        ID_OPHOUSEPROC,109,23,95,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Find &Houses.",ID_OPHOUSES,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,14,67,55,10
+    CONTROL         "Find &Aspects.",ID_OPASPECTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,83,57,10
+    CONTROL         "Find Extended Aspects.",ID_OPEXTASP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,99,90,10
+    CONTROL         "Miscellaneous &Info.",ID_OPMISC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,115,76,10
+    CONTROL         "Extended Misc Info.",ID_OPEXTMISC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,132,78,10
+    CONTROL         "&Summary At End of Report.",ID_OPSUMMARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,148,100,10
+    CONTROL         "&Vertex and East Point.",ID_OPVERTEAST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,116,47,86,10
+    CONTROL         "Print &Text in Report.",ID_OPTEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,116,64,79,10
+    GROUPBOX        "&Midpoint Options",ID_OPMIDGRP,117,81,103,83
+    CONTROL         "Basic Midpoints.",IDOPMBASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,126,99,66,10
+    CONTROL         "One-Half Midpoints.",ID_OPMHALF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,115,77,10
+    CONTROL         "Full Midpoints.",ID_OPMFULL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,126,131,60,10
+    CONTROL         "Aspects With Midpoints.",ID_OPMMIDASP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,147,91,10
+    PUSHBUTTON      "OK",IDOK,17,176,57,20
+    PUSHBUTTON      "Help",IDHELP,88,176,57,20
+    PUSHBUTTON      "Cancel",IDCANCEL,160,176,57,20
+END
+
+IDD_FILE_NAME DIALOG DISCARDABLE  0, 0, 302, 114
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Name For Chart in File List"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Name:",101,14,10,22,8
+    EDITTEXT        ID_FNNAME,71,7,187,12,ES_AUTOHSCROLL
+    LTEXT           "&Comments:",103,14,30,36,8
+    EDITTEXT        ID_FNCOMMENT,71,29,186,12,ES_AUTOHSCROLL
+    LTEXT           "Chart Type:",105,14,50,39,9
+    LTEXT           "*",ID_FNTYPE,73,50,154,10,SS_NOPREFIX
+    LTEXT           "File Name:",IDC_STATIC,15,69,34,8
+    EDITTEXT        ID_FNFILENAME,73,68,213,12,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    DEFPUSHBUTTON   "OK",IDOK,11,92,64,14
+    PUSHBUTTON      "Help",IDHELP,81,92,64,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,92,64,14
+    PUSHBUTTON      "Select File",ID_FNSELFILE,223,92,64,14
+END
+
+IDD_FILE_KILL DIALOG DISCARDABLE  0, 0, 321, 119
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "OK To Delete File?"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Name:",101,19,13,22,8
+    LTEXT           "*",ID_FKNAME,78,14,208,8
+    LTEXT           "Comments:",103,19,27,36,8
+    LTEXT           "*",ID_FKCOMMENT,78,27,219,8
+    LTEXT           "Chart Type:",105,19,41,39,9
+    LTEXT           "*",ID_FKTYPE,78,40,194,10
+    LTEXT           "File Name:",107,19,55,39,9
+    LTEXT           "*",ID_FKFILENAME,78,54,217,10
+    CONTROL         "Continue To Ask?",ID_FKCONTINUE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,19,73,71,10
+    DEFPUSHBUTTON   "OK--Delete",IDOK,13,93,68,16
+    PUSHBUTTON      "Cancel",IDCANCEL,88,93,68,16
+    PUSHBUTTON      "No--Don't",IDNO,161,93,68,16
+    PUSHBUTTON      "Help",IDHELP,235,93,68,16
+END
+
+IDD_FILE_EDIT DIALOG DISCARDABLE  0, 0, 327, 118
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Name For Chart in File List."
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Name:",101,14,15,22,8
+    EDITTEXT        ID_FENAME,71,12,204,12,ES_AUTOHSCROLL
+    LTEXT           "&Comments:",103,14,35,36,8
+    EDITTEXT        ID_FECOMMENTS,71,34,204,12,ES_AUTOHSCROLL
+    LTEXT           "Chart Type:",105,14,55,39,9
+    LTEXT           "*",ID_FETYPE,73,54,202,10,SS_NOPREFIX
+    LTEXT           "File Name:",107,14,72,39,9
+    LTEXT           "*",ID_FEFILENAME,73,71,235,10,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,55,94,64,14
+    PUSHBUTTON      "Help",IDHELP,129,94,64,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,94,64,14
+END
+
+IDD_CUSTOM DIALOG DISCARDABLE  0, 0, 248, 151
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Birth Options"
+FONT 8, "Helv"
+BEGIN
+    GROUPBOX        "Chart Options.",ID_CSCOGROUP,17,9,87,72,WS_GROUP
+    CONTROL         "&Relocate Chart.",ID_CS_RELOC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,27,25,64,10
+    CONTROL         "&Progress Chart.",ID_CSPROGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,27,42,63,10
+    CONTROL         "Progress &Cusps.",ID_CSPRGCUSP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,27,59,65,10
+    GROUPBOX        "Output Options.",ID_CSOOGROUP,118,9,116,63,WS_GROUP
+    CONTROL         "&Text Chart File.",ID_CSTEXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,127,25,63,10
+    CONTROL         "&Graphics Cartwheel.",ID_CSGRAPH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,41,78,10
+    CONTROL         "&Data File(s)",ID_CSDATAFILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,57,50,10
+    LTEXT           "Data File Type:",109,118,76,51,8
+    COMBOBOX        ID_CSDFTYPE,118,87,103,48,CBS_DROPDOWNLIST
+    PUSHBUTTON      "Customize Options",ID_CSCUSTOM,16,94,90,18
+    DEFPUSHBUTTON   "OK--Continue",IDOK,16,121,67,18
+    PUSHBUTTON      "Help",IDHELP,90,121,67,18
+    PUSHBUTTON      "Cancel",IDCANCEL,165,121,67,18
+END
+
+IDD_COVER_DAT DIALOG DISCARDABLE  0, 0, 293, 227
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Cover Page Information."
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Font File To Use:",111,14,15,63,8
+    COMBOBOX        ID_CPFONT,99,13,132,86,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Image To Display:",101,14,35,63,8
+    COMBOBOX        ID_CPIMAGE,99,33,132,86,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "File Name of Graphic:",103,14,55,72,8
+    EDITTEXT        ID_CPGRAPHIC,99,53,174,12,ES_AUTOHSCROLL | ES_OEMCONVERT
+    LTEXT           "Cover Page Title:",105,14,74,58,8
+    EDITTEXT        ID_CPTITLE,99,72,174,12,ES_AUTOHSCROLL
+    LTEXT           "Subject's Name:",107,14,93,74,8
+    EDITTEXT        ID_CP_SUBJECT,99,92,174,12,ES_AUTOHSCROLL
+    LTEXT           "Astrologer's Name",113,14,113,74,8
+    EDITTEXT        ID_CPASTROLOGER,99,112,174,12,ES_AUTOHSCROLL
+    LTEXT           "Comments:",109,14,130,36,8
+    EDITTEXT        ID_CPCOMMENT,14,143,262,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,14,202,72,16
+    PUSHBUTTON      "Help",IDHELP,109,202,72,16
+    PUSHBUTTON      "Cancel",ID_CANCEL,205,202,72,16
+END
+
+IDD_AST_HELP DIALOG DISCARDABLE  0, 0, 215, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "ASTRO-Helper Files"
+FONT 8, "Helv"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,139,92,59,15
+    LTEXT           "Select &Files.",106,16,12,42,8
+    LISTBOX         ID_AHLIST,16,26,108,87,LBS_MULTIPLESEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "View File",ID_AHVIEW,139,12,59,15
+    PUSHBUTTON      "Print Files",ID_AHPRINT,139,32,59,15
+    PUSHBUTTON      "Convert Files.",ID_AHCONVERT,139,52,59,15
+    PUSHBUTTON      "Help",IDHELP,139,72,59,15
+END
+
+IDD_ARCHIVE_DAT DIALOG DISCARDABLE  0, 0, 239, 120
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Archive Information"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Archive &Name and Path:",101,14,18,80,8
+    EDITTEXT        ID_ARNAME,101,16,125,12,ES_AUTOHSCROLL
+    GROUPBOX        "&Archive Program",ID_ARGRP,13,34,115,28
+    CONTROL         "&LHA",ID_ARLHA,"Button",BS_AUTORADIOBUTTON,30,46,27,10
+    CONTROL         "&PKZIP",ID_ARZIP,"Button",BS_AUTORADIOBUTTON,75,46,34,
+                    10
+    CONTROL         "&Delete Archived Files.",ID_ARDELETE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,142,44,84,10
+    LTEXT           "Archive Program &Command String:",103,14,72,111,8
+    EDITTEXT        ID_ARCMD,136,70,90,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,24,96,51,14,WS_GROUP
+    PUSHBUTTON      "Help",IDHELP,92,96,51,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,96,51,14
+END
+
+IDD_DIRECTORIES DIALOG DISCARDABLE  0, 0, 282, 149
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup Directories"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Main Directory:",101,13,17,51,8
+    EDITTEXT        ID_DMAIN,93,15,176,12,ES_AUTOHSCROLL
+    LTEXT           "&Help Directory:",102,13,37,50,8
+    EDITTEXT        ID_DHELP,93,35,176,12,ES_AUTOHSCROLL
+    LTEXT           "Data&base Directory:",103,13,57,66,8
+    EDITTEXT        ID_DDATABASE,93,55,176,12,ES_AUTOHSCROLL
+    LTEXT           "&Data Directory:",104,13,77,51,8
+    EDITTEXT        ID_DDATA,93,76,176,12,ES_AUTOHSCROLL
+    LTEXT           "&User Directory:",105,13,97,50,8
+    EDITTEXT        ID_DUSER,93,97,176,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,13,123,72,19
+    PUSHBUTTON      "Help",IDHELP,104,123,72,19
+    PUSHBUTTON      "Cancel",IDCANCEL,195,123,72,19
+END
+
+IDD_RELOC_DAT DIALOG DISCARDABLE  0, 0, 312, 167
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Relocation Information:"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Place Where Located--&Country:",117,15,15,103,8
+    COMBOBOX        ID_RLCOUNTRY,131,12,124,112,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&State:",120,21,32,21,8
+    COMBOBOX        ID_RLSTATE,51,31,85,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Location:",122,145,32,32,8
+    COMBOBOX        ID_RLLOCATION,184,30,108,81,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "L&ongitude--Degrees:",124,15,51,67,8
+    EDITTEXT        ID_RLLODEG,90,49,27,12
+    LTEXT           "Minutes:",126,128,51,29,8
+    EDITTEXT        ID_RLLOMIN,168,49,22,12
+    LTEXT           "East/West:",129,201,51,38,8
+    COMBOBOX        ID_RLEASTWEST,252,49,40,36,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "L&atitude--Degrees:",130,15,70,67,8
+    EDITTEXT        ID_RLLADEG,90,68,27,12
+    LTEXT           "Minutes:",132,128,70,29,8
+    EDITTEXT        ID_RLLAMIN,168,68,22,12
+    LTEXT           "North/South:",135,201,70,44,8
+    COMBOBOX        ID_RLNORTHSOUTH,252,68,40,36,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "Time &Zone:",136,15,91,38,8
+    COMBOBOX        ID_RLTIMEZONE,59,88,87,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Special C&ode:",138,157,91,47,8
+    COMBOBOX        ID_RLSPECCODE,211,89,90,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "GMT Offsets:",142,210,110,44,8
+    EDITTEXT        ID_RLGMTHR,197,122,20,12,NOT WS_TABSTOP
+    LTEXT           "H",143,221,124,8,8
+    EDITTEXT        ID_RLGMTMIN,231,122,20,12
+    LTEXT           "M",144,257,124,8,8
+    PUSHBUTTON      "Location DB Menu",ID_RLMENU,29,110,115,24
+    DEFPUSHBUTTON   "OK",IDOK,41,143,56,14
+    PUSHBUTTON      "Help",IDHELP,136,144,47,14
+    PUSHBUTTON      "Cancel",IDCANCEL,220,144,44,14
+END
+
+IDD_TRANS_INFO DIALOG DISCARDABLE  18, 65527, 313, 220
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Transits Information."
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Event of Interest:",101,15,14,58,8
+    COMBOBOX        ID_BINAME,82,13,145,82,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Date of Event--Month:",105,15,33,74,8
+    EDITTEXT        ID_BIMO,101,31,22,12,ES_NUMBER
+    LTEXT           "Day:",107,137,33,18,8
+    EDITTEXT        ID_BIDAY,167,31,22,12,ES_NUMBER
+    LTEXT           "Year:",109,206,33,20,8
+    EDITTEXT        ID_BIYEAR,240,31,32,12,ES_NUMBER
+    LTEXT           "&Time of Day--Hours:",111,15,52,66,8
+    EDITTEXT        ID_BIHR,95,50,21,12,ES_NUMBER
+    LTEXT           "Minutes:",113,130,52,29,8
+    EDITTEXT        ID_BIMIN,177,50,23,12,ES_NUMBER
+    LTEXT           "AM or PM:",115,218,52,35,8
+    COMBOBOX        ID_BIAMPM,260,50,32,29,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Place Where Located--",117,15,70,76,8
+    LTEXT           "Country:",118,102,70,28,8
+    COMBOBOX        ID_RLCOUNTRY,140,67,124,97,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&State:",120,22,88,21,8
+    COMBOBOX        ID_RLSTATE,52,87,85,68,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lo&cation:",122,146,88,32,8
+    COMBOBOX        ID_RLLOCATION,185,86,108,61,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Longitude--Degrees:",124,16,107,67,8
+    EDITTEXT        ID_RLLODEG,91,105,27,12,ES_NUMBER
+    LTEXT           "Minutes:",126,129,107,29,8
+    EDITTEXT        ID_RLLOMIN,169,105,22,12,ES_NUMBER
+    LTEXT           "East/West:",129,202,107,38,8
+    COMBOBOX        ID_RLEASTWEST,253,105,40,29,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "L&atitude--Degrees:",130,16,126,67,8
+    EDITTEXT        ID_RLLADEG,91,124,27,12,ES_NUMBER
+    LTEXT           "Minutes:",132,129,126,29,8
+    EDITTEXT        ID_RLLAMIN,169,124,22,12,ES_NUMBER
+    LTEXT           "North/South:",135,202,126,44,8
+    COMBOBOX        ID_RLNORTHSOUTH,253,124,40,29,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "Time &Zone:",136,16,147,38,8
+    COMBOBOX        ID_RLTIMEZONE,59,144,88,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Special C&ode:",138,154,147,47,8
+    COMBOBOX        ID_RLSPECCODE,207,145,90,56,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GMT Offsets:",142,194,162,44,8
+    EDITTEXT        ID_RLGMTHR,181,174,20,12
+    LTEXT           "H",143,205,176,8,8
+    EDITTEXT        ID_RLGMTMIN,215,174,20,12
+    LTEXT           "M",144,241,176,8,8
+    PUSHBUTTON      "Location DB Menu",ID_RLMENU,43,167,98,19
+    DEFPUSHBUTTON   "OK",IDOK,19,193,70,17
+    PUSHBUTTON      "Help",IDHELP,113,193,79,17
+    PUSHBUTTON      "Cancel",IDCANCEL,215,193,72,17
+END
+
+IDD_BIRTH_INF DIALOG DISCARDABLE  15, 65533, 314, 224
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Birth Information:"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Person's &Name",101,15,14,50,8
+    COMBOBOX        ID_BINAME,73,13,141,80,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sex:",103,222,14,20,8
+    COMBOBOX        ID_BISEX,252,12,40,32,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Date of Birth--Month:",105,15,33,70,8
+    EDITTEXT        ID_BIMO,97,31,22,12
+    LTEXT           "Day:",107,136,33,18,8
+    EDITTEXT        ID_BIDAY,162,31,22,12
+    LTEXT           "Year:",109,204,33,20,8
+    EDITTEXT        ID_BIYEAR,240,31,32,12
+    LTEXT           "&Time of Day--Hours:",111,15,52,66,8
+    EDITTEXT        ID_BIHR,95,50,21,12
+    LTEXT           "Minutes:",113,130,52,29,8
+    EDITTEXT        ID_BIMIN,177,50,23,12
+    LTEXT           "AM or PM:",115,218,52,35,8
+    COMBOBOX        ID_BIAMPM,260,50,32,33,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Place Where Located--",117,15,70,76,8
+    LTEXT           "Country:",118,102,70,28,8
+    COMBOBOX        ID_RLCOUNTRY,140,67,124,78,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&State:",120,22,88,21,8
+    COMBOBOX        ID_RLSTATE,52,87,85,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lo&cation:",122,146,88,32,8
+    COMBOBOX        ID_RLLOCATION,185,86,108,71,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Longitude--Degrees:",124,16,107,67,8
+    EDITTEXT        ID_RLLODEG,91,105,27,12
+    LTEXT           "Minutes:",126,129,107,29,8
+    EDITTEXT        ID_RLLOMIN,169,105,22,12
+    LTEXT           "East/West:",129,202,107,38,8
+    COMBOBOX        ID_RLEASTWEST,253,105,40,32,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "L&atitude--Degrees:",130,16,126,67,8
+    EDITTEXT        ID_RLLADEG,91,124,27,12
+    LTEXT           "Minutes:",132,129,126,29,8
+    EDITTEXT        ID_RLLAMIN,169,124,22,12
+    LTEXT           "North/South:",135,202,126,44,8
+    COMBOBOX        ID_RLNORTHSOUTH,253,124,40,32,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "Time &Zone:",136,16,147,38,8
+    COMBOBOX        ID_RLTIMEZONE,60,144,96,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Special C&ode:",138,167,147,47,8
+    COMBOBOX        ID_RLSPECCODE,224,145,77,51,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GMT Offsets:",142,237,163,44,8
+    EDITTEXT        ID_RLGMTHR,224,175,20,12
+    LTEXT           "H",143,248,177,7,8
+    EDITTEXT        ID_RLGMTMIN,258,175,20,12
+    LTEXT           "M",144,284,177,7,8
+    PUSHBUTTON      "Birth DB Menu",ID_BIMENU,18,166,82,17
+    PUSHBUTTON      "Birth Rectification",ID_BIRECT,113,166,82,17
+    PUSHBUTTON      "Location DB Menu",ID_RLMENU,18,195,70,17
+    DEFPUSHBUTTON   "OK",IDOK,101,195,59,17
+    PUSHBUTTON      "Help",IDHELP,170,195,59,17
+    PUSHBUTTON      "Cancel",IDCANCEL,239,195,59,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DLGTEST MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DLGTEST\0"
+            VALUE "LegalCopyright", "Copyright © 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DLGTEST.EXE\0"
+            VALUE "ProductName", "DLGTEST Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PRINT_OPT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_DIRECTORIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPTIONS DLGINIT
+BEGIN
+    ID_OPHOUSEPROC, 0x403, 12, 0
+0x7145, 0x6175, 0x206c, 0x6f48, 0x7375, 0x0065, 
+    ID_OPHOUSEPROC, 0x403, 5, 0
+0x6f4b, 0x6863, "\000" 
+    ID_OPHOUSEPROC, 0x403, 9, 0
+0x6c50, 0x6361, 0x6469, 0x7375, "\000" 
+    ID_OPHOUSEPROC, 0x403, 8, 0
+0x204d, 0x6f48, 0x7375, 0x0065, 
+    ID_OPHOUSEPROC, 0x403, 9, 0
+0x6143, 0x706d, 0x6e61, 0x7375, "\000" 
+    ID_OPHOUSEPROC, 0x403, 14, 0
+0x6552, 0x6967, 0x6d6f, 0x6e61, 0x6174, 0x756e, 0x0073, 
+    ID_OPHOUSEPROC, 0x403, 8, 0
+0x6f4d, 0x6972, 0x756e, 0x0073, 
+    0
+END
+
+IDD_RETURN_DATA DLGINIT
+BEGIN
+    ID_RDBODY, 0x403, 4, 0
+0x7553, 0x006e, 
+    ID_RDBODY, 0x403, 5, 0
+0x6f4d, 0x6e6f, "\000" 
+    ID_RDPROGSYS, 0x403, 27, 0
+0x6553, 0x6f63, 0x646e, 0x7261, 0x2079, 0x4428, 0x7961, 0x6620, 0x726f, 
+0x6120, 0x5920, 0x6165, 0x2972, "\000" 
+    ID_RDPROGSYS, 0x403, 33, 0
+0x6554, 0x7472, 0x6169, 0x7972, 0x2820, 0x6144, 0x2079, 0x6f66, 0x2072, 
+0x2061, 0x754c, 0x616e, 0x2072, 0x6f4d, 0x746e, 0x2968, "\000" 
+    ID_RDPROGSYS, 0x403, 32, 0
+0x694d, 0x6f6e, 0x2072, 0x4c28, 0x6e75, 0x7261, 0x4d20, 0x6e6f, 0x6874, 
+0x6620, 0x726f, 0x6120, 0x5920, 0x6165, 0x2972, 0x0020, 
+    0
+END
+
+IDD_CUSTOM DLGINIT
+BEGIN
+    ID_CSDFTYPE, 0x403, 16, 0
+0x6f43, 0x6d6d, 0x2061, 0x6544, 0x696c, 0x696d, 0x6574, 0x0064, 
+    ID_CSDFTYPE, 0x403, 26, 0
+0x6f43, 0x6d6d, 0x2061, 0x6544, 0x696c, 0x746d, 0x6465, 0x2820, 0x6e4f, 
+0x2065, 0x6946, 0x656c, 0x0029, 
+    ID_CSDFTYPE, 0x403, 14, 0
+0x6154, 0x2062, 0x6544, 0x696c, 0x696d, 0x6574, 0x0064, 
+    ID_CSDFTYPE, 0x403, 25, 0
+0x6154, 0x2062, 0x6544, 0x696c, 0x696d, 0x6574, 0x2064, 0x4f28, 0x656e, 
+0x4620, 0x6c69, 0x2965, "\000" 
+    ID_CSDFTYPE, 0x403, 12, 0
+0x6942, 0x616e, 0x7972, 0x4620, 0x6c69, 0x0065, 
+    ID_CSDFTYPE, 0x403, 16, 0
+0x6341, 0x6563, 0x7373, 0x4420, 0x7461, 0x6261, 0x7361, 0x0065, 
+    0
+END
+
+IDD_TRANS_DATA DLGINIT
+BEGIN
+    ID_TDSTART, 0x403, 10, 0
+0x7341, 0x6563, 0x646e, 0x6e61, 0x0074, 
+    ID_TDSTART, 0x403, 4, 0
+0x7553, 0x006e, 
+    ID_TDSTART, 0x403, 5, 0
+0x6f4d, 0x6e6f, "\000" 
+    ID_TDSTART, 0x403, 8, 0
+0x654d, 0x6372, 0x7275, 0x0079, 
+    ID_TDSTART, 0x403, 6, 0
+0x6556, 0x756e, 0x0073, 
+    ID_TDSTART, 0x403, 5, 0
+0x614d, 0x7372, "\000" 
+    ID_TDSTART, 0x403, 8, 0
+0x754a, 0x6970, 0x6574, 0x0072, 
+    ID_TDSTART, 0x403, 7, 0
+0x6153, 0x7574, 0x6e72, "\000" 
+    ID_TDSTART, 0x403, 7, 0
+0x7255, 0x6e61, 0x7375, "\000" 
+    ID_TDSTART, 0x403, 8, 0
+0x654e, 0x7470, 0x6e75, 0x0065, 
+    ID_TDSTART, 0x403, 6, 0
+0x6c50, 0x7475, 0x006f, 
+    ID_TDSTART, 0x403, 11, 0
+0x6f4e, 0x7472, 0x2068, 0x6f4e, 0x6564, "\000" 
+    ID_TDSTART, 0x403, 11, 0
+0x6f53, 0x7475, 0x2068, 0x6f4e, 0x6564, "\000" 
+    ID_TDSTART, 0x403, 13, 0
+0x654d, 0x6964, 0x6d75, 0x4320, 0x656f, 0x696c, "\000" 
+    ID_TDSTART, 0x403, 12, 0
+0x6d49, 0x756d, 0x206d, 0x6f43, 0x6c65, 0x0069, 
+    ID_TDSTART, 0x403, 16, 0
+0x6150, 0x7472, 0x4f20, 0x2066, 0x6f46, 0x7472, 0x6e75, 0x0065, 
+    ID_TDSTART, 0x403, 7, 0
+0x6556, 0x7472, 0x7865, "\000" 
+    ID_TDSTART, 0x403, 11, 0
+0x6145, 0x7473, 0x5020, 0x696f, 0x746e, "\000" 
+    ID_TDEND, 0x403, 10, 0
+0x7341, 0x6563, 0x646e, 0x6e61, 0x0074, 
+    ID_TDEND, 0x403, 4, 0
+0x7553, 0x006e, 
+    ID_TDEND, 0x403, 5, 0
+0x6f4d, 0x6e6f, "\000" 
+    ID_TDEND, 0x403, 8, 0
+0x654d, 0x6372, 0x7275, 0x0079, 
+    ID_TDEND, 0x403, 6, 0
+0x6556, 0x756e, 0x0073, 
+    ID_TDEND, 0x403, 5, 0
+0x614d, 0x7372, "\000" 
+    ID_TDEND, 0x403, 8, 0
+0x754a, 0x6970, 0x6574, 0x0072, 
+    ID_TDEND, 0x403, 7, 0
+0x6153, 0x7574, 0x6e72, "\000" 
+    ID_TDEND, 0x403, 7, 0
+0x7255, 0x6e61, 0x7375, "\000" 
+    ID_TDEND, 0x403, 8, 0
+0x654e, 0x7470, 0x6e75, 0x0065, 
+    ID_TDEND, 0x403, 6, 0
+0x6c50, 0x7475, 0x006f, 
+    ID_TDEND, 0x403, 11, 0
+0x6f4e, 0x7472, 0x2068, 0x6f4e, 0x6564, "\000" 
+    ID_TDEND, 0x403, 11, 0
+0x6f53, 0x7475, 0x2068, 0x6f4e, 0x6564, "\000" 
+    ID_TDEND, 0x403, 13, 0
+0x654d, 0x6964, 0x6d75, 0x4320, 0x656f, 0x696c, "\000" 
+    ID_TDEND, 0x403, 12, 0
+0x6d49, 0x756d, 0x206d, 0x6f43, 0x6c65, 0x0069, 
+    ID_TDEND, 0x403, 16, 0
+0x6150, 0x7472, 0x4f20, 0x2066, 0x6f46, 0x7472, 0x6e75, 0x0065, 
+    ID_TDEND, 0x403, 7, 0
+0x6556, 0x7472, 0x7865, "\000" 
+    ID_TDEND, 0x403, 11, 0
+0x6145, 0x7473, 0x5020, 0x696f, 0x746e, "\000" 
+    0
+END
+
+IDD_PROGRESS_DATA DLGINIT
+BEGIN
+    ID_PDSYSTEM, 0x403, 27, 0
+0x6553, 0x6f63, 0x646e, 0x7261, 0x2079, 0x4428, 0x7961, 0x6620, 0x726f, 
+0x6120, 0x5920, 0x6165, 0x2972, "\000" 
+    ID_PDSYSTEM, 0x403, 33, 0
+0x6554, 0x7472, 0x6169, 0x7972, 0x2820, 0x6144, 0x2079, 0x6f66, 0x2072, 
+0x2061, 0x754c, 0x616e, 0x2072, 0x6f4d, 0x746e, 0x2968, "\000" 
+    ID_PDSYSTEM, 0x403, 32, 0
+0x694d, 0x6f6e, 0x2072, 0x4c28, 0x6e75, 0x7261, 0x4d20, 0x6e6f, 0x6874, 
+0x6620, 0x726f, 0x6120, 0x5920, 0x6165, 0x2972, 0x0022, 
+    0
+END
+
+IDD_RECT_DATA DLGINIT
+BEGIN
+    ID_RDMETHOD, 0x403, 19, 0
+0x6f53, 0x616c, 0x2072, 0x6843, 0x7261, 0x2074, 0x654d, 0x6874, 0x646f, 
+"\000" 
+    ID_RDMETHOD, 0x403, 18, 0
+0x6c46, 0x7461, 0x4320, 0x6168, 0x7472, 0x4d20, 0x7465, 0x6f68, 0x0064, 
+
+    ID_RDMETHOD, 0x403, 19, 0
+0x7553, 0x726e, 0x7369, 0x2065, 0x6942, 0x7472, 0x2d68, 0x6954, 0x656d, 
+"\000" 
+    ID_RDMETHOD, 0x403, 14, 0
+0x7254, 0x6169, 0x206c, 0x2026, 0x7245, 0x6f72, 0x0072, 
+    ID_RDMETHOD, 0x403, 16, 0
+0x7355, 0x2065, 0x6e4b, 0x776f, 0x206e, 0x6e41, 0x6c67, 0x0065, 
+    ID_RDAMPM, 0x403, 3, 0
+0x4d41, "\000" 
+    ID_RDAMPM, 0x403, 3, 0
+0x4d50, "\000" 
+    ID_RDKNOWNANGL, 0x403, 14, 0
+0x7331, 0x2074, 0x6f48, 0x7375, 0x2f65, 0x7341, 0x0063, 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x6e32, 0x2064, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7233, 0x2064, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 13, 0
+0x7434, 0x2068, 0x6f48, 0x7375, 0x2f65, 0x4349, "\000" 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7435, 0x2068, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7436, 0x2068, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 16, 0
+0x7437, 0x2068, 0x6f48, 0x7375, 0x2f65, 0x6544, 0x6373, 0x002e, 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7438, 0x2068, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7439, 0x2068, 0x6f48, 0x7375, 0x0065, 
+    ID_RDKNOWNANGL, 0x403, 14, 0
+0x3031, 0x6874, 0x4820, 0x756f, 0x6573, 0x4d2f, 0x0043, 
+    ID_RDKNOWNANGL, 0x403, 11, 0
+0x3131, 0x6874, 0x4820, 0x756f, 0x6573, "\000" 
+    ID_RDKNOWNANGL, 0x403, 11, 0
+0x3231, 0x6874, 0x4820, 0x756f, 0x6573, "\000" 
+    ID_RDKNOWNANGL, 0x403, 10, 0
+0x7341, 0x6563, 0x646e, 0x6e61, 0x0074, 
+    ID_RDKNOWNANGL, 0x403, 11, 0
+0x6544, 0x6373, 0x6e65, 0x6164, 0x746e, "\000" 
+    ID_RDKNOWNANGL, 0x403, 23, 0
+0x654d, 0x6964, 0x6d75, 0x4320, 0x656f, 0x696c, 0x4d2f, 0x6469, 0x6568, 
+0x7661, 0x6e65, "\000" 
+    ID_RDKNOWNANGL, 0x403, 18, 0
+0x6d49, 0x756d, 0x206d, 0x6f43, 0x6c65, 0x2f69, 0x614e, 0x6964, 0x0072, 
+
+    ID_RDKSIGN, 0x403, 4, 0
+0x5241, 0x0049, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4154, 0x0055, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4547, 0x004d, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4143, 0x004e, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x454c, 0x004f, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4956, 0x0052, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x494c, 0x0042, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4353, 0x004f, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4153, 0x0047, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4143, 0x0050, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x5141, 0x0055, 
+    ID_RDKSIGN, 0x403, 4, 0
+0x4950, 0x0053, 
+    0
+END
+
+IDD_QDT_OPTIONS DLGINIT
+BEGIN
+    ID_QDFAMPM, 0x403, 3, 0
+0x4d41, "\000" 
+    ID_QDFAMPM, 0x403, 3, 0
+0x4d50, "\000" 
+    ID_QDLAMPM, 0x403, 3, 0
+0x4d41, "\000" 
+    ID_QDLAMPM, 0x403, 3, 0
+0x4d50, "\000" 
+    0
+END
+
+IDD_COVER_DAT DLGINIT
+BEGIN
+    ID_CPFONT, 0x403, 18, 0
+0x5341, 0x5254, 0x204f, 0x6c47, 0x7079, 0x7368, 0x4620, 0x6e6f, 0x0074, 
+
+    ID_CPFONT, 0x403, 12, 0
+0x5341, 0x5254, 0x204f, 0x6950, 0x2320, 0x0031, 
+    ID_CPFONT, 0x403, 12, 0
+0x5341, 0x5254, 0x204f, 0x6950, 0x2320, 0x0032, 
+    ID_CPFONT, 0x403, 10, 0
+0x6957, 0x676e, 0x6944, 0x676e, 0x0073, 
+    ID_CPFONT, 0x403, 10, 0
+0x7355, 0x7265, 0x4620, 0x6e6f, 0x0074, 
+    ID_CPFONT, 0x403, 13, 0
+0x7355, 0x7265, 0x4720, 0x6172, 0x6870, 0x6369, "\000" 
+    ID_CPIMAGE, 0x403, 17, 0
+0x7553, 0x206e, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 18, 0
+0x6f4d, 0x6e6f, 0x5020, 0x616c, 0x656e, 0x2074, 0x6c47, 0x7079, 0x0068, 
+
+    ID_CPIMAGE, 0x403, 21, 0
+0x654d, 0x6372, 0x7275, 0x2079, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 
+0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 19, 0
+0x6556, 0x756e, 0x2073, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 0x6870, 
+"\000" 
+    ID_CPIMAGE, 0x403, 18, 0
+0x614d, 0x7372, 0x5020, 0x616c, 0x656e, 0x2074, 0x6c47, 0x7079, 0x0068, 
+
+    ID_CPIMAGE, 0x403, 21, 0
+0x754a, 0x6970, 0x6574, 0x2072, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 
+0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 20, 0
+0x6153, 0x7574, 0x6e72, 0x5020, 0x616c, 0x656e, 0x2074, 0x6c47, 0x7079, 
+0x0068, 
+    ID_CPIMAGE, 0x403, 20, 0
+0x7255, 0x6e61, 0x7375, 0x5020, 0x616c, 0x656e, 0x2074, 0x6c47, 0x7079, 
+0x0068, 
+    ID_CPIMAGE, 0x403, 21, 0
+0x654e, 0x7470, 0x6e75, 0x2065, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 
+0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 19, 0
+0x6c50, 0x7475, 0x206f, 0x6c50, 0x6e61, 0x7465, 0x4720, 0x796c, 0x6870, 
+"\000" 
+    ID_CPIMAGE, 0x403, 17, 0
+0x7241, 0x6569, 0x2073, 0x6953, 0x6e67, 0x4720, 0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 18, 0
+0x6154, 0x7275, 0x7375, 0x5320, 0x6769, 0x206e, 0x6c47, 0x7079, 0x0068, 
+
+    ID_CPIMAGE, 0x403, 18, 0
+0x6547, 0x696d, 0x696e, 0x5320, 0x6769, 0x206e, 0x6c47, 0x7079, 0x0068, 
+
+    ID_CPIMAGE, 0x403, 18, 0
+0x6143, 0x636e, 0x7265, 0x5320, 0x6769, 0x206e, 0x6c47, 0x7079, 0x0068, 
+
+    ID_CPIMAGE, 0x403, 15, 0
+0x654c, 0x206f, 0x6953, 0x6e67, 0x4720, 0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 17, 0
+0x6956, 0x6772, 0x206f, 0x6953, 0x6e67, 0x4720, 0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 17, 0
+0x694c, 0x7262, 0x2061, 0x6953, 0x6e67, 0x4720, 0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 19, 0
+0x6353, 0x726f, 0x6970, 0x206f, 0x6953, 0x6e67, 0x4720, 0x796c, 0x6870, 
+"\000" 
+    ID_CPIMAGE, 0x403, 23, 0
+0x6153, 0x6967, 0x7474, 0x7261, 0x7569, 0x2073, 0x6953, 0x6e67, 0x4720, 
+0x796c, 0x6870, "\000" 
+    ID_CPIMAGE, 0x403, 21, 0
+0x6143, 0x7270, 0x6369, 0x726f, 0x206e, 0x6953, 0x6e67, 0x4720, 0x796c, 
+0x6870, "\000" 
+    0
+END
+
+IDD_ORB_EDIT DLGINIT
+BEGIN
+    ID_AOCONTEXT, 0x403, 13, 0
+0x614e, 0x6174, 0x206c, 0x6843, 0x7261, 0x7374, "\000" 
+    ID_AOCONTEXT, 0x403, 18, 0
+0x6552, 0x6f6c, 0x6163, 0x6974, 0x6e6f, 0x4320, 0x6168, 0x7472, 0x0073, 
+
+    ID_AOCONTEXT, 0x403, 21, 0
+0x6f43, 0x706d, 0x7461, 0x6261, 0x6c69, 0x7469, 0x2079, 0x6843, 0x7261, 
+0x7374, "\000" 
+    ID_AOCONTEXT, 0x403, 17, 0
+0x6f43, 0x706d, 0x736f, 0x7469, 0x2065, 0x6843, 0x7261, 0x7374, "\000" 
+    ID_AOCONTEXT, 0x403, 15, 0
+0x7254, 0x6e61, 0x6973, 0x2074, 0x6843, 0x7261, 0x7374, "\000" 
+    ID_AOCONTEXT, 0x403, 18, 0
+0x7250, 0x676f, 0x6572, 0x7373, 0x6465, 0x4320, 0x6168, 0x7472, 0x0073, 
+
+    ID_AOCONTEXT, 0x403, 14, 0
+0x7241, 0x6261, 0x6369, 0x4320, 0x6168, 0x7472, 0x0073, 
+    ID_AOCONTEXT, 0x403, 13, 0
+0x6946, 0x6578, 0x2064, 0x6843, 0x7261, 0x7374, "\000" 
+    ID_AOCONTEXT, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_RELOC_DAT DLGINIT
+BEGIN
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6557, 0x7473, "\000" 
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6145, 0x7473, "\000" 
+    ID_RLEASTWEST, 0x403, 1, 0
+"\000" 
+    ID_RLEASTWEST, 0x403, 1, 0
+"\000" 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f4e, 0x7472, 0x0068, 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f53, 0x7475, 0x0068, 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7441, 0x616c, 0x746e, 0x6369, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x7441, 0x616c, 0x746e, 0x6369, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6543, 0x746e, 0x6172, 0x206c, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x6f4d, 0x6e75, 0x6174, 0x6e69, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6150, 0x6963, 0x6966, 0x2063, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 7, 0
+0x6148, 0x6177, 0x6969, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x7247, 0x6565, 0x776e, 0x6369, 0x2068, 0x654d, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6557, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, "\000" 
+    ID_RLTIMEZONE, 0x403, 8, 0
+0x7545, 0x6172, 0x6973, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6843, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x614a, 0x6170, 0x006e, 
+    ID_RLTIMEZONE, 0x403, 10, 0
+0x6e49, 0x6f64, 0x6863, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 12, 0
+0x654e, 0x2077, 0x655a, 0x6c61, 0x6e61, 0x0064, 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e45, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e53, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e57, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6e49, 0x6964, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6153, 0x6f6d, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 16, 0
+0x6e49, 0x2774, 0x206c, 0x6144, 0x6574, 0x4c20, 0x6e69, 0x0065, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    ID_RLTIMEZONE, 0x403, 1, 0
+"\000" 
+    ID_RLSPECCODE, 0x403, 14, 0
+0x7453, 0x6e61, 0x6164, 0x6472, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 9, 0
+0x6157, 0x2072, 0x6954, 0x656d, "\000" 
+    ID_RLSPECCODE, 0x403, 17, 0
+0x6144, 0x6c79, 0x6769, 0x7468, 0x5320, 0x7661, 0x6e69, 0x7367, "\000" 
+    ID_RLSPECCODE, 0x403, 22, 0
+0x6f44, 0x6275, 0x656c, 0x4220, 0x6972, 0x6974, 0x6873, 0x5320, 0x6d75, 
+0x656d, 0x0072, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x7553, 0x6d6d, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x6957, 0x746e, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    0
+END
+
+IDD_BIRTH_INF DLGINIT
+BEGIN
+    ID_BISEX, 0x403, 5, 0
+0x614d, 0x656c, "\000" 
+    ID_BISEX, 0x403, 7, 0
+0x6546, 0x616d, 0x656c, "\000" 
+    ID_BIAMPM, 0x403, 3, 0
+0x4d41, "\000" 
+    ID_BIAMPM, 0x403, 3, 0
+0x4d50, "\000" 
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6557, 0x7473, "\000" 
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6145, 0x7473, "\000" 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f4e, 0x7472, 0x0068, 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f53, 0x7475, 0x0068, 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7441, 0x616c, 0x746e, 0x6369, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x7441, 0x616c, 0x746e, 0x6369, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6543, 0x746e, 0x6172, 0x206c, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x6f4d, 0x6e75, 0x6174, 0x6e69, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6150, 0x6963, 0x6966, 0x2063, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 7, 0
+0x6148, 0x6177, 0x6969, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x7247, 0x6565, 0x776e, 0x6369, 0x2068, 0x654d, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6557, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, "\000" 
+    ID_RLTIMEZONE, 0x403, 8, 0
+0x7545, 0x6172, 0x6973, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6843, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x614a, 0x6170, 0x006e, 
+    ID_RLTIMEZONE, 0x403, 10, 0
+0x6e49, 0x6f64, 0x6863, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 12, 0
+0x654e, 0x2077, 0x655a, 0x6c61, 0x6e61, 0x0064, 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e45, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e53, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e57, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6e49, 0x6964, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6153, 0x6f6d, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 16, 0
+0x6e49, 0x2774, 0x206c, 0x6144, 0x6574, 0x4c20, 0x6e69, 0x0065, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    ID_RLTIMEZONE, 0x403, 1, 0
+"\000" 
+    ID_RLSPECCODE, 0x403, 14, 0
+0x7453, 0x6e61, 0x6164, 0x6472, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 9, 0
+0x6157, 0x2072, 0x6954, 0x656d, "\000" 
+    ID_RLSPECCODE, 0x403, 17, 0
+0x6144, 0x6c79, 0x6769, 0x7468, 0x5320, 0x7661, 0x6e69, 0x7367, "\000" 
+    ID_RLSPECCODE, 0x403, 22, 0
+0x6f44, 0x6275, 0x656c, 0x4220, 0x6972, 0x6974, 0x6873, 0x5320, 0x6d75, 
+0x656d, 0x0072, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x7553, 0x6d6d, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x6957, 0x746e, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    0
+END
+
+IDD_TRANS_INFO DLGINIT
+BEGIN
+    ID_BIAMPM, 0x403, 3, 0
+0x4d41, "\000" 
+    ID_BIAMPM, 0x403, 3, 0
+0x4d50, "\000" 
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6557, 0x7473, "\000" 
+    ID_RLEASTWEST, 0x403, 5, 0
+0x6145, 0x7473, "\000" 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f4e, 0x7472, 0x0068, 
+    ID_RLNORTHSOUTH, 0x403, 6, 0
+0x6f53, 0x7475, 0x0068, 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7441, 0x616c, 0x746e, 0x6369, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x7441, 0x616c, 0x746e, 0x6369, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6543, 0x746e, 0x6172, 0x206c, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 18, 0
+0x6f4d, 0x6e75, 0x6174, 0x6e69, 0x5320, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6150, 0x6963, 0x6966, 0x2063, 0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    ID_RLTIMEZONE, 0x403, 7, 0
+0x6148, 0x6177, 0x6969, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x7247, 0x6565, 0x776e, 0x6369, 0x2068, 0x654d, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 17, 0
+0x6557, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, 0x6e61, "\000" 
+    ID_RLTIMEZONE, 0x403, 15, 0
+0x6145, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, "\000" 
+    ID_RLTIMEZONE, 0x403, 8, 0
+0x7545, 0x6172, 0x6973, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6843, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x614a, 0x6170, 0x006e, 
+    ID_RLTIMEZONE, 0x403, 10, 0
+0x6e49, 0x6f64, 0x6863, 0x6e69, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 12, 0
+0x654e, 0x2077, 0x655a, 0x6c61, 0x6e61, 0x0064, 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e45, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e53, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 13, 0
+0x2e57, 0x4120, 0x7375, 0x7274, 0x6c61, 0x6169, "\000" 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6e49, 0x6964, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x6153, 0x6f6d, 0x0061, 
+    ID_RLTIMEZONE, 0x403, 16, 0
+0x6e49, 0x2774, 0x206c, 0x6144, 0x6574, 0x4c20, 0x6e69, 0x0065, 
+    ID_RLTIMEZONE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    ID_RLTIMEZONE, 0x403, 1, 0
+"\000" 
+    ID_RLSPECCODE, 0x403, 14, 0
+0x7453, 0x6e61, 0x6164, 0x6472, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 9, 0
+0x6157, 0x2072, 0x6954, 0x656d, "\000" 
+    ID_RLSPECCODE, 0x403, 17, 0
+0x6144, 0x6c79, 0x6769, 0x7468, 0x5320, 0x7661, 0x6e69, 0x7367, "\000" 
+    ID_RLSPECCODE, 0x403, 22, 0
+0x6f44, 0x6275, 0x656c, 0x4220, 0x6972, 0x6974, 0x6873, 0x5320, 0x6d75, 
+0x656d, 0x0072, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x7553, 0x6d6d, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 12, 0
+0x6957, 0x746e, 0x7265, 0x5420, 0x6d69, 0x0065, 
+    ID_RLSPECCODE, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DlgTest\n\nDlgTes\n\n\nDlgTest.Document\nDlgTes Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DlgTest"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\DlgTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

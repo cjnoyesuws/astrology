@@ -1,0 +1,593 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "D:\msvc\mfc\include\afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDI_ICON1               ICON    DISCARDABLE     "TBT.ICO"
+IDI_TEXTICON            ICON    DISCARDABLE     "TEXT.ICO"
+IDI_TBT_ICON            ICON    DISCARDABLE     "TBT.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1_S MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&Open"
+        BEGIN
+            MENUITEM "&Generic Text File...",       ID_FILES_OPEN_ASCIITEXTFILE
+
+            MENUITEM "&Help Source File...",        ID_FILES_OPEN_HELPSOURCEFILE
+
+            MENUITEM "&Report Source File...",      ID_FILES_OPEN_REPORTSOURCEFILE
+
+            MENUITEM "&2 ID Source (Regular Text)...",
+                                                    ID_FILES_OPEN_2IDTEXTFILE
+
+            MENUITEM "&3 ID Source (Aspect/Midpoint)...",
+                                                    ID_FILES_OPEN_3IDTEXTSOURCEFILE
+
+        END
+        MENUITEM "&Close",                      ID_FILES_CLOSE, GRAYED
+        MENUITEM "&Save",                       ID_FILES_SAVE, GRAYED
+        MENUITEM "Save&As...",                  ID_FILES_SAVEAS, GRAYED
+        MENUITEM "&Restore",                    ID_FILES_RESTORE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print",                      ID_FILES_PRINT
+        MENUITEM "P&rint Setup...",             ID_FILES_PRINTSETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILES_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO, GRAYED
+        MENUITEM "&Redo",                       ID_EDIT_REDO, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        ID_EDIT_CUT, GRAYED
+        MENUITEM "&Copy",                       ID_EDIT_COPY, GRAYED
+        MENUITEM "&Paste",                      ID_EDIT_PASTE, GRAYED
+        MENUITEM "&Delete",                     ID_EDIT_DELETE, GRAYED
+    END
+    POPUP "Co&mpile"
+    BEGIN
+        MENUITEM "Changed &Text Files",         ID_COMPILE_CHANGEDTEXTFILES
+        MENUITEM "Changed &Help Files",         ID_COMPILE_CHANGEDHELPFILES
+        MENUITEM "Changed &Report Files",       ID_COMPILE_CHANGEDREPORTFILES
+
+    END
+    POPUP "&Convert"
+    BEGIN
+        MENUITEM "&Text to Format",             ID_CONVERT_TEXTFILESTOFORMAT
+        MENUITEM "&Help to Format",             ID_CONVERT_HELPFILESTOFORMAT
+        MENUITEM "&Report to Format",           ID_CONVERT_REPORTFILESTOFORMAT
+
+        MENUITEM "&Old Text to Format",         ID_CONVERT_OLDTEXTFILESTOFORMAT
+
+        MENUITEM "O&ld Help to Format",         ID_CONVERT_OLDHELPFILESTOFORMAT
+
+        MENUITEM "Converted Te&xt Back to AST", ID_CONVERT_CONVERTTEXTFILESBACKTOAST
+
+        MENUITEM "Converted H&elp Files Back to AST",
+                                                ID_CONVERT_CONVERTHELPFILESBAC
+
+        MENUITEM "Converted Re&ports Back to AST",
+                                                ID_CONVERT_CONVERTEDREPORTSBACKTOAST
+
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Setup...",                   ID_OPTIONS_SETUP
+        MENUITEM "&Directories...",             ID_OPTIONS_DIRECTORIES
+    END
+    POPUP "&Utilities"
+    BEGIN
+        MENUITEM "Spell Check File.",           ID_UTILITIES_SPELLCHECKFILE
+        , GRAYED
+        MENUITEM "Update ASTRO Files",          ID_UTILITIES_UPDATEASTROFILES
+        , GRAYED
+    END
+    POPUP "&Windows"
+    BEGIN
+        MENUITEM "&Tile",                       ID_WINDOWS_TILE
+        MENUITEM "&Cascade",                    ID_WINDOWS_CASCADE
+        MENUITEM "&Arrange",                    ID_WINDOWS_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM "&Search...",                  ID_HELP_SEARCH
+        MENUITEM "&Help On Help...",            ID_HELP_HELPONHELP
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&Open"
+        BEGIN
+            MENUITEM "&Generic Text File...",       ID_FILES_OPEN_ASCIITEXTFILE
+
+            MENUITEM "&Help Source File...",        ID_FILES_OPEN_HELPSOURCEFILE
+
+            MENUITEM "&Report Source File...",      ID_FILES_OPEN_REPORTSOURCEFILE
+
+            MENUITEM "&2 ID Source (Regular Text)...",
+                                                    ID_FILES_OPEN_2IDTEXTFILE
+
+            MENUITEM "&3 ID Source (Aspect/Midpoint)...",
+                                                    ID_FILES_OPEN_3IDTEXTSOURCEFILE
+
+        END
+        MENUITEM "&Close",                      ID_FILES_CLOSE, GRAYED
+        MENUITEM "&Save",                       ID_FILES_SAVE, GRAYED
+        MENUITEM "Save&As...",                  ID_FILES_SAVEAS, GRAYED
+        MENUITEM "&Restore",                    ID_FILES_RESTORE
+        MENUITEM "E&xit",                       ID_FILES_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO, GRAYED
+        MENUITEM "Cu&t",                        ID_EDIT_CUT, GRAYED
+        MENUITEM "&Copy",                       ID_EDIT_COPY, GRAYED
+        MENUITEM "&Paste",                      ID_EDIT_PASTE, GRAYED
+        MENUITEM "&Delete",                     ID_EDIT_DELETE, GRAYED
+    END
+    POPUP "Co&mpile"
+    BEGIN
+        MENUITEM "Changed &Text Files",         ID_COMPILE_CHANGEDTEXTFILES
+        MENUITEM "Changed &Help Files",         ID_COMPILE_CHANGEDHELPFILES
+        MENUITEM "Changed &Report Files",       ID_COMPILE_CHANGEDREPORTFILES
+
+        MENUITEM "Copy &Text Files to Data Dir",ID_COMPILE_COPYCHANGEDTEXTFILES
+        , GRAYED
+        MENUITEM "Copy &Help Files to Data Dir",ID_COMPILE_COPYCHANGEDHELPFILES
+        , GRAYED
+        MENUITEM "Copy &Report Files to Data Dir",
+                                                ID_COMPILE_COPYCHANGEDREPORTFILES
+        , GRAYED
+    END
+    POPUP "&Convert"
+    BEGIN
+        MENUITEM "&Text to Format",             ID_CONVERT_TEXTFILESTOFORMAT
+        MENUITEM "&Help to Format",             ID_CONVERT_HELPFILESTOFORMAT
+        MENUITEM "&Report to Format",           ID_CONVERT_REPORTFILESTOFORMAT
+
+        MENUITEM "&Old Text to Format",         ID_CONVERT_OLDTEXTFILESTOFORMAT
+
+        MENUITEM "O&ld Help to Format",         ID_CONVERT_OLDHELPFILESTOFORMAT
+
+        MENUITEM "Converted Te&xt Back to AST", ID_CONVERT_CONVERTTEXTFILESBACKTOAST
+
+        MENUITEM "Converted H&elp Files Back to AST",
+                                                ID_CONVERT_CONVERTHELPFILESBAC
+
+        MENUITEM "Converted Re&ports Back to AST",
+                                                ID_CONVERT_CONVERTEDREPORTSBACKTOAST
+
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Setup...",                   ID_OPTIONS_SETUP
+        MENUITEM "&Directories...",             ID_OPTIONS_DIRECTORIES
+    END
+    POPUP "&Windows"
+    BEGIN
+        MENUITEM "&Tile",                       ID_WINDOWS_TILE
+        MENUITEM "&Cascade",                    ID_WINDOWS_CASCADE
+        MENUITEM "&Arrange",                    ID_WINDOWS_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM "&Search...",                  ID_HELP_SEARCH
+        MENUITEM "&Help On Help...",            ID_HELP_HELPONHELP
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""e:\\msvc\\mfc\\include\\afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "TBTWIN.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_FILE DIALOG DISCARDABLE  0, 0, 197, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a Text File."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Text Files.",IDC_STATIC,19,9,35,8
+    LISTBOX         IDC_LIST1,19,23,158,118,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,10,148,50,14
+    DEFPUSHBUTTON   "Help",ID_CONTEXT_HELP,71,148,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,148,50,14
+END
+
+IDD_REPORT_EDIT_S DIALOG DISCARDABLE  0, 0, 310, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Report Text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Item ID:",IDC_STATIC,17,10,32,10
+    COMBOBOX        IDC_COMBO1,16,24,208,105,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Item Inde&x",IDC_STATIC,254,11,38,9
+    EDITTEXT        IDC_EDIT2,258,24,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,14,48,280,84,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,142,42,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,56,142,49,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,108,142,42,14
+    PUSHBUTTON      "Spelling",ID_SPELLING,153,142,42,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,198,142,55,14
+    DEFPUSHBUTTON   "OK",IDOK,256,142,42,14
+END
+
+IDD_REPORT_EDIT DIALOG DISCARDABLE  0, 0, 310, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Report Text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Item ID:",IDC_STATIC,17,10,32,10
+    COMBOBOX        IDC_COMBO1,16,24,208,105,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Item Inde&x",IDC_STATIC,254,11,38,9
+    EDITTEXT        IDC_EDIT2,258,24,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,14,48,280,84,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,142,51,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,69,142,51,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,127,142,51,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,185,142,55,14
+    DEFPUSHBUTTON   "OK",IDOK,247,142,51,14
+END
+
+IDD_TEXT_EDIT DIALOG DISCARDABLE  0, 0, 310, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Regular Text."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ID #&1:",IDC_STATIC,11,10,26,10
+    COMBOBOX        IDC_COMBO1,38,9,198,111,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&2:",IDC_STATIC,43,31,26,10
+    COMBOBOX        IDC_COMBO2,74,30,204,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,14,53,280,88,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,150,51,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,68,150,51,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,124,150,51,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,182,150,58,14
+    DEFPUSHBUTTON   "OK",IDOK,247,150,51,14
+END
+
+IDD_TEXT_EDIT_S DIALOG DISCARDABLE  0, 0, 310, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Regular Text."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ID #&1:",IDC_STATIC,11,10,26,10
+    COMBOBOX        IDC_COMBO1,38,9,198,111,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&2:",IDC_STATIC,43,31,26,10
+    COMBOBOX        IDC_COMBO2,74,30,204,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,14,53,280,88,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,9,150,42,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,55,150,49,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,108,150,42,14
+    PUSHBUTTON      "Spelling",ID_SPELLING,154,150,42,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,200,150,53,14
+    DEFPUSHBUTTON   "OK",IDOK,257,150,42,14
+END
+
+IDD_ASPECT_EDIT DIALOG DISCARDABLE  0, 0, 313, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Aspect Text."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ID #&1:",IDC_STATIC,11,10,26,10
+    COMBOBOX        IDC_COMBO1,39,9,168,123,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&2:",IDC_STATIC,40,31,25,10
+    COMBOBOX        IDC_COMBO2,70,30,175,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&3:",IDC_STATIC,69,52,24,10
+    COMBOBOX        IDC_COMBO3,99,51,175,83,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,15,71,280,76,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,157,53,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,68,157,53,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,127,157,53,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,184,157,57,14
+    DEFPUSHBUTTON   "OK",IDOK,246,157,53,14
+END
+
+IDD_ASPECT_EDIT_S DIALOG DISCARDABLE  0, 0, 313, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Aspect Text."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ID #&1:",IDC_STATIC,11,10,26,10
+    COMBOBOX        IDC_COMBO1,39,9,168,123,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&2:",IDC_STATIC,40,31,25,10
+    COMBOBOX        IDC_COMBO2,70,30,175,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID #&3:",IDC_STATIC,69,52,24,10
+    COMBOBOX        IDC_COMBO3,99,51,175,83,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,15,71,280,76,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,10,157,42,14
+    PUSHBUTTON      "&All Symbols",ID_ALL_SYMBOLS,56,157,49,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,109,157,42,14
+    PUSHBUTTON      "Spelling",ID_SPELLING,155,157,42,14
+    PUSHBUTTON      "&Used Symbols",ID_USED_SYMBOLS,201,157,53,14
+    DEFPUSHBUTTON   "OK",IDOK,258,157,42,14
+END
+
+IDD_DIRECT DIALOG DISCARDABLE  0, 0, 253, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Directories"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Main Directory:",IDC_STATIC,9,12,51,8
+    EDITTEXT        IDC_EDIT_MAIN,92,11,149,12,ES_AUTOHSCROLL
+    LTEXT           "Text &Source Directory:",IDC_STATIC,9,31,75,8
+    EDITTEXT        IDC_EDIT_SOURCE,92,30,149,12,ES_AUTOHSCROLL
+    LTEXT           "ASTRO &Data Directory:",IDC_STATIC,9,50,77,8
+    EDITTEXT        IDC_EDIT_DATA,92,49,149,12,ES_AUTOHSCROLL
+    LTEXT           "&Editing Directory:",IDC_STATIC,9,69,58,8
+    EDITTEXT        IDC_EDIT_EDIT,92,68,149,12,ES_AUTOHSCROLL
+    LTEXT           "ASTRO &Help Directory:",IDC_STATIC,9,88,76,10
+    EDITTEXT        IDC_EDIT_HELP,92,87,149,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,9,114,50,14
+    DEFPUSHBUTTON   "Help",ID_CONTEXT_HELP,98,114,50,14
+    DEFPUSHBUTTON   "OK",IDOK,193,114,50,14
+END
+
+IDD_TBT_OPTIONS DIALOG DISCARDABLE  0, 0, 233, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "TBT Options."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Enable Extended Text:",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,14,15,85,10
+    LTEXT           "Text Format:",IDC_STATIC,14,35,42,8
+    COMBOBOX        IDC_COMBO1,67,33,148,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Text &Source Extension:",IDC_STATIC,15,56,77,8
+    EDITTEXT        IDC_EDIT1,98,56,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,16,96,50,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,91,96,50,14
+    DEFPUSHBUTTON   "OK",IDOK,163,97,50,14
+    CONTROL         "Source Text is Ansi Format?",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,76,102,10
+    CONTROL         "Edit Format is Ansi?",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,129,76,76,10
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 107, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About TBT."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "IDI_TBT_ICON",IDC_ICON,42,15,18,20
+    CTEXT           "Text Builder Toolkit (TBT) For Windows. Version 1.50",
+                    IDC_STATIC,15,49,74,27
+    DEFPUSHBUTTON   "OK",IDOK,26,89,50,14
+END
+
+IDD_DEPEND DIALOG DISCARDABLE  0, 0, 273, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dependencies."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Final File &Description:",IDC_STATIC,12,7,72,8
+    COMBOBOX        IDC_COMBO1,98,7,152,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Base File &Name:",IDC_STATIC,11,25,54,8
+    EDITTEXT        IDC_EDIT1,74,23,46,12,ES_AUTOHSCROLL
+    LTEXT           "&Type:",IDC_STATIC,133,26,20,8
+    COMBOBOX        IDC_COMBO2,162,25,88,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Before",IDC_STATIC,12,42,23,8
+    EDITTEXT        IDC_EDIT5,60,44,197,31,ES_AUTOHSCROLL
+    LTEXT           "Commands:",IDC_STATIC,11,53,38,8
+    LTEXT           "&After",IDC_STATIC,14,83,23,8
+    EDITTEXT        IDC_EDIT6,60,80,197,34,ES_AUTOHSCROLL
+    LTEXT           "Commands:",IDC_STATIC,14,95,38,8
+    LTEXT           "Build When?",IDC_STATIC,12,122,43,8
+    COMBOBOX        IDC_COMBO3,66,122,73,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set &Source Files...",IDC_SET_SOURCE,157,132,101,14
+    LTEXT           "Symbol File:",IDC_STATIC,13,142,40,8
+    EDITTEXT        IDC_EDIT4,65,142,60,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,11,161,50,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,114,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,161,50,14
+END
+
+IDD_DEPEND_SOURCE DIALOG DISCARDABLE  0, 0, 266, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dependency Sources."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Source Description:",IDC_STATIC,14,14,66,8
+    COMBOBOX        IDC_COMBO1,95,13,145,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Base File &Name:",IDC_STATIC,15,35,54,8
+    EDITTEXT        IDC_EDIT1,75,34,60,12,ES_AUTOHSCROLL
+    LTEXT           "&Type:",IDC_STATIC,149,36,20,8
+    COMBOBOX        IDC_COMBO2,177,35,70,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Build Commands:",IDC_STATIC,16,60,56,8
+    EDITTEXT        IDC_EDIT3,17,74,237,56,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,14,147,50,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,106,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,145,50,14
+END
+
+IDD_TBT_OPTIONS2 DIALOG DISCARDABLE  0, 0, 221, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "TBT Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Files To Build",IDC_STATIC,17,9,188,70
+    CONTROL         "Pro Version Files",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,25,77,10
+    CONTROL         "Extended Text 1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,42,70,10
+    CONTROL         "Extended Text 1",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,58,70,10
+    CONTROL         "Deluxe Version Files",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,25,77,10
+    CONTROL         "Extended Text 2",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,41,65,10
+    CONTROL         "Extended Text 2",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,58,65,10
+    LTEXT           "Text Format:",IDC_STATIC,26,93,42,8
+    COMBOBOX        IDC_COMBO1,75,90,92,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text &Source Extension:",IDC_STATIC,26,114,77,8
+    EDITTEXT        IDC_EDIT1,109,113,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL2,21,154,50,14
+    PUSHBUTTON      "Help",ID_CONTEXT_HELP,91,154,50,14
+    DEFPUSHBUTTON   "OK",IDOK,157,154,50,14
+    CONTROL         "Source Text is Ansi Format?",IDC_CHECK7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,133,102,10
+    CONTROL         "Edit Format is Ansi?",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,133,76,10
+END
+
+IDD_SYMBOL_EDIT DIALOG DISCARDABLE  0, 0, 243, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Symbol Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Symbol Name:",IDC_STATIC,17,15,47,8
+    COMBOBOX        IDC_COMBO1,72,14,105,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Description:",IDC_STATIC,18,38,40,8
+    EDITTEXT        IDC_EDIT1,74,36,149,12,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,19,61,22,8
+    EDITTEXT        IDC_EDIT2,48,60,27,12,ES_AUTOHSCROLL
+    LTEXT           "Column Used:",IDC_STATIC,85,62,46,8
+    EDITTEXT        IDC_EDIT3,139,60,32,12,ES_AUTOHSCROLL
+    LTEXT           "Array Limit:",IDC_STATIC,20,85,38,8
+    EDITTEXT        IDC_EDIT4,70,83,40,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,19,111,50,14
+    DEFPUSHBUTTON   "Help",ID_CONTEXT_HELP,96,110,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,111,50,14
+END
+
+MESSAGE_BOX DIALOG DISCARDABLE  64, 43, 187, 58
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "ASTRO is Working..."
+FONT 10, "System"
+BEGIN
+    CTEXT           "Processing...",101,12,14,164,8,SS_NOPREFIX
+    PUSHBUTTON      "Cancel",IDCANCEL,59,36,67,12
+END
+
+IDD_EDIT_FILE_ENTRY DIALOG DISCARDABLE  0, 0, 214, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit File List Entry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&File Name:",IDC_STATIC,10,12,37,10
+    EDITTEXT        IDC_EDIT1,52,12,52,11,ES_AUTOHSCROLL
+    LTEXT           "&Type:",IDC_STATIC,9,36,21,11
+    COMBOBOX        IDC_COMBO3,39,35,134,15,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Description:",IDC_STATIC,11,59,40,10
+    EDITTEXT        IDC_EDIT2,57,58,147,13,ES_AUTOHSCROLL
+    LTEXT           "&Symbol File:",IDC_STATIC,12,84,45,10
+    COMBOBOX        IDC_COMBO4,62,84,70,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,11,115,50,14
+    DEFPUSHBUTTON   "Help",ID_CONTEXT_HELP,83,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,114,50,14
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_F1,          IDC_HELP,               VIRTKEY,NOINVERT
+    VK_F1,          IDC_HELP,               VIRTKEY,SHIFT, NOINVERT
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

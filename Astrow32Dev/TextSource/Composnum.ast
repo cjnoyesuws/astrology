@@ -1,0 +1,46 @@
+@ Composite Chart 
+@ # starts each item. 
+@ $$ = $ 
+@ $_ = no page break at end of line 
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Composite Printout For Names: {$1} and {$2}, Comment: {$3}.
+# CH__ASPECT
+$0|$1|$2|Orb: $3 Degrees$_
+# CH__MISC
+$e$d' Decan|''$f'Critical|''$h'Anaretic''$_
+# CH__PLANET
+Tabs|60|3|12|24|36|$_
+[YOUR COMPOSITE $^$1:]$_
+$_
+$9|$b'Direct'Retrograde'Still'|$_
+# CH__PLAN_HOUSE
+$_
+House: $2|$4'On House Cusp|'Not On House Cusp|'$6'Intercepted''$_
+# CH__ASPECT_HD
+Tabs|60|3|12|24|36|$_
+
+{ASPECTS:}$_
+$_
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|$_
+[YOUR COMPOSITE HOUSE CUSPS ARE:]$_
+@TB$_
+# CH__HS_SGN_HED
+
+# CH__HOUSE_SIGN
+
+# CH__PLAN_EXT
+Tabs|66|6|10|15|31|45|60|$_
+Decan:|$1|Decan Ruler:|$3$4'   Decan Sub-Ruler: ''$6$_
+Navasma:|$7|Navasma Sign:|$9$_
+Duad:|$a|Duad Ruler:|$c$d'   Duad Sub-Ruler: ''$f$_
+$g'Combust|''$i'Home|''$k'Detriment|''$m'Exalted-Exact|'Exalted|''$o'Fall-Exact|'Fall|''$q'In Sign Ruled--Ruler: ''$s$_
+$_
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--
+# CHH_RELOC_DAT
+Chart is Calculated At: Country: {$2}, State or Region: {$3}, Location: {$4}. Geographic Coordinates {$5.$6 $7, $9.$a $b}, Time Zone = {$d}, Special Code = {$e} GMT Difference = {$f:$i}.

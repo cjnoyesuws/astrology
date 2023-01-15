@@ -1,0 +1,31 @@
+@ Tableau de la compatibilité
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression de la compatibilité pour les noms: {$1} et {$2}, Commentaire: {$3}.
+# CH__ASPECT
+
+$4's $0 est $1 à $8' s $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+# CH__PLAN_HOUSE
+
+[$ ^ $8' S $ ^ $1:] $ _
+$_
+$8's $1 est en $9' s $3 House$4, Sur Cuspide de Maison et plus Important', Pas Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+étiquettes |60|3|19|34|53|$_
+[$ ^ $1' les S MAISON CUSPIDES SONT:] $ _
+@ TB$_
+# CHH_COMPAT_YB
+NAISSANCE POUR $ ^ $1--
+# CH__COMP_REL
+
+[$ ^ $1 RELATIF À $ ^ $2:] $ _
+$_
+     Le Texte Suivant et l'Information Raconte Comme $2 En affectent $1 et; His1; Vie.$_
+     Votre Compagnon Fait référence à $2. Le Texte en décrit $1.$_

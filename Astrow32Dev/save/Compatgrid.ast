@@ -1,0 +1,33 @@
+@ Tableau de la compatibilité
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression de la compatibilité pour les noms: {$1} et {$2}, Commentaire: {$3}.$_
+# CH__PLANET
+{$^$1:}|$9|$b'Direct'Retrograde'Still' |Déclinaison: X° $ $ y' |
+# CH__MISC
+$c'Decan: "$ E |$f'Critical |''$h'Anaretic |''@ TR
+# CH__PLAN_HOUSE
+$3 maison |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6', a intercepté. |''@ TR
+# CH__ASPECT_HD
+
+{$^$1'S ASPECTS À $2' PLANÈTES S:} $ _
+# CH__HOUSE_HEAD
+
+[$ ^ $1' les S MAISON CUSPIDES SONT:] $ _
+@ TB$_
+# CHH_COMPAT_YB
+NAISSANCE POUR $ ^ $1--
+# CH__COMP_REL
+
+[$ ^ $1 RELATIF À $ ^ $2:] $ _
+$_
+# CH__PLAN_EXT
+Decan: $1 |Decan Ruler:$3 |$4' Sous-souverain Decan: |''$6@TR
+Navasma: $7 |Navasma signent: $9 |Duad: $ UN |Souverain Duad: $ C |$Sous-souverain du d'Duad: |''$f@TR
+$g'Combust |''$i'Home |''$k'Detriment |''$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: S@TR $"
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR$_

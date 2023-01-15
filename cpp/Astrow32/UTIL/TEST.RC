@@ -1,0 +1,43 @@
+RELOC_DAT DIALOG DISCARDABLE  15, 19, 312, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Relocation Information:"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Place Where Located--&Country:",117,15,15,103,8
+    COMBOBOX        119,131,12,124,100,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL |
+		    WS_TABSTOP
+    LTEXT           "",120,21,32,21,8
+    COMBOBOX        121,51,31,85,70,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL |
+		    WS_TABSTOP
+    LTEXT           "&Location:",122,145,32,32,8
+    COMBOBOX        123,184,30,108,66,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL |
+		    WS_TABSTOP
+    LTEXT           "",124,15,51,67,8
+    EDITTEXT        125,90,49,27,12
+    LTEXT           "Minutes:",126,128,51,29,8
+    EDITTEXT        127,168,49,22,12
+    LTEXT           "East/West:",129,201,51,38,8
+    COMBOBOX        128,252,49,40,29,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "L&atitude--Degrees:",130,15,70,67,8
+    EDITTEXT        131,90,68,27,12
+    LTEXT           "Minutes:",132,128,70,29,8
+    EDITTEXT        133,168,68,22,12
+    LTEXT           "North/South:",135,201,70,44,8
+    COMBOBOX        134,252,68,40,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Time &Zone:",136,15,91,38,8
+    COMBOBOX        151,59,88,87,62,CBS_DROPDOWNLIST | WS_VSCROLL |
+		    WS_TABSTOP
+    LTEXT           "Special C&ode:",138,157,91,47,8
+    COMBOBOX        139,211,89,90,62,CBS_DROPDOWNLIST | WS_VSCROLL |
+		    WS_TABSTOP
+    LTEXT           "GMT Offsets:",142,210,110,44,8
+    EDITTEXT        140,197,122,20,12,NOT WS_TABSTOP
+    LTEXT           "H",143,221,124,7,8
+    EDITTEXT        141,231,122,20,12
+    LTEXT           "M",144,257,124,7,8
+    PUSHBUTTON      "Location DB Menu",146,42,117,91,14
+    DEFPUSHBUTTON   "OK",1,42,144,56,14
+    PUSHBUTTON      "Help",150,136,144,47,14
+    PUSHBUTTON      "Cancel",2,220,144,44,14
+END
+

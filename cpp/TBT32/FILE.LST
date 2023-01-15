@@ -1,0 +1,52 @@
+GENDER    1 REPORT.SYM  Gender Strings
+COTRANS   1 REPORT.SYM  Composite Transits Report
+AS5TEXT   2 TEXT.SYM    Compatibility Houses Text
+CHHEAD    1 REPORT.SYM  Chart Headings
+RETURN    1 REPORT.SYM  Solar and Lunar Return Report
+FAMOUS    0 TEXT.SYM    Famous People's Sun Signs
+ASPECTS   0 TEXT.SYM    Aspects Help
+COMPAT    1 REPORT.SYM  Compatibility Report
+COSUMMR   1 REPORT.SYM  Compatibility Summary Report
+PROBLEM   1 REPORT.SYM  Problem Report
+PROGRESS  1 REPORT.SYM  Progress Report
+NATAL     1 REPORT.SYM  Natal Report
+ARABNAM   1 REPORT.SYM  Arabic Name Strings
+TRANSITR  1 REPORT.SYM  Transits Report
+FIXEDST   1 REPORT.SYM  Fixed Star Report
+FIXDNAMS  1 REPORT.SYM  Fixed Star Name Strings
+ARABIC    1 REPORT.SYM  Arabic Report
+NUMERIC   1 REPORT.SYM  Numeric Report
+PROBRES   1 REPORT.SYM  Problem Results Strings
+COMPOS    1 REPORT.SYM  Composite Report
+HELIO     1 REPORT.SYM  Helio Report
+SUMMARY   1 REPORT.SYM  Summary Report
+AS3ATEXT  3 TEXT.SYM    Aspects Text
+AS3BTEXT  2 TEXT.SYM    Summary Text
+STRING    1 REPORT.SYM  General Strings
+TRANSAFT  1 REPORT.SYM  Transit Affects Strings
+AS3CTEXT  3 TEXT.SYM    Aspects Text
+AS1TEXT   2 TEXT.SYM    Planets Text
+MONTHSTR  1 REPORT.SYM  Month Name Strings
+PLASIGNI  0 TEXT.SYM    Planet Significance Help
+COMPATAB  0 TEXT.SYM    Compatibility Help
+AS10TEXT  2 TEXT.SYM    Decanates Text
+AS12TEXT  2 TEXT.SYM    Angles Text
+AS11TEXT  2 TEXT.SYM    House Text
+AS2TEXT   2 TEXT.SYM    House Text
+AS6TEXT   2 TEXT.SYM    Compatibility Summary Text
+AS13TEXT  2 TEXT.SYM    Compatibility Summary Text
+AS7TEXT   2 TEXT.SYM    Transiting General Text
+AS9TEXT   2 TEXT.SYM    Transiting Houses Text
+AS8TEXT   3 TEXT.SYM    Transiting Aspects Text
+RETROGRD  0 TEXT.SYM    Retrograde Planets Help
+TRANSITS  0 TEXT.SYM    Transits Houses Help
+HOUSES    0 TEXT.SYM    Houses Help
+RISING    0 TEXT.SYM    Ascendant Help
+SCOUTPL   0 TEXT.SYM    Scout Planet Help
+AS14TEXT  3 TEXT.SYM    Progressed Aspects
+AS15TEXT  3 TEXT.SYM    Progressed Aspects
+PLANETS   0 TEXT.SYM    Help File on the Planets
+AS16TEXT  3 TEXT.SYM    Compatability Aspects
+AS17TEXT  3 TEXT.SYM    Compatability Aspects
+AS18TEXT  3 TEXT.SYM    Midpoint Sign Text
+AS19TEXT  3 TEXT.SYM    Midpoint Sign Text

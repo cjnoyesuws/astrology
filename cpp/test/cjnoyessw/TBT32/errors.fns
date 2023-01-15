@@ -1,0 +1,11 @@
+extern int alert_box( char *title, const char *fmt, ... );
+extern int alert_box_ext( char *title, UINT options, const char *fmt, ... );
+extern void do_error( const char *file );
+extern int valert_box_ext( char *title, UINT options, const char *fmt, va_list marker );
+
+#ifdef _UNICODE
+extern int alert_box( TCHAR *title, const TCHAR *fmt, ... );
+extern int alert_box_ext( TCHAR *title, UINT options, const TCHAR *fmt, ... );
+extern void do_error( const TCHAR *file );
+extern int valert_box_ext( TCHAR *title, UINT options, const TCHAR *fmt, va_list marker );
+#endif

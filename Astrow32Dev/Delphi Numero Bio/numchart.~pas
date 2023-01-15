@@ -1,0 +1,56 @@
+unit numchart;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DBCtrls, StdCtrls, Buttons, ExtCtrls, ComCtrls;
+
+type
+  TNumChartForm = class(TForm)
+    PageControl1: TPageControl;
+    tsData: TTabSheet;
+    tsChart: TTabSheet;
+    Label1: TLabel;
+    CbChartType: TComboBox;
+    Label2: TLabel;
+    edtChartName: TEdit;
+    Label3: TLabel;
+    edtChartComments: TEdit;
+    Label4: TLabel;
+    EdtFileName: TEdit;
+    sbDialog: TSpeedButton;
+    SaveDialog1: TSaveDialog;
+    Label5: TLabel;
+    Panel1: TPanel;
+    BtnOk: TBitBtn;
+    BitBtn1: TBitBtn;
+    Label6: TLabel;
+    DbLuCbListName: TDBLookupComboBox;
+    edtListName: TEdit;
+    procedure sbDialogClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  NumChartForm: TNumChartForm;
+
+implementation
+
+uses numerocalc_TLB, DmNumerow;
+
+{$R *.dfm}
+
+procedure TNumChartForm.sbDialogClick(Sender: TObject);
+begin
+   With SaveDialog1 do
+   begin
+      if Execute then
+         EdtFileName.Text := FileName;
+   end;
+end;
+
+end.

@@ -1,0 +1,25 @@
+
+int doHelp(zEvent *e);
+
+int Dlgf::doHelp(zEvent *e)
+{
+ char name[150];
+
+ strcpy( file, set_path("ASTROW.HLP", HELP_F );
+ WinHelp(*app->rootWindow(), file, HELP_CONTEXT, IDHELP_DLG_ );
+ return( 1 );
+}
+
+
+zPushButton *pbh = new zPushButton( this, IDC_HELP );
+pbh->setNotify(this, (NotifyProc)& Dlgf::doHelp );
+
+
+HELPID_DLG_GRAFONT      1303L
+HELPID_DLG_EDITOPT      1304L
+HELPID_DLG_ARCHIVE      1305L
+HELPID_DLG_ENFNAMEC     1306L
+HELPID_DLG_EDFNAMEC     1307L
+HELPID_DLG_KLFNAMEC     1308L
+HELPID_DLG_DIRECT       1309L
+HELPID_DLG_PROGR        1310L

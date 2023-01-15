@@ -1,0 +1,212 @@
+#################   SYMBOL FILE FOR TEXT COMPILER   ##################
+# SYMBOL IS SYMBOL NAME, VAL. IS NUMERICAL VALUE AND POS. IS POSITION
+# IN DEFINITION IN WHICH SYMBOL IS ALLOWED TO BE FOUND. POSITIONS START
+# WITH COL 1. COMMENTS ARE PRECEDED BY '#' MARKS.
+#
+# SYMBOL     VAL.  POS.
+#=====================================================================
+#
+# Planet and names of angles
+ASCEND        0    1  Text for Ascendant
+RISING        0    1  Text for Ascendant
+SUN           1    1  Text for Planet
+MOON          2    1  Text for Planet
+MERCURY       3    1  Text for Planet
+VENUS         4    1  Text for Planet
+MARS          5    1  Text for Planet
+JUPITER       6    1  Text for Planet
+SATURN        7    1  Text for Planet
+URANUS        8    1  Text for Planet
+NEPTUNE       9    1  Text for Planet
+PLUTO         10   1  Text for Planet
+NORTH_NODE    11   1  Text for Node
+SOUTH_NODE    12   1  Text for Node
+MED_COELI     13   1  Text for Angle
+IM_COELI      14   1  Text for Angle
+PART_FORTUNE  15   1  Text for Angle
+VERTEX        16   1  Text for Angle
+EAST_POINT    17   1  Text for Angle
+# House Names for signs in Houses file and aspects.
+HOUSE_1       1    1  House 1 is in Sign
+HOUSE_2       2    1  House 2 is in Sign
+HOUSE_3       3    1  House 3 is in Sign
+HOUSE_4       4    1  House 4 is in Sign
+HOUSE_5       5    1  House 5 is in Sign
+HOUSE_6       6    1  House 6 is in Sign
+HOUSE_7       7    1  House 7 is in Sign
+HOUSE_8       8    1  House 8 is in Sign
+HOUSE_9       9    1  House 9 is in Sign
+HOUSE_10      10   1  House 10 is in Sign
+HOUSE_11      11   1  House 11 is in Sign
+HOUSE_12      12   1  House 12 is in Sign
+# Symbols for decanates of signs
+DECANT_1      30   1   Decanate 1
+DECANT_2      31   1   Decanate 2
+DECANT_3      32   1   Decanate 3
+# The twelve signs
+ARIES         0    2   Text for Sign
+TAURUS        1    2   Text for Sign
+GEMINI        2    2   Text for Sign
+CANCER        3    2   Text for Sign
+LEO           4    2   Text for Sign
+VIRGO         5    2   Text for Sign
+LIBRA         6    2   Text for Sign
+SCORPIO       7    2   Text for Sign
+SAGITARIUS    8    2   Text for Sign
+CAPRICORN     9    2   Text for Sign
+AQUARIUS      10   2   Text for Sign
+PISCES        11   2   Text for Sign
+# Text symbol for planets in retrograde motion
+RETROGRADE    12   2   Text Planet in Rx Motion
+# Symbols for planets in houses, and aspects
+PLA_HOUSE_1   1    2  Planet in House 1
+PLA_HOUSE_2   2    2  Planet in House 2
+PLA_HOUSE_3   3    2  Planet in House 3
+PLA_HOUSE_4   4    2  Planet in House 4
+PLA_HOUSE_5   5    2  Planet in House 5
+PLA_HOUSE_6   6    2  Planet in House 6
+PLA_HOUSE_7   7    2  Planet in House 7
+PLA_HOUSE_8   8    2  Planet in House 8
+PLA_HOUSE_9   9    2  Planet in House 9
+PLA_HOUSE_10  10   2  Planet in House 10
+PLA_HOUSE_11  11   2  Planet in House 11
+PLA_HOUSE_12  12   2  Planet in House 12
+# Aspect Names
+CONJUNCT      0    3  Text for Aspect
+SEXTILE       1    3  Text for Aspect
+TRINE         2    3  Text for Aspect
+OPPOSITION    3    3  Text for Aspect
+SQUARED       4    3  Text for Aspect
+SEMISEXT      5    3  Text for Aspect
+SEMISQUARE    6    3  Text for Aspect
+SEMISESQUAD   7    3  Text for Aspect
+QUINCUNX      8    3  Text for Aspect
+BIQUINTILE    9    3  Text for Aspect
+QUINTILE      10   3  Text for Aspect
+TREDECILE     11   3  Text for Aspect
+DECILE        12   3  Text for Aspect
+SEPTILE       13   3  Text for Aspect
+# Summary Types
+# Aspect Summary
+AS_SUMMARY    0    2   Aspect Summary
+# Element Summary
+EL_SUMMARY    1    2   Element Summary
+# Gender Summary
+GE_SUMMARY    2    2   Genders Summary
+# Qualties Summary
+QA_SUMMARY    3    2   Quality Summary
+# Hemisphere Summary
+HE_SUMMARY    4    2   Hemisphere Summary
+# Scout Planet
+SC_PLANET     5    2   Scout Planet
+# General Symbol for Balanced in a Summary
+BALANCED      0    1   Summary Balanced
+# Elements for summary
+FIRE          1    1   Summary Fire
+EARTH         2    1   Summary Earth
+AIR           3    1   Summary Air
+WATER         4    1   Summary Water
+# Genders for summary
+MASCULINE     1    1   Summary Masculine
+FEMININE      2    1   Summary Feminine
+# Qualities for Summary
+CARDINAL      1    1   Summary Cardinal
+FIXED         2    1   Summary Fixed
+MUTABLE       3    1   Summary Mutable
+# Hemispheres for Summary
+EAST          1    1   Summary East
+WEST          2    1   Summary West
+NORTH         3    1   Summary North
+SOUTH         4    1   Summary South
+# Summary Symbols for Functional Houses
+INDIVIDUAL    1    1   Summary Individual
+TEMPORAL      2    1   Summary Temporal
+RELATIVE      3    1   Summary Relative
+TERMINAL      4    1   Summary Terminal
+# Summary Symbols for Modal Houses
+ANGULAR       1    1   Summary Angular
+SUCCEDENT     2    1   Summary Succedent
+CADENT        3    1   Summary Cadent
+# Aspects For Summary
+S_CONJUNCT    0    1   Summary Conjunct
+S_SEXTILE     1    1   Summary Sextile
+S_TRINE       2    1   Summary Trine
+S_OPPOSITION  3    1   Summary Opposition
+S_SQUARED     4    1   Summary Squared
+# Compatibility Summary Cross Elements
+C_FIRE        0    2   Compatability Sumry Fire
+C_EARTH       1    2   Compatability Sumry Earth
+C_AIR         2    2   Compatability Sumry Air
+C_WATER       3    2   Compatability Sumry Water
+# Compatibility Summary
+# Both Are Most Same Gender
+C_SAME_GEN    1    1   Compat. Sumry Same Genders
+# Both are Mostly Different Genders
+C_DIFF_GEN    2    1   Compat. Sumry Different Genders
+# Compatibility Summary Cross Sumry Qualities
+C_CARDINAL    4    2   Compatability Sumry Cardinal
+C_FIXED       5    2   Compatability Sumry Fixed
+C_MUTABLE     6    2   Compatability Sumry Mutable
+# Compatibility Summary Genders
+C_GENDER      7    2   Compatability Sumry Genders
+# Compatibilities Hemispheres for summary
+C_EAST        8    2   Compatability Sumry East
+C_WEST        9    2   Compatability Sumry West
+C_NORTH       10   2   Compatability Sumry North
+C_SOUTH       11   2   Compatability Sumry South
+# Summary Cross Symbols for Functional Houses
+C_INDIVIDUAL  12   2   Compatability Sumry Individual
+C_TEMPORAL    13   2   Compatability Sumry Temporal
+C_RELATIVE    14   2   Compatability Sumry Relative
+C_TERMINAL    15   2   Compatability Sumry Terminal
+# Summary Cross Symbols for Functional Houses
+C_ANGULAR     16   2   Compatability Sumry Angular
+C_SUCCEDENT   17   2   Compatability Sumry Succedent
+C_CADENT      18   2   Compatability Sumry Cadent
+# Transit General Text Symbol
+TRA_GENERAL   12   2   Transits General Text
+# Transit Houses
+X_HOUSE_1     0    2   Compat & Transit Houses
+X_HOUSE_2     1    2   Compat & Transit Houses
+X_HOUSE_3     2    2   Compat & Transit Houses
+X_HOUSE_4     3    2   Compat & Transit Houses
+X_HOUSE_5     4    2   Compat & Transit Houses
+X_HOUSE_6     5    2   Compat & Transit Houses
+X_HOUSE_7     6    2   Compat & Transit Houses
+X_HOUSE_8     7    2   Compat & Transit Houses
+X_HOUSE_9     8    2   Compat & Transit Houses
+X_HOUSE_10    9    2   Compat & Transit Houses
+X_HOUSE_11    10   2   Compat & Transit Houses
+X_HOUSE_12    11   2   Compat & Transit Houses
+ASCEND        0    4  Text for Ascendant
+RISING        0    4  Text for Ascendant
+SUN           1    4  Text for Planet
+MOON          2    4  Text for Planet
+MERCURY       3    4  Text for Planet
+VENUS         4    4  Text for Planet
+MARS          5    4  Text for Planet
+JUPITER       6    4  Text for Planet
+SATURN        7    4  Text for Planet
+URANUS        8    4  Text for Planet
+NEPTUNE       9    4  Text for Planet
+PLUTO         10   4  Text for Planet
+NORTH_NODE    11   4  Text for Node
+SOUTH_NODE    12   4  Text for Node
+MED_COELI     13   4  Text for Angle
+IM_COELI      14   4  Text for Angle
+PART_FORTUNE  15   4  Text for Angle
+VERTEX        16   4  Text for Angle
+EAST_POINT    17   4  Text for Angle
+MP_ARIES      0    3  Text for Midpoint Sign
+MP_TAURUS     1    3  Text for Midpoint Sign
+MP_GEMINI     2    3  Text for Midpoint Sign
+MP_CANCER     3    3  Text for Midpoint Sign
+MP_LEO        4    3  Text for Midpoint Sign
+MP_VIRGO      5    3  Text for Midpoint Sign
+MP_LIBRA      6    3  Text for Midpoint Sign
+MP_SCORPIO    7    3  Text for Midpoint Sign
+MP_SAGITARIUS 8    3  Text for Midpoint Sign
+MP_CAPRICORN  9    3  Text for Midpoint Sign
+MP_AQUARIUS   10   3  Text for Midpoint Sign
+MP_PISCES     11   3  Text for Midpoint Sign
+

@@ -1,0 +1,860 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Astrow, Configuration: ProDebug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Astrow32Dev\Astrow32\Astrow\ProDebug\BAT000004.bat" with contents
+[
+@echo off
+"c:\Astrow32Dev\Astrow32\Astrow\makehelp.bat"
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Making help file..."
+exit 1
+:VCEnd
+]
+Creating command line "c:\Astrow32Dev\Astrow32\Astrow\ProDebug\BAT000004.bat"
+Creating temporary file "c:\Astrow32Dev\Astrow32\Astrow\ProDebug\RSP000005.rsp" with contents
+[
+/Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "DELUXE" /D "NEW" /D "PRO" /D "_MBCS" /FD /EHsc /MTd /Yu"stdafx.h" /Fp".\ProDebug/Astrow.pch" /Fo".\ProDebug/" /Fd".\ProDebug/" /FR".\ProDebug/" /W3 /c /ZI /TP
+\astrow32\uiutl\Wrfdata.cpp
+\astrow32\uiutl\Wrbdata.cpp
+\astrow32\wpconv\Wpintl.cpp
+\astrow32\uiutl\Words.cpp
+\astrow32\uiutl\Virttext.cpp
+\astrow32\uiutl\Virtsave.cpp
+\astrow32\uiutl\Uis2dsk.cpp
+\astrow32\uiutl\Txtsrch.cpp
+\astrow32\engine\Trprnres.cpp
+\astrow32\engine\Transits.cpp
+\astrow32\dlgtest\TransInfo.cpp
+\astrow32\dlgtest\TransData.cpp
+\astrow32\graph\Tickcirc.cpp
+\astrow32\uiutl\Tabs.cpp
+\astrow32\wpconv\Tabout.cpp
+\astrow32\engine\Table.cpp
+\astrow32\engdll\Sun.cpp
+\astrow32\uiutl\Strclip.cpp
+\astrow32\util\Sortfils.cpp
+\astrow32\engdll\Sidereal.cpp
+\astrow32\uiutl\Sexcodes.cpp
+\astrow32\uiutl\Setup.cpp
+\astrow32\uiutl\Setpath.cpp
+\astrow32\util\Scanfile.cpp
+\astrow32\uiutl\Rwfdata.cpp
+\astrow32\dlgtest\ReturnData.cpp
+\astrow32\engine\Return.cpp
+\astrow32\dlg\Repstyle.cpp
+\astrow32\engine\Reprnres.cpp
+\astrow32\astroedit\ReportStyles.cpp
+\astrow32\dlgtest\RelocScr.cpp
+\astrow32\engdll\Reghouse.cpp
+\astrow32\dlgtest\RectifyData.cpp
+\astrow32\engine\Realoc.cpp
+\astrow32\que\Quinsdel.cpp
+\astrow32\que\Queutil.cpp
+\astrow32\que\Queuio.cpp
+\astrow32\que\Quesel.cpp
+\astrow32\que\Quelist.cpp
+\astrow32\que\Queitm.cpp
+\astrow32\que\Quefind.cpp
+\astrow32\dlgtest\QdtOptions.cpp
+\astrow32\dlg\Qdtopt.cpp
+\astrow32\astroedit\PseudoStyle.cpp
+\astrow32\engine\Prprnres.cpp
+\astrow32\engine\Progress.cpp
+\astrow32\dlgtest\ProgrData.cpp
+\astrow32\engine\Prnsumm.cpp
+\astrow32\engine\Prnres.cpp
+\astrow32\dlgtest\PrintOptions.cpp
+\astrow32\dlg\Printopt.cpp
+\astrow32\astrograph\PopupEd.cpp
+\astrow32\engdll\Plutocrx.cpp
+\astrow32\graph\Plotslin.cpp
+\astrow32\graph\Plotplan.cpp
+\astrow32\graph\Plothous.cpp
+\astrow32\graph\Plotgrtp.cpp
+\astrow32\engdll\Planets.cpp
+\astrow32\engdll\Plachous.cpp
+\astrow32\engdll\Perturnp.cpp
+\astrow32\engdll\Pertmvm.cpp
+\astrow32\engdll\Pertjs.cpp
+\astrow32\engdll\Pelement.cpp
+\astrow32\util\Parsefil.cpp
+\astrow32\astroview\ParaEdit.cpp
+\astrow32\astroview\PageSetp.cpp
+\astrow32\dlg\Pageopt.cpp
+\astrow32\engine\Oututil.cpp
+\astrow32\engine\Outreprn.cpp
+\astrow32\engine\Outqry.cpp
+\astrow32\wpconv\Outprnwp.cpp
+\astrow32\wpconv\outprnw6.cpp
+\astrow32\engine\Outchthd.cpp
+\astrow32\engine\Oprnsumm.cpp
+\astrow32\engine\Oprnres.cpp
+\astrow32\wpconv\Opmkprs.cpp
+\astrow32\engine\Ochthed.cpp
+\astrow32\engine\Nxprnres.cpp
+\astrow32\engine\Nmprnres.cpp
+\astrow32\engine\Nhprnres.cpp
+\Astrow32Dev\Astrow32\Engdll\mkastrd\newhouse.cpp
+\astrow32\engdll\Morhouse.cpp
+\astrow32\engdll\Moon.cpp
+\astrow32\engine\Mktmdt.cpp
+\astrow32\engine\Misccalc.cpp
+\astrow32\engine\Midpoint.cpp
+\astrow32\engine\Memmgr.cpp
+\astrow32\engdll\Mctosidt.cpp
+\astrow32\uiutl\Makename.cpp
+\astrow32\engine\Loadorbs.cpp
+\astrow32\graph\Loadgrph.cpp
+\astrow32\cover\Loadcovr.cpp
+\astrow32\engdll\Kochhous.cpp
+\astrow32\graph\Key.cpp
+\astrow32\engdll\Julutil.cpp
+\astrow32\engdll\Julian.cpp
+\astrow32\engdll\Jtype.cpp
+\astrow32\graph\Isincos.cpp
+\astrow32\engine\Intrhous.cpp
+\astrow32\uiutl\Inifile.cpp
+\astrow32\engdll\Hstoramc.cpp
+\astrow32\engdll\House.cpp
+\astrow32\graph\Grlist.cpp
+\astrow32\graph\Graspgrd.cpp
+\astrow32\graph\Graspcir.cpp
+\astrow32\graph\Graphwrt.cpp
+\astrow32\astrograph\GraphOpts.cpp
+\astrow32\dlg\Graphopt.cpp
+\astrow32\astrograph\GraphFileOpts.cpp
+\astrow32\astrograph\GraFont.cpp
+\astrow32\dlg\Grafnt.cpp
+\astrow32\dlg\Grafilop.cpp
+\astrow32\astrograph\GraColor.cpp
+\astrow32\dlg\Graclr.cpp
+\astrow32\uiutl\Getlist.cpp
+\astrow32\uiutl\Fptr.cpp
+\astrow32\astroview\FindText.cpp
+\astrow32\dlgtest\FileNameDlg.cpp
+\astrow32\dlgtest\FileKillDlg.cpp
+\astrow32\dlgtest\FileEditDlg.cpp
+\astrow32\uiutl\Errors.cpp
+\astrow32\engdll\Eqhouse.cpp
+\astrow32\engine\Dotext.cpp
+\astrow32\que\Doque.cpp
+\astrow32\engine\Dopoptxt.cpp
+\astrow32\engdll\Dohouse.cpp
+\astrow32\engine\Docalc.cpp
+\astrow32\astrograph\Directories.cpp
+\astrow32\uiutl\Direc.cpp
+\astrow32\wpconv\Decompf.cpp
+\astrow32\cover\Decomp.cpp
+\astrow32\engdll\Dataname.cpp
+\astrow32\graph\Datakey.cpp
+\astrow32\graph\Datagrfa.cpp
+\astrow32\dlg\Coverdat.cpp
+\astrow32\engine\Coprnsum.cpp
+\astrow32\engine\Coprnres.cpp
+\astrow32\dlg\Convopt.cpp
+\astrow32\astroedit\ConvertData.cpp
+\astrow32\engine\Compos.cpp
+\astrow32\engine\Compile2.cpp
+\astrow32\engine\Compile.cpp
+\astrow32\engine\Compat.cpp
+\astrow32\dlg\Colorfnt.cpp
+\astrow32\engine\Cmprnres.cpp
+\astrow32\engdll\Cmphouse.cpp
+\astrow32\dlgtest\ChartOptions.cpp
+\astrow32\uiutl\Charcons.cpp
+\astrow32\dlgtest\BirthInfo.cpp
+\astrow32\batch\Batchimp.cpp
+\astrow32\wpconv\astwww.cpp
+\astrow32\wpconv\Astwstar.cpp
+\astrow32\wpconv\Astwperf.cpp
+\astrow32\wpconv\astwp6.cpp
+\astrow32\engdll\Astutl.cpp
+\astrow32\wpconv\Astrtf.cpp
+\astrow32\astroview\AstroviewView.cpp
+\astrow32\astroview\AstroviewDoc.cpp
+\astrow32\dlgtest\AstroHelper.cpp
+\astrow32\astrograph\AstrographView.cpp
+\astrow32\astrograph\AstrographDoc.cpp
+\astrow32\astroflist\astroflistView.cpp
+\astrow32\astroflist\astroflistDoc.cpp
+\astrow32\engine\Astmisc.cpp
+\astrow32\dlg\Asthlper.cpp
+\Astrow32Dev\Astrow32\Engdll\mkastrd\asteroidcalc.cpp
+\astrow32\engdll\Astduad.cpp
+\astrow32\wpconv\Astami.cpp
+\astrow32\engine\Aspects.cpp
+\astrow32\wpconv\Asfil2tx.cpp
+\astrow32\graph\Asdrawbs.cpp
+\astrow32\engdll\Ascend.cpp
+\astrow32\graph\Arndcirc.cpp
+\astrow32\engine\Arabpt.cpp
+\astrow32\engdll\Anomaly.cpp
+\Astrow32Dev\Astrow32\Engine\Wrcsvdax.cpp
+\Astrow32Dev\Astrow32\Engine\Wrcsvdat.cpp
+\Astrow32Dev\Astrow32\Engine\Wrbindat.cpp
+\Astrow32Dev\Astrow32\Engine\soprnres.cpp
+.\MainFrm.cpp
+\Astrow32Dev\Astrow32\Engine\hrmprnres.cpp
+\Astrow32Dev\Astrow32\Engine\Ctprnres.cpp
+.\Astrow.cpp
+]
+Creating command line "cl.exe @c:\Astrow32Dev\Astrow32\Astrow\ProDebug\RSP000005.rsp /nologo"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Making help file...
+Building Win32 Help files
+The system cannot find the file specified.
+        1 file(s) copied.
+The system cannot find the file specified.
+        1 file(s) copied.
+Compiling...
+Wrfdata.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Wrfdata.cpp': No such file or directory
+Wrbdata.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Wrbdata.cpp': No such file or directory
+Wpintl.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Wpintl.cpp': No such file or directory
+Words.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Words.cpp': No such file or directory
+Virttext.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Virttext.cpp': No such file or directory
+Virtsave.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Virtsave.cpp': No such file or directory
+Uis2dsk.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Uis2dsk.cpp': No such file or directory
+Txtsrch.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Txtsrch.cpp': No such file or directory
+Trprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Trprnres.cpp': No such file or directory
+Transits.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Transits.cpp': No such file or directory
+TransInfo.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\TransInfo.cpp': No such file or directory
+TransData.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\TransData.cpp': No such file or directory
+Tickcirc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Tickcirc.cpp': No such file or directory
+Tabs.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Tabs.cpp': No such file or directory
+Tabout.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Tabout.cpp': No such file or directory
+Table.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Table.cpp': No such file or directory
+Sun.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Sun.cpp': No such file or directory
+Strclip.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Strclip.cpp': No such file or directory
+Sortfils.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\util\Sortfils.cpp': No such file or directory
+Sidereal.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Sidereal.cpp': No such file or directory
+Generating Code...
+Compiling...
+Sexcodes.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Sexcodes.cpp': No such file or directory
+Setup.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Setup.cpp': No such file or directory
+Setpath.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Setpath.cpp': No such file or directory
+Scanfile.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\util\Scanfile.cpp': No such file or directory
+Rwfdata.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Rwfdata.cpp': No such file or directory
+ReturnData.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\ReturnData.cpp': No such file or directory
+Return.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Return.cpp': No such file or directory
+Repstyle.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Repstyle.cpp': No such file or directory
+Reprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Reprnres.cpp': No such file or directory
+ReportStyles.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroedit\ReportStyles.cpp': No such file or directory
+RelocScr.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\RelocScr.cpp': No such file or directory
+Reghouse.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Reghouse.cpp': No such file or directory
+RectifyData.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\RectifyData.cpp': No such file or directory
+Realoc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Realoc.cpp': No such file or directory
+Quinsdel.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Quinsdel.cpp': No such file or directory
+Queutil.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Queutil.cpp': No such file or directory
+Queuio.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Queuio.cpp': No such file or directory
+Quesel.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Quesel.cpp': No such file or directory
+Quelist.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Quelist.cpp': No such file or directory
+Queitm.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Queitm.cpp': No such file or directory
+Generating Code...
+Compiling...
+Quefind.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Quefind.cpp': No such file or directory
+QdtOptions.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\QdtOptions.cpp': No such file or directory
+Qdtopt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Qdtopt.cpp': No such file or directory
+PseudoStyle.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroedit\PseudoStyle.cpp': No such file or directory
+Prprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Prprnres.cpp': No such file or directory
+Progress.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Progress.cpp': No such file or directory
+ProgrData.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\ProgrData.cpp': No such file or directory
+Prnsumm.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Prnsumm.cpp': No such file or directory
+Prnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Prnres.cpp': No such file or directory
+PrintOptions.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\PrintOptions.cpp': No such file or directory
+Printopt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Printopt.cpp': No such file or directory
+PopupEd.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\PopupEd.cpp': No such file or directory
+Plutocrx.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Plutocrx.cpp': No such file or directory
+Plotslin.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Plotslin.cpp': No such file or directory
+Plotplan.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Plotplan.cpp': No such file or directory
+Plothous.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Plothous.cpp': No such file or directory
+Plotgrtp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Plotgrtp.cpp': No such file or directory
+Planets.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Planets.cpp': No such file or directory
+Plachous.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Plachous.cpp': No such file or directory
+Perturnp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Perturnp.cpp': No such file or directory
+Generating Code...
+Compiling...
+Pertmvm.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Pertmvm.cpp': No such file or directory
+Pertjs.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Pertjs.cpp': No such file or directory
+Pelement.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Pelement.cpp': No such file or directory
+Parsefil.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\util\Parsefil.cpp': No such file or directory
+ParaEdit.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroview\ParaEdit.cpp': No such file or directory
+PageSetp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroview\PageSetp.cpp': No such file or directory
+Pageopt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Pageopt.cpp': No such file or directory
+Oututil.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Oututil.cpp': No such file or directory
+Outreprn.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Outreprn.cpp': No such file or directory
+Outqry.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Outqry.cpp': No such file or directory
+Outprnwp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Outprnwp.cpp': No such file or directory
+outprnw6.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\outprnw6.cpp': No such file or directory
+Outchthd.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Outchthd.cpp': No such file or directory
+Oprnsumm.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Oprnsumm.cpp': No such file or directory
+Oprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Oprnres.cpp': No such file or directory
+Opmkprs.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Opmkprs.cpp': No such file or directory
+Ochthed.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Ochthed.cpp': No such file or directory
+Nxprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Nxprnres.cpp': No such file or directory
+Nmprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Nmprnres.cpp': No such file or directory
+Nhprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Nhprnres.cpp': No such file or directory
+Generating Code...
+Compiling...
+newhouse.cpp
+c:\Astrow32Dev\Astrow32\INC\Useri.h(67) : error C2146: syntax error : missing ';' before identifier 'longitude'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(67) : error C2501: 'O_LOC_DB::DEG_MIN' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(67) : error C2501: 'O_LOC_DB::longitude' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(68) : error C2146: syntax error : missing ';' before identifier 'latitude'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(68) : error C2501: 'O_LOC_DB::DEG_MIN' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(68) : error C2501: 'O_LOC_DB::latitude' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(69) : error C2146: syntax error : missing ';' before identifier 'time_zone'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(69) : error C2501: 'O_LOC_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(69) : error C2501: 'O_LOC_DB::time_zone' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(70) : error C2146: syntax error : missing ';' before identifier 'special_code'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(70) : error C2501: 'O_LOC_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(70) : error C2501: 'O_LOC_DB::special_code' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(71) : error C2146: syntax error : missing ';' before identifier 'hrs_offset'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(71) : error C2501: 'O_LOC_DB::HRS' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(71) : error C2501: 'O_LOC_DB::hrs_offset' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(72) : error C2146: syntax error : missing ';' before identifier 'min_offset'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(72) : error C2501: 'O_LOC_DB::MINU' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(72) : error C2501: 'O_LOC_DB::min_offset' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(79) : error C2146: syntax error : missing ';' before identifier 'longitude'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(79) : error C2501: 'LOC_DB::DEG_MIN' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(79) : error C2501: 'LOC_DB::longitude' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(80) : error C2146: syntax error : missing ';' before identifier 'latitude'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(80) : error C2501: 'LOC_DB::DEG_MIN' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(80) : error C2501: 'LOC_DB::latitude' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(81) : error C2146: syntax error : missing ';' before identifier 'time_zone'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(81) : error C2501: 'LOC_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(81) : error C2501: 'LOC_DB::time_zone' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(82) : error C2146: syntax error : missing ';' before identifier 'special_code'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(82) : error C2501: 'LOC_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(82) : error C2501: 'LOC_DB::special_code' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(83) : error C2146: syntax error : missing ';' before identifier 'hrs_offset'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(83) : error C2501: 'LOC_DB::HRS' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(83) : error C2501: 'LOC_DB::hrs_offset' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(84) : error C2146: syntax error : missing ';' before identifier 'min_offset'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(84) : error C2501: 'LOC_DB::MINU' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(84) : error C2501: 'LOC_DB::min_offset' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(97) : error C2146: syntax error : missing ';' before identifier 'time_zone'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(97) : error C2501: 'BIRTH_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(97) : error C2501: 'BIRTH_DB::time_zone' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(98) : error C2146: syntax error : missing ';' before identifier 'special_code'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(98) : error C2501: 'BIRTH_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(98) : error C2501: 'BIRTH_DB::special_code' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(100) : error C2146: syntax error : missing ';' before identifier 'birth_data'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(100) : error C2501: 'BIRTH_DB::AS_DATA' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(100) : error C2501: 'BIRTH_DB::birth_data' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(110) : error C2146: syntax error : missing ';' before identifier 'time_zone'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(110) : error C2501: 'O_BIRTH_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(110) : error C2501: 'O_BIRTH_DB::time_zone' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(111) : error C2146: syntax error : missing ';' before identifier 'special_code'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(111) : error C2501: 'O_BIRTH_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(111) : error C2501: 'O_BIRTH_DB::special_code' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(113) : error C2146: syntax error : missing ';' before identifier 'birth_data'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(113) : error C2501: 'O_BIRTH_DB::AS_DATA' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(113) : error C2501: 'O_BIRTH_DB::birth_data' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(124) : error C2146: syntax error : missing ';' before identifier 'type'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(124) : error C2501: 'O_FILE_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(124) : error C2501: 'O_FILE_DB::type' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(125) : error C2146: syntax error : missing ';' before identifier 'file_num'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(125) : error C2501: 'O_FILE_DB::COUNT' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(125) : error C2501: 'O_FILE_DB::file_num' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(134) : error C2146: syntax error : missing ';' before identifier 'type'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(134) : error C2501: 'W16_FILE_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(134) : error C2501: 'W16_FILE_DB::type' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(135) : error C2146: syntax error : missing ';' before identifier 'file_num'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(135) : error C2501: 'W16_FILE_DB::COUNT' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(135) : error C2501: 'W16_FILE_DB::file_num' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(148) : error C2146: syntax error : missing ';' before identifier 'type'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(148) : error C2501: 'FILE_DB::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(148) : error C2501: 'FILE_DB::type' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(149) : error C2146: syntax error : missing ';' before identifier 'file_num'
+c:\Astrow32Dev\Astrow32\INC\Useri.h(149) : error C2501: 'FILE_DB::COUNT' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Useri.h(149) : error C2501: 'FILE_DB::file_num' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(9) : error C2146: syntax error : missing ';' before identifier 'num_transits'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(9) : error C2501: 'TRANS_DATA::COUNT' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(9) : error C2501: 'TRANS_DATA::num_transits' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(10) : error C2146: syntax error : missing ';' before identifier 'start_planet'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(10) : error C2501: 'TRANS_DATA::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(10) : error C2501: 'TRANS_DATA::start_planet' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(11) : error C2146: syntax error : missing ';' before identifier 'end_planet'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(11) : error C2501: 'TRANS_DATA::NUM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(11) : error C2501: 'TRANS_DATA::end_planet' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(12) : error C2146: syntax error : missing ';' before identifier 'interval_date'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(12) : error C2501: 'TRANS_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(12) : error C2501: 'TRANS_DATA::interval_date' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(21) : error C2146: syntax error : missing ';' before identifier 'offset'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(21) : error C2501: 'PROGR_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(21) : error C2501: 'PROGR_DATA::offset' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(22) : error C2146: syntax error : missing ';' before identifier 'acd_date'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(22) : error C2501: 'PROGR_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(22) : error C2501: 'PROGR_DATA::acd_date' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(23) : error C2146: syntax error : missing ';' before identifier 'acd_time'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(23) : error C2501: 'PROGR_DATA::TIM' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(23) : error C2501: 'PROGR_DATA::acd_time' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(28) : error C2146: syntax error : missing ';' before identifier 'direction'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(28) : error C2501: 'DIREC_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(28) : error C2501: 'DIREC_DATA::direction' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(34) : error C2146: syntax error : missing ';' before identifier 'start'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(34) : error C2501: 'RETURN_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(34) : error C2501: 'RETURN_DATA::start' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(35) : error C2146: syntax error : missing ';' before identifier 'end'
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(35) : error C2501: 'RETURN_DATA::DATES' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Dataext.h(35) : fatal error C1003: error count exceeds 100; stopping compilation
+Morhouse.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Morhouse.cpp': No such file or directory
+Moon.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Moon.cpp': No such file or directory
+Mktmdt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Mktmdt.cpp': No such file or directory
+Misccalc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Misccalc.cpp': No such file or directory
+Midpoint.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Midpoint.cpp': No such file or directory
+Memmgr.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Memmgr.cpp': No such file or directory
+Mctosidt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Mctosidt.cpp': No such file or directory
+Makename.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Makename.cpp': No such file or directory
+Loadorbs.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Loadorbs.cpp': No such file or directory
+Loadgrph.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Loadgrph.cpp': No such file or directory
+Loadcovr.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\cover\Loadcovr.cpp': No such file or directory
+Kochhous.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Kochhous.cpp': No such file or directory
+Key.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Key.cpp': No such file or directory
+Julutil.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Julutil.cpp': No such file or directory
+Julian.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Julian.cpp': No such file or directory
+Jtype.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Jtype.cpp': No such file or directory
+Isincos.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Isincos.cpp': No such file or directory
+Intrhous.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Intrhous.cpp': No such file or directory
+Inifile.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Inifile.cpp': No such file or directory
+Generating Code...
+Compiling...
+Hstoramc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Hstoramc.cpp': No such file or directory
+House.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\House.cpp': No such file or directory
+Grlist.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Grlist.cpp': No such file or directory
+Graspgrd.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Graspgrd.cpp': No such file or directory
+Graspcir.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Graspcir.cpp': No such file or directory
+Graphwrt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Graphwrt.cpp': No such file or directory
+GraphOpts.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\GraphOpts.cpp': No such file or directory
+Graphopt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Graphopt.cpp': No such file or directory
+GraphFileOpts.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\GraphFileOpts.cpp': No such file or directory
+GraFont.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\GraFont.cpp': No such file or directory
+Grafnt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Grafnt.cpp': No such file or directory
+Grafilop.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Grafilop.cpp': No such file or directory
+GraColor.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\GraColor.cpp': No such file or directory
+Graclr.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Graclr.cpp': No such file or directory
+Getlist.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Getlist.cpp': No such file or directory
+Fptr.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Fptr.cpp': No such file or directory
+FindText.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroview\FindText.cpp': No such file or directory
+FileNameDlg.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\FileNameDlg.cpp': No such file or directory
+FileKillDlg.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\FileKillDlg.cpp': No such file or directory
+FileEditDlg.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\FileEditDlg.cpp': No such file or directory
+Generating Code...
+Compiling...
+Errors.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Errors.cpp': No such file or directory
+Eqhouse.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Eqhouse.cpp': No such file or directory
+Dotext.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Dotext.cpp': No such file or directory
+Doque.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\que\Doque.cpp': No such file or directory
+Dopoptxt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Dopoptxt.cpp': No such file or directory
+Dohouse.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Dohouse.cpp': No such file or directory
+Docalc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Docalc.cpp': No such file or directory
+Directories.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\Directories.cpp': No such file or directory
+Direc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Direc.cpp': No such file or directory
+Decompf.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Decompf.cpp': No such file or directory
+Decomp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\cover\Decomp.cpp': No such file or directory
+Dataname.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Dataname.cpp': No such file or directory
+Datakey.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Datakey.cpp': No such file or directory
+Datagrfa.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Datagrfa.cpp': No such file or directory
+Coverdat.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Coverdat.cpp': No such file or directory
+Coprnsum.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Coprnsum.cpp': No such file or directory
+Coprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Coprnres.cpp': No such file or directory
+Convopt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Convopt.cpp': No such file or directory
+ConvertData.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroedit\ConvertData.cpp': No such file or directory
+Compos.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Compos.cpp': No such file or directory
+Generating Code...
+Compiling...
+Compile2.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Compile2.cpp': No such file or directory
+Compile.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Compile.cpp': No such file or directory
+Compat.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Compat.cpp': No such file or directory
+Colorfnt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Colorfnt.cpp': No such file or directory
+Cmprnres.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Cmprnres.cpp': No such file or directory
+Cmphouse.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Cmphouse.cpp': No such file or directory
+ChartOptions.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\ChartOptions.cpp': No such file or directory
+Charcons.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\uiutl\Charcons.cpp': No such file or directory
+BirthInfo.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\BirthInfo.cpp': No such file or directory
+Batchimp.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\batch\Batchimp.cpp': No such file or directory
+astwww.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\astwww.cpp': No such file or directory
+Astwstar.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Astwstar.cpp': No such file or directory
+Astwperf.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Astwperf.cpp': No such file or directory
+astwp6.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\astwp6.cpp': No such file or directory
+Astutl.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Astutl.cpp': No such file or directory
+Astrtf.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Astrtf.cpp': No such file or directory
+AstroviewView.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroview\AstroviewView.cpp': No such file or directory
+AstroviewDoc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroview\AstroviewDoc.cpp': No such file or directory
+AstroHelper.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlgtest\AstroHelper.cpp': No such file or directory
+AstrographView.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\AstrographView.cpp': No such file or directory
+Generating Code...
+Compiling...
+AstrographDoc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astrograph\AstrographDoc.cpp': No such file or directory
+astroflistView.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroflist\astroflistView.cpp': No such file or directory
+astroflistDoc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\astroflist\astroflistDoc.cpp': No such file or directory
+Astmisc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Astmisc.cpp': No such file or directory
+Asthlper.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\dlg\Asthlper.cpp': No such file or directory
+asteroidcalc.cpp
+c:\Astrow32Dev\Astrow32\ENGDLL\mkastrd\asteroidcalc.cpp(7) : fatal error C1083: Cannot open include file: 'asteroid.h': No such file or directory
+Astduad.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Astduad.cpp': No such file or directory
+Astami.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Astami.cpp': No such file or directory
+Aspects.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Aspects.cpp': No such file or directory
+Asfil2tx.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\wpconv\Asfil2tx.cpp': No such file or directory
+Asdrawbs.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Asdrawbs.cpp': No such file or directory
+Ascend.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Ascend.cpp': No such file or directory
+Arndcirc.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\graph\Arndcirc.cpp': No such file or directory
+Arabpt.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engine\Arabpt.cpp': No such file or directory
+Anomaly.cpp
+c1xx : fatal error C1083: Cannot open source file: '\astrow32\engdll\Anomaly.cpp': No such file or directory
+Wrcsvdax.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(59) : warning C4101: 'p' : unreferenced local variable
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(89) : warning C4101: 'buf' : unreferenced local variable
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(201) : error C2039: 'direction' : is not a member of 'PROGR_DATA'
+        c:\Astrow32Dev\Astrow32\INC\Dataext.h(19) : see declaration of 'PROGR_DATA'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(212) : error C2065: 'ddk' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(212) : error C2227: left of '->pdp' must point to class/struct/union
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(212) : error C2227: left of '->direction' must point to class/struct/union
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdax.cpp(213) : error C2059: syntax error : ']'
+Wrcsvdat.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(185) : error C2065: 'prog_list' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(510) : error C2065: 'en' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(510) : error C2146: syntax error : missing ')' before identifier 'd'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(510) : error C2059: syntax error : ')'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(554) : error C2065: 'pdata' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(554) : error C2227: left of '->name' must point to class/struct/union
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(560) : error C2227: left of '->name' must point to class/struct/union
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\ENGINE\Wrcsvdat.cpp(560) : error C3861: 'pdata': identifier not found, even with argument-dependent lookup
+Wrbindat.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(14) : error C2061: syntax error : identifier 'DIRECT_DATA'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(21) : error C2065: 'dd' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(21) : error C2027: use of undefined type '(FILE *,short,short,BIRTH_DB *,RECT_DATA *,PROGR_DATA *)bin_write_header::DIRECT_DATA'
+        c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(21) : see declaration of '(FILE *,short,short,BIRTH_DB *,RECT_DATA *,PROGR_DATA *)bin_write_header::DIRECT_DATA'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(100) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(125) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(126) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(152) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(153) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(162) : error C2146: syntax error : missing ',' before identifier 'BIRTH_DB'
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(176) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(177) : error C2065: 'pad' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(204) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(243) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(274) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(305) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(336) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(337) : error C2661: 'bin_write_header' : no overloaded function takes 7 arguments
+soprnres.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\Astrow\TextManager.h(20) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(54) : error C2144: syntax error : 'char' should be preceded by ','
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(57) : error C2065: 'asp_map' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(59) : error C2065: 'name2' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(70) : error C2061: syntax error : identifier 'hsfil'
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(98) : error C2065: 'comment' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(107) : error C2065: 'hsfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(107) : error C2065: 'shsfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(114) : error C2065: 'apfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(114) : error C2065: 'sapfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(114) : error C2065: 'aprep' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(145) : error C2065: 'capfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(146) : error C2065: 'file' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(148) : error C2065: 'hsfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(150) : error C2065: 'SOLAR_ASPECT_FILE' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(151) : error C2065: 'sfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(151) : error C2065: 'SOLAR_PLANET_FILE' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(153) : error C2065: 'shsfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(153) : error C2065: 'SOLAR_HOUSE_FILE' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(163) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(164) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(166) : error C3861: 'sfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(167) : error C3861: 'shsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(176) : error C2065: 'pa_data' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(186) : error C2065: 'CHSO_RADIX' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(187) : error C2440: '=' : cannot convert from 'const char *' to 'const char'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(191) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(193) : error C3861: 'sfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(194) : error C3861: 'shsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(202) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(202) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(204) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(204) : error C3861: 'sfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(204) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(204) : error C3861: 'shsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(210) : error C2227: left of '->name' must point to class/struct/union
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(210) : error C3861: 'pa_data': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(215) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(217) : error C3861: 'sfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\soprnres.cpp(218) : error C3861: 'shsfile': identifier not found, even with argument-dependent lookup
+MainFrm.cpp
+c:\Astrow32Dev\Astrow32\Astrow\DBirthset.h(13) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DBirthset.h(16) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DBirthset.h(45) : warning C4995: 'CDaoFieldExchange': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRelocationset.h(13) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRelocationset.h(16) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRelocationset.h(41) : warning C4995: 'CDaoFieldExchange': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DLocationset.h(13) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DLocationset.h(16) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DLocationset.h(38) : warning C4995: 'CDaoFieldExchange': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRectification.h(13) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRectification.h(16) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DRectification.h(40) : warning C4995: 'CDaoFieldExchange': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DTransitset.h(13) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DTransitset.h(16) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\Astrow\DTransitset.h(45) : warning C4995: 'CDaoFieldExchange': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\INC\Databaseodbc.hpp(17) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\INC\Databaseodbc.hpp(24) : warning C4995: 'CDaoRecordset': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\INC\Compile.hpp(23) : error C2958: the left parenthesis '(' found at 'c:\astrow32dev\astrow32\inc\compile.hpp(23)' was not matched correctly
+c:\Astrow32Dev\Astrow32\INC\Asthlper.hpp(22) : warning C4183: 'read': missing return type; assumed to be a member function returning 'int'
+Generating Code...
+Compiling...
+hrmprnres.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\Astrow\TextManager.h(20) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(54) : error C2144: syntax error : 'char' should be preceded by ','
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(57) : error C2065: 'asp_map' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(59) : error C2065: 'name2' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(62) : error C2065: 'p' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(62) : error C2065: 'lanet' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(63) : error C2143: syntax error : missing ';' before 'return'
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(71) : error C2061: syntax error : identifier 'hsfil'
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(84) : error C2065: 'sfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(103) : error C2065: 'comment' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(108) : error C2143: syntax error : missing ';' before '}'
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(113) : error C2065: 'hsfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(113) : error C2065: 'shsfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(120) : error C2065: 'apfil' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(151) : error C2065: 'capfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(152) : error C2065: 'file' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(154) : error C2065: 'hsfile' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(164) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(165) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(174) : error C2065: 'pa_data' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(178) : error C2065: 'rphhd' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(179) : error C3861: 'rphhd': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(182) : error C3861: 'rphhd': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(191) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(195) : error C2065: 'sinf' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(198) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(198) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(199) : error C2065: 'hyinf' : undeclared identifier
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(199) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(199) : error C3861: 'hsfile': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\ENGINE\hrmprnres.cpp(210) : error C3861: 'file': identifier not found, even with argument-dependent lookup
+Ctprnres.cpp
+c:\Astrow32Dev\Astrow32\INC\FLAGS.H(13) : warning C4005: 'TEXT' : macro redefinition
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include\WinNT.h(327) : see previous definition of 'TEXT'
+c:\Astrow32Dev\Astrow32\Astrow\TextManager.h(20) : warning C4995: 'CDaoDatabase': name was marked as #pragma deprecated
+c:\Astrow32Dev\Astrow32\ENGINE\Ctprnres.cpp(54) : error C2065: 'asp_map' : undeclared identifier
+Astrow.cpp
+c:\Astrow32Dev\Astrow32\INC\Virttext.hpp(106) : warning C4091: 'typedef ' : ignored on left of 'LOC' when no variable is declared
+c:\Astrow32Dev\Astrow32\INC\Datagrfa.hpp(56) : warning C4183: 'houseMidpoint': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Graspgrd.hpp(15) : warning C4183: 'draw': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Graspgrd.hpp(16) : warning C4183: 'drawGrid': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Graspgrd.hpp(17) : warning C4183: 'drawGridKey': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Graspgrd.hpp(18) : warning C4183: 'drawOne': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\Astrow\Astrow.cpp(138) : warning C4996: 'CWinApp::Enable3dControlsStatic' was declared deprecated
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\atlmfc\include\afxwin.h(4371) : see declaration of 'CWinApp::Enable3dControlsStatic'
+c:\Astrow32Dev\Astrow32\Astrow\Astrow.cpp(334) : warning C4244: '-=' : conversion from 'LONG' to 'WORD', possible loss of data
+c:\Astrow32Dev\Astrow32\Astrow\Astrow.cpp(375) : error C2065: 'm_msgCur' : undeclared identifier
+Generating Code...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Astrow32Dev\Astrow32\Astrow\ProDebug\BuildLog.htm"
+Astrow - 378 error(s), 37 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

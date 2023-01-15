@@ -1,0 +1,48 @@
+@ Composite Chart 
+@ # starts each item. 
+@ $$ = $ 
+@ $_ = no page break at end of line 
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+﻿Impresión compuesta para los nombres: {$1} Y {$2}, Haga comentarios: {$3}.
+# CH__ASPECT
+$0|$1|$2|Esfera: $3 Grados$_
+# CH__MISC
+$e$d' Decan|''$f'Crítico|''$h'Anaretic''$_
+# CH__PLANET
+Tabs|60|3|12|24|36|$_
+[Su compuesto $^$1:]$_
+$_
+$9|$b'Dirija'De forma retrógrada'Todavía'|$_
+# CH__PLAN_HOUSE
+$_
+Cámara: $2|$4'Sobre Cusp de Cámara|'No sobre Cusp de Cámara|'$6'Interceptar''$_
+# CH__ASPECT_HD
+Tabs|60|3|12|24|36|$_
+
+{Aspectos:}$_
+$_
+# CHH_COMPAT_YB
+FOR de parto $^$1--
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|$_
+[Sus CUSPS de Cámara compuestos lo son:]$_
+@TB$_
+# CH__HS_SGN_HED
+
+# CH__HOUSE_SIGN
+
+# CH__PLAN_EXT
+Tabs|66|6|10|15|31|45|60|$_
+Decan:|$1|Regla de Decan:|$3$4'   Decan sub - regla: ''$6$_
+Navasma:|$7|Señal de Navasma:|$9$_
+Duad:|$a|Regla de Duad:|$c$d'   Duad sub - regla: ''$f$_
+$g'Combust|''$i'Casa|''$k'Detrimento|''$m'- eminente exacto|'Exaltar|''$o'- de otoño exacto|'Caiga|''$q'En - señal ruled - gobernante: ''$s$_
+$_
+# CHH_COMPAT_YB
+FOR de parto $^$1--
+# CHH_RELOC_DAT
+La tabla es calculada en: el «country»: {$2}, Estado federal o región: {$3}, Ubicación: {$4}. Coordenadas geográficas {$5.$6 $7, $9.$a $b}, Huso horario = {$d}, Clave especial = {$e} Diferencia de GMT = {$f:$i}.
+La tabla es calculada en: el «country»: {$2}, Estado federal o región: {$3}, Ubicación: {$4}. Coordenadas geográficas {$5.$6 $7, $9.$a $b}, Huso horario = {$d}, Clave especial = {$e} Diferencia de GMT = {$f:$i}.
+�

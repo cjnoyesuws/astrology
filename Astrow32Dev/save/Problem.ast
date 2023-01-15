@@ -1,0 +1,27 @@
+@ @ Truc spécifique pour rapport du problème
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du problème astrologique pour nom: {$1}, Commentaire: {$2}.$_
+# CHPR_HOUSE
+{$1} est dans Maison {#$3} $8' et € '. €'
+# CHPR_ASPECT
+{$1} est {$4} à {$2} $8' et € '. €'
+# CHPR_SIGN
+{$1} est dans le Signe {$5} $8' et € '. €'
+# CHPR_SIGN_HOUSE
+{$1} est dans le Signe {$5} et est dans le {$6} House$8 et € '. €'
+# CHPR_HSE_CUSP_SIGN
+Logez la Cuspide {#$3} dans le Signe {$5} $8' et € '. €'
+# CHPR_PLAN_HOUSE
+{$1} et {$2} est dans Maison {#3} $8' et € '. €'
+# CHPR_PLAN_SIGN
+{$1} et {$2} est dans le Signe {$5} $8' et € '. €'
+# CHPR_RESULT
+Résulter dans {$7}.$_
+
+
+

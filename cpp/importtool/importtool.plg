@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: importtool - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/importtool.res" /d "_DEBUG" "D:\importtool\importtool.rc"" 
+Creating temporary file "f:\temp\RSPF38.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/importtool.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\importtool\FileListSet.cpp"
+"D:\importtool\importtoolDlg.cpp"
+]
+Creating command line "cl.exe @f:\temp\RSPF38.tmp" 
+Creating temporary file "f:\temp\RSPF39.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/importtool.pdb" /debug /machine:I386 /out:"Debug/importtool.exe" /pdbtype:sept 
+.\Debug\BirthSet.obj
+.\Debug\Charcons.obj
+.\Debug\Direc.obj
+.\Debug\Errors.obj
+.\Debug\FileListSet.obj
+.\Debug\ImportBirths.obj
+.\Debug\ImporterData.obj
+.\Debug\ImportLocations.obj
+.\Debug\importtool.obj
+.\Debug\importtoolDlg.obj
+.\Debug\LocationSet.obj
+.\Debug\Progress.obj
+.\Debug\RectificationSet.obj
+.\Debug\Relocationset.obj
+.\Debug\StdAfx.obj
+.\Debug\transitSet.obj
+.\Debug\Uis2dsk.obj
+.\Debug\importtool.res
+]
+Creating command line "link.exe @f:\temp\RSPF39.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+FileListSet.cpp
+importtoolDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+importtool.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

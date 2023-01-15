@@ -1,0 +1,65 @@
+@ Rapport de la progression
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Progressé impression du tableau pour nom: {$1}, Commentaire: {$2}.$_
+# CH__ASPECT
+Progressé $0 |$1|$7'Progressed'Natal' $2 |Orbe: $3 Degrees$_
+# CH__MISC
+$c'Decan: "$ E |$f'Critical |''$h'Anaretic "$ _
+# CH__PLANET
+Étiquettes |60|3|15|30|45|$_
+[VOTRE $ ^ $1:] $ _
+$_
+Progressé $9 |$b'Direct'Retrograde'Still' |$c' Decan: E$f $"' Critique.''$h' Anaretic.''$_
+# CH__PLAN_HOUSE
+Maison: $3, $5' |Sur cuspide de maison' |Pas Sur Cuspide de Maison' $7' Intercepté.'.'$_
+# CH__ASPECT_HD
+Étiquettes |60|3|15|30|45|$_
+
+{ASPECTS AUX PLANÈTES NATALES:} $ _
+# CHP_ASPECT_PRHD
+Étiquettes |60|3|15|30|45|$_
+
+{ASPECTS À A PROGRESSÉ PLANÈTES:} $ _
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON SONT:] $ _
+$_
+# CHP_PRHOUSE_HEAD
+[VOTRE A PROGRESSÉ LES CUSPIDES DE MAISON SONT:] $ _
+$_ 
+# CHP_MS_HEAD
+Étiquettes |60|2|12|30|$_
+[SÉRIE DE LUNE]: $ _
+
+Flânez la série pour 4 mois avant date demandée à 1 année après date demandée et aspects à vos planètes natales.$_
+$_
+# CHP_PROG_NOTE
+
+Votre a progressé planètes et aspects à vos planètes natales.$_
+Les progressions N'invalident pas l'information affichée dans un Tableau Natal Mais Ajouter à l'Information et Montre le Growth$_ Personnel de l'Individu
+$_
+<Les aspects qui ne correspondent pas aux planètes avec les aspects dans Votre Tableau Natal Ont Petit Pouvoir et devraient Être ignorés.>$_
+
+# CHP_MS_MISC
+$e$d' Decan.''$f' Degré Critique. '$h' Degré Anaretic.''$_
+# CHP_MS_PLANET
+Étiquettes |60|2|12|30|$_ 
+[VOTRE A PROGRESSÉ LUNE POUR LE MOIS $ ^ K $:] $ _
+$_
+$9|$b'Direct'Retrograde'Still' |$c' Decan: E$f $"' Critique.''$h' Anaretic.''$_
+# CHP_PLAN_HOUSE
+Maison: $3, $5' |Sur cuspide de maison' |Pas Sur Cuspide de Maison' $7' Intercepté.'.'$_   
+# CH__PLAN_EXT
+Étiquettes |66|4|10|15|31|51|
+Decan: |$1|Souverain Decan: |$3$4' Sous-souverain Decan: "$6 $ _
+Navasma: |$7|Navasma signent: |$9$_
+Duad: |$un |Souverain Duad: |$c$d' Sous-souverain Duad: F$_ $"
+$g'Combust i'Home $" k'Detriment $" "$ m'Exalted-exact '"$ Exalté o'Fall-exact 'chute le "$ q'In Signe a Gouverné--Souverain: "$ S
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

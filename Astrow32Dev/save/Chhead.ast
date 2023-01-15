@@ -1,0 +1,40 @@
+﻿@ Truc commun utilisé par tous les rapports
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du zodiaque natale pour nom: {$1}, Commentaire: {$2}.$_
+# CHH_BIRTH
+Date de naissance: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $b.$c $d}, Zone Time = {$f}, Code Spécial = {$g}. Différence GMT = {$h:$k}.
+
+Time Used sidéral Pour les Calculs de Maison Était {$m:$n:$o}.
+
+# CHH_RECT
+
+
+{PRÉVENIR! Naissance Time est inconnu!} Dominant, Med Coeli, Immun Coeli et partie de richesse, aussi bien que sommet et point d'est < mai n'est pas exact >. Maisons, Lune, Mercure et Aspects Apparentés < mai n'est pas Aussi Exact.> Maisons Déterminées par "$2."$_
+Naissance du procès Time: {$3}.$_
+$4'Based sur Angle ''{$5} $6' utiliser ''{$7} $8'.
+''
+# CHH_RELOC_DAT
+Le tableau est Délocalisé à: Pays: {$2}, Etat ou Région: {$3}, Emplacement: {$4}. Coordonnées géographiques {$5.$6 $7, $9.$a $b}, Zone Time = {$d}, Code Spécial = {$e} Différence GMT = {$f:$i}.
+# CHH_PROG
+Progressé {$2} années, {$3} mois et {$4} jours. Système de la progression: {''$5' Secondaire (jour pour une année) 'Tertiaire (jour pour un mois Lunaire) 'Mineur (mois Lunaire pour une année)'''}.
+
+# CHH_TS_HOUSE
+C'est un  le Zodiaque de $2'Sidereal'Tropical'. La Méthode de maison est $3.
+
+# CH__HOUSE_CS
+Logez la Cuspide #$^ $1: |$2|Logez la Cuspide #$^ $3: |$4@TR$_
+# CH__HOUSE_HEAD
+
+étiquettes |60|3|19|34|53|$_
+[VOS CUSPIDES DE MAISON NATALES:] $ _
+@ TB$_
+# CH__HARMONIC
+Votre Tableau est Calculé utiliser Harmonique {#$u} $_
+
+# CHH_COMPAT_YB
+NAISSANCE POUR $^ $1--

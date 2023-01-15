@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Astrograph - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "f:\temp\RSPA9C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "NEW" /D "DELUXE" /D "USEDLL" /D "GRAVIEWER" /FR".\Debug/" /Fp".\Debug/Astrograph.pch" /Yu"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"D:\Astrow32\Astrograph\AstrographView.cpp"
+]
+Creating command line "cl.exe @f:\temp\RSPA9C.tmp" 
+Creating temporary file "f:\temp\RSPA9D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:".\Debug/Astrograph.pdb" /debug /machine:I386 /out:".\Debug/Astrograph.exe" 
+.\Debug\Arndcirc.obj
+.\Debug\Asdrawbs.obj
+.\Debug\Astmisc.obj
+.\Debug\Astrograph.obj
+.\Debug\AstrographDoc.obj
+.\Debug\AstrographView.obj
+.\Debug\Charcons.obj
+.\Debug\Colorfnt.obj
+.\Debug\Datagrfa.obj
+.\Debug\Datakey.obj
+.\Debug\Decomp.obj
+.\Debug\Direc.obj
+.\Debug\Directories.obj
+.\Debug\Dopoptxt.obj
+.\Debug\Dotext.obj
+.\Debug\Errors.obj
+.\Debug\Fptr.obj
+.\Debug\Graclr.obj
+.\Debug\GraColor.obj
+.\Debug\Grafilop.obj
+.\Debug\Grafnt.obj
+.\Debug\GraFont.obj
+.\Debug\GraphFileOpts.obj
+.\Debug\Graphopt.obj
+.\Debug\GraphOpts.obj
+.\Debug\Graphwrt.obj
+.\Debug\Graspcir.obj
+.\Debug\Graspgrd.obj
+.\Debug\Grlist.obj
+.\Debug\Inifile.obj
+.\Debug\Isincos.obj
+.\Debug\Key.obj
+.\Debug\Loadgrph.obj
+.\Debug\MainFrm.obj
+.\Debug\Mktmdt.obj
+.\Debug\Ochthed.obj
+.\Debug\Outchthd.obj
+.\Debug\Outqry.obj
+.\Debug\Outreprn.obj
+.\Debug\Oututil.obj
+.\Debug\Plotgrtp.obj
+.\Debug\Plothous.obj
+.\Debug\Plotplan.obj
+.\Debug\Plotslin.obj
+.\Debug\PopupEd.obj
+.\Debug\Setpath.obj
+.\Debug\Sexcodes.obj
+.\Debug\StdAfx.obj
+.\Debug\Strclip.obj
+.\Debug\Table.obj
+.\Debug\Tabout.obj
+.\Debug\Tabs.obj
+.\Debug\Tickcirc.obj
+.\Debug\Uis2dsk.obj
+.\Debug\Words.obj
+.\Debug\Astrograph.res
+.\Debug\House.obj
+]
+Creating command line "link.exe @f:\temp\RSPA9D.tmp"
+<h3>Output Window</h3>
+Compiling...
+AstrographView.cpp
+D:\Astrow32\Astrograph\AstrographView.cpp(631) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(631) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(806) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(808) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(812) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(814) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(818) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(820) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(821) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(825) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(830) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(832) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(837) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(839) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(844) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(845) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(847) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(853) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(856) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(857) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(860) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(795) : warning C4101: 'y' : unreferenced local variable
+D:\Astrow32\Astrograph\AstrographView.cpp(875) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(1122) : warning C4305: '*=' : truncation from 'const double' to 'float'
+D:\Astrow32\Astrograph\AstrographView.cpp(1129) : warning C4305: '*=' : truncation from 'const double' to 'float'
+D:\Astrow32\Astrograph\AstrographView.cpp(1136) : warning C4305: '*=' : truncation from 'const double' to 'float'
+D:\Astrow32\Astrograph\AstrographView.cpp(1609) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+D:\Astrow32\Astrograph\AstrographView.cpp(1623) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+Astrograph.exe - 0 error(s), 28 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,70 @@
+// AstroviewDoc.h : interface of the CAstroviewDoc class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+class CAstroviewDoc : public CDocument
+{
+protected: // create from serialization only
+	CAstroviewDoc();
+	DECLARE_DYNCREATE(CAstroviewDoc)
+
+// Attributes
+public:
+	VirtualTextBuffer * GetVirtBuf();
+	VirtualTextBuffer * pVTBuf;
+#ifdef PRO
+	CoverPageData *GetCoverData() { return cover; }
+#endif
+	void SetFileDB( XPFILE_DB *ptr );
+	void SetCanClose(int c) { CanClose = c; }
+    void SetMultiFiles( CStringArray *par, int num ) { pStringArray = par; num_files = num; file_no = 1; }
+	int HasMoreFiles() { if (file_no < num_files ) return 1; else return 0;}
+	void DoNextFile();
+	int IsCover() {return isCover; }
+	int GetFileNo() { return file_no; }
+    BOOL CAstroviewDoc::CanCloseFrame(CFrameWnd* pFrame);
+	void DoPrint();
+	int canClose() { return CanClose; }
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CAstroviewDoc)
+	public:
+	virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+	virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
+	virtual BOOL OnSaveDocument(LPCTSTR lpszPathName);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CAstroviewDoc();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CAstroviewDoc)
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+private:
+#ifdef PRO	
+	CoverPageData *cover;
+#endif
+	int isCover;
+	int CanClose;
+	int num_files;
+	int file_no;
+	CStringArray* pStringArray;
+
+};
+
+/////////////////////////////////////////////////////////////////////////////

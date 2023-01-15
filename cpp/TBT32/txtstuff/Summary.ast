@@ -1,0 +1,78 @@
+@ variables are coded as $C where C is the variable.
+@ $$  = dolar sign
+@ $^ = makes string result of next variable caps or left fills a number
+@      variable with either 0 or space which ever is more appropriate.
+@ $_ = Return That Won't Cause Page Breaks
+# CHS_SUMARY_TITLE
+
+TABS|46|3|18|24|43|$_
+[SUMMARY:]$_
+# CHS_SCOUT_PL
+
+Your Scout Planet is $3.$_
+# CHS_GENDER_COUNT
+
+{Count of Planets in Genders:}$_
+@TB
+Masculine Signs|$^$3|Feminine Signs|$^$4@TB$_
+# CHS_ELEMENT_COUNT
+
+{Count of Planets in Elements:}$_
+@TB
+Fire Signs|$^$3|Earth Signs|$^$4@TR$_
+Air Signs|$^$5|Water Signs|$^$6@TB$_
+# CHS_QUALITIES_COUNT
+
+{Count of Signs in Qualities:}$_
+@TB
+Cardinal Signs|$^$3|Fixed Signs|$^$4@TR$_
+Mutable Signs|$^$5|@TB$_
+# CHS_HEMISPHERES_COUNT
+
+{Count of Planets in Various Hemispheres:}$_
+@TB
+North Houses|$^$3|South Houses|$^$4@TR$_
+East Houses|$^$5|West Houses|$^$6@TB$_
+# CHS_FUNCTIONAL_COUNT
+
+{Count of Functional Houses:}$_
+@TB
+Individual Houses|$^$3|Relative Houses|$^$4@TR$_
+Temporal Houses|$^$5|Terminal Houses|$^$6@TB$_
+# CHS_MODAL_COUNT
+
+{Count of Modal Houses:}$_
+@TB
+Cadent Houses|$^$3|Angular Houses|$^$4@TR$_
+Succedent Houses|$^$5|@TB$_
+# CHS_ASPECT_COUNT 
+
+{Count of Aspects:}$_
+@TB
+Conjunct|$^$3|Sextile|$^$4@TR$_
+Trine|$^$5|Opposed|$^$6@TR$_
+Squared|$^$7|Semisextile|$^$8@TR$_
+Sesquiquadrate|$^$9|Semisquare|$^$a@TR$_
+Quincunx|$^$b|Biquintile|$^$c@TR$_
+Quintile|$^$d|Tredecile|$^$e@TR$_
+Decile|$^$f|@TD$_
+# CHS_SIGN_COUNT
+
+{Count of Signs:}$_
+@TB
+Aries|$^$3|Taurus|$^$4@TR$_
+Gemini|$^$5|Cancer|$^$6@TR$_
+Leo|$^$7|Virgo|$^$8@TR$_
+Libra|$^$9|Scorpio|$^$a@TR$_
+Sagittarius|$^$b|Capricorn|$^$c@TR$_
+Aquarius|$^$d|Pisces|$^$e@TB$_
+# CHS_HOUSE_COUNT
+
+{Count of Houses:}$_
+@TB
+House #1|$^$3|House #2|$^$4@TR$_
+House #3|$^$5|House #4|$^$6@TR$_
+House #5|$^$7|House #6|$^$8@TR$_
+House #7|$^$9|House #8|$^$a@TR$_
+House #9|$^$b|House #10|$^$c@TR$_
+House #11|$^$d|House #12|$^$e@TB$_

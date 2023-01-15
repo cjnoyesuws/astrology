@@ -1,0 +1,80 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(B480AEC1-0F33-49B2-AF97-C89DBD206D32),
+	dual,
+	helpstring("INumerowCalcer Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\astrow32dev\\numerocalc\\numerowcalcer.h"
+interface INumerowCalcer : IDispatch {
+#line 16 "c:\\astrow32dev\\numerocalc\\numerowcalcer.h"
+	[propput,id(1),helpstring("property Index")] HRESULT  Index([in] SHORT newVal);
+	[propput,id(2),helpstring("property FirstName")] HRESULT  FirstName([in] BSTR newVal);
+	[propput,id(3),helpstring("property MiddleName")] HRESULT  MiddleName([in] BSTR newVal);
+	[propput,id(4),helpstring("property LastName")] HRESULT  LastName([in] BSTR newVal);
+	[propput,id(5),helpstring("property BirthDate")] HRESULT  BirthDate([in] DATE newVal);
+	[id(6),helpstring("method CalcChart")] HRESULT  CalcChart([in] CHAR *file, [in] CHAR *person, [in] CHAR *comments, [in]CHAR *type, [in] SHORT typecode);
+	[propput,id(7),helpstring("property TranStart")] HRESULT  TransStart([in] SHORT newVal);
+	[propput,id(8),helpstring("property TransEnd")] HRESULT  TransEnd([in] SHORT newVal);
+	[propput,id(9),helpstring("property FontName")] HRESULT  FontName([in] BSTR newVal);
+	[propput,id(10),helpstring("property FontSize")] HRESULT  FontSize([in] SHORT newVal);
+	[propput,id(11),helpstring("property FontCodes")] HRESULT  FontCodes([in] SHORT newVal);
+	[propput,id(12),helpstring("property FontColor")] HRESULT  FontColor([in] ULONG newVal);
+	[propput,id(13),helpstring("property LeftMargin")] HRESULT  LeftMargin([in] SHORT newVal);
+	[propput,id(14),helpstring("property TextWidth")] HRESULT  TextWidth([in] SHORT newVal);
+	[propput,id(15),helpstring("property DemoMode")] HRESULT  DemoMode([in] SHORT newVal);
+	[id(16),helpstring("method ConvertFile")] HRESULT  ConvertFile([in] CHAR *in_name, [in] CHAR *out_name, [in]SHORT type);
+};
+
+[
+	object,
+	uuid(74EAD860-7971-4E4D-B7CD-1C9C9F96B854),
+	dual,
+	helpstring("ITextGetter Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\astrow32dev\\numerocalc\\textgetter.h"
+interface ITextGetter : IDispatch {
+#line 16 "c:\\astrow32dev\\numerocalc\\textgetter.h"
+	[propput,id(1),helpstring("property Row")] HRESULT  Row([in] SHORT newVal);
+	[propput,id(2),helpstring("property Col")] HRESULT  Col([in] SHORT newVal);
+	[propget,id(3),helpstring("property Text")] HRESULT  Text([out,retval] BSTR *pVal );
+};
+
+
+[ version(1.0), uuid(96EE2450-3081-450C-B99C-719AB1A784F7), helpstring("numerocalc 1.0 Type Library") ]
+library numerocalc
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(C2875FFB-F20C-46D6-8701-3FC4E1AC2FA2),
+		helpstring("NumerowCalcer Class")
+	] 
+#line 47 "c:\\astrow32dev\\numerocalc\\numerowcalcer.h"
+	coclass CNumerowCalcer {
+		interface INumerowCalcer;
+	};
+
+	[
+		version(1.0),
+		uuid(9654336F-86B5-4970-821A-4DDFDE04EB0E),
+		helpstring("TextGetter Class")
+	] 
+#line 34 "c:\\astrow32dev\\numerocalc\\textgetter.h"
+	coclass CTextGetter {
+		interface ITextGetter;
+	};
+
+}
+

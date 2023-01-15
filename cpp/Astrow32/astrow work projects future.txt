@@ -1,0 +1,37 @@
+Astro For Windows Development projects for the future.
+
+Database Export functionality
+* DAO
+* ODBC
+* BDE
+
+Office Export functionality
+* Excell
+* Word
+
+Enhanced export Functionality using word perfect converter ocx
+* spreadsheets
+* wordprocessors
+
+Astro for Windows Socket Server
+* Socketfarm distributes to multiple programs and needs and load balancing
+* Socket graph converter
+  - convert over socket
+  - socket command convert to file, send file name
+* Socket Text converter
+  - convert over socket
+  - socket command convert to file, send file name
+* socket chart compiler
+* demonstration web sites
+  - PHP
+  - servlet
+
+Astro For Windows Automation/Ole Server
+* automation
+* insert graph into doc
+* insert report into doc
+* automation compiler
+* automation converters
+  - graphics
+  - reports
+* ASP example using automation

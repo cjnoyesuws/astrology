@@ -1,0 +1,49 @@
+@ Passages de rapport du tableau composé 
+@ #débuts chaque article. 
+@ $$ = $ 
+@ $ _ = aucune page fracture à fin de ligne 
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0 @ 
+# CHH_TITLE
+Passages d'impression du tableau composée pour les noms: {$1} et {$2}, Commentaire: {$3}.
+# CHH_BIRTH
+ Date: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+
+Time Used sidéral Pour les Calculs de Maison Était {m:$n:$o $}.
+
+# CHT_TRANS_PARAM
+Transite les paramètres sont--nombre de passages: {$1}, Planète Initiale: {$2}, Planète de la fin: {$3}, période de la Séparation: {$4} mois et {$5} jours.
+
+# CHT_TRANS_NOTE
+
+# CHT_TRANS_YB
+NAISSANCE POUR $ ^ $1--Naissance
+# CHT_TRANS_TD
+PASSAGES--début
+# CH__ASPECT
+$1 |$2 |Orbe: $3$6' (Orbe Exact).'.' (Orbe large).'$_
+# CH__PLANET
+Étiquettes |60|3|15|30|45|$_
+[VOTRE $ ^ $1:] $ _
+$_
+$9|$un motion$_
+# CH__PLAN_HOUSE
+Dans natal |Maison: $2 |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted |''$_
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+étiquettes |60|3|19|34|53|
+
+[VOS CUSPIDES DE MAISON COMPOSÉES SONT:] $ _
+@ TB$_
+# CHT_HOUSE_TRHEAD
+[VOS CUSPIDES DE MAISON POUR LE PASSAGE SONT:] $ _
+@ TB$_
+# CHT_TRANS_ID
+$_
+
+[* * * * * NOMBRE DU PASSAGE: $1 * * * * *] $ _
+[Date pour les passages: $2] $ _
+# CHH_RELOC_DAT
+Le tableau est Calculé À: Pays: {$2}, Etat ou Région: {$3}, Emplacement: {$4}. Coordonnées géographiques {$5.$6 $7, $9.$un $ b}, Zone Time = {$ d}, Code Spécial = {$ e} Différence GMT = {f:$i $}.$_
+$_

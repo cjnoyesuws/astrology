@@ -1,0 +1,59 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(18B41BCD-EA9C-48FD-B6BC-EE8C411C4073),
+	dual,
+	helpstring("IBioDataCalc Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\astrow32dev\\biocalc\\biodatacalc.h"
+interface IBioDataCalc : IDispatch {
+#line 16 "c:\\astrow32dev\\biocalc\\biodatacalc.h"
+	[propput,id(1),helpstring("property PersName")] HRESULT  PersName([in] BSTR newVal);
+	[propput,id(2),helpstring("property BirthDate")] HRESULT  BirthDate([in] DATE newVal);
+	[propput,id(3),helpstring("property StartDate")] HRESULT  StartDate([in] DATE newVal);
+	[propput,id(4),helpstring("property Index")] HRESULT  Index([in] SHORT newVal);
+	[propget,id(5),helpstring("property Physical")] HRESULT  Physical([out,retval] DOUBLE *pVal);
+	[propget,id(6),helpstring("property Emotional")] HRESULT  Emotional([out,retval] DOUBLE *pVal);
+	[propget,id(7),helpstring("property Intellectual")] HRESULT  Intellectual([out,retval] DOUBLE *pVal);
+	[propget,id(8),helpstring("property EmotionalDesc")] HRESULT  EmotionalDesc([out,retval] BSTR *pVal );
+	[propget,id(9),helpstring("property PhysicalDesc")] HRESULT  PhysicalDesc([out,retval] BSTR *pVal );
+	[propget,id(10),helpstring("property IntellectualDesc")] HRESULT  IntellectualDesc([out,retval] BSTR *pVal );
+	[id(11),helpstring("method Calc")] HRESULT  Calc();
+	[id(12),helpstring("method SaveData")] HRESULT  SaveData([in] CHAR *file);
+	[id(13),helpstring("method LoadData")] HRESULT  LoadData([in] CHAR *name);
+	[id(14),helpstring("method Export")] HRESULT  Export([in] CHAR *name);
+	[propget,id(15),helpstring("property Days")] HRESULT  Days([out,retval] SHORT *pVal);
+	[propget,id(16),helpstring("property Critical")] HRESULT  Critical([out,retval] DOUBLE *pVal);
+	[propget,id(17),helpstring("property CriticalDesc")] HRESULT  CriticalDesc([out,retval] BSTR *pVal );
+	[propget,id(1),helpstring("property PersName")] HRESULT  PersName([out,retval] BSTR *pVal );
+	[propget,id(2),helpstring("property BirthDate")] HRESULT  BirthDate([out,retval] DATE *pVal);
+	[propget,id(3),helpstring("property StartDate")] HRESULT  StartDate([out,retval] DATE *pVal);
+};
+
+
+[ version(1.0), uuid(F2B59736-4D14-4DB1-960C-0B4F14ACE444), helpstring("biocalc 1.0 Type Library") ]
+library biocalc
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(37A3EB90-807D-4CA1-921D-BCAC087ED99C),
+		helpstring("BioDataCalc Class")
+	] 
+#line 51 "c:\\astrow32dev\\biocalc\\biodatacalc.h"
+	coclass CBioDataCalc {
+		interface IBioDataCalc;
+	};
+
+}
+

@@ -1,0 +1,25 @@
+Your self-extracting archive has been created successfully.
+Project: Astrotextsource
+Date: 17-Nov-2007 5:58:02p
+
+Self-Extractor size:	245,760 bytes (240.00 KB)
+Meta data:	23,896 bytes
+Alignment filler:	3132 bytes
+Total overhead:	270,336 bytes (264.00 KB)
+Compressed data size:	173,676 bytes (169.61 KB)
+Final size:	446,464 bytes (436.00 KB)
+Output file:	C:\Astrow32Dev\installs\Text Source\AstrotextSource.exe
+
+Total build time:	10.58 seconds (87.87 KB/s)
+Number of files in archive:	107 (8.69 KB average)
+
+Compression mode:	Normal
+Compression time:	9.00 seconds (103.27 KB/s)
+Uncompressed data size:	951,746 bytes (929.44 KB)
+Memory saved w/compression:	778,070 bytes (759.83 KB)
+Compression ratio:	5.5:1 (81.8%)
+
+Installed size (4K clusters):	1.15 MB
+Installed size (8K clusters):	1.52 MB
+Installed size (16K clusters):	2.27 MB
+Installed size (32K clusters):	3.75 MB

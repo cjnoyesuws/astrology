@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<UPDATEINFO>
+  <CONSTANTS>
+    <CONSTANT name="%site%" value="http://www.cjnoyessw.com/updates"></CONSTANT>
+  </CONSTANTS>
+  <SECTIONS>
+    <SECTION name="astrow" title="Astro For Windows" version="2.2.8.1" check="true" enable="true"
+     description="the Astro For Windows Program">
+    </SECTION>
+  </SECTIONS>
+  <GENERAL>
+    <VERSION>2.2.8.1</VERSION>
+    <CHECKCONNECTION>true</CHECKCONNECTION>
+    <CLOSEAPPLICATION>false</CLOSEAPPLICATION>
+    <CHECKSEPARATELY>false</CHECKSEPARATELY>
+    <ENABLEROLLBACK>true</ENABLEROLLBACK>
+    <SELFUPDATE>false</SELFUPDATE>
+    <RESUMEDOWNLOADS>false</RESUMEDOWNLOADS>
+  </GENERAL>
+  <FILES>
+    <FILE name="Astro For Windows" section="astrow">
+      <ACTION type="download">
+	<LOCATION>%site%/pro/Astrow.exe</LOCATION>
+      </ACTION>
+    </FILE>
+  <FILE name="Importer Tool" section="astrow">
+      <ACTION type="download">
+    	<LOCATION>%site%/importertool.exe</LOCATION>
+          </ACTION>
+      </FILE>
+  </FILES>
+
+</UPDATEINFO>
+

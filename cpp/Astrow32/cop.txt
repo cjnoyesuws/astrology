@@ -1,0 +1,118 @@
+ Volume in drive C is CDR
+ Volume Serial Number is C435-A9DD
+
+ Directory of C:\Astrow32Dev\Astrow32\Astrogrid\Debug
+
+12/14/2004  07:24 PM            20,576 Copy of Colorfnt.obj
+               1 File(s)         20,576 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\DLG
+
+09/30/2004  11:37 PM             6,064 Copy (2) of Adbcombbox.cpp
+07/19/1998  03:09 PM             2,868 Copy (2) of ARCHIVE.CPP
+02/28/1999  04:46 PM             2,114 Copy (2) of Colorfnt.cpp
+09/23/2004  08:01 PM             7,861 Copy (2) of Convopt.cpp
+02/27/1999  09:33 PM             4,058 Copy (2) of Coverdat.cpp
+07/11/1998  10:40 PM             2,880 Copy (2) of Graclr.cpp
+02/28/1999  04:46 PM             2,114 Copy (3) of Colorfnt.cpp
+09/23/2004  08:01 PM             7,861 Copy (3) of Convopt.cpp
+09/30/2004  11:37 PM             6,064 Copy of Adbcombbox.cpp
+07/19/1998  03:09 PM             2,868 Copy of ARCHIVE.CPP
+02/28/1999  04:46 PM             2,114 Copy of Colorfnt.cpp
+09/23/2004  08:01 PM             7,861 Copy of Convopt.cpp
+02/28/1999  04:46 PM             2,114 Copy of Copy of Colorfnt.cpp
+02/27/1999  09:33 PM             4,058 Copy of Coverdat.cpp
+07/11/1998  10:40 PM             2,880 Copy of Graclr.cpp
+02/28/1999  04:46 PM             6,327 Copy of Grafilop.cpp
+              16 File(s)         70,106 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\GRAPH
+
+01/05/1999  03:49 PM             2,022 Copy (2) of Arndcirc.cpp
+11/28/1999  12:39 PM             6,703 Copy (2) of Asdrawbs.cpp
+03/16/1995  11:20 AM             2,121 Copy (2) of CONVERT.CPP
+01/03/1999  07:46 PM             7,028 Copy (2) of Datagrfa.cpp
+12/01/2004  10:55 PM             4,857 Copy (2) of Datakey.cpp
+02/28/1999  05:25 PM             2,395 Copy (2) of Graspcir.cpp
+08/12/2001  03:50 PM             3,246 Copy (2) of Graspgrd.cpp
+07/26/1998  02:55 PM             6,377 Copy (2) of GRCONV.CPP
+01/01/1999  07:59 PM             3,007 Copy (2) of Grlist.cpp
+01/05/1999  03:49 PM             2,022 Copy of Arndcirc.cpp
+11/28/1999  12:39 PM             6,703 Copy of Asdrawbs.cpp
+03/16/1995  11:20 AM             2,121 Copy of CONVERT.CPP
+01/03/1999  07:46 PM             7,028 Copy of Datagrfa.cpp
+12/01/2004  10:55 PM             4,857 Copy of Datakey.cpp
+08/16/1999  06:12 PM             3,417 Copy of FIXUPWMF.CPP
+12/01/2004  09:54 PM            10,056 Copy of Graphwrt.cpp
+02/28/1999  05:25 PM             2,395 Copy of Graspcir.cpp
+08/12/2001  03:50 PM             3,246 Copy of Graspgrd.cpp
+07/26/1998  02:55 PM             6,377 Copy of GRCONV.CPP
+01/01/1999  07:59 PM             3,007 Copy of Grlist.cpp
+07/19/1998  03:20 PM             1,387 Copy of Grpoped.cpp
+05/08/1993  02:05 PM            13,160 Copy of WHEELCMP.CPP
+              22 File(s)        103,532 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\newplanets
+
+12/12/2004  02:08 AM             5,535 Copy of aa.cpp
+12/11/2004  01:40 PM             2,340 Copy of altaz.cpp
+12/12/2004  02:07 AM             1,208 Copy of angles.cpp
+12/18/1995  10:09 PM               780 Copy of annuab.cpp
+12/11/2004  02:54 PM             4,353 Copy of Anomaly.cpp
+12/13/2004  10:50 AM             1,956 Copy of arcdot.cpp
+12/12/2004  02:07 AM             9,823 Copy of deltat.cpp
+12/11/2004  03:30 PM            10,203 Copy of dms.cpp
+12/12/2004  02:09 AM             4,100 Copy of domoon.cpp
+12/12/2004  02:08 AM            35,391 Copy of ear404.cpp
+12/12/2004  02:10 AM             2,684 Copy of epsiln.cpp
+12/12/2004  02:09 AM            17,892 Copy of gplan.cpp
+12/12/2004  02:07 AM             2,806 Copy of Julian.cpp
+12/12/2004  02:07 AM            40,984 Copy of jup404.cpp
+12/13/2004  10:50 AM             2,647 Copy of kep.h
+12/12/2004  06:28 PM             8,167 Copy of kepler.cpp
+12/12/2004  02:09 AM               839 Copy of lonlat.cpp
+12/12/2004  02:07 AM            47,763 Copy of mar404.cpp
+12/12/2004  02:07 AM            28,688 Copy of mer404.cpp
+12/12/2004  02:08 AM            24,712 Copy of mlat404.cpp
+12/12/2004  02:08 AM            62,870 Copy of mlr404.cpp
+12/12/2004  02:08 AM            12,647 Copy of nep404.cpp
+12/31/2004  02:03 PM             1,853 Copy of newplan.cpp
+12/12/2004  02:08 AM             2,653 Copy of newplanets.cpp
+12/12/2004  02:09 AM            10,204 Copy of nutate.cpp
+12/11/2004  01:24 PM               297 Copy of stdafx.cpp
+12/13/2004  11:02 AM             1,956 Copy of sun.cpp
+12/15/2004  12:40 AM             1,381 Copy of TransTime.cpp
+12/12/2004  02:07 AM            38,740 Copy of ura404.cpp
+12/12/2004  02:09 AM             2,125 Copy of utilfnc.cpp
+12/13/2004  10:50 AM             1,121 Copy of vearth.cpp
+              31 File(s)        388,718 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\test\ASTROW
+
+05/22/1995  12:00 AM            27,070 Copy of Natal0x.out
+               1 File(s)         27,070 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\UIUTL
+
+08/12/1997  06:42 PM             5,768 Copy of ASFRAME.CPP
+03/13/2005  12:26 AM             3,482 Copy of Direc.cpp
+12/01/2004  05:40 PM             4,220 Copy of Errors.cpp
+01/18/2005  11:02 PM             9,650 Copy of Fptr.cpp
+               4 File(s)         23,120 bytes
+
+ Directory of C:\Astrow32Dev\Astrow32\WPCONV
+
+01/16/1999  12:42 AM             3,512 Copy of Asfil2txsmp.cpp
+03/23/2004  04:03 PM             3,348 Copy of astwww.cpp
+02/28/1999  05:25 PM             6,447 Copy of Decompf.cpp
+09/09/1998  12:42 AM               912 Copy of Opmkprs.cpp
+08/23/1993  02:50 PM             3,765 Copy of PAPCHP.CPP
+09/09/1998  12:44 AM             1,472 Copy of Tabout.cpp
+01/13/1999  06:45 PM             1,689 Copy of Wpintl.cpp
+01/21/1994  05:58 PM             2,487 Copy of WRITOTXT.CPP
+08/23/1993  02:50 PM             4,270 Copy of WRIWRHED.CPP
+               9 File(s)         27,902 bytes
+
+     Total Files Listed:
+              84 File(s)        661,024 bytes
+               0 Dir(s)  69,487,263,744 bytes free

@@ -1,0 +1,80 @@
+@ les variables sont codées comme $ C où C est la variable.
+@ $ $ = signe du dolar
+@ $ ^ = fait le résultat de la ficelle de prochaines casquettes variables ou gauche remplit un nombre
+@ variable avec ou 0 ou espace qui jamais sont plus appropriés.
+@ $ _ = Retour Qui Ne causera pas Page Fractures
+# CHS_SUMARY_TITLE
+
+ÉTIQUETTES |46|3|18|24|43|$_
+[RÉSUMÉ:] $ _
+# CHS_SCOUT_PL
+
+Votre Planète du Scout est $3.$_
+# CHS_GENDER_COUNT
+
+{Compte de Planètes dans les Genres:} $ _
+@ TB$_
+Signes masculins |$^$3|Signes féminins |$^$4@TB$_
+# CHS_ELEMENT_COUNT
+
+{Compte de Planètes dans les Éléments:} $ _
+@ TB$_
+Signes du feu |$^$3|Le monde signe |$^$4@TR$_
+Signes de l'air |$^$5|Signes de l'eau |$^$6@TB$_
+# CHS_QUALITIES_COUNT
+
+{Compte de Signes dans les Qualités:} $ _
+@ TB$_
+Signes pourpres |$^$3|Signes arrangés |$^$4@TR$_
+Signes mutables |$^$5|@ TB$_
+# CHS_HEMISPHERES_COUNT
+
+{Compte de Planètes dans Plusieurs Hémisphères:} $ _
+@ TB$_
+Maisons Nord |$^$3|Maisons du sud |$^$4@TR$_
+Maisons de l'est |$^$5|Maisons ouest |$^$6@TB$_
+# CHS_FUNCTIONAL_COUNT
+
+{Compte de Maisons Utilitaires:} $ _
+@ TB$_
+Maisons individuelles |$^$3|Maisons relatives |$^$4@TR$_
+Maisons temporelles |$^$5|Maisons terminales |$^$6@TB$_
+# CHS_MODAL_COUNT
+
+{Compte de Maisons Modales:} $ _
+@ TB$_
+Cadent loge |$^$3|Maisons anguleuses |$^$4@TR$_
+Succedent loge |$^$5|@ TB$_
+# CHS_ASPECT_COUNT 
+
+{Compte d'Aspects:} $ _
+@ TB$_
+Conjoint |$^$3|Sextile |$^$4@TR$_
+Trine |$^$5|S'opposé |$^$6@TR$_
+Rendu carré |$^$7|Semisextile |$^$8@TR$_
+Sesquiquadrate |$^$9|Semisquare |$^$a@TR$_
+Quincunx |$^$b |Biquintile |$^$c@TR$_
+Quintile |$^$d |Tredecile |$^$e@TR$_
+Decile |$^$f |@ TB$_
+# CHS_SIGN_COUNT
+
+{Compte de Signes:} $ _
+@ TB$_
+Bélier |$^$3|Taureau |$^$4@TR$_
+Gémeaux |$^$5|Cancer |$^$6@TR$_
+Leo |$^$7|Vierge |$^$8@TR$_
+Balance |$^$9|Scorpion |$^$a@TR$_
+Sagittaire |$^$b |Capricorne |$^$c@TR$_
+Verseau |$^$d |Poisson |$^$e@TB$_
+# CHS_HOUSE_COUNT
+
+{Compte de Maisons:} $ _
+@ TB$_
+Maison #1 |$^$3|Maison #2 |$^$4@TR$_
+Maison #3 |$^$5|Maison #4 |$^$6@TR$_
+Maison #5 |$^$7|Maison #6 |$^$8@TR$_
+Maison #7 |$^$9|Maison #8 |$^$a@TR$_
+Maison #9 |$^$b |Maison #10 |$^$c@TR$_
+Maison #11 |$^$d |Maison #12 |$^$e@TB$_
+
+

@@ -1,0 +1,30 @@
+@ Rapports de l'étoile fixes
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+les deftabs ont Arrangé le Vedette Rapport de la Grille du Tableau Pour Nom: {$1}, Commentaire: {$2}.$_
+# CH__PLANET
+{$^$k:} |$9|Déclinaison: X° $ $ y' |
+# CH__MISC
+$c'Decan: "$ E |$f'Critical |''$h'Anaretic |''
+# CH__PLAN_HOUSE
+Maison: $2 |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted |''
+# CH__PLAN_EXT
+Decan: $1 |Souverain Decan: $3 |$4'Decan Sous-souverain: "$6 |Navasma: $7 |Navasma signent: |$9@TR
+Duad: $ UN |Souverain Duad: $ C |$Sous-souverain du d'Duad: "$ F |$g'Combust |''$i'Home |''$k'Detriment |''@ TR
+$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: |''$s
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR$_
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON NATALES:] $ _
+@ TB
+# CH__ASPECT_HD
+{ASPECTS:} $ _
+$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

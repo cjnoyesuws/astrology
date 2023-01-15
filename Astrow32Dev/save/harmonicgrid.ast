@@ -1,0 +1,36 @@
+@ Rapport harmonique
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du tableau harmonique pour nom: {$1}, Commentaire: {$2}.$_
+# CH__MISC
+$c'Decan: "$ E |$f'Critical |''$h'Anaretic |''
+# CH__PLANET
+{$^$P $ ^ $1:} |$9|$b'Direct'Retrograde'Still' |
+# CH__PLAN_HOUSE
+Maison: $2 |$4'On Maison Cusp'Not Sur Cuspide de Maison' |$6'Intercepted |''
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON SONT:] $ _
+@ TB$_
+# CHH_BIRTH
+Date de naissance: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+
+Time Used sidéral Pour les Calculs de Maison Était {m:$n:$o $}.$_
+# CHSO_DATA
+Système de la direction solaire: $5' jour pour un Year'Degree pour un Système Year'Nabod' Dirigé: Années, {$2} mois, {$3} jours {$4} les a'Target $ Datent ".
+# CH__PLAN_EXT
+Decan: $1 |Decan Ruler:$3 |$4' Sous-souverain Decan: |''$6@TR
+Navasma: $7 |Navasma signent: $9 |Duad: $ UN |Souverain Duad: $ C |$Sous-souverain du d'Duad: |''$f@TR
+$g'Combust |''$i'Home |''$k'Detriment |''$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: "$ S
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

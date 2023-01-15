@@ -1,0 +1,1047 @@
+# depslib dependency file v1.0
+1655229826 source:/home/cnoyes/astrology/astroweb/compiler/compile.cpp
+	<stdlib.h>
+	<assert.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"flags.h"
+	"compute.fns"
+	"errors.fns"
+	"charcons.h"
+	"fptr.h"
+	<math.h>
+	"utlduad.h"
+	"fixstar.h"
+	"arabpt.h"
+	"oututil.h"
+	<cstring>
+	"setup.hpp"
+	"options.hpp"
+	"paths.hpp"
+	"Compile.hpp"
+	"orbs.h"
+	"output.fns"
+	"rapidjson/filewritestream.h"
+	<rapidjson/writer.h>
+	<cstdio>
+	<stdio.h>
+	"BaseChartWriter.h"
+	"IniChartWriter.h"
+	"JsonChartWriter.h"
+
+1655999649 /home/cnoyes/astrology/astroweb/include/astro.h
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+
+1673147652 /home/cnoyes/astrology/astroweb/include/useri.h
+
+1668890344 /home/cnoyes/astrology/astroweb/include/dataext.h
+	"astro.h"
+	"useri.h"
+
+1651957619 /home/cnoyes/astrology/astroweb/include/flags.h
+
+1656000225 /home/cnoyes/astrology/astroweb/include/compute.fns
+
+1651952705 /home/cnoyes/astrology/astroweb/include/errors.fns
+
+1653933667 /home/cnoyes/astrology/astroweb/include/charcons.h
+
+1655233832 /home/cnoyes/astrology/astroweb/include/setup.hpp
+
+1655003831 /home/cnoyes/astrology/astroweb/include/utlduad.h
+
+1651536676 /home/cnoyes/astrology/astroweb/include/fixstar.h
+
+1653154341 /home/cnoyes/astrology/astroweb/include/arabpt.h
+
+1667089403 /home/cnoyes/astrology/astroweb/include/Compile.hpp
+	<cstring>
+
+1651536676 /home/cnoyes/astrology/astroweb/include/orbs.h
+
+1653769976 /home/cnoyes/astrology/astroweb/include/ChartWriter.h
+
+1653870815 /home/cnoyes/astrology/astroweb/include/files.h
+
+1655230071 source:/home/cnoyes/astrology/astroweb/compiler/compile2.cpp
+	<stdlib.h>
+	<assert.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"flags.h"
+	"compute.fns"
+	"errors.fns"
+	"charcons.h"
+	"fptr.h"
+	<math.h>
+	"utlduad.h"
+	"fixstar.h"
+	"arabpt.h"
+	"oututil.h"
+	<cstring>
+	"setup.hpp"
+	"options.hpp"
+	"paths.hpp"
+	"Compile.hpp"
+	"orbs.h"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/options.hpp
+
+1651536676 /home/cnoyes/astrology/astroweb/include/cJSON.h
+
+1653942081 /home/cnoyes/astrology/astroweb/include/OptionsReader.h
+	<string>
+	"AbstractReader.h"
+	"setup.hpp"
+
+1653943832 /home/cnoyes/astrology/astroweb/include/AbstractReader.h
+	<string>
+
+1653843944 /home/cnoyes/astrology/astroweb/include/ConfigHelper.h
+
+1654223735 /home/cnoyes/astrology/astroweb/include/DataReader.h
+	"AbstractReader.h"
+
+1654216765 source:/home/cnoyes/astrology/astroweb/io/DataReader.cpp
+	<string>
+	<stdio.h>
+	<cstring>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"stdlib.h"
+	<string>
+	"AbstractReader.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"DataReader.h"
+	"errors.fns"
+
+1651536676 source:/home/cnoyes/astrology/astroweb/json/cJSON.cpp
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1655247342 source:/home/cnoyes/astrology/astroweb/json/JsonOptionReader.cpp
+	<cstring>
+	"setup.hpp"
+	"rapidjson/reader.h"
+	<iostream>
+	<string>
+	<stdio.h>
+	"errors.fns"
+	"ConfigHelper.h"
+	"JsonOptionReader.h"
+
+1656007739 /home/cnoyes/astrology/astroweb/include/JsonOptionReader.h
+	"rapidjson/rapidjson.h"
+	"setup.hpp"
+	<string>
+	"AbstractReader.h"
+	<iostream>
+	<ostream>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/rapidjson.h
+	<cstdlib>
+	<cstring>
+	"rapidjson/..."
+	<string>
+	"msinttypes/stdint.h"
+	"msinttypes/inttypes.h"
+	<stdint.h>
+	<inttypes.h>
+	<endian.h>
+	"rapidjson/..."
+	<cassert>
+	<utility>
+	<cassert>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/msinttypes/stdint.h
+	<stdint.h>
+	<limits.h>
+	<wchar.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/msinttypes/inttypes.h
+	"stdint.h"
+	<inttypes.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/reader.h
+	"allocators.h"
+	"stream.h"
+	"encodedstream.h"
+	"internal/clzll.h"
+	"internal/meta.h"
+	"internal/stack.h"
+	"internal/strtod.h"
+	<limits>
+	<intrin.h>
+	<nmmintrin.h>
+	<emmintrin.h>
+	<arm_neon.h>
+	<stdexcept>
+	"rapidjson/error/error.h"
+	"rapidjson/reader.h"
+	"error/error.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/allocators.h
+	"rapidjson.h"
+	"internal/meta.h"
+	<memory>
+	<type_traits>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/meta.h
+	"../rapidjson.h"
+	<type_traits>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/stream.h
+	"rapidjson.h"
+	"encodings.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/encodings.h
+	"rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/encodedstream.h
+	"stream.h"
+	"memorystream.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/memorystream.h
+	"stream.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/clzll.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/stack.h
+	"../allocators.h"
+	"swap.h"
+	<cstddef>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/swap.h
+	"../rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/strtod.h
+	"ieee754.h"
+	"biginteger.h"
+	"diyfp.h"
+	"pow10.h"
+	<climits>
+	<limits>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/ieee754.h
+	"../rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/biginteger.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/diyfp.h
+	"../rapidjson.h"
+	"clzll.h"
+	<limits>
+	<intrin.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/pow10.h
+	"../rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/error/error.h
+	"../rapidjson.h"
+
+1653933648 source:/home/cnoyes/astrology/astroweb/uiutil/charcons.cpp
+	<stdio.h>
+	"charcons.h"
+
+1653796713 source:/home/cnoyes/astrology/astroweb/uiutil/ConfigHelper.cpp
+	"astro.h"
+	"flags.h"
+	"useri.h"
+	"dataext.h"
+	"ConfigHelper.h"
+	"cstring"
+	<string.h>
+	<assert.h>
+
+1653347967 source:/home/cnoyes/astrology/astroweb/uiutil/dataname.cpp
+	<stdio.h>
+	<string.h>
+	"paths.hpp"
+
+1651536676 /home/cnoyes/astrology/astroweb/include/paths.hpp
+
+1653359517 source:/home/cnoyes/astrology/astroweb/uiutil/errors.cpp
+	<stdarg.h>
+	<assert.h>
+	<stdlib.h>
+	<errno.h>
+	"errors.fns"
+	"charcons.h"
+	<stdio.h>
+	"files.h"
+	<string.h>
+
+1653856522 source:/home/cnoyes/astrology/astroweb/uiutil/files.cpp
+	<stdafx.h>
+	<stdio.h>
+	<files.h>
+	"errors.fns"
+	<paths.hpp>
+	<stdlib.h>
+	<string.h>
+
+1651723084 /home/cnoyes/astrology/astroweb/include/stdafx.h
+
+1651536676 source:/home/cnoyes/astrology/astroweb/uiutil/globals.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"utlduad.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/uiutil/makename.cpp
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<assert.h>
+	"paths.hpp"
+
+1654110713 source:/home/cnoyes/astrology/astroweb/uiutil/OptionsReader.cpp
+	<string>
+	"setup.hpp"
+	"AbstractReader.h"
+	"OptionsReader.h"
+	<stdio.h>
+	<cstring>
+	"errors.fns"
+	"ConfigHelper.h"
+
+1654042528 source:/home/cnoyes/astrology/astroweb/uiutil/ProgramOptions.cpp
+	<string>
+	"ProgramOptions.h"
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+
+1653954511 /home/cnoyes/astrology/astroweb/include/ProgramOptions.h
+	<string>
+
+1654114398 source:/home/cnoyes/astrology/astroweb/uiutil/setpath.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	"paths.hpp"
+	"ConfigLoader.h"
+	"ConfigData.h"
+
+1653800153 /home/cnoyes/astrology/astroweb/include/ConfigLoader.h
+	<string>
+	"ConfigData.h"
+
+1665329767 /home/cnoyes/astrology/astroweb/include/ConfigData.h
+	<string>
+
+1654217329 source:/home/cnoyes/astrology/astroweb/uiutil/strclip.cpp
+	<string.h>
+
+1653943787 source:/home/cnoyes/astrology/src/AbstractReader.cpp
+	<string>
+	"AbstractReader.h"
+
+1653796907 source:/home/cnoyes/astrology/src/ChartCompiler.cpp
+	"ChartCompiler.h"
+	<string>
+
+1653446278 /home/cnoyes/astrology/astroweb/include/ChartCompiler.h
+
+1653796713 source:/home/cnoyes/astrology/src/ConfigData.cpp
+	<string>
+	"ConfigData.h"
+
+1654211290 source:/home/cnoyes/astrology/src/ConfigLoader.cpp
+	<string>
+	<stdio.h>
+	"ConfigData.h"
+	"ConfigLoader.h"
+	<cstring>
+
+1653696769 source:/home/cnoyes/astrology/src/GenericObject.cpp
+	"GenericObject.h"
+
+1653697541 /home/cnoyes/astrology/astroweb/include/GenericObject.h
+
+1654106929 source:/home/cnoyes/astrology/src/Main.cpp
+	<string>
+	"Main.h"
+	"ProgramOptions.h"
+	"ProgramConfig.h"
+	"compile.hpp"
+
+1654647148 /home/cnoyes/astrology/astroweb/include/Main.h
+
+1655236558 /home/cnoyes/astrology/astroweb/include/ProgramConfig.h
+	"rapidjson/rapidjson.h"
+	"rapidjson/fwd.h"
+	"rapidjson/document.h"
+	"rapidjson/filereadstream.h"
+	"ProgramOptions.h"
+	"setup.hpp"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"JsonOptionReader.h"
+	"ConfigData.h"
+	"ProgramConfig.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/fwd.h
+	"rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/document.h
+	"reader.h"
+	"internal/meta.h"
+	"internal/strfunc.h"
+	"memorystream.h"
+	"encodedstream.h"
+	<new>
+	<limits>
+	<compare>
+	<iterator>
+	<map>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/strfunc.h
+	"../stream.h"
+	<cwchar>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/filereadstream.h
+	"stream.h"
+	<cstdio>
+
+1653927853 /home/cnoyes/astrology/astroweb/include/compile.hpp
+	<cstring>
+
+1654044482 source:/home/cnoyes/astrology/src/ProgramConfig.cpp
+	<string>
+	"ProgramOptions.h"
+	"rapidjson/rapidjson.h"
+	"rapidjson/fwd.h"
+	"rapidjson/document.h"
+	"rapidjson/filereadstream.h"
+	"setup.hpp"
+	"OptionsReader.h"
+	"JsonOptionReader.h"
+	"stdio.h"
+	"ConfigData.h"
+	"ConfigLoader.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"DataReader.h"
+	"ProgramConfig.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/engine/memmgr.cpp
+	"astro.h"
+	"flags.h"
+	"useri.h"
+	"dataext.h"
+
+1655003739 /home/cnoyes/astrology/astroweb/include/fptr.h
+
+1651536676 /home/cnoyes/astrology/astroweb/include/oututil.h
+
+1651536738 source:/home/cnoyes/astrology/astroweb/engine/polarfixup.cpp
+	<stdafx.h>
+	"astro.h"
+	"flags.h"
+
+1651948516 source:/home/cnoyes/astrology/astroweb/io/ChartWriter.cpp
+	<stdio.h>
+	<string.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"ChartWriter.h"
+
+1673148598 /home/cnoyes/astrology/astroweb/include/output.fns
+
+1653943787 source:/home/cnoyes/astrology/astroweb/apputil/AbstractReader.cpp
+	<string>
+	"AbstractReader.h"
+
+1653933648 source:/home/cnoyes/astrology/astroweb/apputil/charcons.cpp
+	<stdio.h>
+	"charcons.h"
+
+1653796713 source:/home/cnoyes/astrology/astroweb/apputil/ConfigData.cpp
+	<string>
+	"ConfigData.h"
+
+1653796713 source:/home/cnoyes/astrology/astroweb/apputil/ConfigHelper.cpp
+	"astro.h"
+	"flags.h"
+	"useri.h"
+	"dataext.h"
+	"ConfigHelper.h"
+	"cstring"
+	<string.h>
+	<assert.h>
+
+1665330250 source:/home/cnoyes/astrology/astroweb/apputil/ConfigLoader.cpp
+	<string>
+	<stdio.h>
+	"ConfigData.h"
+	"ConfigLoader.h"
+	<cstring>
+
+1653347967 source:/home/cnoyes/astrology/astroweb/apputil/dataname.cpp
+	<stdio.h>
+	<string.h>
+	"paths.hpp"
+
+1653359517 source:/home/cnoyes/astrology/astroweb/apputil/errors.cpp
+	<stdarg.h>
+	<assert.h>
+	<stdlib.h>
+	<errno.h>
+	"errors.fns"
+	"charcons.h"
+	<stdio.h>
+	"files.h"
+	<string.h>
+
+1654746874 source:/home/cnoyes/astrology/astroweb/apputil/files.cpp
+	<stdafx.h>
+	<stdio.h>
+	<files.h>
+	"errors.fns"
+	<paths.hpp>
+	<stdlib.h>
+	<string.h>
+
+1668365837 source:/home/cnoyes/astrology/astroweb/apputil/globals.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"utlduad.h"
+
+1655249630 source:/home/cnoyes/astrology/astroweb/apputil/Main.cpp
+	<string>
+	"Main.h"
+	"ProgramOptions.h"
+	"ProgramConfig.h"
+	"Compile.hpp"
+	"ConfigData.h"
+	"ConfigLoader.h"
+
+1653347967 source:/home/cnoyes/astrology/astroweb/apputil/makename.cpp
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<assert.h>
+	"paths.hpp"
+
+1654042528 source:/home/cnoyes/astrology/astroweb/apputil/ProgramOptions.cpp
+	<string>
+	"ProgramOptions.h"
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+
+1654642189 source:/home/cnoyes/astrology/astroweb/apputil/setpath.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	"paths.hpp"
+	"ConfigLoader.h"
+	"ConfigData.h"
+
+1655230011 source:/home/cnoyes/astrology/astroweb/apputil/IniOptionsReader.cpp
+	<string>
+	<cstring>
+	"setup.hpp"
+	"AbstractReader.h"
+	"IniOptionsReader.h"
+	<stdio.h>
+	"errors.fns"
+	"ConfigHelper.h"
+
+1654473083 /home/cnoyes/astrology/astroweb/include/IniOptionsReader.h
+	<string>
+	"AbstractReader.h"
+	"setup.hpp"
+
+1672953181 source:/home/cnoyes/astrology/astroweb/apputil/ProgramConfig.cpp
+	<string>
+	"ProgramOptions.h"
+	"rapidjson/rapidjson.h"
+	"rapidjson/fwd.h"
+	"rapidjson/document.h"
+	"rapidjson/filereadstream.h"
+	"rapidjson/pointer.h"
+	"setup.hpp"
+	"IniOptionsReader.h"
+	"JsonOptionReader.h"
+	"stdio.h"
+	"ConfigData.h"
+	"ConfigLoader.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"IniDataReader.h"
+	"ProgramConfig.h"
+	"cstring"
+	"JsonDataReader.h"
+
+1654927940 /home/cnoyes/astrology/astroweb/include/IniDataReader.h
+	"AbstractReader.h"
+
+1668365836 source:/home/cnoyes/astrology/astroweb/apputil/strclip.cpp
+	<string.h>
+	"ctype.h"
+
+1655229783 source:/home/cnoyes/astrology/astroweb/compiler/Comp.cpp
+	<stdlib.h>
+	<assert.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"flags.h"
+	"compute.fns"
+	"errors.fns"
+	"charcons.h"
+	"fptr.h"
+	<math.h>
+	"utlduad.h"
+	"fixstar.h"
+	"arabpt.h"
+	"oututil.h"
+	"cstring"
+	"setup.hpp"
+	"options.hpp"
+	"paths.hpp"
+	"Compile.hpp"
+	"orbs.h"
+	"output.fns"
+	"BaseChartWriter.h"
+	"IniChartWriter.h"
+
+1654926987 /home/cnoyes/astrology/astroweb/include/IniChartWriter.h
+
+1655229869 source:/home/cnoyes/astrology/astroweb/compiler/Transits.cpp
+	<stdlib.h>
+	<assert.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"flags.h"
+	"compute.fns"
+	"errors.fns"
+	"charcons.h"
+	"fptr.h"
+	<math.h>
+	"utlduad.h"
+	"fixstar.h"
+	"arabpt.h"
+	"oututil.h"
+	<cstring>
+	"setup.hpp"
+	"options.hpp"
+	"paths.hpp"
+	"Compile.hpp"
+	"orbs.h"
+	"output.fns"
+	"BaseChartWriter.h"
+	"IniChartWriter.h"
+
+1655489033 source:/home/cnoyes/astrology/astroweb/json/Aspect.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<stdio.h>
+	<string>
+	"JsonWriter.h"
+	"DataBase.h"
+	"Aspect.h"
+
+1669751385 source:/home/cnoyes/astrology/astroweb/json/AspectArray.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<string>
+	"JsonWriter.h"
+	"DataBase.h"
+	"Aspect.h"
+	"AspectArray.h"
+
+1653164825 source:/home/cnoyes/astrology/astroweb/json/Chart.cpp
+
+1656000541 source:/home/cnoyes/astrology/astroweb/json/HouseCusp.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<string>
+	"JsonWriter.h"
+	"DataBase.h"
+	"Aspect.h"
+	"HouseCusp.h"
+
+1669751385 source:/home/cnoyes/astrology/astroweb/json/HouseCuspArray.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<string>
+	"JsonWriter.h"
+	"DataBase.h"
+	"Planet.h"
+	"HouseCusp.h"
+	"HouseCuspArray.h"
+
+1669751385 source:/home/cnoyes/astrology/astroweb/json/Planet.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<string>
+	"JsonWriter.h"
+	"DataBase.h"
+	"Planet.h"
+	"AspectArray.h"
+
+1669751385 source:/home/cnoyes/astrology/astroweb/json/PlanetArray.cpp
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<string>
+	<stdio.h>
+	"JsonWriter.h"
+	"DataBase.h"
+	"PlanetArray.h"
+	"Planet.h"
+
+1654833539 source:/home/cnoyes/astrology/astroweb/ini/IniChartWriter.cpp
+	<stdio.h>
+	<string.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"BaseChartWriter.h"
+	"IniChartWriter.h"
+
+1655692503 source:/home/cnoyes/astrology/astroweb/ini/IniDataReader.cpp
+	<string>
+	<stdio.h>
+	<cstring>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"stdlib.h"
+	<string>
+	"AbstractReader.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"IniDataReader.h"
+	"errors.fns"
+
+1654832408 source:/home/cnoyes/astrology/astroweb/apputil/BaseChartWriter.cpp
+
+1655088250 /home/cnoyes/astrology/astroweb/include/BaseChartWriter.h
+
+1655229895 source:/home/cnoyes/astrology/astroweb/compiler/Progress.cpp
+	<stdlib.h>
+	<assert.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"flags.h"
+	"compute.fns"
+	"errors.fns"
+	"charcons.h"
+	"fptr.h"
+	<math.h>
+	"utlduad.h"
+	"fixstar.h"
+	"arabpt.h"
+	"oututil.h"
+	<cstring>
+	"setup.hpp"
+	"options.hpp"
+	"paths.hpp"
+	"Compile.hpp"
+	"orbs.h"
+	"output.fns"
+	"BaseChartWriter.h"
+	"IniChartWriter.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/filewritestream.h
+	"stream.h"
+	<cstdio>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/writer.h
+	"stream.h"
+	"internal/clzll.h"
+	"internal/meta.h"
+	"internal/stack.h"
+	"internal/strfunc.h"
+	"internal/dtoa.h"
+	"internal/itoa.h"
+	"stringbuffer.h"
+	<new>
+	<intrin.h>
+	<nmmintrin.h>
+	<emmintrin.h>
+	<arm_neon.h>
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/dtoa.h
+	"itoa.h"
+	"diyfp.h"
+	"ieee754.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/internal/itoa.h
+	"../rapidjson.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/stringbuffer.h
+	"stream.h"
+	"internal/stack.h"
+	<utility>
+	"internal/stack.h"
+
+1655088522 /home/cnoyes/astrology/astroweb/include/JsonChartWriter.h
+	<cstdio>
+	<stdio.h>
+	"BaseChartWriter.h"
+
+1655435532 source:/home/cnoyes/astrology/astroweb/json/JsonWriter.cpp
+	<stdio.h>
+	"JsonWriter.h"
+
+1653275590 /usr/local/src/rapidjson/include/rapidjson/prettywriter.h
+	"writer.h"
+
+1669524633 /home/cnoyes/astrology/astroweb/include/JsonWriter.h
+	<stdio.h>
+
+1655077794 /home/cnoyes/astrology/astroweb/include/DataBase.h
+	"rapidjson/filewritestream.h"
+	"rapidjson/prettywriter.h"
+	"JsonWriter.h"
+
+1655090829 /home/cnoyes/astrology/astroweb/include/Aspect.h
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<JsonWriter.h>
+	<DataBase.h>
+
+1655092497 /home/cnoyes/astrology/astroweb/include/HouseCusp.h
+	"astro.h"
+	<cstring>
+	<JsonWriter.h>
+	<DataBase.h>
+
+1653161707 /home/cnoyes/astrology/astroweb/include/aspect.h
+
+1655074572 source:/home/cnoyes/astrology/astroweb/json/DataBase.cpp
+	"DataBase.h"
+
+1673161721 source:/home/cnoyes/astrology/astroweb/json/JsonChartWriter.cpp
+	<stdio.h>
+	<string.h>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	<cstdio>
+	<JsonWriter.h>
+	<DataBase.h>
+	<Planet.h>
+	<PlanetArray.h>
+	<HouseCusp.h>
+	<HouseCuspArray.h>
+	<Aspect.h>
+	<AspectArray.h>
+	"BaseChartWriter.h"
+	"JsonChartWriter.h"
+	"useri.h"
+
+1655087751 /home/cnoyes/astrology/astroweb/include/Planet.h
+	"astro.h"
+	<JsonWriter.h>
+	<DataBase.h>
+
+1655225972 /home/cnoyes/astrology/astroweb/include/PlanetArray.h
+	"astro.h"
+	<JsonWriter.h>
+	<DataBase.h>
+
+1655078252 /home/cnoyes/astrology/astroweb/include/HouseCuspArray.h
+	"astro.h"
+	<JsonWriter.h>
+	<DataBase.h>
+
+1655089026 /home/cnoyes/astrology/astroweb/include/AspectArray.h
+	"astro.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/pointer.h
+	"document.h"
+	"uri.h"
+	"internal/itoa.h"
+
+1649219293 /usr/local/src/rapidjson/include/rapidjson/uri.h
+	"internal/strfunc.h"
+
+1673147114 source:/home/cnoyes/astrology/astroweb/json/JsonDataReader.cpp
+	<string>
+	<stdio.h>
+	<cstring>
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"stdlib.h"
+	<string>
+	"AbstractReader.h"
+	"astro.h"
+	"useri.h"
+	"dataext.h"
+	"errors.fns"
+	"cJSON.h"
+	"JsonDataReader.h"
+
+1655692071 /home/cnoyes/astrology/astroweb/include/JsonDataReader.h
+	"cJSON.h"
+
+1666297393 source:/home/cnoyes/astrology/astroweb/reports/ReportConfig.cpp
+	"ReportConfig.h"
+
+1668888231 /home/cnoyes/astrology/include/ReportConfig.h
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"dataext.h"
+	<string>
+
+1668886878 source:/home/cnoyes/astrology/astroweb/reports/TextGetter.cpp
+	"stdafx.h"
+	"TextGetter.h"
+	"errors.fns"
+	"report_def.h"
+	<assert.h>
+	<map>
+	<utility>
+	<string>
+	"sqlite3pp.h"
+
+1668906263 /home/cnoyes/astrology/astroweb/include/TextGetter.h
+	<string>
+	"sqlite3.h"
+	"sqlite3pp.h"
+
+1665281556 /home/cnoyes/astrology/astroweb/include/sqlite3pp.h
+	<functional>
+	<iterator>
+	<stdexcept>
+	<string>
+	<tuple>
+	<sqlite3ext.h>
+	<sqlite3.h>
+	"sqlite3pp.ipp"
+
+1665281962 /home/cnoyes/astrology/astroweb/include/sqlite3pp.ipp
+	<cstring>
+	<memory>
+
+1651536738 /home/cnoyes/astrology/astroweb/include/report_def.h
+
+1666541094 source:/home/cnoyes/astrology/astroweb/reports/GridReport.cpp
+	"GridReport.h"
+
+1668888231 /home/cnoyes/astrology/include/GridReport.h
+	"Report.h"
+	"ReportConfig.h"
+	"ConfigData.h"
+	"grids.h"
+
+1668888231 /home/cnoyes/astrology/include/Report.h
+	"Report.h"
+	"ReportManager.h"
+	"TextManager.h"
+	"ReportConfig.h"
+	"ConfigData.h"
+	"stdio.h"
+	"cJSON.h"
+
+1668888231 /home/cnoyes/astrology/include/ReportManager.h
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"dataext.h"
+	"charcons.h"
+	"utlduad.h"
+	"ConfigData.h"
+	"TextManager.h"
+	"charcons.h"
+	<sstream>
+
+1669338119 /home/cnoyes/astrology/astroweb/include/TextManager.h
+	"ConfigData.h"
+	"TextGetter.h"
+
+1668894995 /home/cnoyes/astrology/astroweb/include/grids.h
+	<string>
+	<sstream>
+	<vector>
+
+1668889991 /home/cnoyes/astrology/astroweb/include/GridReport.h
+	"Report.h"
+	"ReportConfig.h"
+	"ConfigData.h"
+	"grids.h"
+
+1668906628 /home/cnoyes/astrology/astroweb/include/Report.h
+	"Report.h"
+	"ReportManager.h"
+	"TextManager.h"
+	"ReportConfig.h"
+	"ConfigData.h"
+	"stdio.h"
+	"cJSON.h"
+
+1669428133 /home/cnoyes/astrology/astroweb/include/ReportManager.h
+	"astro.h"
+	"dataext.h"
+	"useri.h"
+	"utlduad.h"
+	"ConfigData.h"
+	"TextManager.h"
+	"Report.h"
+	"charcons.h"
+	<sstream>
+
+1669340701 /home/cnoyes/astrology/astroweb/include/ReportConfig.h
+	"astro.h"
+	"useri.h"
+	"flags.h"
+	"dataext.h"
+	<string>
+	"utlduad.h"
+
+1668895023 source:/home/cnoyes/astrology/astroweb/reports/Grids.cpp
+	"astro.h"
+	"useri.h"
+	"output.fns"
+	"flags.h"
+	<vector>
+	<string>
+	"sqlite3pp.h"
+	"exception"
+	"grids.h"
+	"oututil.h"
+	"sstream"
+
+1655000722 /home/cnoyes/astrology/astroweb/include/misccalc.h
+

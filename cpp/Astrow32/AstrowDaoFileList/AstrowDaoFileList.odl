@@ -1,0 +1,42 @@
+// AstrowDaoFileList.odl : type library source for AstrowDaoFileList.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (AstrowDaoFileList.tlb).
+
+[ uuid(256297A1-DDD3-4101-9EC1-7F3860D82C23), version(1.0) ]
+library AstrowDaoFileList
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CAstrowDaoFileListDoc
+	
+	[ uuid(879C7204-D961-42C7-A14F-67B18622BA3B) ]
+	dispinterface IAstrowDaoFileList
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CAstrowDaoFileListDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CAstrowDaoFileListDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CAstrowDaoFileListDoc
+	
+	[ uuid(02BEA01B-9225-4B33-8448-56505B87B11B) ]
+	coclass Document
+	{
+		[default] dispinterface IAstrowDaoFileList;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AstroProDemo", "AstroProDemo.vdproj", "{396E2AEC-5B94-4B31-A213-7BE2BDE245D7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{396E2AEC-5B94-4B31-A213-7BE2BDE245D7}.Debug.ActiveCfg = Release
+		{396E2AEC-5B94-4B31-A213-7BE2BDE245D7}.Debug.Build.0 = Release
+		{396E2AEC-5B94-4B31-A213-7BE2BDE245D7}.Release.ActiveCfg = Release
+		{396E2AEC-5B94-4B31-A213-7BE2BDE245D7}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

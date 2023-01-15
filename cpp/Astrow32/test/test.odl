@@ -1,0 +1,68 @@
+// test.odl : type library source for test.exe
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (test.tlb).
+
+[ uuid(3B35F071-843B-11D1-9D9B-0000C00DEE96), version(1.0) ]
+library Test
+{
+	importlib("stdole32.tlb");
+	
+	//  Primary dispatch interface for CTestDoc
+	
+	[ uuid(3B35F072-843B-11D1-9D9B-0000C00DEE96) ]
+	dispinterface ITest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CTestDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CTestDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CTestDoc
+	
+	[ uuid(3B35F070-843B-11D1-9D9B-0000C00DEE96) ]
+	coclass CTestDoc
+	{
+		[default] dispinterface ITest;
+	};
+
+
+	//  Primary dispatch interface for CDataTest
+	
+	[ uuid(7C0054D0-D3D8-11D1-9DAC-0000C00DEE96) ]
+	dispinterface IDataTest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CDataTest)
+			[id(1)] BSTR Name;
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CDataTest)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CDataTest
+
+	[ uuid(7C0054D2-D3D8-11D1-9DAC-0000C00DEE96) ]
+	coclass DataTest
+	{
+		[default] dispinterface IDataTest;
+	};
+
+	//{{AFX_APPEND_ODL}}
+};

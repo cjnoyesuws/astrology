@@ -1,0 +1,14 @@
+TBT.EXE Fix List
+
+1.25 Main first release
+
+1.251
+     * TBT gets help from Text Sub Directory not Help subdirectory
+     * Call DOC2REPT.MAK not REPTCOPY for Build Report.
+     * Initializing directories by default use ASTROW for data and help
+       astrow\TEXT for rest for example.
+1.26
+     * Expanded Text Block Size. Common Block initialized at start and
+       cleared at end of read/write of file Block Size is 32000 char
+     * expand block/paragraph capacity of TBT Building utilities
+       BUILDTXT, 3DBLDTXT, BUILDRPT

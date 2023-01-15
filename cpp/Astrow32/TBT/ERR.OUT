@@ -1,0 +1,33 @@
+textbary.cpp(116) : error C2143: syntax error : missing ';' before '!'
+textbary.cpp(116) : error C2061: syntax error : identifier 'i'
+textbary.cpp(126) : error C2143: syntax error : missing ')' before 'delete'
+textbary.cpp(130) : error C2501: 'pblk' : missing decl-specifiers
+textbary.cpp(130) : error C2440: 'initializing' : cannot convert from 'class ::CTextBlock __far *const ' to 'int '
+textbary.cpp(131) : error C2143: syntax error : missing ';' before 'if'
+textbary.cpp(133) : error C2065: 'stream' : undeclared identifier
+textbary.cpp(133) : error C2501: 'fclose' : missing decl-specifiers
+textbary.cpp(133) : error C2371: 'fclose' : redefinition; different basic types
+textbary.cpp(134) : error C2143: syntax error : missing ';' before 'return'
+textbary.cpp(135) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(137) : error C2143: syntax error : missing ';' before 'switch'
+textbary.cpp(141) : error C2143: syntax error : missing ';' before 'break'
+textbary.cpp(142) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(144) : error C2143: syntax error : missing ';' before 'case'
+textbary.cpp(147) : error C2143: syntax error : missing ';' before 'break'
+textbary.cpp(148) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(150) : error C2143: syntax error : missing ';' before 'case'
+textbary.cpp(153) : error C2143: syntax error : missing ';' before 'break'
+textbary.cpp(154) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(156) : error C2143: syntax error : missing ';' before 'default'
+textbary.cpp(158) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(161) : error C2143: syntax error : missing ';' before 'if'
+textbary.cpp(163) : error C2143: syntax error : missing ';' before 'break'
+textbary.cpp(164) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(166) : error C2143: syntax error : missing ';' before 'if'
+textbary.cpp(168) : error C2143: syntax error : missing ';' before '}'
+textbary.cpp(170) : error C2501: '_nElements' : missing decl-specifiers
+textbary.cpp(170) : error C2065: 'i' : undeclared identifier
+textbary.cpp(171) : error C2501: 'fclose' : missing decl-specifiers
+textbary.cpp(171) : error C2371: 'fclose' : redefinition; different basic types
+textbary.cpp(172) : error C2143: syntax error : missing ';' before 'return'
+textbary.cpp(173) : error C2143: syntax error : missing ';' before '}'

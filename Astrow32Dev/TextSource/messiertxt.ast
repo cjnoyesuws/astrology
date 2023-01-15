@@ -1,0 +1,54 @@
+@ Fixed Star Reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+deftabs Messier Star Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__MID_PLANET
+Midpoint Between $1 and $2 is $6'on the cusp Between ''$5$7' and ', '$9$8','' $3.$^$4 Degrees.$_
+# CH__MID_HOUSE
+In the $4 House, $5'On House Cusp'Not On House Cusp'$7', Intercepted.'.'
+# CH__MID_ASPT
+
+{Aspects to Midpoint:}$_
+# CH__MID_ASPE
+$_
+Your Midpoint is $1 to $2 With an Orb of $3 Degrees.$_
+# CH__ASPECT
+
+Your $0 is $1 to $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+# CH__PLANET
+$_
+[YOUR $^$1:]$_
+$_
+Your $1 is $5'on the cusp Between ''$4$6' and ','$8$7','' $2.$^$3 Degrees, and is in $a motion.$_
+$_
+$c'It is in the ''$e$d' Decan.''$f' It is in a <Critical Degree> making it a planet to watch.''$h' This is an <Anaretic Degree> indicating an <Urgent> need to work with the energies of this planet.''$_
+# CH__PLAN_HOUSE
+$_
+Your $1 is in the $3 House$4', On House Cusp and More Important', Not On House Cusp and Less Important'$6', Intercepted.'.'
+# CH__ASPECT_HD
+
+{ASPECTS:}$_
+# CH__PLAN_EXT
+$_
+Decan of this Planet is $1 and its Ruled by: $3$4' and is Sub-Ruled by: ''$6.$_
+Navasma of this Planet is: $7 The Sign of the Navasma is: $9$_
+Duad of this Planet is $a and its Ruled by: $c $d'and is Sub-Ruled by:'' $f$_
+$g'The Planet is Combust. ''$i'The Planet is In Its Home Sign. ''$k'The Planet is In Its Sign of Detriment. ''$m'The Planet is in Its Exalted Sign and in an Exact Degree. 'The Planet is in Its Exalted Sign. ''$o'The Planet is in Its Fall Sign and in an Exact Degree. 'The Planet is in Its Fall Sign. ''$Q'The Planet is in the Sign of its Ruler.''
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|$_
+[YOUR HOUSE CUSPS ARE:]$_
+@TB$_
+# CH__HS_SGN_HED
+$_
+[YOUR HOUSE CUSPS AND THE SIGNS THEY'RE IN:]$_
+$_
+# CH__HOUSE_SIGN
+Your $8 House Cusp is $2 $4'on the Cusp Between ''$3$5' and ''$7.$_
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

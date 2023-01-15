@@ -1,0 +1,3 @@
+3dxltx.c
+3dxltx.c(171) : error C2143: syntax error : missing ';' before 'type'
+3dxltx.c(171) : error C2086: 'x' : redefinition

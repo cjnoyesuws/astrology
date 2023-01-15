@@ -1,0 +1,1 @@
+for %%A in (*.ast) do ..\langfixup "..\en to fr translation of TextSource" "c:\astrow32dev\textsource" "C:\astrow32dev\save"  %%A

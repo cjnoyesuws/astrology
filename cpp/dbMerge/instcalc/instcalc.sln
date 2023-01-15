@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instcalc", "instcalc.vcproj", "{84AB8EBC-DF19-42ED-8730-7B46F00EC45F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instcalcPS", "instcalcPS.vcproj", "{E1A3B805-29FA-4300-9609-3DD9017C07CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84AB8EBC-DF19-42ED-8730-7B46F00EC45F} = {84AB8EBC-DF19-42ED-8730-7B46F00EC45F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{84AB8EBC-DF19-42ED-8730-7B46F00EC45F}.Debug.ActiveCfg = Debug|Win32
+		{84AB8EBC-DF19-42ED-8730-7B46F00EC45F}.Debug.Build.0 = Debug|Win32
+		{84AB8EBC-DF19-42ED-8730-7B46F00EC45F}.Release.ActiveCfg = Release|Win32
+		{84AB8EBC-DF19-42ED-8730-7B46F00EC45F}.Release.Build.0 = Release|Win32
+		{E1A3B805-29FA-4300-9609-3DD9017C07CA}.Debug.ActiveCfg = Debug|Win32
+		{E1A3B805-29FA-4300-9609-3DD9017C07CA}.Debug.Build.0 = Debug|Win32
+		{E1A3B805-29FA-4300-9609-3DD9017C07CA}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

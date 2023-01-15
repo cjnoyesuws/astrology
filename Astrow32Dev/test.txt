@@ -1,0 +1,7 @@
+<img src="00sweden.gif" usemap="#00sweden" border="0">
+
+<map name="00sweden">
+<area shape="poly" coords="487,103,627,103,626,225,482,227,486,104" href="houses.html" target="_BLANK">
+<area shape="poly" coords="44,62,259,67,288,170,158,203,48,193,30,99,43,63,42,61,48,61" href="wheel.html" target="_BLANK">
+
+</map>

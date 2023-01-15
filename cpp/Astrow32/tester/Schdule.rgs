@@ -1,0 +1,26 @@
+HKCR
+{
+	Tester.Schdule.1 = s 'Schdule Class'
+	{
+		CLSID = s '{C4B368C5-4EA8-11D3-9DE7-0000C00DEE96}'
+	}
+	Tester.Schdule = s 'Schdule Class'
+	{
+		CLSID = s '{C4B368C5-4EA8-11D3-9DE7-0000C00DEE96}'
+		CurVer = s 'Tester.Schdule.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C4B368C5-4EA8-11D3-9DE7-0000C00DEE96} = s 'Schdule Class'
+		{
+			ProgID = s 'Tester.Schdule.1'
+			VersionIndependentProgID = s 'Tester.Schdule'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{28FD5C22-4EA3-11D3-9DE7-0000C00DEE96}'
+		}
+	}
+}

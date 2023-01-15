@@ -1,0 +1,47 @@
+@ Rapport de la progression
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Progressé impression du tableau pour nom: {$1}, Commentaire: {$2}.$_
+# CH__MISC
+$e Decan |$f' < Degré Critique > |''$h' < Degré Anaretic > |''
+# CH__PLANET
+{$^$1:}|$9|$un mouvement |Déclinaison: X° $ $ y' |
+# CH__PLAN_HOUSE
+$3 Maison natale |$4'On Cuspide de Maison |'Pas sur cuspide |'$6'Intercepted |''
+# CH__ASPECT_HD
+
+{ASPECTS AUX PLANÈTES NATALES:} $ _
+# CHP_ASPECT_PRHD
+
+{ASPECTS À A PROGRESSÉ PLANÈTES:} $ _
+# CH__HOUSE_HEAD
+[VOS CUSPIDES DE MAISON SONT:] $ _
+@ TB$_
+# CHP_PRHOUSE_HEAD
+[VOTRE A PROGRESSÉ LES CUSPIDES DE MAISON SONT:] $ _
+@ TB$_ 
+# CHP_MS_HEAD
+[SÉRIE DE LUNE]: $ _
+@ TB$_
+# CHP_MS_MISC
+$e Decan |$f' < Degré Critique > |'$h' < Degré Anaretic > |''
+# CHP_MS_PLANET
+{$^$K:} |$9|$un |Déclinaison: X° $ $ y' |
+# CHP_PLAN_HOUSE
+dans $2 Maison Natale |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted |''
+# CH__MISC
+$e Decan |''$f' < Degré Critique > |''$h' < Degré Anaretic > |''
+# CH__PLAN_EXT
+Decan: $1 |Decan Ruler:$3 |$4' Sous-souverain Decan: |''$6@TR
+Navasma: $7 |Navasma signent: $9 |Duad: $ UN |Souverain Duad: $ C |$Sous-souverain du d'Duad: |''$f@TR
+$g'Combust |''$i'Home |''$k'Detriment |''$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: S@TR $"
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

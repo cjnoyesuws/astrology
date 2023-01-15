@@ -1,0 +1,57 @@
+@ Point arabe rapports
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Point de l'arabe du deftabs Impression du Tableau Pour Nom: {$1}, Commentaire: {$2}.$_
+# CH__MID_PLANET
+
+Milieu Entre $1 et $ e est $6' sur la cuspide Entre "$5$7' et ', $9$8', "$3.$^$4 degrés.$_
+# CH__MID_HOUSE
+Dans la $4 Maison, $5' Sur Maison Cusp'Not Sur Cuspide de Maison' $7', Intercepté.'.'
+# CH__MID_ASPT
+
+{Aspects à Milieu:} $ _
+# CH__MID_ASPE
+$_
+Votre Milieu est $1 à $2 Avec un Orbe de $3 Degrés.$_
+# CH__ASPECT
+
+Votre $ un est $1 à $2 Avec un Orbe de $3 Degrees$6 (Orbe Exact).'.' (Orbe large).'$_
+# CH__PLANET
+
+
+[VOTRE $ ^ K $:] $ _
+$_
+Votre K $ est $5' sur la cuspide Entre "$4$6' et ', $8$7', "$2.$^$3 Degreen.$_
+# CH__MISC
+$le c'It est dans l'e$d $"' Decan.''$f' C'est dans un < Degré Critique > le faire une planète pour regarder.''$h' C'est un < Degré Anaretic > indiquer un < Urgent > ayez besoin de travailler avec les énergies de cette planète.''$_
+# CH__PLAN_HOUSE
+
+Votre $ B est dans le $3 House$4, Sur Cuspide de Maison et plus Important', Pas Sur Cuspide de Maison et moins Important' $6', Intercepté.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__PLAN_EXT
+$_
+Decan de cette Planète est $1 et le sien a Gouverné par: $3$4' et est Sous-gouverné par: "$6.$_
+Navasma de cette Planète est: $7 Le Signe du Navasma est: $9 $ _
+Duad de cette Planète est $ un et le sien a Gouverné par: $ c le d'and $ est Sous-gouverné par: " F$_ $
+$la Planète du g'The est Combust. ''$la Planète de l'i'The est Dans Son Signe de Maison. ''$la Planète du k'The est Dans Son Signe de Détriment. ''$la Planète du m'The est dans Son Signe Exalté et dans un Degré Exact. 'La Planète est dans Son Signe Exalté. ''$la Planète de l'o'The est dans Son Signe de chute et dans un Degré Exact. 'La Planète est dans Son Signe de chute. ''$La Planète Q'The est dans le Signe de son Souverain.''
+# CH__HOUSE_HEAD
+étiquettes |60|3|19|34|53|
+
+[VOS CUSPIDES DE MAISON SONT:] $ _
+@ TB$_
+# CH__HS_SGN_HED
+$_
+[VOS CUSPIDES DE MAISON ET LES SIGNES ILS SONT DANS:] $ _
+
+# CH__HOUSE_SIGN
+Votre $8 Cuspide de Maison est $2 $4' sur la Cuspide Entre "$3$5' et "$7.$_
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

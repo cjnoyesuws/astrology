@@ -1,0 +1,53 @@
+[
+  uuid(B8D5F4FC-BEF2-44B5-BEB4-B3ACCAAC62BC), 
+  version(1.0), 
+  helpstring("instcalc Library")
+    
+]
+library instcalc
+{
+
+  importlib("STDOLE2.TLB");
+  importlib("stdvcl40.dll");
+
+  [
+    uuid(58E8EF81-9D07-4B04-AF1C-142CF4C9509A), 
+    version(1.0), 
+    helpstring("Dispatch interface for AstInstCalc Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAstInstCalc: IDispatch
+  {
+    [
+    propget, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Index([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Index([in] long Value );
+    [
+    propget, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall Value([out, retval] VARIANT * Value );
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall StartAt([in] long Month, [in] long Day, [in] long Year );
+  };
+
+  [
+    uuid(FBE5D579-FCE8-41BB-BE21-1576781E09CB), 
+    version(1.0), 
+    helpstring("AstInstCalc Object")
+  ]
+  coclass AstInstCalc
+  {
+    [default] interface IAstInstCalc;
+  };
+
+}; 

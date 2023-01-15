@@ -1,0 +1,17 @@
+Subj:astrow to-do 
+Date:4/27/2004 09:34:04 AM Eastern Daylight Time
+From:cnoyes@neometrics.com
+To:CJNoyesSW@aol.com
+Sent from the Internet (Details)
+
+
+
+
+Do away with make popup
+Add indexes for countries and states where states index would be composed of country+state
+Build combo boxes by scanning indexes.
+ 
+Develop auto add birth If birth not in db ask user do you want to add to db, if yes add.
+ 
+Christopher J. Noyes
+ 

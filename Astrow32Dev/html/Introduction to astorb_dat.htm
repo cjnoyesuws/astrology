@@ -1,0 +1,583 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)ftp://ftp.lowell.edu/pub/elgb/astorb.html -->
+<HTML><HEAD><TITLE>Introduction to astorb.dat</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1479" name=GENERATOR></HEAD>
+<BODY>
+<H2>
+<CENTER>The Asteroid Orbital Elements Database </CENTER></H2>
+<P><FONT size=+1><B>Introduction </B></FONT>astorb.dat is an ASCII file of 
+high-precision osculating orbital elements, ephemeris uncertainties, and some 
+additional data for all the numbered asteroids and the vast majority of 
+unnumbered asteroids (multi-apparition and single-apparition) for which it is 
+possible to make reasonably determinate computations. It is currently about <!--CSize-->19.7 <!--EndCSize-->Mb in size in its compressed form 
+(astorb.dat.gz), <!--USize-->72.0 <!--EndUSize-->Mb in size when decompressed 
+(astorb.dat), and contains <!--Count-->269735 <!--EndCount-->orbits computed by 
+me (Edward Bowell). Each orbit, based on astrometric observations downloaded 
+from the <A href="http://cfa-www.harvard.edu/cfa/ps/mpc.html">Minor Planet 
+Center, </A>occupies one 266-column record. 
+<P><FONT size=+1><B>Special Features of astorb.dat</B></FONT> There are three 
+primary differences between our database and conventional asteroid orbit files. 
+</P>
+<P>First, <B>we update the database daily.</B> Thus, observations in each new 
+batch of Minor Planet Circulars will be used in new orbits on a monthly basis, 
+and those in the Minor Planet Electronic Circulars shortly after they are 
+published. Other changes, such as the addition of orbits resulting from our own 
+astrometric observations and the computation of current ephemeris uncertainties, 
+are being made on a quasi-daily basis. Automatic daily updates commence at 8 hr 
+UT. The updating process is generally completed by 10:00 UT. On the UT date of 
+full Moon, the updating process is not completed until 14 hr UT or later. </P>
+<P>Second, <B>all the orbits in a given version of the file have an epoch of 
+osculation near the present.</B> Consequently, the ephemerides of most 
+non-Earth-approaching asteroids can be computed to arcsec accuracy or better 
+within ± 50 days of the epoch using a 2-body ephemeris program. </P>
+<P>Third, <B>current and future ephemeris uncertainties are given.</B> Observers 
+will readily be able to estimate whether asteroids are likely to be within their 
+telescopes' fields of view, and they will better be able to prioritize 
+astrometric targets. </P>
+<P><FONT size=+1><B>Landmarks</B></FONT> For a reverse chronological listing of 
+significant changes to the database, click <A 
+href="ftp://ftp.lowell.edu/pub/elgb/astorb_landmarks.html">here</A>. </P>
+<P><FONT size=+1><B>Downloading astorb.dat</B></FONT> The file may be obtained 
+by the following means: 
+<UL>
+  <LI>Get a decompressed version (astorb.dat) via ftp by clicking on <A 
+  href="ftp://ftp.lowell.edu/pub/elgb/astorb.dat.gz">here</A>. The source 
+  (astorb.dat.gz) is compressed but your browser should automatically decompress 
+  it. If this fails, try getting the original, uncompressed version by clicking 
+  <A href="ftp://ftp.lowell.edu/pub/elgb/astorb.dat">here</A>. And if this 
+  fails, try ftp'ing astorb.dat to yourself using the recipe below (except type 
+  "get astorb.dat" rather than "get astorb.dat.gz"). To name the file on a 
+  Netscape browser, click on "File", then on "Save as", then on "OK" (the file 
+  will automatically be named astorb.dat unless you choose another name at this 
+  point). <BR><BR>
+  <LI>If the above doesn't work or if you know someone who would like astorb.dat 
+  and has ftp but not WWW access, note that the compressed version is available 
+  via anonymous ftp at ftp.lowell.edu/pub/elgb/astorb.dat.gz, as are text 
+  versions (astorb.txt and astorb_landmarks.txt) of astorb.html and 
+  astorb_landmarks.html. Type the following commands: <BR><BR>ftp ftp.lowell.edu 
+  <BR>Name: anonymous <BR>Password: <CODE>your email address</CODE> 
+  <BR>ftp&gt;cd pub/elgb <BR>ftp&gt;get astorb.txt <BR>ftp&gt;get 
+  astorb_landmarks.txt <BR>ftp&gt;get astorb.dat.gz <BR>ftp&gt;quit 
+  <BR><BR>astorb.dat.gz has been compressed using a public-domain utility called 
+  <CODE>gzip</CODE>. To decompress the file (which will result in file 
+  astorb.dat), type <BR>gunzip astorb.dat.gz <BR><BR>
+  <UL>
+    <LI><CODE>gzip</CODE> code is available at <A 
+    href="ftp://prep.ai.mit.edu/pub/gnu/gzip-1.2.4.tar">prep.ai.mit.edu/pub/gnu/gzip-1.2.4.tar</A> 
+    (UNIX version) and <A 
+    href="ftp://prep.ai.mit.edu/pub/gnu/gzip-1.2.4.msdos.exe">prep.ai.mit.edu/pub/gnu/gzip-1.2.4.msdos.exe</A> 
+    (DOS version). The <CODE>gzip</CODE> software accommodates both the 
+    <CODE>gzip</CODE> and the <CODE>gunzip</CODE> commands. <BR><BR>Type the 
+    following commands: <BR><BR>ftp prep.ai.mit.edu <BR>Name: anonymous 
+    <BR>Password: <CODE>your email address</CODE> <BR>ftp&gt;cd pub/gnu 
+    <BR>ftp&gt;get gzip-1.2.3.tar (or get gzip-1.2.4.msdos.exe) <BR>ftp&gt;quit 
+    <BR><BR></LI></UL>
+  <LI>Tell your colleagues lacking both web and ftp access that we can supply 
+  them with a compressed copy of the file along with the decompression software, 
+  preferably on 3.5-in (9-cm) diskettes, in either UNIX or DOS format. To 
+  arrange delivery, email us at <A 
+  href="mailto:koehn@lowell.edu">mailto:koehn@lowell.edu</A>or call Bruce Koehn 
+  at +1-520-774-3358 (fax +1-520-774-6296), specifying the medium and format you 
+  prefer. </LI></UL>
+<P></P>
+<P><FONT size=+1><B>Incremental update files</B></FONT> In response to users who 
+have difficulty downloading the complete astorb.dat (see above for 
+instructions), we have instituted (9 October 1996) a method of logging daily 
+changes in the orbital elements therein. Users will find files such as 
+yymmdd.add and yymmdd.del in our public ftp area accessible from the WWW. These 
+cover update activities for the past 30 days or more. Thus, 961007.add comprises 
+records for asteroids whose orbital elements were either added to or replaced in 
+astorb.dat on 7 October 1996; and 960930.del contains records for asteroids 
+whose orbits were deleted from astorb.dat on 30 September 1996. Note the 
+following: (1) The *.add files are refreshed every day. Thus, an orbit that was 
+replaced on, say, 961001 and then again on 961002 will be found only in the 
+961002.add file on or after the latter date. (2) The *.add files reflect changes 
+in orbital elements only. Changes to other parameters (such as H, G, and integer 
+codes), as well as daily updates of ephemeris uncertainties, are not reported in 
+the *.add files. Users who are interested in the latter should download the 
+entire astorb.dat. To download the *.add and *.del files, add the commands 
+<BR><BR>ftp&gt;mget *.add <BR>ftp&gt;mget *.del <BR><BR>to the ftp instructions 
+above. </P>
+<P><FONT size=+1><B>File Structure</B></FONT> Here are two sample records (with 
+one line of parameter numbers above and three lines of column counts below): <PRE>(1)   (2)                (3)             (4)    (5)  (6)  (7)   (8)
+    1 Ceres              E. Bowell        3.34  0.12 0.72 913.0 G?
+ 1693 Hertzsprung        E. Bowell       10.97  0.15 0.74  39.5 C
+         0         0         0         0         0         0         0
+         1         2         3         4         5         6         7
+1234567890123456789012345678901234567890123456789012345678901234567890
+ 
+  (9)                   (10) (11)  (12)     (13)       (14)       (15)
+  0   0   0   0   0   0 56959 4750 19960427  80.477333  71.802404  80.
+  0   0   0   0   0   0 20972   25 19960427 322.276332 234.698906  70.
+         0         0         1         1         1         1         1
+         8         9         0         1         2         3         4
+1234567890123456789012345678901234567890123456789012345678901234567890
+ 
+       (16)      (17)       (18)        (19)     (20)     (21)    (22)
+659857 10.600303 0.07604100   2.76788714 19960414 2.3E-02  1.4E-04 199
+393559 11.942428 0.27460300   2.79629204 19950513 9.0E-01  7.9E-03 199
+         1         1         1         1         1         2         2
+         5         6         7         8         9         0         1
+1234567890123456789012345678901234567890123456789012345678901234567890
+ 
+     (23)             (24)             (25)
+60416 2.7E-02 19960530 3.1E-02 20040111 3.1E-02 20040111
+60416 1.2E+00 19960610 1.3E+00 20010812 9.0E-01 20010813
+         2         2         2         2         2
+         2         3         4         5         6
+12345678901234567890123456789012345678901234567890123456
+    </PRE>
+<P>A FORTRAN format statement for reading a record in astorb.dat is: 
+<BR><BR>A5,1X,A18,1X,A15,1X,A5,1X,F5.2,1X,A4,1X,A5,1X,A4, 
+1X,6I4,1X,<BR>2I5,1X,I4,2I2.2,1X,3(F10.6,1X),F9.6,1X,F10.8, 
+1X,F12.8,1X,I4,2I2.2,1X,F7.2,1X,F8.2,1X,I4,2I2,3(1X,F7.2,1X,I4,2I2) </P>
+<P>Note that some numerical data (e.g., asteroid number) are encoded as 
+character variables. You may need to decode them. </P>
+<P>Parameters are: </P>
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TH>Parameter</TH>
+    <TH>Description</TH></TR>
+  <TR>
+    <TD align=right>(1)</TD>
+    <TD>Asteroid number (blank if unnumbered).</TD></TR>
+  <TR>
+    <TD align=right>(2)</TD>
+    <TD>Name or preliminary designation.</TD></TR>
+  <TR>
+    <TD align=right>(3)</TD>
+    <TD>Orbit computer.</TD></TR>
+  <TR>
+    <TD align=right>(4)</TD>
+    <TD>Absolute magnitude H, mag [see <CITE>E. Bowell et al., pp. 549-554, in 
+      "Asteroids II", R. P. Binzel et al. (eds.), The University of Arizona 
+      Press, Tucson, 1989 </CITE>and more recent<CITE> Minor Planet 
+      Circulars</CITE>]. Note that H may be given to 2 decimal places (e.g., 
+      13.41), 1 decimal place (13.4) or as an integer (13), depending on its 
+      estimated accuracy. H is given to two decimal places for all unnumbered 
+      asteroids, even though it may be very poorly known.</TD></TR>
+  <TR>
+    <TD align=right>(5)</TD>
+    <TD>Slope parameter G ( <CITE>ibid.</CITE>).</TD></TR>
+  <TR>
+    <TD align=right>(6)</TD>
+    <TD>Color index B-V, mag (blank if unknown; see <CITE>E. F. Tedesco, pp. 
+      1090-1138, op. cit. </CITE>).</TD></TR>
+  <TR>
+    <TD align=right>(7)</TD>
+    <TD>IRAS diameter, km (blank if unknown; see <CITE>E. F. Tedesco et al., 
+      pp. 1151-1161, op.cit.</CITE>).</TD></TR>
+  <TR>
+    <TD align=right>(8)</TD>
+    <TD>IRAS Taxonomic classification (blank if unknown; 
+    <CITE>ibid.</CITE>).</TD></TR>
+  <TR>
+    <TD align=right>(9)</TD>
+    <TD>Six integer codes (see table of explanation below). Note that not all 
+      codes have been correctly computed.</TD></TR>
+  <TR>
+    <TD align=right>(10)</TD>
+    <TD>Orbital arc, days, spanned by observations used in orbit 
+    computation.</TD></TR>
+  <TR>
+    <TD align=right>(11)</TD>
+    <TD>Number of observations used in orbit computation.</TD></TR>
+  <TR>
+    <TD align=right>(12)</TD>
+    <TD>Epoch of osculation, yyyymmdd (TDT). The epoch is the Julian date 
+      ending in 00.5 nearest the date the file was created. Thus, as the file is 
+      updated, epochs will succeed each other at 100-day intervals on or after 
+      Julian dates ending in 50.5 (19980328, 19980706, 19981014, 
+  19990122,...)</TD></TR>
+  <TR>
+    <TD align=right>(13)</TD>
+    <TD>Mean anomaly, deg.</TD></TR>
+  <TR>
+    <TD align=right>(14)</TD>
+    <TD>Argument of perihelion, deg (J2000.0).</TD></TR>
+  <TR>
+    <TD align=right>(15)</TD>
+    <TD>Longitude of ascending node, deg (J2000.0).</TD></TR>
+  <TR>
+    <TD align=right>(16)</TD>
+    <TD>Inclination, deg (J2000.0).</TD></TR>
+  <TR>
+    <TD align=right>(17)</TD>
+    <TD>Eccentricity.</TD></TR>
+  <TR>
+    <TD align=right>(18)</TD>
+    <TD>Semimajor axis, AU.</TD></TR>
+  <TR>
+    <TD align=right>(19)</TD>
+    <TD>Date of orbit computation, yymmdd (MST, = UTC - 7 hr).</TD></TR>
+  <TR>
+    <TD align=right>(20)</TD>
+    <TD>Absolute value of the current 1-<IMG alt=sigma 
+      src="Introduction to astorb_dat_files/sigma.gif" align=bottom> ephemeris 
+      uncertainty (CEU), arcsec.</TD></TR>
+  <TR>
+    <TD align=right>(21)</TD>
+    <TD>Rate of change of CEU, arcsec/day.</TD></TR>
+  <TR>
+    <TD align=right>(22)</TD>
+    <TD>Date of CEU, yyyymmdd (0 hr UT).</TD></TR>
+  <TR>
+    <TD align=right>(23)</TD>
+    <TD>Next peak ephemeris uncertainty (PEU), arcsec, from date of CEU, and 
+      date of its occurrence, yyyymmdd.</TD></TR>
+  <TR>
+    <TD align=right>(24)</TD>
+    <TD>Greatest PEU, arcsec, in 10 years from date of CEU, and date of its 
+      occurrence, yyyymmdd.</TD></TR>
+  <TR>
+    <TD align=right>(25)</TD>
+    <TD>Greatest PEU, arcsec, in 10 years from date of next PEU, and date of 
+      its occurrence, yyyymmdd, if two observations (of accuracy equal to that 
+      of the observations currently included in the orbit--typically ± 1 arcsec) 
+      were to be made on the date of the next PEU [parameter 
+(23)].</TD></TR></TBODY></TABLE>
+<P>The meanings of the six integer codes [parameter (9)] are as follows 
+(reference to "type 6:7", for example, means code 6, value 7): </P>
+<CENTER>
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TH>Code</TH>
+    <TH>Value</TH>
+    <TH>Explanation</TH></TR>
+  <TR>
+    <TD align=right>1</TD>
+    <TD></TD>
+    <TD align=middle>Planet-crossing asteroids. <BR><I>Note: Because some 
+      orbits are very poor (or erroneously linked), there may be errors in 
+      assignment of these parameter values. </I></TD></TR>
+  <TR>
+    <TD rowSpan=6></TD>
+    <TD align=right>1</TD>
+    <TD>Aten asteroids (a&nbsp;&lt;&nbsp;1.0 AU). </TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD>Apollo asteroids (a&nbsp;&gt;&nbsp;1.0 AU; 
+      0&nbsp;&lt;&nbsp;q&nbsp;&lt;&nbsp;1.0 </TD></TR>
+  <TR>
+    <TD align=right>4</TD>
+    <TD>Amor asteroids (a&nbsp;&gt;&nbsp;1.0167 AU; 
+      1.0167&nbsp;&lt;&nbsp;q&nbsp;&lt;&amp;nb </TD></TR>
+  <TR>
+    <TD align=right>8</TD>
+    <TD>Mars crossers (1.3&nbsp;&lt;&nbsp;q&nbsp;&lt;&nbsp;1.6660 AU).</TD></TR>
+  <TR>
+    <TD align=right>16</TD>
+    <TD>Outer-planet crossers (excluding Jupiter and Mars Trojans). Asteroids 
+      that cross or pass into the heliocentric distance zones between the 
+      perihelion and aphelion distances of Jupiter (4.950 to 5.455 AU), Saturn 
+      (9.009 to 10.069 AU), Uranus (18.274 to 20 089 AU), and/or Neptune (29.800 
+      to 30.317 AU). </TD></TR>
+  <TR>
+    <TD align=right>n</TD>
+    <TD>Asteroids (excluding Mars and Jupiter Trojans) that cross both inner- 
+      and outer-planet orbits. For example, an asteroid having n&nbsp;=&nbsp;24 
+      crosse the orbits of both Mars (q&nbsp;&lt;&nbsp;1.6660 AU) and Jupiter 
+      (Q&nbsp;&gt;&nbsp;4.950 AU). </TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD></TD>
+    <TD align=middle>Orbit computation.</TD></TR>
+  <TR>
+    <TD rowSpan=6></TD>
+    <TD align=right>1</TD>
+    <TD>Orbits derived from uncertainly, perhaps erroneously linked 
+      observations. </TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD>Eccentricity assumed.</TD></TR>
+  <TR>
+    <TD align=right>4</TD>
+    <TD>Eccentricity and semimajor axis assumed.</TD></TR>
+  <TR>
+    <TD align=right>8</TD>
+    <TD>Mainly for numbered asteroids, omitted observations have resulted in 
+      degradation of a so-called orbit-quality parameter (OQP, see <CITE>K. 
+      Muinonen and E. Bowell, Icarus 104, 255-279, 1993</CITE>), generally by 
+      more than 0.1. The corresponding ephemeris uncertainty has increased by 
+      about 25% or more. </TD></TR>
+  <TR>
+    <TD align=right>16</TD>
+    <TD>OQP degrades by more than 0.1 if unsubstantiated observations (e.g., 
+      one-night apparitions) are omitted.</TD></TR>
+  <TR>
+    <TD align=right>32</TD>
+    <TD>Orbit derived from data containing observations not in Minor Planet 
+      Center files. </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD align=right>64</TD>
+    <TD>H is unknown. H = 14 mag assumed. </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD align=right>128</TD>
+    <TD>Asteroid sought, but not found. </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD align=right>n</TD>
+    <TD>Sum of preceding entries. For example, n&nbsp;=&nbsp;3 pertains to an 
+      uncertainly linked orbit for which the eccentricity was assumed.</TD></TR>
+  <TR>
+    <TD align=right>3</TD>
+    <TD></TD>
+    <TD align=middle>Asteroids observed during the course of major surveys. 
+      Our definition includes asteroids that were observed but not discovered 
+      during the course of a survey.</TD></TR>
+  <TR>
+    <TD rowSpan=6></TD>
+    <TD align=right>1</TD>
+    <TD>Palomar-Leiden survey (PLS) asteroids. </TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD>Palomar-Leiden T-2 survey asteroids.</TD></TR>
+  <TR>
+    <TD align=right>4</TD>
+    <TD>Palomar-Leiden T-3 survey asteroids.</TD></TR>
+  <TR>
+    <TD align=right>8</TD>
+    <TD>U.K. Schmidt Telescope-Caltech asteroid survey (UCAS) asteroids.</TD></TR>
+  <TR>
+    <TD align=right>16</TD>
+    <TD>Palomar-Leiden T-1 survey asteroids.</TD></TR>
+  <TR>
+    <TD align=right>n</TD>
+    <TD>Asteroids observed in more than one survey. For example, 
+      n&nbsp;=&nbsp;3 denotes an asteroid observed in both the PLS and T-2 
+      surveys.</TD></TR>
+  <TR>
+    <TD align=right>4</TD>
+    <TD></TD>
+    <TD align=middle>Minor Planet Center (MPC) critical-list numbered 
+      asteroids. </TD></TR>
+  <TR>
+    <TD rowSpan=7></TD>
+    <TD align=right>1</TD>
+    <TD>Lost asteroid.</TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD>Asteroids observed at only two apparitions.</TD></TR>
+  <TR>
+    <TD align=right>3</TD>
+    <TD>Asteroids observed at only three apparitions.</TD></TR>
+  <TR>
+    <TD align=right>4</TD>
+    <TD>Asteroids observed at four or more apparitions, last more than ten 
+      years ago.</TD></TR>
+  <TR>
+    <TD align=right>5</TD>
+    <TD>Asteroids observed at four or more apparitions, only one night in last 
+      ten years.</TD></TR>
+  <TR>
+    <TD align=right>6</TD>
+    <TD>Other poorly observed asteroids observed at four or more 
+    apparitions.</TD></TR>
+  <TR>
+    <TD align=right>7</TD>
+    <TD>Absolute magnitude poorly known (not on MPC critical-list).</TD></TR>
+  <TR>
+    <TD align=right>5</TD>
+    <TD></TD>
+    <TD align=middle>Lowell Observatory and related discoveries </TD></TR>
+  <TR>
+    <TD rowSpan=2></TD>
+    <TD align=right>1</TD>
+    <TD>Asteroids discovered by E. Bowell.</TD></TR>
+  <TR>
+    <TD align=right>2</TD>
+    <TD>Non-Bowell discoveries from Lowell search programs.</TD></TR>
+  <TR>
+    <TD></TD>
+    <TD align=right>3</TD>
+    <TD>Sum of preceding entries. n&nbsp;=&nbsp;3 pertains to an asteroid 
+      discovered jointly by E. Bowell and another person connected with Lowell 
+      search programs.</TD></TR>
+  <TR>
+    <TD align=right>6</TD>
+    <TD></TD>
+    <TD align=middle>Rank, in decreasing importance, for our collaborative 
+      program of astrometry using the transit circle of the U.S. Naval 
+      Observatory Flagstaff Station.</TD></TR>
+  <TR>
+    <TD rowSpan=7></TD>
+    <TD align=right>10</TD>
+    <TD>Exceptionally important, to be observed frequently. Principally space 
+      mission targets and occultation candidates.</TD></TR>
+  <TR>
+    <TD align=right>9</TD>
+    <TD>Asteroids useful for mass determination.</TD></TR>
+  <TR>
+    <TD align=right>8</TD>
+    <TD>Asteroids for which one or two additional nights' observation are 
+      required to satisfy orbit-update requirements. Asteroids of type 6:7 whose 
+      ephemeris uncertainties are between 2 and 5 arcsec within the next ten 
+      years or so.</TD></TR>
+  <TR>
+    <TD align=right>7</TD>
+    <TD>Bowell unnumbered discoveries whose ephemeris uncertainties are less 
+      than 2 arcsec within the next ten years or so. MPC critical-list 
+      asteroids. </TD></TR>
+  <TR>
+    <TD align=right>6</TD>
+    <TD>Planet-crossers of type 6:5.</TD></TR>
+  <TR>
+    <TD align=right>5</TD>
+    <TD>Numbered asteroids whose ephemeris uncertainties are between 2 and 5 
+      arcsec within the next ten years or so. Unnumbered asteroids that should 
+      be numberable after one or two more nights' 
+observation.</TD></TR></TBODY></TABLE></CENTER>
+<P>Note that the codes have not been carefully checked. There are doubtless many 
+errors. </P><FONT size=+1><B>Notes on File Content</B></FONT> 
+<P>
+<LI>Osculating elements [parameters (13) through (18)] are heliocentric. 
+<P></P>
+<P></P>
+<LI>It may be assumed that ephemeris uncertainties are along the line of 
+variation. Except for very accurately known orbits (ephemeris uncertainty &lt; 1 
+arcsec) and very poorly known orbits (arc &lt; 10 days), positional uncertainty 
+perpendicular to the line of variation is usually very small compared to that 
+along the line of variation. 
+<P></P>
+<P></P>
+<LI>The current ephemeris uncertainty [CEU, parameter (20)] and its rate of 
+change [parameter (21)] indicate whether an asteroid ought to be located in an 
+observer's field of view. A CEU greater than all three of the peak ephemeris 
+uncertainties [PEUs, parameters (23) through (25)] implies that the asteroid's 
+ephemeris uncertainty is currently greater than at any time in the next ten 
+years. Such asteroids are prime targets for observation because their orbits are 
+subject to the greatest improvement for years to come. Note that, because 
+ephemeris uncertainties have been computed using 2-body rather than n-body error 
+propagation (see <CITE>K. Muinonen and E. Bowell, Icarus <B>104</B>, 255-279, 
+1993</CITE>), uncertainties for Earth-approaching asteroids may have been 
+misestimated by a factor of several. 
+<P></P>
+<P></P>
+<LI>Most single-apparition asteroids are hopelessly lost. They have large 
+CEUs--typically ± 10<SUP>5</SUP> to ± 10<SUP>6</SUP> arcsec. CEUs may have been 
+imperfectly computed for such asteroids (though it should hardly matter) because 
+of poorly known or unknown observational accuracy and/or because orbital 
+eccentricities have been assumed (integer code 2 equals 2 or 4; see the 
+integer-code table above). Users who wish to estimate ephemeris uncertainties 
+for lost asteroids at times close to when they were observed may make use of the 
+approximate formulae (formulae require Netscape Version 2.0 or higher for proper 
+rendering): 
+<P></P>
+<CENTER>
+<P><IMG alt=sigma src="Introduction to astorb_dat_files/sigma.gif" 
+align=bottom>(t) = ±4500(q - 1) (t<SUB>f</SUB> - t) / 
+[t<SUB>arc</SUB><SUP>2</SUP> (N - 3)<SUP>1/2</SUP> <IMG alt=Delta 
+src="Introduction to astorb_dat_files/Delta.gif" align=bottom>] arcsec <BR><IMG 
+alt=sigma src="Introduction to astorb_dat_files/sigma.gif" align=bottom>(t) = 
+±4500(q - 1) (t - t<SUB>l</SUB>) / [t<SUB>arc</SUB><SUP>2</SUP> (N - 
+3)<SUP>1/2</SUP> <IMG alt=Delta src="Introduction to astorb_dat_files/Delta.gif" 
+align=bottom>] arcsec, </P></CENTER>
+<P>derived from <CITE>K. Muinonen, E. Bowell, and L. H. Wasserman (Planet. Space 
+Sci. <B>42</B>, 307-313, 1994</CITE>). Here, <IMG alt=sigma 
+src="Introduction to astorb_dat_files/sigma.gif" align=bottom>(t) is the 1-<IMG 
+alt=sigma src="Introduction to astorb_dat_files/sigma.gif" align=bottom> 
+sky-plane uncertainty, along the line of variation, at time t; q is the 
+perihelion distance in AU; t<SUB>f</SUB> and t<SUB>l</SUB> are the times of the 
+first and last observations, respectively (t<SUB>f</SUB> - t and t - 
+t<SUB>l</SUB> are in days); t<SUB>arc</SUB> and N are parameters (10) and (11) 
+above; and <IMG alt=Delta src="Introduction to astorb_dat_files/Delta.gif" 
+align=bottom> is the Earth-asteroid distance in AU. For long-unobserved 
+asteroids, t<SUB>f</SUB> and t<SUB>l</SUB> may be approximated from the 
+designation. Thus, for 1982 EE, which has a 9-day arc, t<SUB>f</SUB> may be 
+taken as 1 March 1982 and t<SUB>l</SUB> as 15 March 1982. The formula should be 
+accurate to within a factor of five. </P>
+<P></P>
+<LI>Peak ephemeris uncertaities [parameters (23) through (25)] generally occur 
+near opposition or conjunction (the latter are more prevalent for Earth-crossing 
+asteroids). The next PEU [parameter (23)] usually indicates the best time to 
+make astrometric observations for orbit improvement, as will the PEU over the 
+next 10 years [parameter (24)]. Special effort should be made to observe 
+asteroids whose next PEUs are the greatest during the next 10 years [i.e., 
+parameter (23) exceeds both parameters (24) and (25)]. Parameter (25) may be 
+used to quantify the amount of orbital improvement that would result from 
+observing at or near the date of next PEU. For example, if the next PEU is 
+1.2D+02 arcsec, and parameter (25) has value 6.0D+00 arcsec, a 20-fold ephemeris 
+improvement (and approximately equal improvement in the unceratinties of the 
+orbital elements) could be made. Note that numbered asteroids whose orbits are 
+satisfactory have all three PEUs less than about ± 2 arcsec (absolute). 
+Consequently, numbered asteroids whose ephemeris uncertainties, as indicated by 
+the CEU and PEUs, at any time exceed about 2 arcsec should be targeted for 
+observation. Unnumbered asteroids whose ephemeris uncertainties [as per 
+parameter (25)] could be brought below about ± 2 arcsec, would probably then be 
+candidates for numbering. A parameter (25) PEU greater than a parameter (24) PEU 
+implies that observing at or near the date of the next PEU [parameter (23)] may 
+actually cause ephemeris and orbit degradation. Thus, there is no point in 
+making such observations unless they are numerous and/or of high accuracy. 
+<P></P>
+<P><FONT size=+1><B>Computational Details</B></FONT> To produce the database, 
+our variable-timestep differential orbit correction program was run in an 
+automatic mode. Perturbation due to all major planets (Mercury through Pluto, 
+Earth and Moon separately), Ceres (assumed mass 5.0×10<SUP>-10</SUP> M<IMG 
+alt=_Sun src="Introduction to astorb_dat_files/smsun.gif" align=center>), Pallas 
+(1.1×10<SUP>-10</SUP> M<IMG alt=_Sun 
+src="Introduction to astorb_dat_files/smsun.gif" align=center>), and Vesta 
+(1.4×10<SUP>-10</SUP> M<IMG alt=_Sun 
+src="Introduction to astorb_dat_files/smsun.gif" align=center>) were included. 
+Planetary positions were derived from JPL's DE403 planetary ephemeris. Positions 
+of the three perturbing asteroids were derived, by iteration, from our own 
+orbits. Relativistic effects have not been included. The orbit of one numbered 
+asteroid (1566 Icarus) is known to be imperfect as it requires inclusion of 
+relativistic effects. The orbits of other close-Sun-approaching asteroids are 
+doubtless similarly affected, but their observational (O-C) residuals appear to 
+be satisfactory. </P>
+<P>For numbered asteroids, we have adopted a uniform policy regarding the 
+inclusion or exclusion of observations in the orbit determination: namely, to 
+exclude observations whose great-circle sky-plane residuals exceed 2.3 arcsec. 
+(We have found from experience that, for well-determined orbits, 2.3 arcsec is 
+an appropriate residual threshold separating "good" and "bad" observations.) For 
+numbered asteroids of type 2:8 in the integer-code table above, our policy has 
+resulted in degradation of the orbit-quality parameter (OQP), which is a 
+reliable (logarithmic) measure of an asteroid orbit's quality, and which (for 
+non-Earth approachers) correlates well with ephemeris uncertainty. Such 
+asteroids need orbit improvement to the point where the exclusion of "poor" 
+observations no longer degrades the OQP. For unnumbered asteroids, we have 
+retained obviously inferior observations where doing so improved the OQP and 
+ephemeris uncertainty, thus making it easier to reobserve them; these asteroids 
+are identified by integer code 2:16. 
+<P><FONT size=+1><B>Upcoming Changes in astorb.dat</B></FONT> Eventually, we 
+intend to produce a version of the database in a format resembling that espoused 
+in our ACM93 paper [E. Bowell, K. Muinonen, and L. H. Wasserman (1994). A 
+public-domain asteroid orbit database. In <CITE>"Asteroids, Comets, Meteors 
+1993" (A. Milani et al., eds.), pp. 477-481. Kluwer, Dordrecht</CITE>]. We will 
+not be making this expanded file publicly accessible until we have checked it 
+fairly thoroughly, incorporated it into our suite of asteroid-orbit software, 
+and extracted data for a paper entitled something like <CITE>"Orbit and 
+ephemeris accuracy of multi-apparition asteroids"</CITE>. </P>
+<P>In addition, we are near to making a second run on orbits for numbered 
+asteroids in which close asteroid-asteroid encounters will be noted and a new 
+perturbation scheme that includes two or three dozen asteroid perturbers is 
+implemented. </P>
+<P>We are also looking into the possibility of allowing approved WWW users to 
+run selected programs on our system (ephemerides; which asteroids are in a given 
+region of sky at a given time; selecting subsets of asteroids by orbital 
+elements, predicted magnitude, location in the sky, etc.). </P>
+<P><FONT size=+1><B>Acknowledgment and Attribution</B></FONT> The research and 
+computing needed to generate astorb.dat were funded principally by NASA grant 
+NAG5-4741, and in part by the Lowell Observatory endowment. astorb.dat may be 
+freely used, copied, and transmitted provided attribution to Dr. Edward Bowell 
+and the aforementioned funding sources is made. Hypertext links to this WWW site 
+are welcome. </P>
+<P>Ted Bowell </P><!--Stop-->
+<HR>
+
+<H5><I>Last updated 12 Dec 2004 at 20:24:06 U.T. </I></H5>
+<H5><I>Contact: Bruce Koehn <A 
+href="mailto:koehn@lowell.edu">mailto:koehn@lowell.edu</A><BR>Web Curators: <A 
+href="http://www.lowell.edu/users/elgb/bowell.html">Ted Bowell </A>and <A 
+href="http://www.lowell.edu/users/koehn/koehn.html">Bruce Koehn </A></I></H5><A 
+href="http://www.lowell.edu/"><IMG height=40 alt=Icon 
+src="Introduction to astorb_dat_files/button_return.gif" width=40> Go (Back) to 
+the Lowell Observatory Home Page </A><BR><A 
+href="http://www.lowell.edu/users/elgb/Welcome.html"><IMG height=40 alt=Icon 
+src="Introduction to astorb_dat_files/button_return.gif" width=40> Go (Back) to 
+previous page </A></LI></BODY></HTML>

@@ -1,0 +1,13 @@
+REGEDIT
+HKEY_CLASSES_ROOT\.out = ASTROWtext
+HKEY_CLASSES_ROOT\.afl = ASTROflst
+HKEY_CLASSES_ROOT\ASTROflst = ASTROW User File List.
+HKEY_CLASSES_ROOT\ASTROflst\shell\print = 
+HKEY_CLASSES_ROOT\ASTROflst\shell\open\command = D:\WPRO\astrow.exe -ou %1
+HKEY_CLASSES_ROOT\ASTROWgraph = ASTROW Graphic File.
+HKEY_CLASSES_ROOT\ASTROWgraph\shell\print\command = D:\WPRO\ASTROW.exe -pg %1
+HKEY_CLASSES_ROOT\ASTROWgraph\shell\open\command = D:\WPRO\astrow.exe -vg %1
+HKEY_CLASSES_ROOT\ASTROWtext = ASTROW Text Report
+HKEY_CLASSES_ROOT\ASTROWtext\shell\print\command = D:\WPRO\ASTROW.exe -pt %1
+HKEY_CLASSES_ROOT\ASTROWtext\shell\open\command = D:\WPRO\astrow.exe -vt %1
+HKEY_CLASSES_ROOT\.gra = ASTROWgraph

@@ -1,0 +1,992 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TBT32.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TBT32.ico"
+IDI_ICON1               ICON                    "res\\TBT32.ICO"
+IDI_ICON2               ICON                    "res\\TBT32.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_EDIT MENU 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "&Copy",                       ID_COPY
+        MENUITEM "&Paste",                      ID_PASTE
+        MENUITEM "Cu&t",                        ID_CUT
+        MENUITEM "C&lear",                      ID_CLEAR
+        MENUITEM "&Undo",                       ID_UNDO
+        MENUITEM "&Bold",                       ID_BOLD
+        MENUITEM "&Italic",                     ID_ITAL
+        MENUITEM "&Heading",                    ID_HEAD
+        MENUITEM "&Normal",                     ID_UNHEADING
+        MENUITEM "Check Spelling",              ID_SPELL
+    END
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_UNICODE)
+#if defined(APSTUDIO_INVOKED)
+IDR_MAINFRAME$(_UNICODE) MENU 
+#else
+IDR_MAINFRAME MENU 
+#endif
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Edit &Text Sources"
+    BEGIN
+        MENUITEM "&Help Text",                  ID_HELPTXT
+        MENUITEM "&Regular Text Sources",       ID_REGULARTXT
+        MENUITEM "&Aspect/Midpoint Text",       ID_ASPECTTEXT
+        MENUITEM "Repor&t Text Sources",        ID_EDITTEXTSOURCES_REPORTTEXTSOURCES
+
+        MENUITEM "Array &Text Items",           32793
+    END
+    POPUP "&Import"
+    BEGIN
+        MENUITEM "Import Planet/House Text File", 
+                                                ID_IMPORT_IMPORTPLANETHOUSETEXT
+
+        MENUITEM "Import Aspect Text File",     ID_IMPORT_IMPORTASPECTTEXT
+        MENUITEM "Import Help Files ",          ID_IMPORT_IMPORTAHELPFILE
+        MENUITEM "Import Report Text File",     ID_IMPORT_IMPORTREPORTTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Import Exported Planet/House File", 
+                                                ID_IMPORT_IMPORTEXPORTEDPLANET
+
+        MENUITEM "Import Exported Aspect File", ID_IMPORT_IMPORTEXPORTEDASPECTFILE
+
+        MENUITEM "Import Exported Help File",   ID_IMPORT_IMPORTEXPORTEDHELPFILE
+
+        MENUITEM "Import Exported Report File", ID_IMPORT_IMPORTEXPORTEDREPORTFILE
+
+    END
+    POPUP "Export"
+    BEGIN
+        MENUITEM "Export Planet/House Text",    ID_EXPORT_EXPORTREGULARTEXT
+        MENUITEM "Export Aspect Text",          ID_EXPORT_EXPORTASPECTTEXT
+        MENUITEM "Export Help",                 ID_EXPORT_EXPORTHELP
+        MENUITEM "Export Reports",              ID_EXPORT_EXPORTREPORTS
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Setup",                      ID_OPTIONS_SETUP
+        MENUITEM "&Add Language",               ID_ADDLANGUAGE
+        MENUITEM "Set &Current Language",       32795
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TBT32...",             ID_APP_ABOUT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(NOUNICODE)
+#if defined(APSTUDIO_INVOKED)
+IDR_MAINFRAME$(NOUNICODE) MENU 
+#else
+IDR_MAINFRAME MENU 
+#endif
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Edit &Text Sources"
+    BEGIN
+        MENUITEM "&Help Text",                  ID_HELPTXT
+        MENUITEM "&Regular Text Sources",       ID_REGULARTXT
+        MENUITEM "&Aspect/Midpoint Text",       ID_ASPECTTEXT
+        MENUITEM "Repor&t Text Sources",        ID_EDITTEXTSOURCES_REPORTTEXTSOURCES
+
+        MENUITEM "Array &Text Items",           32793
+    END
+    POPUP "&Import"
+    BEGIN
+        MENUITEM "Import Planet/House Text File", 
+                                                ID_IMPORT_IMPORTPLANETHOUSETEXT
+
+        MENUITEM "Import Aspect Text File",     ID_IMPORT_IMPORTASPECTTEXT
+        MENUITEM "Import Help Files ",          ID_IMPORT_IMPORTAHELPFILE
+        MENUITEM "Import Report Text File",     ID_IMPORT_IMPORTREPORTTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Import Exported Planet/House File", 
+                                                ID_IMPORT_IMPORTEXPORTEDPLANET
+
+        MENUITEM "Import Exported Aspect File", ID_IMPORT_IMPORTEXPORTEDASPECTFILE
+
+        MENUITEM "Import Exported Help File",   ID_IMPORT_IMPORTEXPORTEDHELPFILE
+
+        MENUITEM "Import Exported Report File", ID_IMPORT_IMPORTEXPORTEDREPORTFILE
+
+    END
+    POPUP "Export"
+    BEGIN
+        MENUITEM "Export Planet/House Text",    ID_EXPORT_EXPORTREGULARTEXT
+        MENUITEM "Export Aspect Text",          ID_EXPORT_EXPORTASPECTTEXT
+        MENUITEM "Export Help",                 ID_EXPORT_EXPORTHELP
+        MENUITEM "Export Reports",              ID_EXPORT_EXPORTREPORTS
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Setup",                      ID_OPTIONS_SETUP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TBT32...",             ID_APP_ABOUT
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_COPY,                VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_PASTE,               VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_CUT,                 VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_UNDO,                VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TBT32"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TBT32 Version 1.02",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HELPTXT DIALOGEX 0, 0, 432, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Help Text"
+MENU IDR_EDIT
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,221,65,21
+    PUSHBUTTON      "Cancel",IDCANCEL,321,221,65,21
+    LTEXT           "Help Text",IDC_STATIC,7,37,96,9
+    CONTROL         "",IDC_EDIT1,"RICHEDIT",TCS_HOTTRACK | 
+                    TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,7,46,418,166
+    CONTROL         "",IDC_WSPELLCTRL1,
+                    "{245338C3-BCA3-4A2C-A7B7-53345999A8E8}",WS_TABSTOP,199,
+                    228,11,14
+    LTEXT           "Tab Stops:",IDC_STATIC,7,7,102,9
+    CONTROL         "",IDC_TABCTRLCTRL1,
+                    "{5230206E-3E6A-454C-9999-EADA11AE4F32}",WS_TABSTOP,7,17,
+                    418,19
+    PUSHBUTTON      "Prior Block",ID_PRIOR,127,221,65,21
+    PUSHBUTTON      "Next Block",ID_NEXT,229,221,65,21
+END
+
+IDD_TEXTTYPE DIALOG  0, 0, 257, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Select Text Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,76,62,22
+    PUSHBUTTON      "Cancel",IDCANCEL,162,76,62,22
+    LTEXT           "Select Text Type:",IDC_STATIC,17,13,112,12
+    COMBOBOX        IDC_TEXTTYPE,7,31,243,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_REGTEXT DIALOG  0, 0, 478, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Regular Text"
+MENU IDR_EDIT
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,241,70,22
+    PUSHBUTTON      "Cancel",IDCANCEL,314,240,68,23
+    LTEXT           "First Key:",IDC_STATIC,7,7,35,15
+    COMBOBOX        IDC_KEY1,46,7,153,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Second Key:",IDC_STATIC,211,7,43,13
+    COMBOBOX        IDC_KEY2,269,7,173,79,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TEXT,"RICHEDIT",TCS_HOTTRACK | 
+                    TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,7,39,464,193
+    CONTROL         "",IDC_WSPELLCTRL1,
+                    "{245338C3-BCA3-4A2C-A7B7-53345999A8E8}",WS_TABSTOP,29,
+                    22,11,14
+END
+
+IDD_ASPTEXT DIALOGEX 0, 0, 482, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Aspect Text"
+MENU IDR_EDIT
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,234,70,22
+    PUSHBUTTON      "Cancel",IDCANCEL,323,233,68,23
+    LTEXT           "Planet:",IDC_STATIC,7,7,35,10
+    COMBOBOX        IDC_PLAN1,55,6,153,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Second Planet:",IDC_STATIC,217,7,53,13
+    COMBOBOX        IDC_PLAN2,279,6,173,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Aspect",IDC_STATIC,92,27,35,15
+    COMBOBOX        IDC_ASPECT,129,26,134,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TEXT,"RICHEDIT",TCS_HOTTRACK | 
+                    TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,7,55,468,173
+    LTEXT           "Text",IDC_STATIC,7,45,67,8
+    CONTROL         "",IDC_WSPELLCTRL1,
+                    "{245338C3-BCA3-4A2C-A7B7-53345999A8E8}",WS_TABSTOP,15,
+                    16,11,14
+END
+
+IDD_REPORTTEXT DIALOGEX 0, 0, 444, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Report Text"
+MENU IDR_EDIT
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,215,69,22
+    PUSHBUTTON      "Cancel",IDCANCEL,267,216,64,21
+    LTEXT           "Report Text Id:",IDC_STATIC,7,7,56,15
+    COMBOBOX        IDC_TEXTID,64,7,232,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Index:",IDC_STATIC,305,7,24,13
+    EDITTEXT        IDC_INDEX,337,7,56,16,ES_AUTOHSCROLL
+    LTEXT           "Report Text:",IDC_STATIC,7,57,54,10
+    CONTROL         "",IDC_TEXT,"RICHEDIT",TCS_HOTTRACK | 
+                    TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,7,70,430,139
+    CONTROL         "",IDC_WSPELLCTRL1,
+                    "{245338C3-BCA3-4A2C-A7B7-53345999A8E8}",WS_TABSTOP,415,
+                    7,11,14
+    LTEXT           "Tab Stops:",IDC_STATIC,7,23,69,9
+    CONTROL         "",IDC_TABCTRLCTRL1,
+                    "{5230206E-3E6A-454C-9999-EADA11AE4F32}",WS_TABSTOP,7,33,
+                    430,17
+END
+
+IDD_SEL_FILE DIALOGEX 0, 0, 246, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Import Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,171,61,23
+    PUSHBUTTON      "Cancel",IDCANCEL,175,171,64,23
+    LTEXT           "Select File To Import:",IDC_STATIC,7,7,81,11
+    LISTBOX         IDC_FILES,7,24,232,139,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Set Import Directory . . .",ID_IMPORT_DIR,80,171,86,23
+END
+
+IDD_SELTEXTITEM DIALOG  0, 0, 259, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Select Text Item"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,78,62,22
+    PUSHBUTTON      "Cancel",IDCANCEL,162,78,62,22
+    LTEXT           "Select Text Item:",IDC_STATIC,17,13,112,12
+    COMBOBOX        IDC_TEXTITEM,7,31,245,70,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETUP DIALOG  0, 0, 254, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,101,59,19
+    PUSHBUTTON      "Cancel",IDCANCEL,151,101,61,19
+    LTEXT           "Text Source Dir:",IDC_STATIC,7,20,56,15
+    EDITTEXT        IDC_DIR,73,17,174,20,ES_AUTOHSCROLL
+    LTEXT           "Database Name:",IDC_STATIC,7,54,58,16
+    EDITTEXT        IDC_DSN,65,49,182,19,ES_AUTOHSCROLL
+    LTEXT           "Database Directory:",IDC_STATIC,7,79,66,14
+    EDITTEXT        IDC_DBDIR,80,75,167,18,ES_AUTOHSCROLL
+END
+
+IDD_ARRAYEDIT DIALOGEX 0, 0, 413, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Array Items"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,335,236,71,19
+    PUSHBUTTON      "Cancel",IDCANCEL,7,236,71,19
+    PUSHBUTTON      "Add",IDC_ADD,171,236,71,19
+    PUSHBUTTON      "Delete",ID_DELETE,253,236,71,19
+    COMBOBOX        IDC_COMBO1,69,7,272,125,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select Array Item:",IDC_STATIC,7,7,60,12
+    LTEXT           "Edit Value:",IDC_STATIC,7,31,41,13
+    EDITTEXT        IDC_EDIT1,50,28,346,17,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST1,21,65,378,164,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Click on Items In List to Edit:",IDC_STATIC,19,52,165,9
+    PUSHBUTTON      "Insert",IDCAIDC_INSERT,89,236,71,19
+END
+
+IDD_PROGRESS DIALOG  0, 0, 285, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "Import Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Processing File:",IDC_STATIC,7,7,54,10
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",0x1,7,30,
+                    271,45
+    CTEXT           "Static",IDC_FILE,64,7,214,13,SS_SUNKEN | WS_BORDER
+END
+
+IDD_NEWLANG DIALOGEX 0, 0, 216, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Add New Language"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,69,50,14
+    LTEXT           "Language Code:",IDC_STATIC,20,20,54,8
+    LTEXT           "Description:",IDC_STATIC,20,45,39,8
+    EDITTEXT        IDC_LANGCODE,81,17,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESC,81,39,111,14,ES_AUTOHSCROLL
+END
+
+IDD_SETLANGUAGE DIALOGEX 0, 0, 220, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Set Current Language"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,69,50,14
+    LTEXT           "Language Code:",IDC_STATIC,22,19,54,8
+    COMBOBOX        IDC_LANGUAGE,21,34,176,49,CBS_DROPDOWN | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TRANSBASE DIALOGEX 0, 0, 344, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set Base Translation Directory"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,69,60,50,14
+    LTEXT           "Base Translation Directory:",IDC_STATIC,7,28,88,8
+    EDITTEXT        IDC_BASEDIR,99,26,207,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SELECT,311,26,26,14
+END
+
+IDD_SETTRANSDIR DIALOGEX 0, 0, 347, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set Translated Directory Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,69,50,14
+    LTEXT           "Translated Directory:",IDC_STATIC,7,33,69,8
+    EDITTEXT        IDC_TRANSDIR,79,31,235,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SELECT,316,31,24,14
+END
+
+IDD_TRANSTASKS DIALOGEX 0, 0, 244, 328
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tasks To Translate Your Source"
+FONT 10, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,84,306,77,14
+    LTEXT           "Setup Tranlation Base Directory...",IDC_STATIC,17,24,
+                    110,8
+    LTEXT           "Import Translated Text...",IDC_STATIC,17,268,83,8
+    LTEXT           "Add New Language...",IDC_STATIC,17,217,71,8
+    DEFPUSHBUTTON   "Do Task",IDC_EXPORT,149,47,76,14
+    LTEXT           "Export Database...",IDC_STATIC,17,47,63,8
+    LTEXT           "Manual Task",IDC_STATIC,167,115,40,8
+    DEFPUSHBUTTON   "Do Task",IDC_SETTRANSDIR,149,137,76,14
+    LTEXT           "Setup Tranlated Text Directory...",IDC_STATIC,17,139,
+                    108,8
+    DEFPUSHBUTTON   "Do Task",IDC_MERGE,149,189,76,14
+    LTEXT           "Prepare Text For Import...",IDC_STATIC,17,192,87,8
+    DEFPUSHBUTTON   "Do Task",IDC_PREPARE,149,88,76,14
+    LTEXT           "Prepare Text For Translation:",IDC_STATIC,17,90,96,8
+    LTEXT           "Set Current Language...",IDC_STATIC,17,242,80,8
+    DEFPUSHBUTTON   "Do Task",IDC_CHECK,149,162,76,14
+    LTEXT           "Check Translation for Errors...",IDC_STATIC,17,165,98,8
+    LTEXT           "Translate the Text...",IDC_STATIC,17,116,68,8
+    DEFPUSHBUTTON   "Do Task",IDC_SETBASEDIR,148,22,76,14
+    DEFPUSHBUTTON   "Do Task",IDC_ADDNEWLANG,149,214,76,14
+    DEFPUSHBUTTON   "Do Task",IDC_SETCURRLANG,149,239,76,14
+    DEFPUSHBUTTON   "Do Task",IDC_IMPORT,149,264,76,14
+    CONTROL         "Regular",IDC_REGIMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,281,40,10
+    CONTROL         "Aspects",IDC_ASPIMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,59,281,41,10
+    CONTROL         "Help",IDC_HLPIMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    101,282,31,10
+    CONTROL         "Reports",IDC_REPTIMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,282,40,10
+    CONTROL         "Regular",IDC_REGEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,63,40,10
+    CONTROL         "Aspects",IDC_ASPEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,59,63,41,10
+    CONTROL         "Help",IDC_HLPEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    101,64,31,10
+    CONTROL         "Reports",IDC_REPTEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,64,40,10
+END
+
+IDD_TRANSLATEWIZ DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,1
+ PRODUCTVERSION 1,0,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "TBT32 Text Builder Toolkit Application"
+            VALUE "FileVersion", "1, 0, 2, 1"
+            VALUE "InternalName", "TBT32"
+            VALUE "LegalCopyright", "Copyright (C) 2005 by Christopher J. Noyes"
+            VALUE "OriginalFilename", "TBT32.EXE"
+            VALUE "ProductName", "TBT32 Text Builder Toolkit Application"
+            VALUE "ProductVersion", "1, 0, 2, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HELPTXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_TEXTTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_REGTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_ASPTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 475
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_REPORTTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 437
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_SEL_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_SELTEXTITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ARRAYEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_NEWLANG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_SETLANGUAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_TRANSBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_SETTRANSDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_TRANSTASKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 320
+    END
+
+    IDD_TRANSLATEWIZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TEXTTYPE DLGINIT
+BEGIN
+    IDC_TEXTTYPE, 0x403, 19, 0
+0x7341, 0x7274, 0x2d6f, 0x6548, 0x706c, 0x7265, 0x4620, 0x6c69, 0x7365, 
+"\000" 
+    IDC_TEXTTYPE, 0x403, 18, 0
+0x6552, 0x6f70, 0x7472, 0x5420, 0x7865, 0x2074, 0x6946, 0x656c, 0x0073, 
+
+    IDC_TEXTTYPE, 0x403, 19, 0
+0x6552, 0x7567, 0x616c, 0x2072, 0x6554, 0x7478, 0x4620, 0x6c69, 0x7365, 
+"\000" 
+    IDC_TEXTTYPE, 0x403, 18, 0
+0x7341, 0x6570, 0x7463, 0x5420, 0x7865, 0x2074, 0x6946, 0x656c, 0x0073, 
+
+    0
+END
+
+IDD_SELTEXTITEM DLGINIT
+BEGIN
+    IDC_TEXTITEM, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_HELPTXT DLGINIT
+BEGIN
+    IDC_WSPELLCTRL1, 0x376, 163, 0
+0x0019, 0x0000, 0x0034, 0x0030, 0x0034, 0x0032, 0x0037, 0x0032, 0x0033, 
+0x0039, 0x0032, 0x0039, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0000, 0x0001, 0x01c2, 0x0000, 0x0246, 0x0000, 0x0010, 0x0000, 0x0000, 
+0xff01, 0xffff, 0xffff, 0xffff, 0x01ff, 0x0101, 0x0001, 0x0101, 0x0101, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x1600, 0x7373, 0x6563, 0x6d61, 0x742e, 
+0x786c, 0x732c, 0x6373, 0x6165, 0x326d, 0x632e, 0x786c, 0x0010, 0x0032, 
+0x0032, 0x0001, 0x0001, 0x0a01, 0x3200, 0x0100, 0x1701, 0x7375, 0x7265, 
+0x6964, 0x2e63, 0x6c74, 0x2c78, 0x6f63, 0x7272, 0x6365, 0x2e74, 0x6c74, 
+"\170" 
+    IDC_TABCTRLCTRL1, 0x376, 58, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0032, 0x0030, 
+0x0030, 0x0034, 0x0020, 0x0000, 0x0001, 0x40cd, 0x0000, 0x0334, 0x0000, 
+0x0000, 0x0000, 
+    0
+END
+
+IDD_ASPTEXT DLGINIT
+BEGIN
+    IDC_WSPELLCTRL1, 0x376, 163, 0
+0x0019, 0x0000, 0x0034, 0x0030, 0x0034, 0x0032, 0x0037, 0x0032, 0x0033, 
+0x0039, 0x0032, 0x0039, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0000, 0x0001, 0x01c2, 0x0000, 0x0246, 0x0000, 0x0010, 0x0000, 0x0000, 
+0xff01, 0xffff, 0xffff, 0xffff, 0x01ff, 0x0101, 0x0001, 0x0101, 0x0101, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x1600, 0x7373, 0x6563, 0x6d61, 0x742e, 
+0x786c, 0x732c, 0x6373, 0x6165, 0x326d, 0x632e, 0x786c, 0x0010, 0x0032, 
+0x0032, 0x0001, 0x0001, 0x0a01, 0x3200, 0x0100, 0x1701, 0x7375, 0x7265, 
+0x6964, 0x2e63, 0x6c74, 0x2c78, 0x6f63, 0x7272, 0x6365, 0x2e74, 0x6c74, 
+"\170" 
+    0
+END
+
+IDD_REGTEXT DLGINIT
+BEGIN
+    IDC_WSPELLCTRL1, 0x376, 163, 0
+0x0019, 0x0000, 0x0038, 0x0031, 0x0036, 0x0035, 0x0039, 0x0038, 0x0031, 
+0x0030, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0000, 0x0001, 0x01c2, 0x0000, 0x0246, 0x0000, 0x0010, 0x0000, 0x0000, 
+0xff01, 0xffff, 0xffff, 0xffff, 0x01ff, 0x0101, 0x0001, 0x0101, 0x0101, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x1600, 0x7373, 0x6563, 0x6d61, 0x742e, 
+0x786c, 0x732c, 0x6373, 0x6165, 0x326d, 0x632e, 0x786c, 0x0010, 0x0032, 
+0x0032, 0x0000, 0x0001, 0x0a01, 0x3200, 0x0100, 0x1701, 0x7375, 0x7265, 
+0x6964, 0x2e63, 0x6c74, 0x2c78, 0x6f63, 0x7272, 0x6365, 0x2e74, 0x6c74, 
+"\170" 
+    0
+END
+
+IDD_REPORTTEXT DLGINIT
+BEGIN
+    IDC_WSPELLCTRL1, 0x376, 163, 0
+0x0019, 0x0000, 0x0034, 0x0030, 0x0034, 0x0032, 0x0037, 0x0032, 0x0033, 
+0x0039, 0x0032, 0x0039, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 0x0020, 
+0x0000, 0x0001, 0x01c2, 0x0000, 0x0246, 0x0000, 0x0010, 0x0000, 0x0000, 
+0xff01, 0xffff, 0xffff, 0xffff, 0x01ff, 0x0101, 0x0001, 0x0101, 0x0101, 
+0x0001, 0x0000, 0x0000, 0x0100, 0x1600, 0x7373, 0x6563, 0x6d61, 0x742e, 
+0x786c, 0x732c, 0x6373, 0x6165, 0x326d, 0x632e, 0x786c, 0x0010, 0x0032, 
+0x0032, 0x0000, 0x0001, 0x0a01, 0x3200, 0x0100, 0x1701, 0x7375, 0x7265, 
+0x6964, 0x2e63, 0x6c74, 0x2c78, 0x6f63, 0x7272, 0x6365, 0x2e74, 0x6c74, 
+"\170" 
+    IDC_TABCTRLCTRL1, 0x376, 58, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0032, 0x0030, 
+0x0030, 0x0034, 0x0020, 0x0000, 0x0001, 0x42aa, 0x0000, 0x02e5, 0x0000, 
+0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "TBT32"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TBT32"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP                 "Open a Help Text"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_REGULARTXT           "Edit Regular i.e. Signs in Planets or Planets in Houses Text"
+    ID_TEXTSOURCES_ASPECTTEXT "Aspect & Midpoint Text"
+    ID_IMPORT_IMPORTPLANETHOUSETEXT 
+                            "Import a Planet/House Text File Into The Database"
+    ID_IMPORT_IMPORTASPECTTEXT 
+                            "Import a Aspect Text Source File Into the Database"
+    ID_IMPORT_IMPORTAHELPFILE "Import Help Files Into the Database"
+    ID_IMPORT_IMPORTREPORTTEXT "Import A Report Text File Into the Database"
+    ID_EDITTEXTSOURCES_REPORTTEXTSOURCES "Edit a Report Source Text File"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPTIONS_SETUP        "Setup Application"
+    ID_ARRAYTEXT            "Edit Array Text items"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TBT32.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

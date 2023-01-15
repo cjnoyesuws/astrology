@@ -1,0 +1,33 @@
+@ Numeric Reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+deftabs Natal Numeric Grid Printout For Name: {$1}, Comment: {$2}.$_
+# CH__MISC
+$c'Decan : ''$e|$f'Critical |''$h'Anaretic|''
+# CH__PLANET
+{$^$1:}|$9|$b'Direct'Retrograde'Still'|Declination: $x° $y'|
+# CH__MISC
+$c'Decan : ''$e|$f'Critical|''$h'Anaretic|''
+# CH__PLAN_HOUSE
+House: $2|$4'On House Cusp'Not On House Cusp'|$6'Intercepted|''
+# CH__PLAN_EXT
+Decan: $1|Decan Ruler:$3|$4'   Decan Sub-Ruler: |''$6@TR
+Navasma: $7|Navasma Sign: $9|Duad: $a|Duad Ruler: $c|$d'Duad Sub-Ruler: |''$f@TR
+$g'Combust|''$i'Home|''$k'Detriment|''$m'Exalted-Exact|'Exalted|''$o'Fall-Exact|'Fall|''$q'In Sign Ruled--Ruler: ''$s@TR
+# CH__ASPECT_HD
+{ASPECTS:}$_
+# CH__MID_ASPT
+{Aspects to Midpoint:}$_
+# CH__HOUSE_CS
+House Cusp #$^$1:|$2|House Cusp #$^$3:|$4@TR$_
+# CH__HOUSE_HEAD
+[YOUR NATAL HOUSE CUSPS:]$_
+@TB
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

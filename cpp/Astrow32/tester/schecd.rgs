@@ -1,0 +1,23 @@
+HKCR
+{
+	Tester.schecd.1 = s 'schecd Class'
+	{
+		CLSID = s '{C4B368C1-4EA8-11D3-9DE7-0000C00DEE96}'
+	}
+	Tester.schecd = s 'schecd Class'
+	{
+		CLSID = s '{C4B368C1-4EA8-11D3-9DE7-0000C00DEE96}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C4B368C1-4EA8-11D3-9DE7-0000C00DEE96} = s 'schecd Class'
+		{
+			ProgID = s 'Tester.schecd.1'
+			VersionIndependentProgID = s 'Tester.schecd'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}

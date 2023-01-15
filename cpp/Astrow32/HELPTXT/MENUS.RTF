@@ -1,0 +1,656 @@
+{\rtf1\ansi \deff0{\fonttbl{\f0\froman Tms Rmn;}{\f1\froman Symbol;}{\f2\fswiss Helv;}{\f3\froman Times New Roman;}{\f4\fswiss Arial;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;}{\stylesheet{\s244 \f3\fs16\up6 \sbasedon0\snext0 footnote reference;}{\s245 \f3 \sbasedon0\snext245 footnote text;}{\s252\keepn \b\i\f4\cf2 
+\sbasedon0\snext0 heading 3;}{\s253\keepn \b\f4\fs28\cf2 \sbasedon0\snext0 heading 2;}{\s254\keepn \b\f4\fs32\cf2 \sbasedon0\snext0 heading 1;}{\s255\li720 \f3\fs22 \sbasedon0\snext255 Normal Indent;}{\f3\fs22 \snext0 Normal;}}{\info
+{\author Christopher J. Noyes}{\operator Christopher J. Noyes}{\creatim\yr1993\mo8\dy15\hr20\min38}{\revtim\yr1993\mo8\dy16\hr16\min21}{\version3}{\edmins428}{\nofpages1}{\nofwords65536}{\nofchars65536}{\vern8368}}\paperw10080\paperh12240\widowctrl\ftnbj 
+\sectd \linex0\endnhere \pard\plain \s254\keepn \b\f4\fs32\cf2 {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBGET}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Get, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Get Birth;Menu Commands}}Get Birth.
+\par \pard\plain \f3\fs22 
+\par This Function reads a Birth Record based on what is in the name field on the Birth, Compatibility and Transits Info Data Screens, depending on which is active at the time.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBADD}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Add, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Add Birth;Menu Commands}}Add New Birth.
+\par \pard\plain \f3\fs22 
+\par This Function will Save the contents of the Birth Data Screen to the Birth Data Base.If in the Birth Rectification screen the Birth is marked as time is Not Known, the rectification information in the screen is saved to the database as well. 
+\par \tab {\b NOTE:} the name will not appear in the Popup list till you run the "{\uldb Make Popups}{\v IDM_BDBMKPOP}" menu command located in the Utilities menu. This utiluty can also be found in this menu as well.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBREPLACE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Replace, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Replace Birth;Menu Commands}}Replace Birth.
+\par \pard\plain \f3\fs22 
+\par This Function will Replace the contents of the Record corresponding to this one in the Birth Data Base with the contents of the Birth Data Screen.Note: this record must have been read with the Get Birth menu command, before editing it. If in the Birth Rec
+tification screen the Birth is marked as time is Not Known, the rectification information in the screen is saved to the database as well. 
+\par \tab {\b NOTE:} If the Name changes, this will not be reflected in the Popup List till you run the"{\uldb Make Popups}{\v IDM_BDBMKPOP}" menu command located in the Utilities menu. This utility can also be found in this menu as well.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBDEL}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Delete, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Delete Birth;Menu Commands}}Delete Birth.
+\par \pard\plain \f3\fs22 
+\par This Function Will Erase the Entry in the Index File Pointing to the Record in the Birth Data Base. The Name field indicates the record to be deleted.\line \tab {\b NOTE:} this deletion will not be reflected in the Popup List till you run the "{\uldb 
+Make Popups}{\v IDM_BDBMKPOP}" menu command in the Utilities menu. This utility can also be found in this menu as well.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBRETURN}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Return, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Get Birth;Menu Commands}}Return To Birth Data Screen.
+\par \pard\plain \f3\fs22 
+\par This Function Returns you to the Birth Info Screen
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBMKPOP}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Make Popups, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Make Popups;Menu Commands}}Make Birth Popups.
+\par \pard\plain \f3\fs22 
+\par This Function Rebuilds the Birth Popup List.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBCOPY}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Copy,Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Copy Birth;Menu Commands}}Copy Birth.
+\par \pard\plain \f3\fs22 
+\par This Function copies the data that is currently in this screen and saves it so you can paste it later.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBPASTE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Paste, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu; Birth;Menu Commands}}Paste Birth.
+\par \pard\plain \f3\fs22 
+\par This Function Pastes the previously saved birth data in to the screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_BDBCLEAR}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Clear, Birth Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Clear Birth;Menu Commands}}Clear Birth.
+\par \pard\plain \f3\fs22 
+\par This Function Pastes the previously saved birth data in to the screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Birth Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} BIRTH_MENU}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Menu;Menu Commands}}Birth Menu.
+\par \pard\plain \f3\fs22 
+\par This menu allows you to use and make changes to the Birth Database.
+\par 
+\par \pard \sl240 {\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Get Birth.}{\plain \v\f3 IDM_BDBGET}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Add Birth.}{\plain \v\f3 IDM_BDBADD}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Replace Birth.}{\plain \v\f3 IDM_BDBREPLACE}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Delete Birth.}{\plain \v\f3 IDM_BDBDEL}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Make Birth Popups.}{\plain \v\f3 IDM_BDBMKPOP}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Copy Birth.}{\plain \v\f3 IDM_BDBCOPY}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Paste Birth.}{\plain \v\f3 IDM_BDBPASTE}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Clear Birth.}{\plain \v\f3 IDM_BDBCLEAR}{\plain \f3 .
+\par }{\plain \f1 \'a8}{\plain \f3  }{\plain \b\f3\uldb Return.}{\plain \v\f3 IDM_BDBRETURN}{\plain \f3 .
+\par }\pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBGET}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Add Location, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Add Location;Menu Commands}}Get Location.
+\par \pard\plain \f3\fs22 
+\par This Function reads a Location Record based on what is in the Country, State and Location fields in the Birth Info Screen, Compatibility Info Screen, Transits Info Screen or Relocation Data screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBADD}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Replace Location, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Replace Location;Menu Commands}}Add New Location.
+\par \pard\plain \f3\fs22 
+\par This Function will Save the contents of the Birth Data Screen to the Location Data Base, though this location will not appear in the Popup lists till you run the "{\uldb Make Popups}{\v IDM_UPLOCAT}" menu command located in the Utilities menu.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBREPLACE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Get Location, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Get Location;Menu Commands}}Replace Location.
+\par \pard\plain \f3\fs22 
+\par This Function will Replace the contents of the Record corresponding to this one in the Location Data Base with the contents of the Birth Data Screen, Birth Info Screen, Compatibility Info Screen, Transits Info Screen or Relocation Data screen.
+\par \tab {\b NOTE}: this record must have been read with the Get Location menu command, before making changes to it. If you make a change to the spelling, the change of spelling won't be reflected in this list till you run the "{\uldb Make Popups}{\v 
+IDM_UPLOCAT}" menu command located in the Utilities menu.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBDEL}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Delete Location, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Delete Location;Menu Commands}}Delete Location.
+\par \pard\plain \f3\fs22 
+\par This Function Will Erase the Entry in the Index File Pointing to the Record in the Location Data Base. The Country, State, and Location fields indicate the record to be deleted.
+\par \tab {\b NOTE:} this deletion will not be reflected in the Popup List till you run the "{\uldb Make Popups}{\v IDM_UPLOCAT}" menu command in the Utilities menu.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBCOPY}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Copy, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Copy Location;Menu Commands}}Copy Birth.
+\par \pard\plain \f3\fs22 
+\par This Function copies the data that is currently in this screen and saves it so you can paste it later.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBPASTE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Paste, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Paste Location;Menu Commands}}Paste Birth.
+\par \pard\plain \f3\fs22 
+\par This Function Pastes the previously saved birth data in to the screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 #{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_LDBCLEAR}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Clear, Location Menu}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Clear Location;Menu Commands}}Clear Birth.
+\par \pard\plain \f3\fs22 This Function Pastes the previously saved birth data in to the screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Location Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} LOCATION_MENU}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Location Menu;Menu Commands}}Location Menu.
+\par \pard\plain \f3\fs22 
+\par This menu allows you to use and make changes to the Birth Database.
+\par \pard \sl240 
+\par {\plain \f1 \'a8} {\b\uldb Get Location.}{\v IDM_LDBGET}.
+\par {\plain \f1 \'a8} {\b\uldb Add Location.}{\v IDM_LDBADD}.
+\par {\plain \f1 \'a8} {\b\uldb Replace Location.}{\v IDM_LDBREPLACE}.
+\par {\plain \f1 \'a8} {\b\uldb Delete Location.}{\v IDM_LDBDEL}.
+\par {\plain \f1 \'a8} {\b\uldb Copy Location.}{\v IDM_LDBCOPY}.
+\par {\plain \f1 \'a8} {\b\uldb Paste Location.}{\v IDM_LDBPASTE}.
+\par {\plain \f1 \'a8} {\b\uldb Clear Location.}{\v IDM_LDBCLEAR}.
+\par {\plain \f1 \'a8} {\b\uldb Return.}{\v IDM_LDBRETURN}.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Astrology Help}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HASTROL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ ASTRO-Helper;Astrology Help;Astrology}}Astrology Help.
+\par \pard\plain \f3\fs22 
+\par This allows you to view, print and convert to ASCII text, special help files. These file help you learn about Astrology. If yo
+u produce reports for other people, you can print out these help files for the people you do charts for so they understand astrology better.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Data Menu.}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Data Menu;Menu Commands}}Data Menu.
+\par \pard\plain \f3\fs22 
+\par Use these menu commands to enter and to edit data. Info screens refers to birth date and location. Transits Data is data
+ for number of transits and period between charts and planets involved. Rectification is a method used to do a chart where the exact birth time is not known.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Birth Info.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DBIRTHI}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Info;Data Menu;Menu Commands}}Birth Info, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter your birth information into ASTRO.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Compatibility Info.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DCOMPATI}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Compatibility Info;Data Menu;Menu Commands}}Compatibility Info, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter your partner's birth information into ASTRO.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Transits Info.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DTRANSI}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Transits Info;Data Menu;Menu Commands}}Transits Info, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter the first date to do a transit chart for
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Transits Data.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DTRANSD}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Transits Data;Data Menu;Menu Commands}}Transits Data, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter the data for doing transits analysis. The data entered on this screen is the number of transit charts you wish to calculate, the range of planets you wish to test and the dates between.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Progression Data.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DPROGD}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Progression Data;Data Menu;Menu Commands}}Progression Data, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter Progression information for ASTRO. This screen will ask you the number of years and months you wish to progress. Normally progressions 
+are only done for a period of years but for ASTRO, do a progression for years and months is relatively easy.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Birth Rectification.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DBIRTHR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Rectification;Data Menu;Menu Commands}}Birth Rectification, {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command if you do not accurately know the birth time for the person involved. If you do not know the birth time you can calculate a chart using a number of methods. If you know a House cusp or can predict the ascendant, use "Use Know Angle" 
+and enter the information that you know.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Compatibility Rectification.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DCOMPATR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Compatibility Rectification;Data Menu;Menu Commands}}Compatibility Birth Rectification, \line {\plain \b\f4\cf2 (Data Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command if you do not accurately know the birth time for the person involved. If you do not know the birth time you can calculate a chart using a number of methods. If you know a House cusp or can predict the ascendant
+, use "Use Know Angle" and enter the information that you know.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Compile Menu.}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Compile Menu;Menu Commands}}Compile Menu
+\par \pard\plain \f3\fs22 
+\par Use these menu commands to compile an astrological chart. Once you enter your information a chart must be compiled before you can view or print it.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Default Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CDEF}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Default Chart;Compile Menu;Menu Commands;Charts}}Default Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command will compile a chart based on what you have defined in the Options/Birth Options screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Planets Only, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CBSO}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth Signs Only;Compile Menu;Menu Commands;Charts}}Birth Signs Only, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command will compile a chart with just the planet information. Several other items are shown in this menu command such as text and the summary which can be turned off if you wish from the Options screen.
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Planets and Houses, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CBSH}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Birth and Houses;Compile Menu;Menu Commands;Charts}}Planets and Houses, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command will compile a chart with just the planet and House information for the planets.Several other items are shown in this menu command such as text and the summary which can be turned off if you wish with the Options/Birth Options screen.
+
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Planets Houses and Aspects, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CBSHA}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Planets Houses and Aspects;Compile Menu;Menu Commands;Charts}}Planets, Houses and Aspects, \line {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 This menu command will compile a chart with just the planet, House and aspect information for the planets.Several other items are shown in this menu 
+command such as text and the summary which can be turned off if you wish with the Options/Birth Options screen.
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option. 
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Complete Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CCOMPLETE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Complete Chart;Compile Menu;Menu Commands;Charts}}Complete Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command will compile a chart with just the planet, House, aspect and other information for the planets.Several other items are shown 
+in this menu command such as text and the summary which can be turned off if you wish with the Options/Birth Options screen.
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Complete Chart with Basic Midpoints, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_CCMPBASM}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Complete Chart with Basic Midpoints;Compile Menu;Menu Commands;Charts;Midpoints}}Complete Chart With Basic Midpoints, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command will compile a chart with just the planet, House, aspect and other information for the planets. This menu command also does basic midpoint calculations for midpoints between the moon's nodes and the ascendant and the Midheaven. Several o
+ther items are shown in this menu command such as text and the summary which can be turned off if you wish with the Options/Birth Options screen.
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Complete Chart with Full Midpoints, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_CCMPFLM}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Complete Chart with Full Midpoints;Compile Menu;Menu Commands;Charts;Midpoints}}Complete Chart With Full Midpoints, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab This menu command will compile a chart with just the planet, House, aspect and other information for the planets. This menu command also does Full midpoint calculations for midpoints betwee
+n all planets and angles. Several other items are shown in this menu command such as text and the summary which can be turned off if you wish with the Options/Birth Options screen.
+\par \tab You need to have completed the birth and, if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Compatibility Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CCOMPAT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K
+} Compatibility Chart;Compile Menu;Menu Commands;Charts}}Compatibility Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab Use this menu command to compile a comp
+atibility chart based on two people's birth information and compare them. Several other items are shown in this menu command such as text and the summary which can be turned off if you wish with the Options/Compatibility Options screen.
+\par \tab You need to have completed the birth and Compatibility screens, and if necessary the birth and compatibility rectification screens before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Transits Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_CTRANS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Transits Chart;Compile Menu;Menu Commands;Charts}}Transits Charts, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab Use this menu command to compile transits charts based on a person's birth date and a second date and some other information. This menu command compi
+les a number of charts for a period in time. Several other items are shown in this menu command such as text and the summary which can be turned off if you wish with the Options/Transits Options screen.
+\par \tab You need to have completed the Birth, Transits Info screens, and Transits Data screens and if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Progression Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CPROGR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Progression Chart;Compile Menu;Menu Commands;Charts}}Progression Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab Use this menu command to compile a Progression chart. This uses a birth date and adds a day for every year to the birth date and compiles a second chart and compares them. Several other items are shown in this menu command such as text 
+and the summary which can be turned off if you wish with the Options/Progressions Options screen.
+\par \tab You need to have completed the Birth screen, and Progression Data screens and if necessary the birth rectification screen before selecting this option.
+\par \tab When this menu command starts you will be asked information to put on the header of the printout and to make it easier to retrieve this printout. All the printouts which you do in this session are kept on disk till you quit, unless you kill them.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} View, (File Menu).}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FVIEW}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ File Menu;View File}}View, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to view an ASTRO File that was created by compiling a horoscope. If you have selected a graphics file, you will view a graphics file, other
+wise you will view a text file. This menu command allows you to view the by scrolling through the file like you would with a word processor. \tab 
+You can also do this by Pressing ENTER on the choice you want to view, or double clicking the choice with the mouse.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Kill, (File Menu).}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FKILL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ File Menu;Kill File;Delete File}}Kill, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to delete files from the file list. A file list is created whenever you start ASTRO and a record of every file created when you compile a horoscope chart. This file and the files it contains can be saved when you quit. You may wish t
+o delete files, if you do not have much room on your disk, etc. Unless you do not tell ASTRO Not To the file list is entirely erased along with its contents when this program end.
+\par \tab If you have no files checked or{\i  selected}, only the file that the highlight is on will be deleted, otherwise all the files that are checked or {\i selected} will be deleted.
+\par \tab You can also delete or kill a single file by highlighting that file and pressing DEL or Selecting Delete or Cut from the Edit menu.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Options Menu.}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Options Menu;Menu Commands}}Options Menu.
+\par \pard\plain \f3\fs22 
+\par These menu commands allow you to customize ASTRO. You can use these menu commands to customize screen colors, disk directories etc as well as certain options when you compile charts, as well as options for the graphics operations of the program.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Setup, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OSETUP}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Disk Directories;Setup;Options Menu;Menu Commands}}Setup, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize disk directories.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Natal Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ONATAL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Natal Options;Chart Options;Options Menu;Menu Commands}}Natal Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling Birth charts. The options set on this screen are directly used when compiling the default chart. These allow you to use certain features in ASTRO which some users may not wish to use, b
+ut you might want, or to turn of other options which you do not feel are valid.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Compatibility Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OCOMPAT}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Compatibility Options;Chart Options;Options Menu;Menu Commands}}Compatibility Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling Compatibility charts. These
+ allow you to use certain features in ASTRO which some users may not wish to use, but you might want, or to turn of other options which you do not feel are valid.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Transits Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OTRANS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Transits Options;Chart Options;Options Menu;Menu Commands}}Transits Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab 
+This menu command allows you to customize options used when compiling Transits charts. These allow you to use certain features in ASTRO which some users may not wish to use, but you might want, or to turn of other options which you do not feel are valid.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Progressions Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OPROGR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Progressions Options;Chart Options;Options Menu;Menu Commands}}Progressions Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling Progressions charts. These allow you to use certain features in ASTRO which some users may not wish to use, but you might want, or to turn of other options 
+which you do not feel are valid.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Utilities Menu.}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Utilities Menu;Menu Commands}}Utilities.
+\par \pard\plain \f3\fs22 
+\par These menu commands are basically utilities for your use which you may find useful.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Re-Index Databases, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UIBIRTH}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+#} IDM_UILOCAT}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UIALLD}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Re-Index Database;Database Functions;Utilities Menu;Menu Commands}}Re-Index Databases, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This Function allows you to Re-Index the databases that ASTRO uses.Normally this is not needed but if one of the database indexes (files ending in .NDX) become corrupted or accidentally erased, they may need to be re-indexed.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Make Popups, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UPBIRTH}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_UPLOCAT}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UPALLD}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Make Popups;Database Functions;Utilities Menu;Menu Commands}}Make Popups, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to make or update the popup files used by the database to show you the names and locations on file. If you add names or locations to these files, they will have to be updated.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Sort File List, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_USORT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Sort File List;Utilities Menu;Menu Commands}}Sort File List, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to sort alphabetically the file list. If you keep files around for several different sessions and delete files you may need to use this utility to reorganize your files.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Numeric Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CNUMERIC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Numeric Chart;Compile Menu;Menu Commands;Charts}}Numeric Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab This menu command compiles a chart which contains just the astrological facts and positions without any interpretation or text. The information in this chart is
+ presented, in a more compact notation which astrologers use to note planetary positions and signs.
+\par \tab This menu command will compile a chart based on what you have defined in the Options/Birth Options for the Numeric Report.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Numeric Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_ONUMER}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Numeric Options;Chart Options;Options Menu;Menu Commands}}Numeric Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling Birth charts, and Producing a Numeric chart. The options set on this screen are directly used when compiling the default Numeric chart. These allow you to use certain features in ASTRO 
+which some users may not wish to use, but you might want, or to turn of other options which you do not feel are valid.This screen also has several options such as "Text" which are not valid in this context since the Numeric chart Produces No Text.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Edit File List Entry, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UEDIT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+K} Edit File List Entry;File List;Utilities Menu;Menu Commands}}Edit File List Entry, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to Edit an entry in the file list, that you had compiled earlier, and perhaps you now want to put a more exact comment onto it.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Rebuild File List, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UBLDFLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+K} Rebuild File List Entry;File List;Utilities Menu;Menu Commands}}Rebuild File List, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par With this version of ASTRO, you can archive files from the list off to another floppy, or disk. To do this copy the file onto another disk and kill the file from the View-Print menu. When you need the file again, copy the file back to your User directory,
+ and select this menu command. This will only work for files generated by ASTRO Version 2.25 or greater since ASTRO as of this version stores file information in each file, and the previous version did not.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Graphics Options.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OGRAPHICS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Graphics Options;Options Menu;Menu Commands}}Graphics Options.
+\par \pard\plain \f3\fs22 
+\par This screen will allow you to change the graphics configuration, and customize it to your needs. You can change screen colors and fonts, and setup the various options that the graphics display supports.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Return Data}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DRETURND}K{\footnote 
+\pard\plain \s245 \f3 {\fs16\up6 K} Return Data;Data Menu;Menu Commands}}Return Data.
+\par \pard\plain \f3\fs22 
+\par Use this screen to Enter and Edit data for doing a return chart. A Return Chart shows dates and times when either the Sun or the Moon returns to the same place it was at when you were born.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Relocation Data}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DRELOCD}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Relocation Data;Data Menu;Menu Commands}}Relocation Data.
+\par \pard\plain \f3\fs22 
+\par Use this screen to Enter and Edit data for doing a Relocation chart. A Relocation chart shows the effect that moving from your birth place to another location has on your houses and how things fall in them.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Save (Birth Data), File Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FSAVE}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_FSAVEAS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Save Birth Data;SaveAs Birth Data;Birth Data;Files Menu;Menu Commands}}Save (Birth Data), {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to name a file to save all the Data entered in these menus to. This allows you to save the data you have entered for a future time. If you don't enter a disk or directory, it will be saved to your User disk and Directory. If y
+ou save to a file ASTRODAT.DEF, this file will be read Every time ASTRO starts up. A
+STRO saves the contents of the screens to the File ASTRODAT.HIS when you quit, and reloads it when you startup again. This is overridden by ASTRODAT.DEF which takes priority if it exists.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Open (Birth Data), File Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FOPENBDAT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Open (Birth Data);Files Menu;Menu Commands;Birth Data}}Open (Birth Data), {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to name a previously saved file and load it into memory. This loads data into all the screens. If you don't specify a disk or directory, the file is read from your User Disk and Directory.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Return Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CRETURN}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Return Chart;Compile Menu;Menu Commands;Charts}}Return Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command produces a Return chart A Return chart shows dates and times when either the Sun or the Moon returns to the same place it was at when you were born. You need to fill in the Birth Info Screen, B
+irth Rectification Screen and the Return Data Screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Relocation Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CRELOC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Relocation Chart;Compile Menu;Menu Commands;Charts}}Relocation Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to compile a Relocation chart. A Relocation chart shows the effect that moving from your birth place to another location has on your houses and how things fall in them. You need to fill in the Birth Info Screen, Birth 
+Rectification Screen and the Relocation Data Screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Composite Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CCOMPOS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Composite Chart;Compile Menu;Menu Commands;Charts}}Composite Chart, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to compile a Composite Chart. A Composite Chart takes the locations from two charts and calculates midpoints between them.These show the nature of the relationship.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Relocation Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_ORELOC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Relocation Options;Chart Options;Options Menu;Menu Commands}}Relocation Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling a Relocation chart. These allow you to use certain features in A
+STRO which some users may not wish to use, but you might want, or to turn of other options which you do not feel are valid.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Composite Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OCOMPOS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Composite Options;Chart Options;Options Menu;Menu Commands}}Composite Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command allows you to customize options used when compiling a Composite chart. These allow you to use certain features in ASTRO which some users may not wish to use, but you might want, or to turn of other options which you do not feel are valid
+.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Text Conversion, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OTEXT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Text Conversion;Options;Options Menu;Menu Commands}}Text Conversion, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par \tab Use this menu command to enter information about converting ASTRO files to ASCII or to other word processing formats.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Merge Databases, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UMBIRTH}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_UMLOCAT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Merge Databases;Database Functions;Utilities Menu;Menu Commands}}Merge Databases, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to Merge New database data into an existing location or birth database. This will allow you to upgrade to the Extended Database without losing data you have entered.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Read File Into Data, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UPARSE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+K} Read File Into Data;Utilities Menu;Menu Commands}}Read File Into Data, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to scan through ASTRO text output files and put the original Info and Data information into the
+ir appropriate screens. This is useful if you forgot to add a name to the database and you want to use it again. This menu command puts the data back into the screens that they came from.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Transits of Composite Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #
+} IDM_CCMTR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Transits of Composite Chart;Compile Menu;Menu Commands;Charts}}Transits of Composite Chart, \line {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par The Choice compiles Transits of a composite chart created between the two births in the Birth Information Screen and the Compatability Information Screen. Information in the Transits Information Screen and the Transits Data Screen is also needed.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Fixed Star Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CFIXED}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Fixed Star Chart;Compile Menu;Menu Commands;Charts}}Fixed Star Report, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This Compiles a Fixed Star Report. This tells you where the Major fixed stars where on the date in the Birth Information Screen, and shows what natal house they are in and what aspects they make to your natal planets.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Arabic Parts Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CARABIC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Arabic Parts Chart;Compile Menu;Menu Commands;Charts}}Arabic Parts Report, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This Compiles an Arabic Parts Report. This tells you where the major Arabic Parts which are combinations of other signs where on the 
+date in the Birth Information Screen, and shows what natal house they are in and what aspects they make to your natal planets.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} New/Open Comment File, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_FNEWCFL}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FOPENCFL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Open Comment File;New Comment File;Comment Files;File List}}New/Open Comment File, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This feature allows you to edit a file that will be associated with a single chart. This is a file of your comments that you can use. This supplies a built in word processor. The file that you create is printed, converted, an
+d deleted along with the associated report.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} New/Open Cover Page, File Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_FNEWCPG}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FOPENCPG}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Open Cover Page;New Cover Page;Cover Page;File List}}New/Open Cover Page, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This feature allows you to edit a Cover Page file that will be associated with a single chart. This menu command brings up a special editing screen which you can use.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Save Comment File.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FSAVECFL}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Save Comment File;Comment Files;File List}}Save Comment File, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This feature allows you to Save the a Comment File that you are currently editing.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Composite Transits Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OCMTR}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Composite Transits Options;Chart Options;Options Menu;Menu Commands}}Composite Transits Options, \line {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to edit the options associated with the Transits of Composite Reports Options.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Fixed Star Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OFIXED}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Fixed Star Options;Chart Options;Options Menu;Menu Commands}}Fixed Star Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to edit the options associated with the Fixed Star Reports Options.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Arabic Parts Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OARABIC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Arabic Parts Options;Chart Options;Options Menu;Menu Commands}}Arabic Parts Options, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to edit the options associated with the Arabic Parts Reports Options.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} XPRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Load Macros, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UMACROS
+}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Load Macros;Utilities Menu;Menu Commands}}Load Macros, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to load a file of Macros from within ASTRO. This duplicates the -MAC=file command line option.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Heliocentric Chart, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CHELIO}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Heliocentric Chart;Compile Menu;Menu Commands;Charts}}Heliocentric Report, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This Compiles a Heliocentric Report. This tells you the Heliocentric angles made by The planets based on the date in the Birth Information Screen. Norm
+al Astrology is based on ancient beliefs, which believed that the earth is at the center of the universe. A Heliocentric chart takes the proper assumption that the planets circle the Sun. A Heliocentric report is used in conjunction with a natal report.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Heliocentric Problem, Compile Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_CPROB}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Arabic Parts Chart;Compile Menu;Menu Commands;Charts}}Astrological Problem, {\plain \b\f4\cf2 (Compile Menu)}.
+\par \pard\plain \f3\fs22 
+\par This Compiles an Astrological Problem Report. This compares the chart created from the Birth Information Screen and checks against data based on other charts and predicts potential sore spots and problems in the person's character based on their chart.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Astrological Problem Options, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+#} IDM_OPROB}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Astrological Problem Options;Chart Options;Options Menu;Menu Commands}}Astrological Problem Options, \line {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to edit the options associated with the Astrological Problem Charts.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} XPRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Run Batch, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UBATCH}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Run Batch;Utilities Menu;Menu Commands}}Run Batch, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This allows you to Run an ASTRO PRO Batch File from within ASTRO. This duplicates the -BAT={\i file} command line option.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Aspect Orbs, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OEORBS}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Aspect Orbs;Aspects;Customize Orbs;Chart Options;Options Menu;Menu Commands}}Aspect Orbs, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par This screen allows you to setup custom orbs or change the orbs that the program uses to give you results that you expect. A separate set of data is used for each type of chart.
+\par \tab If you don't consider yourself an expert astrologer, I would suggest leaving these as they are.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Arrange, Windows Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_WARANGE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Arrange Windows;Windows Menu;Menu Commands}}Arrange, {\plain \b\f4\cf2 (Windows Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command arranges the minimized window icons.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Cascade, Windows Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_WCASCADE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Cascade Windows;Windows Menu;Menu Commands}}Cascade, {\plain \b\f4\cf2 (Windows Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Cascades or Overlaps the open windows.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Tile, Windows Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_WTILE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Tile Windows;Windows Menu;Menu Commands}}Tile, {\plain \b\f4\cf2 (Windows Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command menu command Tiles the open windows
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Text Reports, Windows Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_WTEXTLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Text Reports;Windows Menu;Menu Commands;File List}}Text Reports, {\plain \b\f4\cf2 (Windows Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command reopens a closed text report file options.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Graphic Files, Windows Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_WGRAPHLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Graphics Files;Windows Menu;Menu Commands;File List}}Graphics Files, {\plain \b\f4\cf2 (Windows Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command reopens a closed graphics report file options.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Clear File List Selection, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UCLRSEL}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Clear File List Selection;Utilities Menu;Menu Commands}}Clear File List Selection, \line {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command, clears all the checked or selected files in a given file list.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Archive Charts, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UARC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Archive Charts;PKZIP;LHA;Utilities Menu;Menu Commands}}Archive Charts, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command, archives all the checked or selected files in a given file list. This command uses external programs LHA.EXE and PKZIP.EXE to compress and archive files for later use.You can archive these files to a floppy or other disk.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Unarchive Charts, Utilities Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_UXARC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+K} Unarchive Charts;PKUNZIP;LHA;Utilities Menu;Menu Commands}}Unarchive Charts, {\plain \b\f4\cf2 (Utilities Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command unarchives the files from a PKZIP .ZIP file, or from a LHA .LZH file This command uses external programs LHA.EXE and PKUNZIP.EXE to decompress. You can decompress these files from a floppy or other disk.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Contents, Help Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HCONTENTS}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Contents;Help Menu;Menu Commands}}Contents, {\plain \b\f4\cf2 (Help Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command brings up the Help Contents menu.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Search For Help On, Help Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HSEARCH}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K
+} Search For Help On;Help Menu;Menu Commands}}Search For Help On, {\plain \b\f4\cf2 (Help Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Brings up a Search Dialog Box so you can search for various topics
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Contents, Help Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HHOWTO}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ How To Use Help;Help Menu;Menu Commands}}How To Use Help, {\plain \b\f4\cf2 (Help Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command shows you how to use help.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} About, Help Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HABOUT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ About;Help Menu;Menu Commands}}About, {\plain \b\f4\cf2 (Help Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command brings up a dialog box showing this programs title and version number.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Open File List, Files Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_FNEWFLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} User File List;File List;New File List;Files Menu;Menu Commands}}New File List, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command creates a new User File List. You can copy and Paste files from the regular Text and Graphics File List and save this list for future use. You can perform all the normal operations that you can do from a file list from a User file List.
+
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Open File List, Files Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_FOPENFLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} User File List;File List;Open File List;Files Menu;Menu Commands}}Open File List, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Opens an existing User File List. You can copy and Paste files from the regular Text and Graphics File List and save this list for future use. You can perform all the normal operations that you can do from a file list from a User file Li
+st.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Open File List, Files Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_FSAVEFLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} User File List;File List;Save File List;Files Menu;Menu Commands}}Save File List, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Saves the User File List you are working on. to a file. If the file is named already that name will be used, otherwise you will be promp
+ted for a name. You can copy and Paste files from the regular Text and Graphics File List and save this list for future use. You can perform all the normal operations that you can do from a file list from a User file List.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Open File List, Files Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_FSAVEASFLST}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} User File List;File List;Save As File List;Files Menu;Menu Commands}}Save As File List, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Saves the User File List you are working on. to a file.You will be prompted for a name. If the file already has a name, you can change it. You can copy and Paste files from the regular Text and Graphics File List and save this list for f
+uture use. You can perform all the normal operations that you can do from a file list from a User file List.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Edit, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 
+#} IDM_FEDIT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Edit, Files Menu;Editing Text Files;Files Menu;Menu Commands}}Edit, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command converts the currently selected text file into a text file that an editor can use and then starts the editor that you have setup and loads the file that you converted so you can edit the file.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} DELUXE}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Close, Files Menu.}#{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 #} IDM_FCLOSE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Close, Files Menu;Files Menu;Menu Commands}}Close, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command closes the current window. If you are using the Professional version and the current file has been modified, it will prompt you to save the current file.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Exit, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FEXIT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Exit;Quit;Files Menu;Menu Commands}}Exit, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command exits ASTRO
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Export, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FEXPORT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Export;Saving Files;Text files;Files Menu;Menu Commands}}Export, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command converts files to another useable format. Text Files are converted to Word Processing Files and Graphic Files are converted into bitmap files. If you are in a text file list only the text files will be converted. If you are in a Graphics
+ file list, only the graphics files will be converted. If you are in a User file list, both types of files will be converted to their respective types.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Page Setup, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FPRPAGESETUP}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Page Setup;Files Menu;Menu Commands}}Page Setup, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command lets you setup the page dimensions and margins used for printing text and graphic files.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Printer Setup, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FPSETUPTXT}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_FPSETUPGRA}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Printer Setup;Graphics;Text files;Files Menu;Menu Commands}}Printer Setup {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command sets up the printer for text or graphics. ASTRO allows for two different printer set
+ups to be used, B&W for text and Color for Graphics for example. This allows you to pick printers, and setup printer parameters that your printer supports and setup other related items.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Undo, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_EUNDO}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Undo;Edit Menu;Menu Commands}}Undo {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command undoes what was done last. If you had just Cut something, undo would undo the cut. if you had pasted something undo would undo the paste.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Redo, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_EREDO}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Redo;Edit Menu;Menu Commands}}Redo {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command redoes what was undone last.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Cut, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ECUT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Cut;Edit Menu;Menu Commands}}Cut {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Cuts a selection and puts it on the Clipboard. In a File List this deletes a file.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Copy, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ECOPY}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Copy;Edit Menu;Menu Commands}}Copy {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Copies the selection to the Clipboard.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Paste, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_EPASTE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Paste;Edit Menu;Menu Commands}}Paste {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Pastes what is in the Clipboard to the current window.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Delete, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_EDEL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Delete;Edit Menu;Menu Commands}}Delete {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command Deletes what is selected. In a File list this has the same effect as Files Kill.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Find, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_EFIND}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Find;Text Viewer;File List;Edit Menu;Menu Commands}}Find {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par If you are in a Text Screen, this menu command brings up a dialog box which you can use to enter text to find. In a File List, this menu command brings up a dialog box which you can use to enter and find files in the list. In this screen, you can enter wh
+at you know either name or comments.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Next, Edit Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ENEXT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Next;Text Viewer;File List;Edit Menu;Menu Commands}}Next {\plain \b\f4\cf2 (Edit Menu)}.
+\par \pard\plain \f3\fs22 
+\par Once you have chosen Find in the Edit menu, this menu command finds the next available matching selection.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show Sign Names, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_SIGN_NAME}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Show Sign Names;Graphics;Graphics Menu;Menu Commands}}Show Sign Names, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of Sign Names in the graphics screen around the outside. If Glyphs are being used, then Glyphs will be used, otherwise the names will be used.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show House Numbers, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HOUSE_NUM}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Show House Numbers;Graphics;Graphics Menu;Menu Commands}}Show House Numbers, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of House Numbers in the graphics screen around the outside or in the middle. 
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show House Degrees, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HOUSE_DEG}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Show House Degrees;Graphics;Graphics Menu;Menu Commands}}Show House Degrees, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of House Degrees in the graphics screen around the outside of the cartwheel.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show Aspects, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_SHOW_ASPT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K
+} Show Aspects;Graphics;Graphics Menu;Menu Commands}}Show Aspects, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of Aspect Lines in the graphics screen in the middle of the wheel. Aspect lines are only shown in Natal or Relocated charts, where the charts are compiled with aspects. 
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show Aspect Grid, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_SHOW_AGRID}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Show Aspect Grid;Graphics;Graphics Menu;Menu Commands}}Show Aspect Grid, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of the Aspect Grid 
+in the graphics screen in the bottom right of the aspect display. Aspect lines are shown on all charts, where the charts are compiled with aspects. If you double click on an aspect and text is available that text will be displayed
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use Glyphs, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_USE_GLYPH}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Use Glyphs;Glyphs;Graphics;Graphics Menu;Menu Commands}}Use Glyphs, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the use of Glyphs in the Graphics Cartwheel.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Show Sign Lines, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_SHOW_SLIN}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Show Sign Lines;Graphics;Graphics Menu;Menu Commands}}Show Sign Lines, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on or off the display of Sign Lines in the Graphics Cartwheel.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use Inner House Cusps, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_USE_INHC}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Use Inner House Cusps;Graphics;Graphics Menu;Menu Commands}}Use Inner House Cusps, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command selects which house cusps to display when displaying Compatibility, Transits, or Progressions cartwheels.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Sign Tick Wheel, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_SIGN_TICK}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Sign Tick Wheel;Graphics;Graphics Menu;Menu Commands}}Sign Tick Wheel, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on of off the display of Sign Tick Wheels. A Sign Tick Wheel is an outer circle showing the Signs, and uses the glyphs.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Decan Tick Wheel, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DEC_TICK}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Decan Tick Wheel;Graphics;Graphics Menu;Menu Commands}}Decan Tick Wheel, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on of off the display of Decan Tick Wheels. A Decan Tick Wheel is an outer circle, but inside the Sign Tick Wheel, showing the Decans of the signs.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Degree Tick Wheel, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_DEG_TICK}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Degree Tick Wheel;Graphics;Graphics Menu;Menu Commands}}Degree Tick Wheel, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on of off the display of Degree Tick Wheels. A Degree Tick Wheel is an outer circle, but inside the Decan or Sign Tick Wheel, showing the Degrees.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} House Numbers Outside, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_HOUS_OUTS}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} House Numbers Outside;Graphics;Graphics Menu;Menu Commands}}House Numbers Outside, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command selects whether to display the House Cusp Numbers outside the wheel or at the center of the wheel.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Plot Classical, Graphics Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_PLOT_CLASSIC}K{\footnote \pard\plain \s245 \f3 {
+\fs16\up6 K} Plot Classical;Graphics;Graphics Menu;Menu Commands}}Plot Classic, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command selects whether to display the Planets and Sign Degrees horizontally plotted approximately where they should be or display them on angles into the wheel.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use Next Chart, Graphics Menu.}#{\footnote \pard\plain \s245 
+\f3 {\fs16\up6 #} IDM_GNEXTC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Use Next Chart;Graphics;Graphics Menu;Menu Commands}}Use Next Chart, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par When displaying Transits charts, this menu command displays the next transit chart. If there are no more charts, the first is displayed.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use Previous Chart, Graphics Menu.}#{\footnote \pard\plain 
+\s245 \f3 {\fs16\up6 #} IDM_GSHPREVC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Use Previous Chart;Graphics;Graphics Menu;Menu Commands}}Use Previous Chart, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par When displaying Transits charts, this menu command displays the previous transit chart. If the first chart is being displayed, the last is displayed.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use First Chart, Graphics Menu.}#{\footnote \pard\plain \s245 
+\f3 {\fs16\up6 #} IDM_GSHFIRSTC}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Use First Chart;Graphics;Graphics Menu;Menu Commands}}Use First Chart, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par When displaying Transits charts, this menu command displays the first transit chart.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Decrease House Cusps, Graphics Menu.}#{\footnote \pard\plain 
+\s245 \f3 {\fs16\up6 #} IDM_GDECHSE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Decrease House Cusps;Graphics;Graphics Menu;Menu Commands}}Decrease House Cusps, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command decreases house cusps by one degree. This is useful for rectification.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Increase House Cusps, Graphics Menu.}#{\footnote \pard\plain 
+\s245 \f3 {\fs16\up6 #} IDM_GINCHSE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Increase House Cusps;Graphics;Graphics Menu;Menu Commands}}Increase House Cusps, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command increases house cusps by one degree. This is useful for rectification.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}}{\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Use Regular House Cusps, Graphics Menu.}#{\footnote 
+\pard\plain \s245 \f3 {\fs16\up6 #} IDM_GREGHSE}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Use Regular House Cusps;Graphics;Graphics Menu;Menu Commands}}Use Regular House Cusps, {\plain \b\f4\cf2 (Graphics Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command reverts the house cusps to the ones that are stored in the graphics file. This is useful for rectification.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Zoom In, View Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ZOOMIN}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Zoom In;Graphics;View Menu;Menu Commands}}Zoom In, {\plain \b\f4\cf2 (View Menu)}.
+\par \pard\plain \f3\fs22 
+\par When the graphics screen is not in "Fit Window Mode", this menu command Zooms the graphics screen in and enlarges the graphics screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Zoom Out, View Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_ZOOMOUT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Zoom Out;Graphics;View Menu;Menu Commands}}Zoom Out, {\plain \b\f4\cf2 (View Menu)}.
+\par \pard\plain \f3\fs22 
+\par When the graphics screen is not in "Fit Window Mode", this menu command Zooms the graphics screen out and reduces the graphics screen.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f4\fs16\cf2\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Fit Window, View Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FITWIN}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Fit Window;Graphics;View Menu;Menu Commands}}Fit Window, {\plain \b\f4\cf2 (View Menu)}.
+\par \pard\plain \f3\fs22 
+\par This menu command turns on of off "Fit Window Mode". In "Fit Window Mode", the graphics screen is scaled to fit the window.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Graphics File Conversion, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #}
+ IDM_OGRPHFIL}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Graphics File Conversion;Options;Options Menu;Menu Commands}}Graphics File Conversion, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to enter information about converting ASTRO Graphics files to Graphic file Formats.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Viewer Setup, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OVIEW}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Viewer Setup;Options;Options Menu;Menu Commands}}Viewer Setup, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to Setup the Colors and fonts for the text file viewer.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 *{\footnote \pard\plain \s245 \f3 {\fs16\up6 *} PRO}${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Editor Setup, Options Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_OEDIT}K
+{\footnote \pard\plain \s245 \f3 {\fs16\up6 K} Editor Setup;Options;Options Menu;Menu Commands}}Editor Setup, {\plain \b\f4\cf2 (Options Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to setup the editor that you want to use to edit ASTRO text files.
+\par \pard\plain \s254\keepn \b\f4\fs32\cf2 \page {\plain \f3\fs16\up6 ${\footnote \pard\plain \s245 \f3 {\fs16\up6 $} Print, Files Menu.}#{\footnote \pard\plain \s245 \f3 {\fs16\up6 #} IDM_FPRINT}K{\footnote \pard\plain \s245 \f3 {\fs16\up6 K}
+ Print, Files Menu;Files Menu;Menu Commands}}Print, {\plain \b\f4\cf2 (File Menu)}.
+\par \pard\plain \f3\fs22 
+\par Use this menu command to print the selected files in this file list. If no files are check this prints the one file that has the selection bar. If files are selected, all those files are printed.
+\par \page 
+\par 
+\par 
+\par 
+\par }

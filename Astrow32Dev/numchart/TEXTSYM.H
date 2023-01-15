@@ -1,0 +1,37 @@
+#define  _0_           0
+#define  _1_           1
+#define  _2_           2
+#define  _3_           3
+#define  _4_           4
+#define  _5_           5
+#define  _6_           6
+#define  _7_           7
+#define  _8_           8
+#define  _9_           9
+#define  _11_          10
+#define  _22_          11
+#define  GENERAL       12
+#define  NOTES         13
+#define  CHALLENGE     0
+#define  DESTINY       1
+#define  EXPRESS       2
+#define  HIDN_TENDN    3
+#define  INNER_SELF    4
+#define  KARMIC_LESN   5
+#define  LIFE_CYCLE_1  6
+#define  LIFE_CYCLE_2  7
+#define  LIFE_CYCLE_3  8
+#define  MOTIV         9
+#define  SUBCON_RESP   10
+#define  TURN_POINT    11
+#define  SUN_SIGN      12
+#define  PERS_YEAR     13
+#define  PERS_MONTH    14
+#define  UNIV_YEAR     15
+#define  UNIV_MONTH    16
+#define  PERS_DAY      17
+#define  UNIV_DAY      18
+#define  ESSENCE       19
+
+
+#define  TEXT_FILE_NAME   "N1TEXT"

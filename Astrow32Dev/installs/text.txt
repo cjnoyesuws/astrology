@@ -1,0 +1,153 @@
+
+C:\Astrow32Dev\installs>path C:\Program Files\Common Files\Borland Shared\BDE\;C:\Program Files\Borland\BDS\3.0\Bin;C:\Oracle\Ora81\bin;C:\Program Files\Oracle\jre\1.1.7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Sybase\SQL Anywhere 9\win32;C:\Program Files\Sybase\Shared\win32;C:\Program Files\Sybase\SQL Anywhere 9\drivers;C:\Program Files\Sybase\Shared\Sybase Central 4.3\win32;C:\Program Files\Common Files\Ulead Systems\MPEG;C:\Program Files\Ulead Systems\Ulead DVD MovieFactory 3 SE;C:\sun\appserver\bin;C:\jb4\apache-ant-1.6.5\bin;c:\jb4\jboss-4.0.1sp1\bin;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;"C:\Program Files\Winzip";"C:\Program Files\Winzip self-extractor";"C:\Program Files\Winzip;C:\Program Files\Winzip self-extractor" 
+
+C:\Astrow32Dev\installs>echo C:\Program Files\Common Files\Borland Shared\BDE\;C:\Program Files\Borland\BDS\3.0\Bin;C:\Oracle\Ora81\bin;C:\Program Files\Oracle\jre\1.1.7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Sybase\SQL Anywhere 9\win32;C:\Program Files\Sybase\Shared\win32;C:\Program Files\Sybase\SQL Anywhere 9\drivers;C:\Program Files\Sybase\Shared\Sybase Central 4.3\win32;C:\Program Files\Common Files\Ulead Systems\MPEG;C:\Program Files\Ulead Systems\Ulead DVD MovieFactory 3 SE;C:\sun\appserver\bin;C:\jb4\apache-ant-1.6.5\bin;c:\jb4\jboss-4.0.1sp1\bin;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;"C:\Program Files\Winzip";"C:\Program Files\Winzip self-extractor";"C:\Program Files\Winzip;C:\Program Files\Winzip self-extractor" 
+C:\Program Files\Common Files\Borland Shared\BDE\;C:\Program Files\Borland\BDS\3.0\Bin;C:\Oracle\Ora81\bin;C:\Program Files\Oracle\jre\1.1.7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Sybase\SQL Anywhere 9\win32;C:\Program Files\Sybase\Shared\win32;C:\Program Files\Sybase\SQL Anywhere 9\drivers;C:\Program Files\Sybase\Shared\Sybase Central 4.3\win32;C:\Program Files\Common Files\Ulead Systems\MPEG;C:\Program Files\Ulead Systems\Ulead DVD MovieFactory 3 SE;C:\sun\appserver\bin;C:\jb4\apache-ant-1.6.5\bin;c:\jb4\jboss-4.0.1sp1\bin;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;C:\Documents and Settings\Christopher Noyes\My Documents\Borland Studio Projects\Bpl;"C:\Program Files\Winzip";"C:\Program Files\Winzip self-extractor";"C:\Program Files\Winzip;C:\Program Files\Winzip self-extractor"
+
+C:\Astrow32Dev\installs>SET VER=225 
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRW225.ZIP C:\Astrow32dev\installs\shareware\ASTRW225.EXE 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating ASTRW225.EXE
+updating Zip file c:\newversionstaging\zips\ASTRW225.ZIP
+
+C:\Astrow32Dev\installs>copy C:\Astrow32dev\installs\shareware\ASTRW225.EXE c:\newversionstaging\zips\ 
+        1 file(s) copied.
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225.ZIP C:\Astrow32dev\installs\astrodeluxedemo\astrosetup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroSetup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225.ZIP
+
+C:\Astrow32Dev\installs>copy C:\Astrow32dev\installs\astrodeluxedemo\astrosetup.exe c:\newversionstaging\zips\ASTRWDX225.EXE 
+        1 file(s) copied.
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225.ZIP C:\Astrow32dev\installs\astrodeluxedemo\astrosetup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroSetup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225.ZIP
+
+C:\Astrow32Dev\installs>copy C:\Astrow32dev\installs\astrodeluxedemo\astrosetup.exe c:\newversionstaging\zips\ASTRPR225.EXE 
+        1 file(s) copied.
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP C:\Astrow32dev\installs\astrodeluxedemo\astrosetup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroSetup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP C:\Astrow32dev\installs\calculators\calculators.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating Calculators.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP C:\Astrow32dev\installs\tbt32\tbt32setup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating tbt32Setup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP C:\Astrow32dev\installs\viewers\viewers.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating viewers.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP C:\Astrow32dev\installs\expertimporter\expertimport.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating ExpertImport.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP c:\newversionstaging\deluxedemo\setup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating setup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP c:\newversionstaging\deluxedemo\autorun.inf 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating autorun.inf
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWDX225FULL.ZIP c:\newversionstaging\deluxedemo\astromanual.pdf 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroManual.pdf
+updating Zip file c:\newversionstaging\zips\ASTRWDX225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzipse32 c:\newversionstaging\zips\ASTRWDX225FULL.ZIP -setup -t "Hit Setup to install" -mokcancel "This will Install the Astro For Windows Deluxe Demo" -c ./setup.exe 
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP C:\Astrow32dev\installs\astroprodemo\astrosetup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroSetup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP C:\Astrow32dev\installs\calculators\calculators.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating Calculators.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP C:\Astrow32dev\installs\tbt32\tbt32setup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating tbt32Setup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP C:\Astrow32dev\installs\viewers\viewers.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating viewers.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP C:\Astrow32dev\installs\expertimporter\expertimport.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating ExpertImport.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP c:\newversionstaging\deluxedemo\setup.exe 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating setup.exe
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP c:\newversionstaging\deluxedemo\autorun.inf 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating autorun.inf
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzip /a c:\newversionstaging\zips\ASTRWPR225FULL.ZIP c:\newversionstaging\prodemo\astromanual.pdf 
+WinZip(R) Command Line Support Add-On Version 1.1 SR-1 (Build 6224)
+Copyright (c) WinZip Computing, Inc. 1991-2004 - All Rights Reserved
+
+updating AstroManual.pdf
+updating Zip file c:\newversionstaging\zips\ASTRWPR225FULL.ZIP
+
+C:\Astrow32Dev\installs>wzzipse32 c:\newversionstaging\zips\ASTRWPR225FULL.ZIP -setup -t "Hit Setup to install" -mokcancel "This will Install the Astro For Windows Professional Demo" -c ./setup.exe 

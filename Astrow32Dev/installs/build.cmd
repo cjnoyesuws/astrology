@@ -1,0 +1,11 @@
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astropro\astrowsetup.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astrodeluxe\astrosetup.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\tbt32\tbt32.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astrotextsource.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astroprodemo\astrosetup.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astrodeluxedemo\astrosetup.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\viewers\viewers.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\calculators\calculators.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\expertimporter\expertimport.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\astrw225.inp
+"c:\Program Files\Self-Extracting Archive Utility\seau-m.exe" /b /s h:\astrow32dev\installs\Astrolite\astrosetup.inp

@@ -1,0 +1,514 @@
+DAO Recordset: Binding Records Dynamically
+Home |  Overview |  How Do I |  FAQ |  Sample |  Tutorial |  ODBC Driver List
+
+This article explains how to use an object of class CDaoRecordset directly, without deriving your own recordset class. Topics covered include: 
+
+The Standard Case: Using a Derived Recordset Class
+
+
+Binding records dynamically instead
+
+
+Dynamically setting and getting parameter values 
+As the MFC Database sample DAOVIEW shows, you can use dynamic binding to work with database schema information not known at design time. For related information on examining a database schema at run time, see the article DAO Tabledef: Examining a Database Schema at Run Time. 
+
+The Standard Case: Using a Derived Recordset Class
+For many applications, you will prefer to create, at design time, a CDaoRecordset-derived class. Using AppWizard or ClassWizard, you can design a class that represents your table or query. You specify the database, the table, and the columns (fields). This information is then encapsulated in the class's connection information, its SQL string, and its data members. Records are statically bound to the recordset at run time via the DoFieldExchange mechanism. For more information, see the article DAO Recordset: Creating Recordsets.
+
+The point is that to operate this way, you must know the database schema at design time so you can specify which table to use and which fields to use from that table. In many applications, this works well. If your database schema is relatively static and users are not constantly adding or deleting tables and table fields, you can design in this way.
+
+Binding Records Dynamically Instead
+If your database schema is relatively dynamic, or if you face a situation in which the schema is unknown at design time, dynamic binding could be the answer.
+
+For dynamic binding, you don't need a derived CDaoRecordset class. Instead, you use CDaoRecordset directly. Here's the general process: 
+
+Construct a CDaoRecordset object.
+
+
+Call its Open member function to connect to a specified database and run a query.
+
+
+Navigate through the records, using the recordset's navigation member functions, such as Move.
+
+
+Call the recordset's GetFieldValue member function to retrieve, immediately, the value of a specified field in the record. Or call Edit, then SetFieldValue, then Update to set the field in the database. 
+Binding dynamically in this way is flexible. You don't have to know the database schema at design time, and you can keep up with a changing schema. This mechanism doesn't use the DoFieldExchange mechanism.
+
+You may get better performance with dynamic binding than with static binding via DAO record field exchange (DFX) if you don’t need every field bound for every record retrieved. However, for applications in which the database schema is reasonably unchanging, binding via DFX is a good choice because DFX manages all of the recordset’s fields for you, reducing the amount of code you must write to bind fields.
+
+The following example, borrowed from the MFC Database sample DAOVIEW, illustrates dynamic binding. The code creates a table-type recordset, which is used to scroll through all records in a table, getting the values of fields in the current record and adding them to an MFC CListCtrl object. 
+
+Note   For more information on the CCrack or CListCtrlEx classes used in the following example, see the MFC Database sample DAOVIEW.
+
+// db is a pointer to a CDaoDatabase object.
+// dbOpenTable specifies a table-type recordset.
+// CCrack is a custom class used to get the actual 
+// type from a COleVariant object.
+// nRecord is used for positioning in the list control.
+ // the list control used here is an extended version 
+ // implemented in DAOView.  The CListCtrl class does not
+ // provide an AddItem() member function as does the
+ // extended version.
+// m_ctlList is a CListCtrlEx object; this class
+// implements an AddItem method for the list control.
+
+CDaoRecordset rs( &db );
+int nRecord = 0;
+
+// Open MFC DAO objects in a try block to catch 
+// security violations when opening tables
+try
+{
+    // Open the recordset, passing a table name 
+    // for the SQL
+    rs.Open( dbOpenTable, strTableName );
+
+    // Move through records
+    while( !rs.IsEOF( ) )
+    {
+        COleVariant var;
+        // Move through fields in current record
+        int nFields = rs.GetFieldCount( );
+        for ( int i=0; i < nFields; i++ )
+        {
+            var = rs.GetFieldValue( i );
+            // Add field value to list control
+            m_ctlList.AddItem( nRecord,i,
+                              CCrack::strVARIANT( var ) );
+        }
+        nRecord++;
+        rs.MoveNext( );
+    }
+}
+catch( CDaoException* e )
+{
+    // Do nothing--used for security violations 
+    // when opening tables
+    e->Delete( );
+}
+
+The key features in this example are: 
+
+The direct use of CDaoRecordset rather than a class derived from CDaoRecordset. The example therefore doesn’t use the DAO record field exchange (DFX) mechanism.
+
+
+The call to GetFieldValue, which returns a value of type COleVariant for a specified field in the current record. The field is specified as the index of the field in the recordset object's Fields collection. 
+Also of interest are: 
+
+The user-defined class CCrack
+
+
+_variant_t::operator =
+Microsoft Specific 
+
+_variant_t& operator=( const VARIANT& varSrc ) throw( _com_error );
+
+_variant_t& operator=( const VARIANT* pVarSrc ) throw( _com_error );
+
+_variant_t& operator=( const _variant_t& var_t_Src ) throw( _com_error );
+
+_variant_t& operator=( short sSrc ) throw( _com_error );
+
+_variant_t& operator=( long lSrc ) throw( _com_error );
+
+_variant_t& operator=( float fltSrc ) throw( _com_error );
+
+_variant_t& operator=( double dblSrc ) throw( _com_error );
+
+_variant_t& operator=( const CY& cySrc ) throw( _com_error );
+
+_variant_t& operator=( const _bstr_t& bstrSrc ) throw( _com_error );
+
+_variant_t& operator=( const wchar_t* wstrSrc ) throw( _com_error );
+
+_variant_t& operator=( const char* strSrc ) throw( _com_error );
+
+_variant_t& operator=( IDispatch* pDispSrc ) throw( _com_error );
+
+_variant_t& operator=( bool bSrc ) throw( _com_error );
+
+_variant_t& operator=( IUnknown* pSrc ) throw( _com_error );
+
+_variant_t& operator=( const DECIMAL& decSrc ) throw( _com_error );
+
+_variant_t& operator=( BYTE bSrc ) throw( _com_error );
+
+Remarks
+
+The operator assigns a new value to the _variant_t object: 
+
+operator=( varSrc )   Assigns an existing VARIANT to a _variant_t object.
+
+
+operator=( pVarSrc )   Assigns an existing VARIANT to a _variant_t object.
+
+
+operator=( var_t_Src )   Assigns an existing _variant_t object to a _variant_t object.
+
+
+operator=( sSrc )   Assigns a short integer value to a _variant_t object.
+
+
+operator=( lSrc )   Assigns a long integer value to a _variant_t object.
+
+
+operator=( fltSrc )   Assigns a float numerical value to a _variant_t object.
+
+
+operator=( dblSrc )   Assigns a double numerical value to a _variant_t object.
+
+
+operator=( cySrc )   Assigns a CY object to a _variant_t object.
+
+
+operator=( bstrSrc )   Assigns a BSTR object to a _variant_t object.
+
+
+operator=( wstrSrc )   Assigns a Unicode string to a _variant_t object.
+
+
+operator=( strSrc )   Assigns a multibyte string to a _variant_t object.
+
+
+operator=( bSrc )   Assigns a bool value to a _variant_t object.
+
+
+operator=( pDispSrc )   Assigns a VT_DISPATCH object to a _variant_t object.
+
+
+operator=( pIUnknownSrc )   Assigns a VT_UNKNOWN object to a _variant_t object.
+
+
+operator=( decSrc )   Assigns a DECIMAL value to a _variant_t object.
+
+
+operator=( bSrc )   Assigns a BYTE value to a _variant_t object. 
+_variant_t Overview
+
+END Microsoft Specific
+
+_variant_t::_variant_t
+Microsoft Specific 
+
+_variant_t( ) throw( );
+
+_variant_t( const VARIANT& varSrc ) throw( _com_error );
+
+_variant_t( const VARIANT* pVarSrc ) throw( _com_error );
+
+_variant_t( const _variant_t& var_t_Src ) throw( _com_error );
+
+_variant_t( VARIANT& varSrc, bool fCopy ) throw( _com_error );
+
+_variant_t( short sSrc, VARTYPE vtSrc = VT_I2 ) throw( _com_error );
+
+_variant_t( long lSrc, VARTYPE vtSrc = VT_I4 ) throw( _com_error );
+
+_variant_t( float fltSrc ) throw( );
+
+_variant_t( double dblSrc, VARTYPE vtSrc = VT_R8 ) throw( _com_error );
+
+_variant_t( const CY& cySrc ) throw( );
+
+_variant_t( const _bstr_t& bstrSrc ) throw( _com_error );
+
+_variant_t( const wchar_t *wstrSrc ) throw( _com_error );
+
+_variant_t( const char* strSrc ) throw( _com_error );
+
+_variant_t( bool bSrc ) throw( );
+
+_variant_t( IUnknown* pIUknownSrc, bool fAddRef = true ) throw( );
+
+_variant_t( IDispatch* pDispSrc, bool fAddRef = true ) throw( );
+
+_variant_t( const DECIMAL& decSrc ) throw( );
+
+_variant_t( BYTE bSrc ) throw( );
+
+Parameters
+
+varSrc
+
+a VARIANT object to be copied into the new _variant_t object
+
+pVarSrc
+
+pointer to a VARIANT object to be copied into the new _variant_t object
+
+var_t_Src
+
+a _variant_t object to be copied into the new _variant_t object
+
+fCopy
+
+if false, the supplied VARIANT object is attached to the new _variant_t object without making a new copy by VariantCopy
+
+ISrc, sSrc
+
+an integer value to be copied into the new _variant_t object
+
+vtSrc
+
+the VARTYPE for the new _variant_t object
+
+fltSrc, dblSrc
+
+a numerical value to be copied into the new _variant_t object
+
+cySrc
+
+a CY object to be copied into the new _variant_t object
+
+bstrSrc
+
+a _bstr_t object to be copied into the new _variant_t object
+
+strSrc, wstrSrc
+
+a string to be copied into the new _variant_t object
+
+bSrc
+
+a bool value to be copied into the new _variant_t object
+
+pIUknownSrc
+
+COM interface pointer to a VT_UNKNOWN object to be encapsulated into the new _variant_t object
+
+pDispSrc
+
+COM interface pointer to a VT_DISPATCH object to be encapsulated into the new _variant_t object
+
+decSrc
+
+a DECIMAL value to be copied into the new _variant_t object
+
+bSrc
+
+a BYTE value to be copied into the new _variant_t object
+
+Remarks
+
+Constructs a _variant_t object. 
+
+_variant_t( )   Constructs an empty _variant_t object, VT_EMPTY.
+
+
+_variant_t( VARIANT& varSrc )   Constructs a _variant_t object from a copy of the VARIANT object. The variant type is retained.
+
+
+_variant_t( VARIANT* pVarSrc )   Constructs a _variant_t object from a copy of the VARIANT object. The variant type is retained.
+
+
+_variant_t( _variant_t& var_t_Src )   Constructs a _variant_t object from another _variant_t object. The variant type is retained.
+
+
+_variant_t( VARIANT& varSrc, bool fCopy )   Constructs a _variant_t object from an existing VARIANT object. If fCopy is false, the VARIANT object is attached to the new object without making a copy.
+
+
+_variant_t( short sSrc, VARTYPE vtSrc = VT_I2 )   Constructs a _variant_t object of type VT_I2 or VT_BOOL from a short integer value. Any other VARTYPE results in an E_INVALIDARG error.
+
+
+_variant_t( long lSrc, VARTYPE vtSrc = VT_I4 )   Constructs a _variant_t object of type VT_I4, VT_BOOL, or VT_ERROR from a long integer value. Any other VARTYPE results in an E_INVALIDARG error.
+
+
+_variant_t( float fltSrc )   Constructs a _variant_t object of type VT_R4 from a float numerical value.
+
+
+_variant_t( double dblSrc, VARTYPE vtSrc = VT_R8 )   Constructs a _variant_t object of type VT_R8 or VT_DATE from a double numerical value. Any other VARTYPE results in an E_INVALIDARG error.
+
+
+_variant_t( CY& cySrc )   Constructs a _variant_t object of type VT_CY from a CY object.
+
+
+_variant_t( _bstr_t& bstrSrc )   Constructs a _variant_t object of type VT_BSTR from a _bstr_t object. A new BSTR is allocated.
+
+
+_variant_t( wchar_t *wstrSrc )   Constructs a _variant_t object of type VT_BSTR from a Unicode string. A new BSTR is allocated.
+
+
+_variant_t( char* strSrc )   Constructs a _variant_t object of type VT_BSTR from a string. A new BSTR is allocated.
+
+
+_variant_t( bool bSrc )   Constructs a _variant_t object of type VT_BOOL from a bool value.
+
+
+_variant_t( IUnknown* pIUknownSrc, bool fAddRef = true )   Constructs a _variant_t object of type VT_UNKNOWN from a COM interface pointer. If fAddRef is true, then AddRef is called on the supplied interface pointer to match the call to Release that will occur when the _variant_t object is destroyed. It is up to you to call Release on the supplied interface pointer. If fAddRef is false, this constructor takes ownership of the supplied interface pointer; do not call Release on the supplied interface pointer.
+
+
+_variant_t( IDispatch* pDispSrc, bool fAddRef = true )   Constructs a _variant_t object of type VT_DISPATCH from a COM interface pointer. If fAddRef is true, then AddRef is called on the supplied interface pointer to match the call to Release that will occur when the _variant_t object is destroyed. It is up to you to call Release on the supplied interface pointer. If fAddRef is false, this constructor takes ownership of the supplied interface pointer; do not call Release on the supplied interface pointer.
+
+
+_variant_t( DECIMAL& decSrc )   Constructs a _variant_t object of type VT_DECIMAL from a DECIMAL value.
+
+
+_variant_t( BYTE bSrc )   Constructs a _variant_t object of type VT_UI1 from a BYTE value. 
+_variant_t Overview
+
+END Microsoft Specific
+
+
+_variant_t
+Microsoft Specific 
+
+A _variant_t object encapsulates theVARIANT data type. The class manages resource allocation and deallocation, and makes function calls to VariantInit and VariantClear as appropriate.
+
+#include <comdef.h>
+
+Compiler COM Support Class Overview
+
+Construction
+
+_variant_t Constructs a _variant_t object. 
+
+
+Operations
+
+Attach Attaches a VARIANT object into the _variant_t object. 
+Clear Clears the encapsulated VARIANT object. 
+ChangeType Changes the type of the _variant_t object to the indicated VARTYPE. 
+Detach Detaches the encapsulated VARIANT object from this _variant_t object. 
+SetString Assigns a string to this _variant_t object. 
+
+
+Operators
+
+operator = Assigns a new value to an existing _variant_t object. 
+operator ==, != Compare two _variant_t objects for equality or inequality. 
+Extractors Extract data from the encapsulated VARIANT object. 
+
+
+END Microsoft Specific
+
+_variant_t
+Microsoft Specific 
+
+A _variant_t object encapsulates theVARIANT data type. The class manages resource allocation and deallocation, and makes function calls to VariantInit and VariantClear as appropriate.
+
+#include <comdef.h>
+
+Compiler COM Support Class Overview
+
+Construction
+
+_variant_t Constructs a _variant_t object. 
+
+
+Operations
+
+Attach Attaches a VARIANT object into the _variant_t object. 
+Clear Clears the encapsulated VARIANT object. 
+ChangeType Changes the type of the _variant_t object to the indicated VARTYPE. 
+Detach Detaches the encapsulated VARIANT object from this _variant_t object. 
+SetString Assigns a string to this _variant_t object. 
+
+
+Operators
+
+operator = Assigns a new value to an existing _variant_t object. 
+operator ==, != Compare two _variant_t objects for equality or inequality. 
+Extractors Extract data from the encapsulated VARIANT object. 
+
+
+END Microsoft Specific
+
+
+_bstr_t::_bstr_t
+Microsoft Specific 
+
+_bstr_t( ) throw( );
+
+_bstr_t( const _bstr_t& s1 ) throw( );
+
+_bstr_t( const char* s2 ) throw( _com_error );
+
+_bstr_t( const wchar_t* s3 ) throw( _com_error );
+
+_bstr_t( const _variant_t& var ) throw ( _com_error );
+
+_bstr_t( BSTR bstr, bool fCopy ) throw ( _com_error );
+
+Parameters
+
+s1
+
+a _bstr_t object to be copied
+
+s2
+
+a multibyte string
+
+s3
+
+a Unicode string
+
+var
+
+a _variant_t object
+
+bstr
+
+an existing BSTR object
+
+fCopy
+
+if false, the bstr argument is attached to the new object without making a copy by calling SysAllocString.
+
+Remarks
+
+Constructs a _bstr_t object. 
+
+_bstr_t( )   Constructs a default _bstr_t object that encapsulates a NULL BSTR object.
+
+
+_bstr_t( _bstr_t& s1 )   Constructs a _bstr_t object as a copy of another. This is a “shallow” copy, which increments the reference count of the encapsulated BSTR object instead of creating a new one.
+
+
+_bstr_t( char* s2 )   Constructs a _bstr_t object by calling SysAllocString to create a new BSTR object and encapsulate it. This constructor first performs a multibyte to Unicode conversion.
+
+
+_bstr_t( wchar_t* s3 )   Constructs a _bstr_t object by calling SysAllocString to create a new BSTR object and encapsulates it.
+
+
+_bstr_t( _variant_t& var )   Constructs a _bstr_t object from a _variant_t object by first retrieving a BSTR object from the encapsulated VARIANT object.
+
+
+_bstr_t( BSTR bstr, bool fCopy )   Constructs a _bstr_t object from an existing BSTR (as opposed to a wchar_t* string). If fCopy is false, the supplied BSTR is attached to the new object without making a new copy via SysAllocString. This is the method used by the wrapper functions in the type library headers to encapsulate and take ownership of a BSTR, returned by an interface method, in a _bstr_t object. 
+_bstr_t Overview
+
+END Microsoft Specific
+
+_bstr_t
+Microsoft Specific 
+
+A _bstr_t object encapsulates the BSTR data type. The class manages resource allocation and deallocation, via function calls to SysAllocString and SysFreeString, and other BSTR APIs when appropriate. The _bstr_t class uses reference counting to avoid excessive overhead.
+
+#include <comdef.h>
+
+Compiler COM Support Class Overview
+
+Construction
+
+_bstr_t Constructs a _bstr_t object. 
+
+
+Operations
+
+copy Constructs a copy of the encapsulated BSTR. 
+length Returns the length of the encapsulated BSTR. 
+
+
+Operators
+
+operator = Assigns a new value to an existing _bstr_t object. 
+operator += Appends characters to the end of the _bstr_t object. 
+operator + Concatenates two strings. 
+operator ! Checks if the encapsulated BSTR is a NULL string. 
+operator ==, !=, <, >, <=, >= Compares two _bstr_t objects. 
+operator wchar_t*, char* Extract the pointers to the encapsulated Unicode or multibyte BSTR object. 
+
+
+END Microsoft Specific
+
+

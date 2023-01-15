@@ -1,0 +1,40 @@
+@ Common Stuff used by all reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Natal Zodiac Printout For Name: {$1}, Comment: {$2}.$_
+# CHH_BIRTH
+Birth Date: {$2}, Time: {$3}. Country: {$4}, State or Region: {$5}, Location: {$6}. Geographic Coordinates {$7.$8 $9, $b.$c $d}, Time Zone = {$f}, Special Code = {$g}. GMT Difference = {$h:$k}.
+
+Sidereal Time Used For House Calculations Was {$m:$n:$o}.
+
+# CHH_RECT
+
+
+{WARNING! Birth Time Is Unknown!} Ascendant, Med Coeli, Immun Coeli, and Part of Fortune, as Well as Vertex and East Point <May Not Be Accurate>. Houses, Moon, Mercury, and Related Aspects <May Also Not be Accurate.> Houses Determined by "$2".$_
+Trial Birth Time: {$3}.$_
+$4'Based on Angle ''{$5}$6' using ''{$7}$8'.
+''
+# CHH_RELOC_DAT
+Chart is Relocated to: Country: {$2}, State or Region: {$3}, Location: {$4}. Geographic Coordinates {$5.$6 $7, $9.$a $b}, Time Zone = {$d}, Special Code = {$e} GMT Difference = {$f:$i}.
+# CHH_PROG
+Progressed {$2} Years, {$3} Months and {$4} days. Progression System: {"$5'Secondary (Day for a Year)'Tertiary (Day for a Lunar Month)'Minor (Lunar Month for a Year)'"}.
+
+# CHH_TS_HOUSE
+This is a $2'Sidereal'Tropical' Zodiac. House Method is $3.
+
+# CH__HOUSE_CS
+House Cusp #$^$1:|$2|House Cusp #$^$3:|$4@TR$_
+# CH__HOUSE_HEAD
+
+tabs|60|3|19|34|53|$_
+[YOUR NATAL HOUSE CUSPS:]$_
+@TB$_
+# CH__HARMONIC
+Your Chart is Calculated using Harmonic {#$u}$_
+
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--

@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TBT32 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\Locals\Temp\RSP36.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "TBT32" /Fp"Debug/TBT32.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\TBT32\AspTextEdit.cpp"
+"C:\TBT32\ImportAspText.cpp"
+"C:\TBT32\ImportRegText.cpp"
+"C:\TBT32\ImportReportText.cpp"
+"C:\TBT32\MainFrm.cpp"
+"C:\TBT32\RegTextEdit.cpp"
+"C:\TBT32\ReportEdit.cpp"
+"C:\TBT32\SYMBOL.CPP"
+"C:\TBT32\TBT32.cpp"
+"C:\TBT32\TEXTBARY.CPP"
+"C:\TBT32\TEXTBLOC.CPP"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\Locals\Temp\RSP36.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\Locals\Temp\RSP37.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TBT32.pdb" /debug /machine:I386 /out:"Debug/TBT32.exe" /pdbtype:sept 
+.\Debug\AspTextEdit.obj
+.\Debug\AST2RTF.OBJ
+.\Debug\ChildView.obj
+.\Debug\DAspectText1.obj
+.\Debug\DHelpTxt1.obj
+.\Debug\DregText1.obj
+.\Debug\DReportText1.obj
+.\Debug\ENDETAB.OBJ
+.\Debug\ERRORS.OBJ
+.\Debug\FILEARY.OBJ
+.\Debug\FileSelector.obj
+.\Debug\HelpEdit.obj
+.\Debug\ImportAspText.obj
+.\Debug\ImportHelp.obj
+.\Debug\ImportRegText.obj
+.\Debug\ImportReportText.obj
+.\Debug\MainFrm.obj
+.\Debug\Progress.obj
+.\Debug\RegTextEdit.obj
+.\Debug\ReportEdit.obj
+.\Debug\RTFFuncs.obj
+.\Debug\RTFTOAST.OBJ
+.\Debug\SelectTextItem.obj
+.\Debug\Setup.obj
+.\Debug\StdAfx.obj
+.\Debug\Strbuff.obj
+.\Debug\StrTransform.obj
+.\Debug\SYMBOL.OBJ
+.\Debug\TBT32.obj
+.\Debug\TEXTBARY.OBJ
+.\Debug\TEXTBLOC.OBJ
+.\Debug\texttypeary.obj
+.\Debug\wspell.obj
+.\Debug\TBT32.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\Locals\Temp\RSP37.tmp"
+<h3>Output Window</h3>
+Compiling...
+AspTextEdit.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+ImportAspText.cpp
+ImportRegText.cpp
+ImportReportText.cpp
+MainFrm.cpp
+RegTextEdit.cpp
+ReportEdit.cpp
+SYMBOL.CPP
+TBT32.cpp
+TEXTBARY.CPP
+TEXTBLOC.CPP
+Linking...
+
+
+
+<h3>Results</h3>
+TBT32.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

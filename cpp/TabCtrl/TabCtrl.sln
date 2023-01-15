@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabCtrl", "TabCtrl.vcproj", "{9E32FB37-2EF5-4EC3-BCDF-3674EAF6BD82}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9E32FB37-2EF5-4EC3-BCDF-3674EAF6BD82}.Debug.ActiveCfg = Release|Win32
+		{9E32FB37-2EF5-4EC3-BCDF-3674EAF6BD82}.Debug.Build.0 = Release|Win32
+		{9E32FB37-2EF5-4EC3-BCDF-3674EAF6BD82}.Release.ActiveCfg = Release|Win32
+		{9E32FB37-2EF5-4EC3-BCDF-3674EAF6BD82}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

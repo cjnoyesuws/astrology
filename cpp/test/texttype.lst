@@ -1,0 +1,48 @@
+1  GLOBAL HEAD;STR;MOSTR Global Reports Stuff
+1  COTRANS HEAD;CHART;TRAN;TRANSAFT Composite Transits Report
+2  COMPAHSE PLAN|COTHS Compatibility Houses Text
+1  RETURN HEAD;CHART;RET Solar and Lunar Return Report
+0  FAMOUS HELP Famous People's Sun Signs
+0  ASPECTS HELP Aspects Help
+1  COMPAT HEAD;CHART Compatibility Report
+1  COSUMMR HEAD;CHART;SUM Compatibility Summary Report
+1  PROBLEM PROBCH;HEAD;CHART;PROBRES Problem Report
+1  PROGRESS HEAD;CHART;PROG Progress Report
+1  NATAL HEAD;CHART Natal Report
+1  TRANSITR HEAD;CHART;TRAN;TRANSAFT Transits Report
+1  FIXEDST HEAD;CHART;FIXEDNAMS Fixed Star Report
+1  ARABIC HEAD;CHART;ARABNAM Arabic Report
+1  NUMERIC HEAD;CHART Numeric Report
+1  COMPOS HEAD;CHART Composite Report
+1  HELIO HEAD;CHART Helio Report
+1  SUMMARY HEAD;CHART;SUM Summary Report
+2  SUMMARY SUM|SUM Summary Text
+3  ASPECTS PLAN;ANG|PLN;ASPHS|ASP Aspects Text
+2  PLANETS DEC;PLAN;ANG|SIGN Planets Text
+0  PLASIGNI HELP Planet Significance Help
+0  COMPATAB HELP Compatibility Help
+2  SIGHOUSE HOUSE|SIGN House Text
+2  HOUSES PLAN|PHSE House Text
+2  COMPASUM SUM|COSM Compatibility Summary Text
+2  TRANSHSE PLAN;ANG|COTHS;TRG Transiting General Text
+3  TRANSASP PLAN;ANG|PLN;ASPHS|ASP Transiting Aspects Text
+0  RETROGRD HELP Retrograde Planets Help
+0  TRANSITS HELP Transits Houses Help
+0  HOUSES HELP Houses Help
+0  RISING HELP Ascendant Help
+0  SCOUTPL HELP Scout Planet Help
+3  PROGRASP PLAN;ANG|PLN;ASPHS|ASP Progressed Aspects
+0  PLANETS HELP Help File on the Planets
+3  COMPTASP PLAN;ANG|PLN;ASPHS|ASP Compatability Aspects
+3  MIDPSIN PLAN;ANG|PLN;ASPHS|MDPS Midpoint Sign Text
+0  COTRANS HEAD;CHART;TRANS Composite Transit Reports
+2  ARABICHSE ARAB|PHSE Arabic parts House Text
+2  FIXEDSTHSE FIXED|PHSE Fixed Star House Text
+2  ARABICSGN ARAB|SIGN Arabic Parts Text
+2  FIXEDSTSGN FIXED|SIGN Fixed Star Text
+3  FIXEDSTASP ARAB|PLN;ASPHS|ASP Arabic Parts Aspects Text
+3  ARABICASP FIXED|PLN;ASPHS|ASP Fixed Star Aspects Text
+1  SOLAR SOLAR|CHART|HEAD Solar Report
+2  SOLARSGN PLAN;ANG|SIGN Solar Planets Text
+2  SOLARHSE PLAN;ANG|PHSE Solar House Text
+3  SOLARASP PLAN;ANG|PLN;ASPHS|ASP Solar Aspects Text

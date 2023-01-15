@@ -1,0 +1,144 @@
+#include "DIALOGS.H"
+
+/* Combo Box Strings */
+
+PROG_SYS ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Secondary (Day for a Year)\1"
+"Tertiary (Day for a Lunar Month)\1"
+"Minor (Lunar Month for a Year)\0"
+END
+
+SB_MALE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Male\1Female\0"
+END
+
+SB_AMPM ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"AM\1PM\0"
+END
+
+SB_WPFMT ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Plain ASCII Text (DOS)\1Plain ASCII Text (Windows)\1"
+"Plain ASCII No Line Breaks (DOS)\1Plain ASCII No Line Breaks (Windows)\1"
+"Coded ASCII Text (DOS)\1Coded ASCII Text (Windows)\1"
+"Coded ASCII No Line Breaks (DOS)\1Coded ASCII No Line Breaks (Windows)\1"
+"WordStar Version 3.x\1WordStar Version 4.x\1"
+"WordPerfect 4.x\1WordPerfect 5.x\1XYWrite\1XYWrite No Line Breaks\1"
+"Microsoft Word DOS (RTF)\1Microsoft Word Windows (RTF)\1Windows Write\0"
+END
+
+SB_FONT ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"ASTRO Glyphs Font\1ASTRO Pi #1\1ASTRO Pi #2\1WingDings\0"
+END
+
+SB_IMAGE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Sun Planet Glyph\1Moon Planet Glyph\1"
+"Mercury Planet Glyph\1Venus Planet Glyph\1"
+"Mars Planet Glyph\1Jupiter Planet Glyph\1"
+"Saturn Planet Glyph\1Uranus Planet Glyph\1"
+"Neptune Planet Glyph\1Pluto Planet Glyph\1"
+"Aries Sign Glyph\1Taurus Sign Glyph\1"
+"Gemini Sign Glyph\1Cancer Sign Glyph\1Leo Sign Glyph\1"
+"Virgo Sign Glyph\1Libra Sign Glyph\1Scorpio Sign Glyph\1"
+"Sagittarius Sign Glyph\1Capricorn Sign Glyph\1"
+"Aquarius Sign Glyph\1Pisces Sign Glyph\1"
+"Special Character #1\1Special Character #2\1Special Character #3\1"
+"Special Character #4\1Special Character #5\1Special Character #6\1"
+"Special Character #7\1Special Character #8\1Special Character #9\1"
+"Special Character #10\1User File Graphic\0"
+END
+
+SB_HOUSE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Equal House\1Koch\1Placidus\1M House\1Campanus\1"
+"Regiomantanus\1Morinus\0"
+END
+
+SB_DATFILE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Comma Delimited\1Binary File\0"
+END
+
+SB_CONTEXT ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Natal Charts\1Relocation Charts\1Compatability Charts\1"
+"Composite Charts\1Transit Charts\1Progressed Charts\1"
+"Arabic Charts\1Fixed Charts\0"
+END
+
+SB_SIGNS ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"ARI\1TAU\1GEM\1CAN\1LEO\1"
+"VIR\1LIB\1SCO\1SAG\1CAP\1AQU\1PIS\0"
+END
+
+SB_ANGLE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"1st House/Asc.\1"
+"2nd House\1"
+"3rd House\1"
+"4th House/IC\1"
+"5th House\1"
+"6th House\1"
+"7th House/Desc.\1"
+"8th House\1"
+"9th House\1"
+"10th House/MC\1"
+"11th House\1"
+"12th House\1"
+"Ascendant\1"
+"Descendant\1"
+"Medium Coeli/Midheaven\1"
+"Immum Coeli/Nadir\0"
+END
+
+SB_RECTM ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Solar Chart Method\1Flat Chart Method\1Sunrise Birth-Time\1"
+"Trial & Error\1Use Known Angle\0"
+END
+
+SB_NORTH ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"North\1South\0"
+END
+
+
+SB_WEST ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"West\1East\0"
+
+END
+
+SB_SPECC ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Standard Time\1War Time\1Daylight Savings\1Double British Summer\1"
+"Summer Time\1Winter Time\1Other\0"
+END
+
+SB_TZONE ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Eastern Atlantic\1Atlantic Standard\1Eastern Standard\1Central Standard\1"
+"Mountain Standard\1Pacific Standard\1Hawaii\1Greenwich Mean\1"
+"Western European\1Eastern Europe\1Eurasia\1China\1Japan\1"
+"Indochina\1New Zealand\1E. Australia\1S. Australia\1W. Australia\1"
+"India\1Samoa\1Int'l Date Line\1Other\0"
+END
+
+SB_BODY ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Sun\1Moon\0"
+END
+
+SB_PLANET ST_BLK LOADONCALL DISCARDABLE MOVEABLE
+BEGIN
+"Ascendant\1Sun\1Moon\1Mercury\1Venus\1Mars\1Jupiter\1Saturn\1"
+"Uranus\1Neptune\1Pluto\1North Node\1South Node\1Medium Coeli\1"
+"Immum Coeli\1Part Of Fortune\1Vertex\1East Point\0"
+END
+

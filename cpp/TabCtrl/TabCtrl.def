@@ -1,0 +1,9 @@
+; TabCtrl.def : Declares the module parameters.
+
+LIBRARY      "TabCtrl.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

@@ -1,0 +1,100 @@
+CHH_TITLE               1   1 HEAD  The Report's Title String
+CHH_BIRTH               2   1 HEAD  Your Birth
+CHH_COMPAT_YB           3   1 HEAD  Partners birth
+CHH_RECT                4   1 HEAD  Rectification Information
+CHH_RELOC               5   1 HEAD  Relocation Information
+CHH_TS_HOUSE            6   1 HEAD  House Procedure & Tropical/Sidereal
+CHH_PROG                7   1 HEAD  Progression Information
+CHH_FEMALE              8   1 HEAD  Female Words
+CHH_MALE                9   1 HEAD  Male Words
+CH__ASPECT              10  1 CHART  Aspect section
+CH__ASPECT_HD           11  1 CHART  Aspect Heading
+CH__COMP_REL            12  1 CHART  Compatability Relative Head
+CHH_RELOC_DAT           13  1 HEAD  Relocation Data
+CH__HOUSE_CS            14  1 CHART  House Cusp String
+CH__HOUSE_HEAD          15  1 CHART  House Cusps Title
+CH__HOUSE_SIGN          16  1 CHART  Sign House is in
+CH__HS_SGN_HED          17  1 CHART  Head Signs Houses are in
+CH__MIDPT_HD            18  1 CHART  Midpoint head
+CH__MID_ASPE            19  1 CHART  Midpoint Aspect Head
+CH__MID_ASPT            20  1 CHART  Midpoint Aspect String
+CH__MID_PLANET          21  1 CHART  Midpoint Sign
+CH__MID_HOUSE           22  1 CHART  Midpoint House
+CH__MISC                23  1 CHART  Planetary decan etc
+CH__PLANET              24  1 CHART  Planetary Data
+CH__PLAN_EXT            25  1 CHART  Extended Planetary Information
+CH__PLAN_HOUSE          26  1 CHART  Planet is in House
+CHP_ASPECT_PRHD         27  1 PROG  Progressed Aspect Head
+CHP_MS_HEAD             28  1 PROG  Progressed Moon Series Head
+CHP_MS_MISC             29  1 PROG  Progressed Moon Series Decan
+CHP_MS_PLANET           30  1 PROG  Progressed Moon Series Planet String
+CHP_PRHOUSE_HEAD        31  1 PROG  Progressed House Head
+CHP_PROG_NOTE           32  1 PROG  Progressed Note at top of report
+CHP_PLAN_HOUSE          33  1 PROG  Progressed Planet House
+CHR_RETURN_DATA         27  1 RET  Return Data
+CHR_RETURN_HD           28  1 RET  Returns Head
+CHR_RETURN_ITM          29  1 RET  Each Item for Return
+CHS_SUMARY_TITLE        1   1 SUM  Summary Title
+CHS_SCOUT_PL            2   1 SUM  Scout Planet Item
+CHS_ASPECT_COUNT        3   1 SUM  Aspect Counts
+CHS_ELEMENT_COUNT       4   1 SUM  Element Counts
+CHS_FUNCTIONAL_COUNT    5   1 SUM  Functionals Counts
+CHS_GENDER_COUNT        6   1 SUM  Genders Counts
+CHS_HEMISPHERES_COUNT   7   1 SUM  Hemispheres Counts
+CHS_MODAL_COUNT         8   1 SUM  Modals Counts
+CHS_QUALITIES_COUNT     9   1 SUM  Qualties Counts
+CHS_SIGN_COUNT          10  1 SUM  Signs Counts
+CHS_HOUSE_COUNT         11  1 SUM  Houses Counts
+CHT_TRANS_PARAM         28  1 TRAN  Transits Data
+CHT_TRANS_TD            29  1 TRAN  Transits Date
+CHT_TRANS_YB            3   1 TRAN  Trasits birth
+CHT_HOUSE_TRHEAD        31  1 TRAN  Heading for Transit
+CHT_TRANS_ID            32  1 TRAN  IDs each Transit
+CHT_TRANS_NOTE          33  1 TRAN  Note at top for Transits
+PR__ECTR                1   1 STYLE  End Centered Copy Style String
+PR__EDAT                2   1  STYLE End Data Style String
+PR__EHED                3   1  STYLE End Head Style String
+PR__EMHED               4   1  STYLE End Main Head Style String
+PR__EPAR                5   1  STYLE End Paragraph Style String
+PR__EPOS                6   1  STYLE End Position Style String
+PR__ETAB                7   1  STYLE End Table Style String
+PR__ETEXT               8   1  STYLE End Text Style String
+PR__LIN                 9   1  STYLE Line Ending Style String
+PR__SCTR                10  1  STYLE Start Centered Copy Style String
+PR__SDAT                11  1  STYLE Start Data Style String
+PR__SHED                12  1  STYLE Start Head Style String
+PR__SMHED               13  1  STYLE Start Main Head Style String
+PR__SPAR                14  1  STYLE Start Paragraph Style String
+PR__SPOS                15  1  STYLE Start Position Style String
+PR__STAB                16  1  STYLE Start Table Style String
+PR__STEXT               17  1  STYLE Start Text Style String
+PR__TAB                 18  1  STYLE Tab Style String
+ST__MONTH               32  12 MOSTR Month Names (Array 12)
+ST__SIGN                45  12 STR Sign Names  (Array 12)
+ST__PLANET              58  41 STR Planet Names (Array 29)
+ST__EARTH               100  1  STR Planet Name Earth
+ST__NUMBERS             101 12 STR House Numbers (Array 12)
+ST__ASPECTS             116 13 STR Aspect Names (Array 13)
+ST__SIGN3               129 12 STR 3 Character Sign Names (Array 12)
+ST__ERROR               141 5  STR Error! Strings   (Array 5)
+ST__HOUSE_MODES         146 11 STR House Procedures (Array 11)
+ST__SIDE_TROP           161 2  STR Sidereal/Tropical (Array 2)
+ST__RETROGRADE          163 3  STR Retrograde Words (Array 3)
+ST__RECT_METH           156 5  STR Rectification Method (Array 5)
+TR__AFFECTS             166 12 TRANSAFT Transits Affecting Strings (Array 12)
+CHPR_HOUSE              10  1 PROB  Problem Planet in House
+CHPR_ASPECT             11  1 PROB  Problem Aspect
+CHPR_SIGN               12  1 PROB  Problem Planet in Sign
+CHPR_SIGN_HOUSE         13  1 PROB  Problem Planet in Sign and House #
+CHPR_HSE_CUSP_SIGN      14  1 PROB  Problem House Cusp # is in Sign
+CHPR_PLAN_HOUSE         15  1 PROB  Problem Planet in House
+CHPR_PLAN_SIGN          16  1 PROB  Problem Planet in Sign
+CHPR_RESULT             17  1 PROB  Problem Result
+ST__ARABN               166 94 ARABNAM Arabic Points Names (Array 94)
+ST__FIXEDN              166 94 FIXEDNAMS Fixed Star Names (Array 94)
+ST_PROBRES              166 94 PROBRES  Problem Result (Array 94)
+CHSO_HEAD               28  1  SOLAR
+CH__DIAL                35  1  HEAD  Dial String
+CH__HARMONIC            36  1  HEAD  Harmonic String
+CHSO_ASPECT             37  1  SOLAR Solar Aspects
+CHSO_DATA               38  1  SOLAR Solar Data

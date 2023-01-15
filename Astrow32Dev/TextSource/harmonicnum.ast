@@ -1,0 +1,46 @@
+@ Harmonic Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Harmonic Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__ASPECT
+Natal $0|$1|Natal $2 |Orb: $3$6' (Exact Orb).'.' (Wide Orb).'$_
+# CHSO_ASPECT
+Natal $0|$1|Harmonic $2 |Orb: $3$6' (Exact Orb).'.' (Wide Orb).'$_
+# CH__MISC
+$c'Decan: ''$e|$f'  Critical|''$h'Anaretic''$_
+# CH__PLANET
+Tabs|60|3|15|30|45|$_
+[YOUR $^$P $^$1:]$_
+$_
+$9|$b'Direct'Retrograde'Still'|$c'  Decan : ''$e$f'  Critical.''$h'  Anaretic.''$_
+# CH__PLAN_HOUSE
+House: $2|$4'On House Cusp|'Not On House Cusp|'$6'Intercepted''$_
+# CH__ASPECT_HD
+Tabs|60|3|15|30|45|$_
+
+{ASPECTS:}$_
+# CH__HOUSE_HEAD
+[YOUR HOUSE CUSPS ARE:]$_
+@TB$_
+# CHH_BIRTH
+Birth Date: {$2}, Time: {$3}. Country: {$4}, State or Region: {$5}, Location: {$6}. Geographic Coordinates {$7.$8 $9, $b.$c $d}, Time Zone = {$f}, Special Code = {$g}. GMT Difference = {$h:$k}.
+
+Sidereal Time Used For House Calculations Was {$m:$n:$o}.$_
+
+# CH__MID_PLANET
+|$a|$2$_
+# CH__MID_HOUSE
+|House: $3,$5'|On House Cusp'|Not On House Cusp'$7'   Intercepted.'.'$_
+# CH__MID_ASPT
+Tabs|60|3|15|30|45|
+{Aspects to Midpoint:}$_
+# CH__MID_ASPE
+|$1|$2|Orb: $3.$_
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

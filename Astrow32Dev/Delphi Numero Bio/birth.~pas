@@ -1,0 +1,119 @@
+unit birth;
+
+interface
+
+uses
+  WinTypes, WinProcs, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, inheritedregistry, inifiles;
+
+type
+  TfrmBirth = class(TForm)
+    Label1: TLabel;
+    btnOk: TButton;
+    btnCancel: TButton;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtMonth: TEdit;
+    edtDay: TEdit;
+    edtYear: TEdit;
+    procedure btnOkClick(Sender: TObject);
+    procedure btnCancelClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormShow(Sender: TObject);
+  private
+    oREg    : TInheritedRegistry;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmBirth: TfrmBirth;
+  theBirth: TDateTime;
+
+
+function getBirth( var y, m, d : Word ) : Word;
+
+implementation
+
+{$R *.DFM}
+
+procedure TfrmBirth.btnOkClick(Sender: TObject);
+var
+  month, day, year : Word;
+  r : Integer;
+  s : String;
+begin
+  val( edtMonth.text, month, r );
+  val( edtDay.text, day, r );
+  val( edtYear.text, year, r );
+  theBirth := EncodeDate( year, month, day );
+  s := FloattoStr(theBirth);
+  oReg.WriteString('BirthDate',s);
+  oReg.CloseKey;
+  oReg.Destroy;
+  Hide;
+end;
+
+procedure TfrmBirth.btnCancelClick(Sender: TObject);
+begin
+  oReg.CloseKey;
+  oReg.Destroy;
+  hide;
+end;
+
+
+procedure TfrmBirth.FormActivate(Sender: TObject);
+var
+  month, day, year, r : Word;
+begin
+  r := getBirth( year, month, day );
+  edtMonth.text := IntToStr(month);
+  edtDay.text := IntToStr(day);
+  edtYear.text := IntToStr(year);
+end;
+
+procedure TfrmBirth. FormKeyPress(Sender: TObject; var Key: Char);
+begin
+if not (key in ['0'..'9',#8]) then
+   begin
+   key := #0;
+   MessageBeep( Word(-1) );
+   end;
+end;
+
+function getBirth( var y, m, d : Word ) : Word;
+var
+  s, ifn : String;
+  oReg : TInheritedRegistry;
+begin
+  if theBirth = 0.0 then
+     begin
+        oReg := TInheritedRegistry.Create('Numero For Windows');
+        oReg.Open('DailyNumbers',true,false);
+        s := oReg.ReadString('BirthDate','0');
+        if s = '0' then
+        begin
+           theBirth := Date;
+           Result := 0;
+        end else
+        begin
+           theBirth := StrToFloat(s);
+           Result := 1;
+        end;
+     end
+  else
+     Result := 1;
+  DecodeDate( theBirth, y, m, d );
+  oReg.CloseKey;
+  oReg.Destroy;
+end;
+
+procedure TfrmBirth.FormShow(Sender: TObject);
+begin
+  oReg := TInheritedRegistry.Create('Numero For Windows');
+  oReg.Open('DailyNumbers',true,false);
+end;
+
+end.

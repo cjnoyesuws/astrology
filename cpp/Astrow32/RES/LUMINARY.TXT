@@ -1,0 +1,129 @@
+                      What Is Luminary?
+
+Luminary is a platform-independent, easy-to-use, and powerful library of
+astronomy code in the C language. The library is highly structured. At the
+highest (and easiest) level, you can calculate the coordinates for all the
+planets with two calls.
+
+
+                  Luminarys Principle Features
+
+->	Calculates the positions of the Sun, Moon, and planets
+->	Calculates positions of asteroids using osculating elements
+->	Calculates comet positions using osculating elements
+->	Comes with data for dozens of asteroids you can add to the library
+->	Works for a span of 16000+ years from 4713 BC to 12000 AD
+->	Is remarkably accurate for planetary calculations
+		to 0.1" of arc for a span of 200 years
+		to 15" of arc for a span of 6000 years
+		to 30" of arc for a span of 8000 years
+->	Returns results in six coordinate systems
+		spherical heliocentric celestial (ecliptic)
+		rectilinear heliocentric celestial
+		spherical geocentric celestial
+		rectilinear geocentric celestial
+		spherical geocentric equatorial (right ascension/declination)
+		spherical topocentric horizontal (altitude/azimuth)
+->	Calculates true geometric positions
+->	Calculates apparent positions for any combination of
+		light time
+		annual aberration
+		nutation
+		parallax
+		refraction
+->	Calculates all positions for the equinox of date
+->	Calculates apparent visual magnitude for any body
+->	Calculates apparent phase for any body
+->	Calculates apparent diameter for planets
+->	Calculates data for solar and lunar eclipses
+->	Calculates positions of the 4 classical moons of Jupiter
+		low accuracy - suitable for identifying which is which
+		high accuracy - to time mutual events, transits, occultations
+->	Calculates the orientation of the rings of Saturn
+->	Has sophisticated time management to
+		convert among standard, universal, julian, and dynamical time
+		step through time at any rate, forward or backward
+->	Comes with a comprehensive printed manual explaining the code
+->	Is platform independent
+->	Is strict ANSI C compliant
+->	Is very fast - on some machines 0.01 second to calculate positions for all theplanets
+
+
+ 
+                           How Fast Is Fast?
+
+On a Power Macintosh 7100, a PowerPC 601 chip, using a fast math library
+with unoptimized code, Luminary can calculate the positions of all the
+planets and moon in all six coordinate systems in 0.01 second. Performance
+will vary greatly depending upon the platform and compiler. On a Mac Quadra
+700 using a Motorola 68040 at 25 mHz with math co-processor, the same
+calculation takes 0.3 seconds.
+
+
+                             Ordering Info
+
+Luminary is not a consumer-oriented end-user astronomy program like Voyager
+II, Distant Suns, Red Shift, or similar programs. Luminary is a set of tools
+you can use to write your own software for solar system calculations, for
+personal use or commercial gain.
+
+There are no licensing fees with Luminary. You are free to include
+Luminary-based object code in your programs without further payment to
+Nebula. The only limitation is that you cannot distribute the source code
+under any circumstances, even if your program is free. If you create a
+program for distribution, please give credit in your documentation or
+somewhere clearly visible in your program stating that you use the Luminary
+code library, and that it is  1994 by Nebula Inc, All Rights Reserved, and
+give our address: P.O. Box 191, Cumberland Ctr., ME 04021.
+
+Luminary is available from Nebula for $495.00. You receive a 3.5" disk (Mac
+or DOS) containing the source code and related files, and a 50-page manual
+detailing all aspects of the library and how to use it.
+
+If you are interested, but would like to know more, contact Nebula. For
+$5.00 we'll ship you the manual and you can read all about it. If you decide
+to purchase, we'll credit the price of the manual.
+
+To contact us...
+
+ Internet:  nebula@acornbbs.com
+ GEnie:     NEBULA2
+ AppleLink: NEBULA
+
+
+
+                          Luminary ORDER FORM
+                         (please print or type)
+
+
+Date:   _________
+
+Name:   ___________________________________________________________
+
+Street: ___________________________________________________________
+
+Town:   ___________________________  State: _______  Zip: _________
+
+Country ___________________________
+
+
+                                    Manual only $5.00  ____________
+
+                                     Luminary $495.00  ____________
+
+	                        ME residents 6% sales tax  ____________
+
+                                                Total  ____________
+
+Shipping is free. Price subject to change without notice. Send check drawn
+on U.S. bank or international money order in U.S. funds. Mail completed
+order form & payment to:   Nebula, Inc.
+                           P.O. Box 191
+                           Cumberland Ctr., ME 04021-0191
+                        
+                        THANK YOU FOR YOUR ORDER!
+
+
+Sales tax, Maine residents only, $ 0.30 for manual
+                                 $29.70 for Luminary
+

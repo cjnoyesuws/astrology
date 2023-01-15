@@ -1,0 +1,236 @@
+# ST__SIGN
+Bélier
+# +
+Taureau
+# +
+Gémeaux
+# +
+Cancer
+# +
+Leo
+# +
+Vierge
+# +
+Balance
+# +
+Scorpion
+# +
+Sagittaire
+# +
+Capricorne
+# +
+Verseau
+# +
+Poisson
+# ST__PLANET
+Dominant
+# +
+Soleil
+# +
+Lune
+# +
+Mercure
+# +
+Vénus
+# +
+Mars
+# +
+Jupiter
+# +
+Saturne
+# +
+Uranus
+# +
+Neptune
+# +
+Pluton
+# +
+Noeud Nord
+# +
+Noeud du sud
+# +
+Coeli moyen
+# +
+Immum Coeli
+# +
+Partie de richesse
+# +
+Sommet
+# +
+Point de l'est
+# +
+Cupido
+# +
+Hades
+# +
+Kronos
+# +
+Appollon
+# +
+Admetos
+# +
+Vulkanus
+# +
+Posiedon
+# +
+Ceres
+# +
+Pallas
+# +
+Junon
+# +
+Vesta
+# +
+Chiron
+# +
+En premier cuspide de maison
+# +
+Deuxième cuspide de maison
+# +
+Troisièmement cuspide de maison
+# +
+Quatrièmement cuspide de maison
+# +
+Cinquièmement cuspide de maison
+# +
+Sixième cuspide de maison
+# +
+Septième cuspide de maison
+# +
+Huitième cuspide de maison
+# +
+Neuvième cuspide de maison
+# +
+Dixième cuspide de maison
+# +
+Onzième cuspide de maison
+# +
+Douzième cuspide de maison
+# ST__EARTH
+Monde
+# ST__NUMBERS
+En premier
+# +
+Seconde
+# +
+Troisièmement
+# +
+Quatrièmement
+# +
+Cinquièmement
+# +
+Sixième
+# +
+Septième
+# +
+Huitième
+# +
+Neuvième
+# +
+Dixième
+# +
+Onzième
+# +
+Douzième
+# ST__ASPECTS
+Conjoint
+# +
+Sextile
+# +
+Trine
+# +
+Opposition
+# +
+Rendu carré
+# +
+Semi-Sextile
+# +
+Semi-carré
+# +
+Sesquiquadrate
+# +
+Quincunx
+# +
+Bi-quintile
+# +
+Quintile
+# +
+Tredecile
+# +
+Decile
+# +
+Septile
+# ST__SIGN3
+ARI
+# +
+TAU
+# +
+PIERRE PRÉCIEUSE
+# +
+BOÎTE
+# +
+LEO
+# +
+VIR
+# +
+LIB
+# +
+SCO
+# +
+AFFAISSEMENT
+# +
+CASQUETTE
+# +
+AQU
+# +
+PIS
+# ST__ERROR
+ERREUR!
+# +
+ERREUR!!
+# +
+Erreur!
+# +
+Erreur!!
+# ST__HOUSE_MODES 
+Maison égale
+# +
+Koch
+# +
+Placidus
+# +
+M maison
+# +
+Campanus
+# +
+Regiomantanus
+# +
+Morinus
+# +
+Porphyrix
+# +
+Topocentric
+# +
+Méridien
+# ST__RECT_METH
+Méthode du tableau solaire
+# +
+Méthode du tableau plate
+# +
+Lever du soleil Naissance-Time
+# +
+Procès & erreur
+# +
+Usage angle connu
+# ST__SIDE_TROP
+Sidéral
+# +
+Tropique
+# ST__RETROGRADE
+Direct
+# +
+Rétrograde
+# +
+Encore
+# +
+x

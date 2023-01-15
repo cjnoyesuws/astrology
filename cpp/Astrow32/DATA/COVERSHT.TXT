@@ -1,0 +1,33 @@
+
+
+
+
+[ASTRO $^$1 REPORT:]
+
+
+
+
+Name: {$2}
+
+
+Comments: {$5}
+
+
+
+
+
+Date Compiled: {$3}
+
+Time Compiled: {$4}
+
+
+
+
+Astrologer:
+
+
+
+
+This Chart was Produced by
+ASTRO the Program for Astrological Analysis
+(C) 1988-1992 By Christopher J. Noyes

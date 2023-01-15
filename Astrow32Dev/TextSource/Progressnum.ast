@@ -1,0 +1,65 @@
+@ Progression Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Progressed Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__ASPECT
+Progressed $0|$1|$7'Progressed'Natal' $2|Orb: $3 Degrees$_
+# CH__MISC
+$c'Decan: ''$e|$f'Critical|''$h'Anaretic''$_
+# CH__PLANET
+Tabs|60|3|15|30|45|$_
+[YOUR $^$1:]$_
+$_
+Progressed $9|$b'Direct'Retrograde'Still'|$c'  Decan : ''$e$f'  Critical.''$h'  Anaretic.''$_
+# CH__PLAN_HOUSE
+House: $3,$5'|On House Cusp'|Not On House Cusp'$7'   Intercepted.'.'$_
+# CH__ASPECT_HD
+Tabs|60|3|15|30|45|$_
+
+{ASPECTS TO NATAL PLANETS:}$_
+# CHP_ASPECT_PRHD
+Tabs|60|3|15|30|45|$_
+
+{ASPECTS TO PROGRESSED PLANETS:}$_
+# CH__HOUSE_HEAD
+[YOUR HOUSE CUSPS ARE:]$_
+$_
+# CHP_PRHOUSE_HEAD
+[YOUR PROGRESSED HOUSE CUSPS ARE:]$_
+$_ 
+# CHP_MS_HEAD
+Tabs|60|2|12|30|$_
+[MOON SERIES]:$_
+
+Moon Series for 4 Months Prior to Requested Date to 1 Year After Requested Date and Aspects to Your Natal Planets.$_
+$_
+# CHP_PROG_NOTE
+
+Your Progressed Planets and Aspects to Your Natal Planets.$_
+Progressions Do Not Invalidate the information shown in a Natal Chart But Add to the Information, and Show the Individual's Personal Growth$_
+$_
+<Aspects which do not correlate to planets with aspects in Your Natal Chart Have Little Power and Should be Ignored.>$_
+
+# CHP_MS_MISC
+$e$d' Decan.''$f' Critical Degree. '$h' Anaretic Degree.''$_
+# CHP_MS_PLANET
+Tabs|60|2|12|30|$_ 
+[YOUR PROGRESSED MOON FOR THE MONTH $^$K:]$_
+$_
+$9|$b'Direct'Retrograde'Still'|$c'  Decan : ''$e$f'  Critical.''$h'  Anaretic.''$_
+# CHP_PLAN_HOUSE
+House: $3,$5'|On House Cusp'|Not On House Cusp'$7'   Intercepted.'.'$_   
+# CH__PLAN_EXT
+Tabs|66|4|10|15|31|51|
+Decan:|$1|Decan Ruler:|$3$4'   Decan Sub-Ruler: ''$6$_
+Navasma:|$7|Navasma Sign:|$9$_
+Duad:|$a|Duad Ruler:|$c$d'   Duad Sub-Ruler: ''$f$_
+$g'Combust   ''$i'Home   ''$k'Detriment   ''$m'Exalted-Exact   'Exalted   ''$o'Fall-Exact   'Fall   ''$q'In Sign Ruled--Ruler: ''$s
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

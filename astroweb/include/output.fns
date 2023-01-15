@@ -1,0 +1,259 @@
+#pragma once
+short tropical_2_sidereal( short minutes, short year );
+short sign_cusp( short minor_degree, short minor_minutes, short sign );
+extern  int astro_file_2_text(char *infile,char *outfile,int width, int left_margin, int type, int code);
+extern  int do_conv_text(struct FILE_DB *fdp );
+extern  int view_helper(void);
+extern  int print_helper(void);
+extern  int convert_helper(void);
+extern  const char * sign_str(short sign);
+extern  const char * planet_str(short planet);
+extern  const char * number_str(short number);
+extern  const char * aspect_str(short aspect);
+extern  int prn_str(FILE *stream,char *string,char *margin);
+extern  int ast_print_file(char *infile,char *outfile,struct FILE_DB *ptr,int width,int left,int p1hd,int open, int code);
+extern  int do_print_file(struct FILE_DB *fdp );
+extern  void pop_view_ast(char *title,char *file,int row,int col,int height,int width,char tcolor,char bcolor);
+extern  int do_view(struct FILE_DB *fdp );
+extern  void comp_print_summary(FILE *stream,unsigned short mode, int table, int global, char *name, char *name2, char *comment);
+extern  int comp_print_aspect_entry(FILE *stream,short planet,struct ASPEC *ptr,char *n1,char *n2, int file, char *rpt);
+extern  int comp_print_entry(FILE *stream,struct AS_INF *inf,short planet,unsigned short mode,char *yst,char *ypst, int file, int apfile, int table, int global);
+extern  void comp_print_results(FILE *stream,struct AS_INF *inf_ptr,struct BIRTH_DB *data,unsigned short mode,struct AS_INF *pa_info,struct BIRTH_DB *pa_data,short house_mode, struct DATA_PACKET *dpk, char *comment, int interp);
+extern  void print_cusps(FILE *stream, short *ptr);
+
+extern  int save_graph_data(char *file_name,int type,struct BIRTH_DB *natal_bd,struct BIRTH_DB *other_bd,struct AS_INF *natal_inf,struct AS_INF * other_inf, unsigned short mode1, unsigned short mode2, struct FILE_DB *ptr, int house_proc);
+extern  int print_aspect_entry(FILE *stream,short planet,struct ASPEC *ptr, int file, char *rpt, char *name);
+extern  int print_midpoint_entry(FILE *stream,short planet,struct MIDPT *ptr,unsigned short mode, int file, char *name, int table, int global );
+extern  int print_entry(FILE *stream,struct AS_INF *inf,short planet,unsigned short mode, int fil, int asfil, int hsfil, int midfile, struct AS_INF_EXT *aie, char *name, char *comment, int table, int global );
+extern  void print_results(FILE *stream,struct AS_INF * inf_ptr,struct BIRTH_DB *data,struct AS_INF_EXT *aie, unsigned short mode,short house_mode, struct DATA_PACKET *dpk, char *comment );
+extern  void print_summary(FILE *stream,unsigned short mode, int table, int global, char *name, char *comment);
+extern  const char *month_str(short month);
+extern  int prog_print_aspect_entry(FILE *stream,short planet,struct ASPEC *ptr, int aspfile, char *name, int na_pr, char *rpt );
+extern  int prog_print_entry(FILE *stream,struct AS_INF *inf,short planet,unsigned short mode,struct AS_INF *alt, int file, int hsfile, int aspfile, char *name, char *comment, int table, int global);
+extern  int print_moon_series_entry(FILE *stream,struct AS_INF *inf,short month,struct AS_INF *pinf,unsigned short mode, int file, int hsfile, int aspfile, char *name, char *comment, int table, int global);
+extern  void prog_print_results(FILE *stream,struct AS_INF * inf_ptr,struct BIRTH_DB *data, unsigned short mode,short house_mode, struct DATA_PACKET *dpk, char *comment, int interp);
+extern  int text_wrap(char *string,int width);
+extern  int trans_print_aspect_entry(FILE *stream,short planet,struct ASPEC *ptr, int file, int text, char *name, char *report );
+extern  int trans_print_entry(FILE *stream,struct AS_INF *inf,short planet,unsigned short mode, int file, int asfile, int tno, struct AS_INF *old, struct DATES *dp, char *name, char *comment, int table, int global );
+extern  void trans_print_results(FILE *stream,struct AS_INF * inf_ptr,struct BIRTH_DB *data,unsigned short mode,struct AS_INF *tr_info,struct BIRTH_DB *tr_data,short house_mode, struct DATA_PACKET *dpk, char *comment, int interp);
+extern  short x_open_files_old( char *file, short dim );
+extern  short close_files_old( short num );
+extern  short get_transfer_text_asp_old( short col, short row, short deep, short num, FILE *stream );
+extern  const char *get_text_asp_old( short col, short row, short deep, short num );
+extern  void testval( int tval, int index, int *ret, int *ret2 );
+extern  char *make_date( struct DATES *dp, char *buf );
+extern  char *make_time( struct TIM *tp, int am_pm, char *buf );
+extern  int num_print_aspect_entry( FILE *stream, short planet, struct ASPEC *ptr, char *name, char *rpt );
+extern  int num_print_midpoint_entry( FILE *stream, short planet, struct MIDPT *ptr, unsigned short mode, char *name, int global, int table );
+extern  int num_print_entry( FILE *stream, struct AS_INF *inf, short planet, unsigned short mode, struct AS_INF_EXT *aie, char *name, char *comment, int table, int global );
+extern void num_print_results( FILE *stream, struct AS_INF *inf_ptr, struct BIRTH_DB *data,
+	 struct AS_INF_EXT *aie_ptr, unsigned short mode, short house_mode, struct DATA_PACKET *dpk, char *comment	);
+extern char * format_degs( short minutes, char *buf );
+extern int write_fptr( char *file, union NFDB *ptr, int type );
+extern FILE *fwrite_fptr( char *file, union NFDB *ptr, int type );
+extern int readx_fptr( char *file, union NFP *ptr );
+extern FILE *freadx_fptr( char *file, union NFP *ptr );
+extern void init_strprn( int print, char *mrgn, char *scr, char *hcr, int (*fcf)(FILE *, unsigned char) );
+extern int return_print_header( FILE *stream, char *chart, struct BIRTH_DB *data,
+ struct RETURN_DATA *retd, struct DATA_PACKET *dpk, int house_mode, char *comment, int table );
+extern int op_make_printer_string( char *instring, FILE *outstream );
+extern int return_print_entry( FILE *stream, struct DATES *d, struct TIM *t, int ap, int table,
+ char *name, int chart, int reno );
+extern void compos_print_results(FILE *stream,struct AS_INF *inf_ptr,
+     struct AS_INF_EXT *aie_ptr, struct BIRTH_DB *data,unsigned short mode,
+     short house_mode, struct DATA_PACKET *dpk, char *comment, int interp);
+extern void setup_compos( struct BIRTH_DB *_pa_data );
+extern void print_rect_data( FILE *stream, struct RECT_DATA *rd );
+extern char *enquote_strclip( unsigned char *str, unsigned char *buf );
+extern int print_ts_house_mode( FILE *stream, int mode, short house_mode );
+extern int print_reloc_header( FILE *stream, struct DATA_PACKET *dpk );
+extern int print_prog_header( FILE *stream, struct DATA_PACKET *dpk );
+extern int duad( int min );
+extern int navasma( int min );
+extern int duad_ruler( int min, int *sub );
+extern int navasma_sign( int min );
+extern int decan_ruler( int min, int sign, int *sub );
+extern char *enquote_strtrim( unsigned char *str, unsigned char *buf );
+extern char *xstrupr( char *buf );
+extern const char *fixed_star_str( int f );
+extern const char *arabic_part_str( int a );
+extern void nx_print_results( FILE *stream, struct AS_INF *inf_ptr, struct BIRTH_DB *data,
+    unsigned short mode, short house_mode, int type, int maxp, struct DATA_PACKET *dpk, char *tps, char *comment, char**texts=NULL );
+extern void problem_solving_report( FILE *stream, struct AS_INF *inf_ptr,
+    struct BIRTH_DB *data, unsigned short mode, short house_mode, struct DATA_PACKET *dpk, char *cmt );
+extern int bin_write_header( FILE *stream,short mode, short ch_code, struct BIRTH_DB *d, struct RECT_DATA *rd, struct DIREC_DATA *dd );
+extern int bin_write_aspects( FILE *stream, int count, struct AS_INF *infp );
+extern int bin_write_midpoint( FILE *stream, int count,struct AS_INF *inf );
+extern FILE *get_bin_file( char **n );
+extern void bin_write_natal_chart( struct AS_INF *ast, struct BIRTH_DB *asd,
+					unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_compat_chart( struct AS_INF *ast, struct AS_INF *pai,
+	 struct BIRTH_DB *asd, struct BIRTH_DB *pad, unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_compos_chart( struct AS_INF *ast, struct BIRTH_DB *asd,
+      struct BIRTH_DB *pad, unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_trans_chart( struct AS_INF *ast, struct BIRTH_DB *asd, struct BIRTH_DB *trd,
+		 unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_prog_chart( struct AS_INF *ast, struct BIRTH_DB *asd,
+					unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_arabic_chart( struct AS_INF *ast, struct BIRTH_DB *asd,
+					unsigned short mode, struct DATA_PACKET *dpk );
+extern void bin_write_fixed_chart( struct AS_INF *ast, struct BIRTH_DB *asd,
+					unsigned short mode, struct DATA_PACKET *dpk );
+
+
+extern void write_csv_rect_data( FILE *stream, struct RECT_DATA *rd );
+extern void write_csv_header( FILE*stream, struct BIRTH_DB *data, unsigned short mode, int count,
+	 short house_mode, struct DATA_PACKET *dpk );
+extern void write_csv_trans_header( FILE *stream, struct BIRTH_DB *tr_data, struct DATA_PACKET *dpk );
+extern void write_csv_prog_header( FILE*stream, struct DATA_PACKET *dpk );
+extern void write_csv_aspect_entry( FILE *stream, short planet, struct ASPEC *aptr, int count, int ch, char *key  );
+extern int write_csv_aspects( FILE *stream, struct AS_INF *inf, int count, int cht, char *key  );
+extern void write_csv_planet_entry( FILE *stream, struct AS_INF *inf, short planet, int cht, char *key  );
+extern void write_csv_planets( FILE *stream, struct AS_INF *inf, short count, int cht, char *key  );
+extern void write_csv_helio_entry(FILE *stream, struct AS_INF *inf, short planet, char *key  );
+extern void write_csv_helio( FILE *stream, struct AS_INF *inf, int count, char *key  );
+extern void write_csv_midpoint_data( FILE *stream, struct MIDPT *inf, short planet, char *key  );
+extern void write_csv_midpoints( FILE*stream, struct AS_INF *inf, int count, char *key  );
+extern void write_csv_houses( FILE *stream, short *cusps, char *key  );
+extern char *get_csv_file( char *name );
+extern void write_csv_house_file( char *name, char *ext, short *cusps, char *key  );
+extern void write_csv_planets_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_csv_aspects_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_csv_natal( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	     short house_mode, struct DATA_PACKET *dpk, int count  );
+extern void write_csv_compos( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+      struct AS_INF *inf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csv_compat( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+     struct AS_INF *inf, struct AS_INF *pinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csv_prog( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+				 short house_mode, struct DATA_PACKET *dpk );
+extern void write_csv_trans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	       struct BIRTH_DB *tr_data, short house_mode, struct DATA_PACKET *dpk );
+
+
+extern void write_csvx_rect_data( FILE *stream, struct RECT_DATA *rd );
+extern void write_csvx_header( FILE*stream, struct BIRTH_DB *data, unsigned short mode, int count,
+	 short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_trans_header( FILE *stream, struct BIRTH_DB *tr_data, struct DATA_PACKET *dpk );
+extern void write_csvx_prog_header( FILE*stream, struct DATA_PACKET *dpk );
+extern void write_csvx_aspect_entry( FILE *stream, short planet, struct ASPEC *aptr, int count, int ch, char *key  );
+extern int write_csvx_aspects( FILE *stream, struct AS_INF *inf, int count, int cht, char *key  );
+extern void write_csvx_planet_entry( FILE *stream, struct AS_INF *inf, short planet, int cht, char *key  );
+extern void write_csvx_planets( FILE *stream, struct AS_INF *inf, short count, int cht, char *key  );
+extern void write_csvx_helio_entry(FILE *stream, struct AS_INF *inf, short planet, char *key  );
+extern void write_csvx_helio( FILE *stream, struct AS_INF *inf, int count, char *key  );
+extern void write_csvx_midpoint_data( FILE *stream, struct MIDPT *inf, short planet, char *key  );
+extern void write_csvx_midpoints( FILE*stream, struct AS_INF *inf, int count, char *key  );
+extern void write_csvx_houses( FILE *stream, short *cusps, char *key  );
+extern char *get_csvx_file( char *name );
+extern void write_csvx_house_file( char *name, char *ext, short *cusps, char *key  );
+extern void write_csvx_planets_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_csvx_aspects_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_csvx_natal( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	     short house_mode, struct DATA_PACKET *dpk, int count  );
+extern void write_csvx_compos( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+      struct AS_INF *inf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_compat( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+     struct AS_INF *inf, struct AS_INF *pinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_prog( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+				 short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_trans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	       struct BIRTH_DB *tr_data, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_cmtrans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+struct BIRTH_DB *tr_data, struct BIRTH_DB *pa_data,short house_mode,struct DATA_PACKET *dpk );
+extern int write_csvx_tr_aspects( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+extern void write_csvx_tr_planets( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+
+
+extern void write_tab_rect_data( FILE *stream, struct RECT_DATA *rd );
+extern void write_tab_header( FILE*stream, struct BIRTH_DB *data, unsigned short mode, int count,
+	 short house_mode, struct DATA_PACKET *dpk );
+extern void write_tab_trans_header( FILE *stream, struct BIRTH_DB *tr_data, struct DATA_PACKET *dpk );
+extern void write_tab_prog_header( FILE*stream, struct DATA_PACKET *dpk );
+extern void write_tab_aspect_entry( FILE *stream, short planet, struct ASPEC *aptr, int count, int ch, char *key  );
+extern void write_tab_aspects( FILE *stream, struct AS_INF *inf, int count, int cht, char *key  );
+extern void write_tab_planet_entry( FILE *stream, struct AS_INF *inf, short planet, int cht, char *key  );
+extern void write_tab_planets( FILE *stream, struct AS_INF *inf, short count, int cht, char *key  );
+extern void write_tab_helio_entry(FILE *stream, struct AS_INF *inf, short planet, char *key  );
+extern void write_tab_helio( FILE *stream, struct AS_INF *inf, int count, char *key  );
+extern void write_tab_midpoint_data( FILE *stream, struct MIDPT *inf, short planet, char *key  );
+extern void write_tab_midpoints( FILE*stream, struct AS_INF *inf, int count, char *key  );
+extern void write_tab_houses( FILE *stream, short *cusps, char *key  );
+extern char *get_tab_file( char *name );
+extern void write_tab_house_file( char *name, char *ext, short *cusps, char *key  );
+extern void write_tab_planets_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_tab_aspects_file( char *name, char *ext, struct AS_INF *inf, int count, int ch, char *key  );
+extern void write_tab_natal( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	     short house_mode, struct DATA_PACKET *dpk, int count  );
+extern void write_tab_compos( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+      struct AS_INF *inf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_tab_compat( struct BIRTH_DB *data, struct BIRTH_DB *pdata,
+     struct AS_INF *inf, struct AS_INF *pinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_tab_prog( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+				 short house_mode, struct DATA_PACKET *dpk );
+extern void write_tab_trans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+	       struct BIRTH_DB *tr_data, short house_mode, struct DATA_PACKET *dpk );
+extern void write_tab_cmtrans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+struct BIRTH_DB *tr_data, struct BIRTH_DB *pa_data,short house_mode,struct DATA_PACKET *dpk );
+extern void write_tab_tr_aspects( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+extern void write_tab_tr_planets( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+
+
+
+
+extern void nh_print_results( FILE *stream, struct AS_INF *inf_ptr, struct BIRTH_DB *data,
+    unsigned short mode, short house_mode, struct DATA_PACKET *dpk, char *comment );
+extern unsigned short fdata_size( unsigned short type );
+extern unsigned short fdata_write_item( FILE *stream, void *data, short sz );
+extern short fdata_write( FILE *stream, unsigned short type );
+extern unsigned short fdata_read_item( FILE *stream, void *data, short sz );
+extern short fdata_read(  FILE *stream );
+extern  char *read_sex_codes( FILE *stream, char *buf, char **ar );
+extern char *do_sex_code( int p, int code, char **outbuf, int *sz );
+extern char *do_sex_codes( FILE *stream, char **outbuf, int *sz );
+
+extern int cmtrans_print_aspect_entry( FILE *stream, short planet, struct ASPEC *ptr, int file, int text, char *name, char *rpt );
+extern  int cmtrans_print_entry( FILE *stream, struct AS_INF *inf, short planet,
+       unsigned short mode, int file, int asfile, int tno, struct AS_INF *old, struct DATES *dp, char *name, char *comment, int table, int global );
+extern  void cmtrans_print_results( FILE *stream, struct AS_INF *inf_ptr,
+	struct BIRTH_DB *data, struct BIRTH_DB *pa_data, unsigned short mode, struct AS_INF *tr_info,
+	struct BIRTH_DB *tr_data, short house_mode, struct DATA_PACKET *dpk, char *comment, int interp );
+extern void write_csv_cmtrans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+   struct BIRTH_DB *tr_data, struct BIRTH_DB *pa_data,short house_mode,struct DATA_PACKET *dpk );
+extern void bin_write_cmtrans_chart( struct AS_INF *ast, struct BIRTH_DB *asd, struct BIRTH_DB *trd,
+       struct BIRTH_DB *cmd, unsigned short mode, struct DATA_PACKET *dpk );
+extern void write_csv_cmtrans( struct BIRTH_DB *data, struct AS_INF *inf, unsigned short mode,
+struct BIRTH_DB *tr_data, struct BIRTH_DB *pa_data,short house_mode,struct DATA_PACKET *dpk );
+extern int write_csv_tr_aspects( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+extern void write_csv_tr_planets( FILE *stream, struct AS_INF *inf, int end, int cht, int start, char *key );
+
+extern void kill_ems_tblp( void );
+extern short tb_close_table_old( short file_num );
+extern char *tb_get_ptr( struct TBLFIL *tb, short item );
+extern char *tb_get_text_old( short table, short item );
+extern short tb_write_text_old( FILE *stream, short table, short item );
+extern short tb_open_file_old( char *name );
+extern int x_kb_check(void);
+extern void write_csvx_solar( struct BIRTH_DB *data,
+     struct AS_INF *inf, struct AS_INF *sinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void solar_print_results( FILE *stream, struct AS_INF *inf_ptr, struct BIRTH_DB *data,
+              unsigned short mode,  struct AS_INF *sinfo,
+                           short house_mode, struct DATA_PACKET *dpk, char *comment, int interp );
+extern void harmonic_print_results( FILE *stream, struct AS_INF *inf_ptr, struct BIRTH_DB *data,
+              unsigned short mode,  struct AS_INF *hinfo,
+                           short house_mode, struct DATA_PACKET *dpk, char *comment, int interp );
+extern void write_tab_Harmonic( struct BIRTH_DB *data, struct AS_INF *inf, struct AS_INF *h_inf, unsigned short mode,
+				 short house_mode, struct DATA_PACKET *dpk );
+extern void write_csv_harmonic( struct BIRTH_DB *data,
+     struct AS_INF *inf, struct AS_INF *hinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void write_csvx_harmonic( struct BIRTH_DB *data,
+     struct AS_INF *inf, struct AS_INF *hinf, unsigned short mode, short house_mode, struct DATA_PACKET *dpk );
+extern void bin_write_harmonic_chart( struct AS_INF *ast, struct AS_INF *hinf, struct BIRTH_DB *asd,
+     unsigned short mode, struct DATA_PACKET *dpk );
+#ifdef _UNICODEVER
+extern int wc_op_make_printer_string( char *instring, FILE *outstream );
+#endif
+extern FILE* getOutputFile(char *name, char *ext);
+
+extern void mem_reclaim( AS_INF *aptr, AS_INF *alt_ptr, struct TRANS_DATA *td, unsigned mode );
+extern void setup_signs(short asc_minutes);

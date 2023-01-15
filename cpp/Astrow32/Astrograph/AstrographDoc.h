@@ -1,0 +1,68 @@
+// AstrographDoc.h : interface of the CAstrographDoc class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+class CAstrographDoc : public CDocument
+{
+protected: // create from serialization only
+	CAstrographDoc();
+	DECLARE_DYNCREATE(CAstrographDoc)
+	int CanClose;
+// Attributes
+public:
+	GraphData *GetDataPtr() { return theDataPtr; }
+	int IsOk() { return _isOk; }
+	CString &GetFileName() { return theFileName; }
+	void SetFileDB( XPFILE_DB *p );
+	void SetCanClose(int c) { CanClose = c; }
+    void SetMultiFiles( CStringArray *par, int num ) { pStringArray = par; num_files = num; file_no = 1; }
+	int HasMoreFiles() { if (file_no < num_files ) return 1; else return 0;}
+	void DoNextFile();
+	int GetFileNo() { return file_no; }
+	void DoPrint();
+	void DoExport();
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CAstrographDoc)
+	public:
+    virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+	virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
+	virtual BOOL CanCloseFrame(CFrameWnd* pFrame);
+	void SetPathName(LPCTSTR lpszPathName, BOOL bAddToMRU);
+
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CAstrographDoc();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CAstrographDoc)
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+
+
+private:
+	CString theFileName;
+	GraphData *theDataPtr;
+	int _isOk;
+	int num_files;
+	int file_no;
+	CStringArray* pStringArray;
+
+};
+
+/////////////////////////////////////////////////////////////////////////////

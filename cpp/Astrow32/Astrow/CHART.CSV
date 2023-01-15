@@ -1,0 +1,243 @@
+"Key","Name","Birth date","Birth Time","Country","State","Location","Long","Lat","Time Zone","Spec Code","GMT","Sidereal Time","Rect System","Trial Time","Side/Trop","House Mode","Name","Birth date","Birth Time","Country","State","Location","Long","Lat","Time Zone","Spec Code","GMT","Sidereal Time","Rect System","Trial Time","Side/Trop","House Mode"
+"Christopher J. Noyes","Christopher J. Noyes","3/29/1958","8:00 AM","USA","New Hampshire","Peterborough",42N00,074W30,"Eastern Standard","Standard Time","06:00","21:27:53","Solar Chart Method","12:00 AM","Tropical","Placidus"
+
+*** Christopher J. Noyes Planets ***
+"Key","Planet","Degree", Decan,"Retrog","Critical","Anaretic","House","Cusp","intercepted"
+"Christopher J. Noyes","Ascendant","15GEM16",2,"Direct","---","---",1,"On House Cusp","---"
+"Christopher J. Noyes","Sun","08ARI22",1,"Direct","---","---",11,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","22CAN10",3,"Direct","---","---",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","27ARI04",3,"Direct","---","---",11,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","22AQU27",3,"Direct","---","---",10,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","09AQU00",1,"Direct","Critical","---",9,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","29LIB07",3,"Retrograde","---","Anaretic",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","25SAG35",3,"Direct","---","---",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","07LEO33",1,"Retrograde","---","---",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","04SCO04",1,"Retrograde","---","---",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","00VIR11",1,"Retrograde","---","---",4,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","02SCO44",1,"Retrograde","---","---",6,"On House Cusp","---"
+"Christopher J. Noyes","South Node","02TAU44",1,"Retrograde","---","---",12,"On House Cusp","---"
+"Christopher J. Noyes","Medium Coeli","19AQU32",2,"Direct","---","---",10,"On House Cusp","---"
+"Christopher J. Noyes","Immum Coeli","19LEO32",2,"Direct","---","---",4,"On House Cusp","---"
+"Christopher J. Noyes","Part of Fortune","29VIR04",3,"Direct","---","Anaretic",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Vertex","08SCO01",1,"Direct","---","---",6,"Not On House Cusp","---"
+"Christopher J. Noyes","East Point","24TAU20",3,"Direct","---","---",12,"Not On House Cusp","---"
+
+*** Christopher J. Noyes Houses ***
+"Key",'House","Degree"
+"Christopher J. Noyes",1,"15GEM16"
+"Christopher J. Noyes",2,"06CAN35"
+"Christopher J. Noyes",3,"26CAN38"
+"Christopher J. Noyes",4,"19LEO32"
+"Christopher J. Noyes",5,"19VIR58"
+"Christopher J. Noyes",6,"01SCO28"
+"Christopher J. Noyes",7,"15SAG16"
+"Christopher J. Noyes",8,"06CAP35"
+"Christopher J. Noyes",9,"26CAP38"
+"Christopher J. Noyes",10,"19AQU32"
+"Christopher J. Noyes",11,"19PIS58"
+"Christopher J. Noyes",12,"01TAU28"
+
+Aspects
+
+*** Christopher J. Noyes Aspects ***
+"Key","Planet","Aspect","Second Planet","Orb"
+"Christopher J. Noyes","Ascendant","Trine","Medium Coeli",4
+"Christopher J. Noyes","Ascendant","Sextile","Immum Coeli",4
+"Christopher J. Noyes","Sun","Sextile","Mars",0
+"Christopher J. Noyes","Sun","Trine","Uranus",0
+"Christopher J. Noyes","Sun","Quincunx","Neptune",4
+"Christopher J. Noyes","Sun","Quincunx","Vertex",0
+"Christopher J. Noyes","Moon","Squared","Mercury",4
+"Christopher J. Noyes","Moon","Quincunx","Venus",0
+"Christopher J. Noyes","Moon","Squared","Jupiter",6
+"Christopher J. Noyes","Moon","Quincunx","Saturn",3
+"Christopher J. Noyes","Moon","Quincunx","Medium Coeli",2
+"Christopher J. Noyes","Mercury","Sextile","Venus",4
+"Christopher J. Noyes","Mercury","Opposition","Jupiter",2
+"Christopher J. Noyes","Mercury","Trine","Saturn",1
+"Christopher J. Noyes","Mercury","Opposition","Neptune",7
+"Christopher J. Noyes","Mercury","Trine","Pluto",3
+"Christopher J. Noyes","Mercury","Quincunx","Part of Fortune",2
+"Christopher J. Noyes","Venus","Trine","Jupiter",6
+"Christopher J. Noyes","Venus","Sextile","Saturn",3
+"Christopher J. Noyes","Venus","Conjunct","Medium Coeli",2
+"Christopher J. Noyes","Venus","Opposition","Immum Coeli",2
+"Christopher J. Noyes","Mars","Opposition","Uranus",1
+"Christopher J. Noyes","Mars","Squared","Neptune",4
+"Christopher J. Noyes","Mars","Squared","Vertex",0
+"Christopher J. Noyes","Jupiter","Sextile","Saturn",3
+"Christopher J. Noyes","Jupiter","Conjunct","Neptune",4
+"Christopher J. Noyes","Jupiter","Sextile","Pluto",1
+"Christopher J. Noyes","Jupiter","Conjunct","North Node",3
+"Christopher J. Noyes","Jupiter","Opposition","South Node",3
+"Christopher J. Noyes","Saturn","Trine","Pluto",4
+"Christopher J. Noyes","Saturn","Squared","Part of Fortune",3
+"Christopher J. Noyes","Uranus","Squared","Neptune",3
+"Christopher J. Noyes","Uranus","Squared","North Node",4
+"Christopher J. Noyes","Uranus","Squared","South Node",4
+"Christopher J. Noyes","Uranus","Squared","Vertex",0
+"Christopher J. Noyes","Neptune","Sextile","Pluto",3
+"Christopher J. Noyes","Neptune","Conjunct","North Node",1
+"Christopher J. Noyes","Neptune","Opposition","South Node",1
+"Christopher J. Noyes","Neptune","Conjunct","Vertex",3
+"Christopher J. Noyes","Pluto","Sextile","North Node",2
+"Christopher J. Noyes","Pluto","Trine","South Node",2
+"Christopher J. Noyes","South Node","Quincunx","Part of Fortune",3
+
+Midpoints
+
+*** Christopher J. Noyes Midpoints ***
+"Key","Planet","Planet 2","Degree","House","Cusp","Intercepted"
+"Christopher J. Noyes","Ascendant","Sun","11TAU49",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Moon","03CAN43",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Mercury","21TAU10",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Venus","18LIB51",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Mars","12LIB08",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Jupiter","22LEO11",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Saturn","20VIR25",5,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Ascendant","Uranus","11CAN24",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Neptune","24LEO40",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Pluto","22CAN43",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","North Node","24LEO00",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","South Node","24TAU00",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Medium Coeli","17LIB24",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Immum Coeli","17CAN24",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Part of Fortune","07LEO10",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","Vertex","26LEO38",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Ascendant","East Point","04GEM48",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Moon","00GEM16",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Mercury","17ARI43",11,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Venus","15VIR24",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Mars","08VIR41",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Jupiter","18CAN44",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Saturn","16LEO58",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Uranus","07GEM57",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Neptune","21CAN13",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Pluto","19GEM16",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","North Node","20CAN33",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","South Node","20ARI33",11,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Medium Coeli","13VIR57",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Immum Coeli","13GEM57",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Part of Fortune","03CAN43",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","Vertex","23CAN11",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Sun","East Point","01TAU21",12,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Moon","Mercury","09GEM37",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Venus","07SCO18",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Mars","00SCO35",6,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Moon","Jupiter","10VIR38",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Saturn","08LIB52",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Uranus","29CAN51",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Neptune","13VIR07",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Pluto","11LEO10",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","North Node","12VIR27",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","South Node","12GEM27",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Medium Coeli","05SCO51",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Immum Coeli","05LEO51",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Part of Fortune","25LEO37",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","Vertex","15VIR05",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Moon","East Point","23GEM15",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Venus","24VIR45",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Mars","18VIR02",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Jupiter","28CAN05",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Saturn","26LEO19",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Uranus","17GEM18",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Neptune","00LEO34",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Pluto","28GEM37",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","North Node","29CAN54",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","South Node","29ARI54",11,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Medium Coeli","23VIR18",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Immum Coeli","23GEM18",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Part of Fortune","13CAN04",2,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","Vertex","02LEO32",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Mercury","East Point","10TAU42",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Mars","15AQU43",9,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Jupiter","25SAG47",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Saturn","24CAP01",8,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Uranus","15SCO00",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Neptune","28SAG15",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Pluto","26SCO19",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","North Node","27SAG35",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","South Node","27VIR35",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Medium Coeli","20AQU59",10,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Immum Coeli","20SCO59",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Part of Fortune","10SAG45",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","Vertex","00CAP14",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Venus","East Point","08LIB23",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Jupiter","19SAG03",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Saturn","17CAP17",8,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Uranus","08SCO16",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Neptune","21SAG32",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Pluto","19SCO35",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","North Node","20SAG52",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","South Node","20VIR52",5,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Mars","Medium Coeli","14AQU16",9,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Immum Coeli","14SCO16",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Part of Fortune","04SAG02",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","Vertex","23SAG30",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Mars","East Point","01LIB40",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Saturn","27SCO21",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Uranus","18VIR20",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Neptune","01SCO35",6,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Jupiter","Pluto","29VIR39",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","North Node","00SCO55",6,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Jupiter","South Node","00LEO55",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Medium Coeli","24SAG19",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Immum Coeli","24VIR19",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Part of Fortune","14LIB05",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","Vertex","03SCO34",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Jupiter","East Point","11LEO43",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Uranus","16LIB34",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Neptune","29SCO49",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Pluto","27LIB53",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","North Node","29SCO09",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","South Node","29LEO09",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Medium Coeli","22CAP33",8,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Immum Coeli","22LIB33",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Part of Fortune","12SCO19",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","Vertex","01SAG48",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Saturn","East Point","09VIR57",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","Neptune","20VIR48",5,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Uranus","Pluto","18LEO52",4,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Uranus","North Node","20VIR08",5,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Uranus","South Node","20GEM08",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","Medium Coeli","13SCO32",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","Immum Coeli","13LEO32",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","Part of Fortune","03VIR18",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","Vertex","22VIR47",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Uranus","East Point","00CAN56",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","Pluto","02LIB07",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","North Node","03SCO24",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","South Node","03LEO24",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","Medium Coeli","26SAG48",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","Immum Coeli","26VIR48",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","Part of Fortune","16LIB34",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","Vertex","06SCO02",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Neptune","East Point","14LEO12",3,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","North Node","01LIB27",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","South Node","01CAN27",1,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","Medium Coeli","24SCO51",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","Immum Coeli","24LEO51",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","Part of Fortune","14VIR37",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","Vertex","04LIB06",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Pluto","East Point","12CAN15",2,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","South Node","02LEO44",3,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","Medium Coeli","26SAG08",7,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","Immum Coeli","26VIR08",5,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","Part of Fortune","15LIB54",5,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","Vertex","05SCO22",6,"Not On House Cusp","---"
+"Christopher J. Noyes","North Node","East Point","13LEO32",3,"Not On House Cusp","---"
+"Christopher J. Noyes","South Node","Medium Coeli","26VIR08",5,"Not On House Cusp","---"
+"Christopher J. Noyes","South Node","Immum Coeli","26GEM08",1,"Not On House Cusp","---"
+"Christopher J. Noyes","South Node","Part of Fortune","15CAN54",2,"Not On House Cusp","---"
+"Christopher J. Noyes","South Node","Vertex","05LEO22",3,"Not On House Cusp","---"
+"Christopher J. Noyes","South Node","East Point","13TAU32",12,"Not On House Cusp","---"
+"Christopher J. Noyes","Medium Coeli","Immum Coeli","19SCO32",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Medium Coeli","Part of Fortune","09SAG18",6,"Not On House Cusp","---"
+"Christopher J. Noyes","Medium Coeli","Vertex","28SAG46",7,"Not On House Cusp","---"
+"Christopher J. Noyes","Medium Coeli","East Point","06LIB56",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Immum Coeli","Part of Fortune","09VIR18",4,"Not On House Cusp","---"
+"Christopher J. Noyes","Immum Coeli","Vertex","28VIR46",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Immum Coeli","East Point","06CAN56",2,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Part of Fortune","Vertex","18LIB32",5,"Not On House Cusp","---"
+"Christopher J. Noyes","Part of Fortune","East Point","26CAN42",3,"Not On House Cusp","Intercepted Sign"
+"Christopher J. Noyes","Vertex","East Point","16LEO10",3,"Not On House Cusp","---"

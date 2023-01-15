@@ -1,0 +1,44 @@
+unit DmNumerow;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB;
+
+type
+  TDmNumerow = class(TDataModule)
+    ADONumeroConnect: TADOConnection;
+    ADONumOne: TADOQuery;
+    ADONumLst: TADOQuery;
+    ADOChartOne: TADOQuery;
+    ADOChartLst: TADOQuery;
+    SrcNumOne: TDataSource;
+    SrcNumLst: TDataSource;
+    SrcChartOne: TDataSource;
+    SrcChartLst: TDataSource;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  aDmNumerow: TDmNumerow;
+
+implementation
+
+uses DBConfig, inheritedregistry;
+
+{$R *.dfm}
+
+procedure TDmNumerow.DataModuleCreate(Sender: TObject);
+var
+  oDbConfig : TDbConfig;
+begin
+  oDBConfig := TDbConfig.Create('Numero For Windows');
+  AdoNumeroConnect.Provider := oDbConfig.Provider;
+  AdoNumeroConnect.ConnectionString := oDbConfig.Connect;
+end;
+
+end.

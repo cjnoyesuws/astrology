@@ -1,0 +1,31 @@
+@ Compatibility Chart
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Compatibility Printout For Names: {$1} and {$2}, Comment: {$3}.
+# CH__ASPECT
+
+$4's $0 is $1 to $8's $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+# CH__PLAN_HOUSE
+
+[$^$8'S $^$1:]$_
+$_
+$8's $1 is in $9's $3 House$4', On House Cusp and More Important', Not On House Cusp and Less Important'$6', Intercepted.'.'$_
+# CH__ASPECT_HD
+
+{ASPECTS:}$_
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|$_
+[$^$1'S HOUSE CUSPS ARE:]$_
+@TB$_
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--
+# CH__COMP_REL
+
+[$^$1 RELATIVE TO $^$2:]$_
+$_
+     The Following Text and Information Relates How $2 Affects $1 and ;His1; Life.$_
+     Your Companion Refers to $2. The Text describes $1.$_

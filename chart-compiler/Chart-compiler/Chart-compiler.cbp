@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Chart-compiler" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="astroweb/uiutil/;astroweb/include/;include/;astroweb/;astroweb/io/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Chart-compiler" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="test natal2cfg.json natal2in.json test4" />
+				<Option host_application="chart-compiler/Chart-compiler/bin/Debug/Chart-compiler" />
+				<Option run_host_application_in_terminal="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDELUXE=1" />
+					<Add option="-DNEW=1" />
+					<Add option="-DPRO=1" />
+					<Add directory="include" />
+					<Add directory="/usr/local/src/rapidjson/include" />
+					<Add directory="/home/cnoyes/astrology/astroweb/include" />
+					<Add directory="astroweb/include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Chart-compiler" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="astroweb/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add directory="/home/cnoyes/astrology/include" />
+			<Add directory="/home/cnoyes/astrology/astroweb/include" />
+			<Add directory="/usr/local/src" />
+		</Compiler>
+		<Linker>
+			<Add library="/home/cnoyes/astrology/astrology-core/astrology-core/bin/Debug/libastrology-core.a" />
+		</Linker>
+		<Unit filename="../../astroweb/apputil/AbstractReader.cpp" />
+		<Unit filename="../../astroweb/apputil/BaseChartWriter.cpp" />
+		<Unit filename="../../astroweb/apputil/ConfigData.cpp" />
+		<Unit filename="../../astroweb/apputil/ConfigHelper.cpp" />
+		<Unit filename="../../astroweb/apputil/ConfigLoader.cpp" />
+		<Unit filename="../../astroweb/apputil/IniOptionsReader.cpp" />
+		<Unit filename="../../astroweb/apputil/Main.cpp" />
+		<Unit filename="../../astroweb/apputil/ProgramConfig.cpp" />
+		<Unit filename="../../astroweb/apputil/ProgramOptions.cpp" />
+		<Unit filename="../../astroweb/apputil/charcons.cpp" />
+		<Unit filename="../../astroweb/apputil/dataname.cpp" />
+		<Unit filename="../../astroweb/apputil/errors.cpp" />
+		<Unit filename="../../astroweb/apputil/files.cpp" />
+		<Unit filename="../../astroweb/apputil/globals.cpp" />
+		<Unit filename="../../astroweb/apputil/makename.cpp" />
+		<Unit filename="../../astroweb/apputil/setpath.cpp" />
+		<Unit filename="../../astroweb/apputil/strclip.cpp" />
+		<Unit filename="../../astroweb/compiler/Comp.cpp" />
+		<Unit filename="../../astroweb/compiler/Progress.cpp" />
+		<Unit filename="../../astroweb/compiler/Transits.cpp" />
+		<Unit filename="../../astroweb/compiler/compile.cpp" />
+		<Unit filename="../../astroweb/compiler/compile2.cpp" />
+		<Unit filename="../../astroweb/include/AbstractReader.h" />
+		<Unit filename="../../astroweb/include/Aspect.h" />
+		<Unit filename="../../astroweb/include/AspectArray.h" />
+		<Unit filename="../../astroweb/include/BaseChartWriter.h" />
+		<Unit filename="../../astroweb/include/Birth.h" />
+		<Unit filename="../../astroweb/include/Chart.h" />
+		<Unit filename="../../astroweb/include/ChartCompiler.h" />
+		<Unit filename="../../astroweb/include/Compile.hpp" />
+		<Unit filename="../../astroweb/include/ConfigData.h" />
+		<Unit filename="../../astroweb/include/ConfigHelper.h" />
+		<Unit filename="../../astroweb/include/ConfigLoader.h" />
+		<Unit filename="../../astroweb/include/DataBase.h" />
+		<Unit filename="../../astroweb/include/DegMin.h" />
+		<Unit filename="../../astroweb/include/GenericObject.h" />
+		<Unit filename="../../astroweb/include/HouseCusp.h" />
+		<Unit filename="../../astroweb/include/HouseCuspArray.h" />
+		<Unit filename="../../astroweb/include/IniChartWriter.h" />
+		<Unit filename="../../astroweb/include/IniDataReader.h" />
+		<Unit filename="../../astroweb/include/IniOptionsReader.h" />
+		<Unit filename="../../astroweb/include/JsonChartReader.h" />
+		<Unit filename="../../astroweb/include/JsonChartWriter.h" />
+		<Unit filename="../../astroweb/include/JsonDataReader.h" />
+		<Unit filename="../../astroweb/include/JsonOptionReader.h" />
+		<Unit filename="../../astroweb/include/JsonWriter.h" />
+		<Unit filename="../../astroweb/include/Location.h" />
+		<Unit filename="../../astroweb/include/Main.h" />
+		<Unit filename="../../astroweb/include/Planet.h" />
+		<Unit filename="../../astroweb/include/PlanetArray.h" />
+		<Unit filename="../../astroweb/include/ProgramConfig.h" />
+		<Unit filename="../../astroweb/include/ProgramOptions.h" />
+		<Unit filename="../../astroweb/include/Report.h">
+			<Option virtualFolder="astroweb/" />
+		</Unit>
+		<Unit filename="../../astroweb/include/arabpt.h" />
+		<Unit filename="../../astroweb/include/ascend.h" />
+		<Unit filename="../../astroweb/include/aspect.h" />
+		<Unit filename="../../astroweb/include/asteroidcalc.h" />
+		<Unit filename="../../astroweb/include/asteroiddata.h" />
+		<Unit filename="../../astroweb/include/astro.h" />
+		<Unit filename="../../astroweb/include/astrow.h" />
+		<Unit filename="../../astroweb/include/astrprob.h" />
+		<Unit filename="../../astroweb/include/cJSON.h" />
+		<Unit filename="../../astroweb/include/charcons.h" />
+		<Unit filename="../../astroweb/include/compute.fns" />
+		<Unit filename="../../astroweb/include/datetime.fns" />
+		<Unit filename="../../astroweb/include/depend.hpp" />
+		<Unit filename="../../astroweb/include/errors.fns" />
+		<Unit filename="../../astroweb/include/files.h" />
+		<Unit filename="../../astroweb/include/fixstar.h" />
+		<Unit filename="../../astroweb/include/flags.h" />
+		<Unit filename="../../astroweb/include/fptr.h" />
+		<Unit filename="../../astroweb/include/freesp.hpp" />
+		<Unit filename="../../astroweb/include/grids.h" />
+		<Unit filename="../../astroweb/include/julian.h" />
+		<Unit filename="../../astroweb/include/lngdbl.h" />
+		<Unit filename="../../astroweb/include/midpoint.h" />
+		<Unit filename="../../astroweb/include/misccalc.h" />
+		<Unit filename="../../astroweb/include/options.hpp" />
+		<Unit filename="../../astroweb/include/orbs.h" />
+		<Unit filename="../../astroweb/include/outfunc.fns" />
+		<Unit filename="../../astroweb/include/oututil.h" />
+		<Unit filename="../../astroweb/include/paths.hpp" />
+		<Unit filename="../../astroweb/include/planpert.fns" />
+		<Unit filename="../../astroweb/include/plans.h" />
+		<Unit filename="../../astroweb/include/report_def.h" />
+		<Unit filename="../../astroweb/include/return.h" />
+		<Unit filename="../../astroweb/include/setup.hpp" />
+		<Unit filename="../../astroweb/include/stdafx.h" />
+		<Unit filename="../../astroweb/include/uicvt.fns" />
+		<Unit filename="../../astroweb/include/useri.h" />
+		<Unit filename="../../astroweb/include/utl.h" />
+		<Unit filename="../../astroweb/include/utlduad.h" />
+		<Unit filename="../../astroweb/ini/IniChartWriter.cpp" />
+		<Unit filename="../../astroweb/ini/IniDataReader.cpp" />
+		<Unit filename="../../astroweb/json/Aspect.cpp" />
+		<Unit filename="../../astroweb/json/AspectArray.cpp" />
+		<Unit filename="../../astroweb/json/DataBase.cpp" />
+		<Unit filename="../../astroweb/json/HouseCusp.cpp" />
+		<Unit filename="../../astroweb/json/HouseCuspArray.cpp" />
+		<Unit filename="../../astroweb/json/JsonChartWriter.cpp" />
+		<Unit filename="../../astroweb/json/JsonDataReader.cpp" />
+		<Unit filename="../../astroweb/json/JsonOptionReader.cpp" />
+		<Unit filename="../../astroweb/json/JsonWriter.cpp" />
+		<Unit filename="../../astroweb/json/Planet.cpp" />
+		<Unit filename="../../astroweb/json/PlanetArray.cpp" />
+		<Unit filename="../../astroweb/json/cJSON.cpp" />
+		<Unit filename="../../include/GridReport.h">
+			<Option virtualFolder="astroweb/include/" />
+		</Unit>
+		<Unit filename="../../include/Report.h">
+			<Option virtualFolder="astroweb/include/" />
+		</Unit>
+		<Unit filename="../../include/ReportConfig.h">
+			<Option virtualFolder="astroweb/include/" />
+		</Unit>
+		<Unit filename="../../include/ReportManager.h">
+			<Option virtualFolder="astroweb/include/" />
+		</Unit>
+		<Extensions>
+			<code_completion>
+				<search_path add="/home/cnoyes/astrology/astroweb/include" />
+			</code_completion>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

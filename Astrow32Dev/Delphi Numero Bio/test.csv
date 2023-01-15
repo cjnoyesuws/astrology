@@ -1,0 +1,69 @@
+<table width="100%%" border="0">
+<tr><td width="10%" align="right"><b>Name</b></td><td align="left">Christopher J. Noyes</td></tr>
+<tr><td align="right"><b>Birth Date</b></td><td> 3/29/1958</td></tr>
+<tr><td align="right"><b>Starting Date</b></td><td>10/20/2007</td></tr>
+</table>
+"DATE","PHYSICAL","EMOTIONAL","INTELLECTUAL","CRITICAL"
+"====","========","=========","============","========"
+<tr><td>10/20/2007</td><td> 0.270 </td><td><i> 0.000 **</i></td><td>-0.282 </td><td><i>-0.004 **</i></td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td><i>Unstable</i></td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>10/21/2007</td><td> 0.520 </td><td>-0.223 </td><td>-0.458 </td><td><i>-0.054 **</i></td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Ok</td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>10/22/2007</td><td> 0.731 </td><td>-0.434 </td><td>-0.618 </td><td><i>-0.107 **</i></td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Ok</td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>10/23/2007</td><td> 0.888 </td><td>-0.623 </td><td>-0.756 </td><td>-0.164 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Ok</td><td>Tired</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>10/24/2007</td><td> 0.979 </td><td>-0.782 </td><td>-0.866 </td><td>-0.223 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Negative</td><td>Tired</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>10/25/2007</td><td> 0.998 </td><td>-0.901 </td><td>-0.945 </td><td>-0.283 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Negative</td><td>Tired</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>10/26/2007</td><td> 0.942 </td><td>-0.975 </td><td>-0.990 </td><td>-0.341 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Negative</td><td>Tired</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>10/27/2007</td><td> 0.817 </td><td>-1.000 </td><td>-0.999 </td><td>-0.394 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Negative</td><td>Tired</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>10/28/2007</td><td> 0.631 </td><td>-0.975 </td><td>-0.972 </td><td>-0.439 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Negative</td><td>Tired</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>10/29/2007</td><td> 0.398 </td><td>-0.901 </td><td>-0.910 </td><td>-0.471 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Negative</td><td>Tired</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>10/30/2007</td><td><i> 0.136 **</i></td><td>-0.782 </td><td>-0.815 </td><td>-0.487 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td><i>Unstable</i></td><td>Negative</td><td>Tired</td><td><i>Unstable</i></td><td>&nbsp;</td></tr>
+<tr><td>10/31/2007</td><td><i>-0.136 **</i></td><td>-0.623 </td><td>-0.690 </td><td>-0.483 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td><i>Unstable</i></td><td>Ok</td><td>Ok</td><td><i>Unstable</i></td><td>&nbsp;</td></tr>
+<tr><td>11/1 /2007</td><td>-0.398 </td><td>-0.434 </td><td>-0.541 </td><td>-0.458 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Ok</td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/2 /2007</td><td>-0.631 </td><td>-0.223 </td><td>-0.372 </td><td>-0.408 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Ok</td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/3 /2007</td><td>-0.817 </td><td><i> 0.000 **</i></td><td>-0.189 </td><td>-0.335 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td>Tired</td><td><i>Unstable</i></td><td>Ok</td><td>Tired</td><td>&nbsp;</td></tr>
+<tr><td>11/4 /2007</td><td>-0.942 </td><td> 0.223 </td><td><i> 0.000 **</i></td><td>-0.240 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td>Tired</td><td>Ok</td><td><i>Unstable</i></td><td>Tired</td><td>&nbsp;</td></tr>
+<tr><td>11/5 /2007</td><td>-0.998 </td><td> 0.434 </td><td> 0.189 </td><td><i>-0.125 **</i></td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Tired</td><td>Ok</td><td>Ok</td><td>Tired</td><td>&nbsp;</td></tr>
+<tr><td>11/6 /2007</td><td>-0.979 </td><td> 0.623 </td><td> 0.372 </td><td><i> 0.005 **</i></td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Tired</td><td>Ok</td><td>Ok</td><td>Tired</td><td>&nbsp;</td></tr>
+<tr><td>11/7 /2007</td><td>-0.888 </td><td> 0.782 </td><td> 0.541 </td><td><i> 0.145 **</i></td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Tired</td><td>Positive</td><td>Ok</td><td>Tired</td><td>&nbsp;</td></tr>
+<tr><td>11/8 /2007</td><td>-0.731 </td><td> 0.901 </td><td> 0.690 </td><td> 0.287 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Positive</td><td>Ok</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/9 /2007</td><td>-0.520 </td><td> 0.975 </td><td> 0.815 </td><td> 0.423 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Positive</td><td>Bright</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/10/2007</td><td>-0.270 </td><td> 1.000 </td><td> 0.910 </td><td> 0.547 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Positive</td><td>Bright</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/11/2007</td><td><i> 0.000 **</i></td><td> 0.975 </td><td> 0.972 </td><td> 0.649 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td><i>Unstable</i></td><td>Positive</td><td>Bright</td><td><i>Unstable</i></td><td>&nbsp;</td></tr>
+<tr><td>11/12/2007</td><td> 0.270 </td><td> 0.901 </td><td> 0.999 </td><td> 0.723 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Positive</td><td>Bright</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/13/2007</td><td> 0.520 </td><td> 0.782 </td><td> 0.990 </td><td> 0.764 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Positive</td><td>Bright</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/14/2007</td><td> 0.731 </td><td> 0.623 </td><td> 0.945 </td><td> 0.766 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Good</td><td>Ok</td><td>Bright</td><td>Good</td><td>&nbsp;</td></tr>
+<tr><td>11/15/2007</td><td> 0.888 </td><td> 0.434 </td><td> 0.866 </td><td> 0.729 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Ok</td><td>Bright</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>11/16/2007</td><td> 0.979 </td><td> 0.223 </td><td> 0.756 </td><td> 0.652 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Ok</td><td>Bright</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>11/17/2007</td><td> 0.998 </td><td><i> 0.000 **</i></td><td> 0.618 </td><td> 0.539 </td><td><i>Warning!</i></td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td><i>Unstable</i></td><td>Ok</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>11/18/2007</td><td> 0.942 </td><td>-0.223 </td><td> 0.458 </td><td> 0.393 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Ok</td><td>Ok</td><td>Hyper</td><td>&nbsp;</td></tr>
+<tr><td>11/19/2007</td><td> 0.817 </td><td>-0.434 </td><td> 0.282 </td><td> 0.222 </td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>Hyper</td><td>Ok</td><td>Ok</td><td>Hyper</td><td>&nbsp;</td></tr>

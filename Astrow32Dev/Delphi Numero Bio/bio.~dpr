@@ -1,0 +1,18 @@
+program bio;
+
+uses
+  Forms,
+  biochart in 'biochart.pas' {BioForm},
+  biocalc_TLB in 'biocalc_TLB.pas',
+  DBConfig in 'DBConfig.pas',
+  inheritedregistry in 'inheritedregistry.pas',
+  dbmaint in 'dbmaint.pas' {DbMaintForm},
+  Demo in 'demo.pas' {demofrm};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TBioForm, BioForm);
+  Application.Run;
+end.

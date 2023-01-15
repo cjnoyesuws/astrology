@@ -1,0 +1,50 @@
+@ Rapport des passages
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression du tableau du passage pour nom: {$1}, Commentaire: {$2}.$_
+# CHH_BIRTH
+ Date: {$2}, Time: {$3}. Pays: {$4}, Etat ou Région: {$5}, Emplacement: {$6}. Coordonnées géographiques {$7.$8 $9, $ b.$c $ d}, Zone Time = {$ f}, Code Spécial = {$ g}. Différence GMT = {h:$k $}.
+
+Time Used sidéral Pour les Calculs de Maison Était {m:$n:$o $}.$_
+
+# CHT_TRANS_PARAM
+Transite les paramètres sont--nombre de passages: {$1}, Planète Initiale: {$2}, Planète de la fin: {$3}, période de la Séparation: {$4} mois et {$5} jours.$_
+# CHT_TRANS_YB
+VOTRE NAISSANCE--Naissance$
+# CHT_TRANS_TD
+PASSAGES--début$
+# CH__PLANET
+{$^$1:}|$9|$un mouvement |Déclinaison: X° $ $ y' |
+# CH__PLAN_HOUSE
+Dans $3 Maison Natale |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted |''
+# CH__ASPECT_HD
+
+{ASPECTS:} $ _
+# CH__HOUSE_HEAD
+
+[VOS CUSPIDES DE MAISON NATALES SONT:] $ _
+@ TB$_
+# CHT_HOUSE_TRHEAD
+
+[VOS CUSPIDES DE MAISON POUR LE PASSAGE SONT:] $ _
+@ TB$_
+# CHT_TRANS_ID
+$_
+
+[* * * * * NOMBRE DU PASSAGE: $1 * * * * *] $ _
+[Date pour les passages: $2] $ _
+# CH__MISC
+$e Decan |$f' < Degré Critique > |''$h' < Degré Anaretic > |''
+# CH__PLAN_EXT
+Decan: $1 |Souverain $3 |$4'Sub-gouverné par: "$6. |Navasma: $7 |Signe: $9 |Duad: $ UN |Gouverné par: $ C |$d'Sub-gouverné par: " F@TR $
+$g'Combust |''$Signe de la Maison de l'i'In |''$k'Sign de Détriment |''$les m'Exalted Signent le Degré Exact |'Signe exalté |''$les o'Fall Signent le Degré Exact |'Signe de chute |''$Q'In signent de souverain "@ TR
+# CH__HOUSE_CS
+Logez la Cuspide #$ ^ $1: |$2|Logez la Cuspide #$ ^ $3: |$4@TR
+# CH__MIDPT_HD
+
+{MILIEUX:} $ _
+$_

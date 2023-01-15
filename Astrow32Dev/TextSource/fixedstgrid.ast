@@ -1,0 +1,30 @@
+@ Fixed Star Reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+deftabs Fixed Star Chart Grid Report For Name: {$1}, Comment: {$2}.$_
+# CH__PLANET
+{$^$k:}|$9|Declination: $x° $y'|
+# CH__MISC
+$c'Decan : ''$e|$f'Critical|''$h'Anaretic|''
+# CH__PLAN_HOUSE
+House: $2|$4'On House Cusp|'Not On House Cusp|'$6'Intercepted|''
+# CH__PLAN_EXT
+Decan: $1|Decan Ruler: $3|$4'Decan Sub-Ruler: ''$6|Navasma: $7|Navasma Sign:|$9@TR
+Duad: $a|Duad Ruler: $c|$d'Duad Sub-Ruler: ''$f|$g'Combust|''$i'Home|''$k'Detriment|''@TR
+$m'Exalted-Exact|'Exalted|''$o'Fall-Exact|'Fall|''$q'In Sign Ruled--Ruler: |''$s
+# CH__HOUSE_CS
+House Cusp #$^$1:|$2|House Cusp #$^$3:|$4@TR$_
+# CH__HOUSE_HEAD
+[YOUR NATAL HOUSE CUSPS:]$_
+@TB
+# CH__ASPECT_HD
+{ASPECTS:}$_
+$_
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

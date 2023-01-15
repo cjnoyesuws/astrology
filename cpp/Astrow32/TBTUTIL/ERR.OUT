@@ -1,0 +1,52 @@
+	cl /nologo /G2 /Gy /W3 /Gf /ALw /YX"pch.cpp" /O2 /Ob1 /D "NDEBUG" /D "BSR" /FR /GD /GEe /Fp"TBTCVTUT.PCH"  /c MKBSR.CPP
+mkbsr.cpp
+mkbsr.cpp(16) : error C2371: 'symbols' : redefinition; different basic types
+mkbsr.cpp(27) : error C2059: syntax error : '-'
+mkbsr.cpp(29) : error C2039: 'r' : is not a member of 'LST'
+mkbsr.cpp(42) : error C2039: 'argc' : is not a member of 'LST'
+mkbsr.cpp(43) : error C2039: 'src' : is not a member of 'LST'
+mkbsr.cpp(43) : error C2039: 'argv' : is not a member of 'LST'
+mkbsr.cpp(43) : error C2109: subscript requires array or pointer type
+mkbsr.cpp(45) : error C2039: 'src' : is not a member of 'LST'
+mkbsr.cpp(45) : error C2446: '=' : no conversion from 'char [9]' to 'int '
+mkbsr.cpp(46) : error C2039: 'argc' : is not a member of 'LST'
+mkbsr.cpp(47) : error C2039: 'dst' : is not a member of 'LST'
+mkbsr.cpp(47) : error C2039: 'argv' : is not a member of 'LST'
+mkbsr.cpp(47) : error C2109: subscript requires array or pointer type
+mkbsr.cpp(49) : error C2039: 'dst' : is not a member of 'LST'
+mkbsr.cpp(49) : error C2446: '=' : no conversion from 'char [9]' to 'int '
+mkbsr.cpp(50) : error C2039: 'ifstream' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2146: syntax error : missing ';' before identifier 'istream'
+mkbsr.cpp(50) : error C2039: 'istream' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2039: 'src' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2039: 'ios' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2039: 'ios' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2653: 'ios' : is not a class name
+mkbsr.cpp(50) : error C2039: 'in' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2039: 'ios' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2039: 'ios' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2653: 'ios' : is not a class name
+mkbsr.cpp(50) : error C2039: 'nocreate' : is not a member of 'LST'
+mkbsr.cpp(50) : error C2064: term does not evaluate to a function
+mkbsr.cpp(51) : error C2039: 'istream' : is not a member of 'LST'
+mkbsr.cpp(51) : error C2039: 'bad' : is not a member of 'LST'
+mkbsr.cpp(51) : error C2228: left of '.fail' must have class/struct/union type
+mkbsr.cpp(56) : error C2228: left of '.get' must have class/struct/union type
+mkbsr.cpp(57) : error C2228: left of '.fail' must have class/struct/union type
+mkbsr.cpp(57) : error C2228: left of '.eof' must have class/struct/union type
+mkbsr.cpp(58) : error C2228: left of '.close' must have class/struct/union type
+mkbsr.cpp(63) : error C2228: left of '.getline' must have class/struct/union type
+mkbsr.cpp(67) : error C2228: left of '.putback' must have class/struct/union type
+mkbsr.cpp(68) : error C2121: '>>' : bad right operand
+mkbsr.cpp(69) : error C2228: left of '.getline' must have class/struct/union type
+mkbsr.cpp(70) : error C2228: left of '.eof' must have class/struct/union type
+mkbsr.cpp(71) : error C2228: left of '.close' must have class/struct/union type
+mkbsr.cpp(75) : error C2228: left of '.bad' must have class/struct/union type
+mkbsr.cpp(75) : error C2228: left of '.fail' must have class/struct/union type
+mkbsr.cpp(77) : error C2228: left of '.close' must have class/struct/union type
+mkbsr.cpp(82) : error C2228: left of '.bad' must have class/struct/union type
+mkbsr.cpp(82) : error C2228: left of '.fail' must have class/struct/union type
+mkbsr.cpp(82) : error C2228: left of '.eof' must have class/struct/union type
+mkbsr.cpp(83) : error C2228: left of '.close' must have class/struct/union type
+mkbsr.cpp(85) : error C2065: 'matchsym' : undeclared identifier
+mkbsr.cpp(85) : error C2664: 'qsort' : cannot convert parameter 4 from 'int ' to 'int (__far __cdecl *)(const void __far *,const void __far *)'

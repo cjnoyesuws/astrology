@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "numchart", "numchart.vcproj", "{59819B04-4097-4C35-9A39-C64F98A8C015}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "capture", "..\..\Astro32dev\numchart\capture\capture.vcproj", "{7E253B6C-5249-4FD5-A5EA-A8E19E630AB2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "numchartlx", "numchartlx\numchartlx.vcproj", "{EDB9801A-DB55-46CD-910F-4DA2DE4C9796}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{59819B04-4097-4C35-9A39-C64F98A8C015}.Debug.ActiveCfg = Debug|Win32
+		{59819B04-4097-4C35-9A39-C64F98A8C015}.Debug.Build.0 = Debug|Win32
+		{59819B04-4097-4C35-9A39-C64F98A8C015}.Release.ActiveCfg = Release|Win32
+		{59819B04-4097-4C35-9A39-C64F98A8C015}.Release.Build.0 = Release|Win32
+		{7E253B6C-5249-4FD5-A5EA-A8E19E630AB2}.Debug.ActiveCfg = Debug|Win32
+		{7E253B6C-5249-4FD5-A5EA-A8E19E630AB2}.Debug.Build.0 = Debug|Win32
+		{7E253B6C-5249-4FD5-A5EA-A8E19E630AB2}.Release.ActiveCfg = Release|Win32
+		{EDB9801A-DB55-46CD-910F-4DA2DE4C9796}.Debug.ActiveCfg = Debug|Win32
+		{EDB9801A-DB55-46CD-910F-4DA2DE4C9796}.Debug.Build.0 = Debug|Win32
+		{EDB9801A-DB55-46CD-910F-4DA2DE4C9796}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

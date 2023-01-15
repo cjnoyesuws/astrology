@@ -1,0 +1,30 @@
+extern void trans_print_grid( FILE *stream, AS_INF *inf_ptr,
+	BIRTH_DB *data, BITS mode, AS_INF *tr_info, int type,
+	BIRTH_DB *tr_data, NUM house_mode, DATA_PACKET *dpk, char *comment );
+extern void prog_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+	  BITS mode, NUM house_mode, DATA_PACKET *dpk, char *comment,
+	  int type );
+extern void num_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+      AS_INF_EXT *aie_ptr, BITS mode, NUM house_mode, DATA_PACKET *dpk,
+	char *comment, int type );
+extern void nx_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+ BITS mode, NUM house_mode, int type, int maxp, DATA_PACKET *dpk, char *tps,
+     char *comment);
+extern void cmtrans_print_grid( FILE *stream, AS_INF *inf_ptr, int type,
+	BIRTH_DB *data, BIRTH_DB *pa_data, BITS mode, AS_INF *tr_info,
+	BIRTH_DB *tr_data, NUM house_mode, DATA_PACKET *dpk, char *comment );
+extern void nh_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+    BITS mode, NUM house_mode, DATA_PACKET *dpk, char *comment );
+extern void harmonic_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+              BITS mode,  AS_INF *hinfo, int type,
+                           NUM house_mode, DATA_PACKET *dpk, char *comment );
+extern void comp_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+              BITS mode,  AS_INF *pa_info, BIRTH_DB *pa_data,
+                           NUM house_mode, DATA_PACKET *dpk, char *comment, int type );
+extern void compos_print_grid( FILE *stream, struct AS_INF *inf_ptr,
+      struct AS_INF_EXT *aie_ptr, struct BIRTH_DB *data, unsigned short mode,
+      short house_mode, struct DATA_PACKET *dpk, char *comment, int type );
+extern void solar_print_grid( FILE *stream, AS_INF *inf_ptr, BIRTH_DB *data,
+              BITS mode,  AS_INF *sinfo, int type,
+ NUM house_mode, DATA_PACKET *dpk, char *comment );
+extern void setup_composg( BIRTH_DB *pa_data );

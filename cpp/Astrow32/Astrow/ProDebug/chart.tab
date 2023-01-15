@@ -1,0 +1,92 @@
+Key	Name	Birth date	Birth Time	Country	State	Location	Long	Lat	Time Zone	Spec Code	GMT	Sidereal Time	Rect System	Trial Time	Side/Trop	House Mode
+Christopher J. Noyes	Christopher J. Noyes	3/29/1958	08:00 AM	USA	New Hampshire	Peterborough	42N00	074W30	Eastern Standard	Standard Time	06:00	21:27:53	Solar Chart Method	12:00 AM	Tropical	Placidus
+
+Planets
+Key	Planet	Degree	Decan	Retrog	Critical	Anaretic	House	Cusp	intercepted
+Christopher J. Noyes	Ascendant	15GEM16	2	Direct	---	---	1,On House Cusp	---
+Christopher J. Noyes	Sun	08ARI22	1	Direct	---	---	11,Not On House Cusp	---
+Christopher J. Noyes	Moon	22CAN10	3	Direct	---	---	2,Not On House Cusp	---
+Christopher J. Noyes	Mercury	27ARI04	3	Direct	---	---	11,Not On House Cusp	---
+Christopher J. Noyes	Venus	22AQU27	3	Direct	---	---	10,Not On House Cusp	---
+Christopher J. Noyes	Mars	09AQU00	1	Direct	Critical	---	9,Not On House Cusp	---
+Christopher J. Noyes	Jupiter	29LIB07	3	Retrograde	---	Anaretic	5,Not On House Cusp	---
+Christopher J. Noyes	Saturn	25SAG35	3	Direct	---	---	7,Not On House Cusp	---
+Christopher J. Noyes	Uranus	07LEO33	1	Retrograde	---	---	3,Not On House Cusp	---
+Christopher J. Noyes	Neptune	04SCO04	1	Retrograde	---	---	6,Not On House Cusp	---
+Christopher J. Noyes	Pluto	00VIR11	1	Retrograde	---	---	4,Not On House Cusp	---
+Christopher J. Noyes	North Node	02SCO44	1	Retrograde	---	---	6,On House Cusp	---
+Christopher J. Noyes	South Node	02TAU44	1	Retrograde	---	---	12,On House Cusp	---
+Christopher J. Noyes	Medium Coeli	19AQU32	2	Direct	---	---	10,On House Cusp	---
+Christopher J. Noyes	Immum Coeli	19LEO32	2	Direct	---	---	4,On House Cusp	---
+Christopher J. Noyes	Part of Fortune	29VIR04	3	Direct	---	Anaretic	5,Not On House Cusp	---
+Christopher J. Noyes	Vertex	08SCO01	1	Direct	---	---	6,Not On House Cusp	---
+Christopher J. Noyes	East Point	24TAU20	3	Direct	---	---	12,Not On House Cusp	---
+
+Houses
+Key	House	Degree
+Christopher J. Noyes	1	15GEM16
+Christopher J. Noyes	2	06CAN35
+Christopher J. Noyes	3	26CAN38
+Christopher J. Noyes	4	19LEO32
+Christopher J. Noyes	5	19VIR58
+Christopher J. Noyes	6	01SCO28
+Christopher J. Noyes	7	15SAG16
+Christopher J. Noyes	8	06CAP35
+Christopher J. Noyes	9	26CAP38
+Christopher J. Noyes	10	19AQU32
+Christopher J. Noyes	11	19PIS58
+Christopher J. Noyes	12	01TAU28
+
+Aspects
+Key	Planet	Aspect	Second Planet	Orb
+Christopher J. Noyes	Ascendant	Trine	Medium Coeli	4
+Christopher J. Noyes	Ascendant	Sextile	Immum Coeli	4
+Christopher J. Noyes	Sun	Sextile	Mars	0
+Christopher J. Noyes	Sun	Trine	Uranus	0
+Christopher J. Noyes	Sun	Quincunx	Neptune	4
+Christopher J. Noyes	Sun	Quincunx	Vertex	0
+Christopher J. Noyes	Moon	Squared	Mercury	4
+Christopher J. Noyes	Moon	Quincunx	Venus	0
+Christopher J. Noyes	Moon	Squared	Jupiter	6
+Christopher J. Noyes	Moon	Quincunx	Saturn	3
+Christopher J. Noyes	Moon	Quincunx	Medium Coeli	2
+Christopher J. Noyes	Mercury	Sextile	Venus	4
+Christopher J. Noyes	Mercury	Opposition	Jupiter	2
+Christopher J. Noyes	Mercury	Trine	Saturn	1
+Christopher J. Noyes	Mercury	Opposition	Neptune	7
+Christopher J. Noyes	Mercury	Trine	Pluto	3
+Christopher J. Noyes	Mercury	Quincunx	Part of Fortune	2
+Christopher J. Noyes	Venus	Trine	Jupiter	6
+Christopher J. Noyes	Venus	Sextile	Saturn	3
+Christopher J. Noyes	Venus	Conjunct	Medium Coeli	2
+Christopher J. Noyes	Venus	Opposition	Immum Coeli	2
+Christopher J. Noyes	Mars	Opposition	Uranus	1
+Christopher J. Noyes	Mars	Squared	Neptune	4
+Christopher J. Noyes	Mars	Squared	Vertex	0
+Christopher J. Noyes	Jupiter	Sextile	Saturn	3
+Christopher J. Noyes	Jupiter	Conjunct	Neptune	4
+Christopher J. Noyes	Jupiter	Sextile	Pluto	1
+Christopher J. Noyes	Jupiter	Conjunct	North Node	3
+Christopher J. Noyes	Jupiter	Opposition	South Node	3
+Christopher J. Noyes	Saturn	Trine	Pluto	4
+Christopher J. Noyes	Saturn	Squared	Part of Fortune	3
+Christopher J. Noyes	Uranus	Squared	Neptune	3
+Christopher J. Noyes	Uranus	Squared	North Node	4
+Christopher J. Noyes	Uranus	Squared	South Node	4
+Christopher J. Noyes	Uranus	Squared	Vertex	0
+Christopher J. Noyes	Neptune	Sextile	Pluto	3
+Christopher J. Noyes	Neptune	Conjunct	North Node	1
+Christopher J. Noyes	Neptune	Opposition	South Node	1
+Christopher J. Noyes	Neptune	Conjunct	Vertex	3
+Christopher J. Noyes	Pluto	Sextile	North Node	2
+Christopher J. Noyes	Pluto	Trine	South Node	2
+Christopher J. Noyes	South Node	Quincunx	Part of Fortune	3
+
+Midpoints
+Key	Planet	Planet 2	Degree	House	Cusp	Intercepted
+Christopher J. Noyes	Ascendant	Medium Coeli	17LIB24	5	On House Cusp	---
+Christopher J. Noyes	Ascendant	Medium Coeli	17ARI24	11	On House Cusp	---
+Christopher J. Noyes	North Node	South Node	02LEO44	3	On House Cusp	---
+Christopher J. Noyes	North Node	South Node	02AQU44	9	On House Cusp	---
+Christopher J. Noyes	Medium Coeli	Immum Coeli	19SCO32	6	On House Cusp	---
+Christopher J. Noyes	Medium Coeli	Immum Coeli	19TAU32	12	On House Cusp	---

@@ -1,0 +1,389 @@
+------ Rebuild All started: Project: Astrow, Configuration: Debug Win32 ------
+
+Deleting intermediate files and output files for project 'Astrow', configuration 'Debug|Win32'.
+Compiling...
+zatan2.cpp
+ WINVER not defined. Defaulting to 0x0501 (Windows XP and Windows .NET Server)
+wspell.cpp
+Wrtabdax.cpp
+Wrfdata.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(33) : warning C4267: '=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(34) : warning C4267: '+=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(44) : warning C4267: '=' : conversion from 'size_t' to 'unsigned short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(70) : warning C4267: '=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(72) : warning C4267: '+=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(74) : warning C4267: '+=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(76) : warning C4267: '+=' : conversion from 'size_t' to 'short', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Wrfdata.cpp(86) : warning C4267: '=' : conversion from 'size_t' to 'unsigned short', possible loss of data
+Wrcsvdax.cpp
+Wrcsvdat.cpp
+Wrbindat.cpp
+c:\Astrow32Dev\Astrow32\ENGINE\Wrbindat.cpp(33) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+Wrbdata.cpp
+Wpintl.cpp
+c:\Astrow32Dev\Astrow32\WPCONV\Wpintl.cpp(28) : warning C4309: 'initializing' : truncation of constant value
+Words.cpp
+Virttext.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Virttext.cpp(204) : warning C4311: 'type cast' : pointer truncation from 'char *' to 'int'
+c:\Astrow32Dev\Astrow32\UIUTL\Virttext.cpp(214) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Virttext.cpp(350) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Virttext.cpp(424) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+Virtsave.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Virtsave.cpp(138) : warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+ven404.cpp
+vearth.cpp
+utilfnc.cpp
+ura404.cpp
+Uis2dsk.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(28) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(30) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(32) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(71) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(73) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(75) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(77) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(98) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(100) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(135) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(138) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(141) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(270) : warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Uis2dsk.cpp(271) : warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
+Txtsrch.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Txtsrch.cpp(51) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+Trprnres.cpp
+TransScr.cpp
+Transits.cpp
+TransInfo.cpp
+TransData.cpp
+Tickcirc.cpp
+TextManager.cpp
+TextGetter.cpp
+Tabs.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(55) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(58) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(65) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(114) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(117) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+c:\Astrow32Dev\Astrow32\UIUTL\Tabs.cpp(124) : warning C4244: 'argument' : conversion from 'short' to 'char', possible loss of data
+Table.cpp
+tabctrlctrl1.cpp
+c:\Astrow32Dev\TBT32\tabctrlctrl1.h(76) : warning C4101: 'result' : unreferenced local variable
+Sun.cpp
+c:\Astrow32Dev\Astrow32\ENGDLL\Sun.cpp(98) : warning C4244: 'return' : conversion from 'double' to 'short', possible loss of data
+StrTransform.cpp
+Strclip.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Strclip.cpp(8) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+Strbuff.cpp
+StdAfx.cpp
+starele.cpp
+SplashWnd.cpp
+Sortfils.cpp
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2159: more than one storage class specified
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2236: unexpected 'struct' 'AryItem'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2143: syntax error : missing ';' before '{'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2447: '{' : missing function header (old-style formal list?)
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(33) : error C2501: 'AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2146: syntax error : missing ';' before identifier 'all'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'AryGroup::all' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2146: syntax error : missing ';' before identifier 'text'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'AryGroup::text' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2146: syntax error : missing ';' before identifier 'graph'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'AryGroup::graph' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2146: syntax error : missing ';' before identifier 'grid'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'AryGroup::grid' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2143: syntax error : missing ';' before '&'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'AryGroup::get' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2059: syntax error : 'return'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2143: syntax error : missing ')' before ';'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(65) : error C2628: 'FileListArray' followed by 'void' is illegal (did you forget a ';'?)
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(66) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(70) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(71) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(72) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(73) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(74) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(75) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(76) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(78) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(88) : error C2065: 'is_dirty' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(89) : error C3861: 'is_dirty': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(92) : error C2065: '_in_mem' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(93) : error C3861: '_in_mem': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2065: 'arraygroup' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2228: left of '.get' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2065: 'fld' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2228: left of '.ar' must have class/struct/union type
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C3861: 'fldcheck': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2228: left of '.get' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2228: left of '.count' must have class/struct/union type
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'arraygroup': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'fldcheck': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'fld': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(96) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(97) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(99) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(100) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : error C3861: 'fld': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : error C2182: 'scanFiles' : illegal use of type 'void'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+soprnres.cpp
+SolarArc.cpp
+sidrlt.cpp
+Sidereal.cpp
+c:\Astrow32Dev\Astrow32\ENGDLL\Sidereal.cpp(185) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\Astrow32Dev\Astrow32\ENGDLL\Sidereal.cpp(186) : warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+Sexcodes.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Sexcodes.cpp(43) : warning C4018: '<' : signed/unsigned mismatch
+c:\Astrow32Dev\Astrow32\UIUTL\Sexcodes.cpp(127) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+c:\astrow32dev\astrow32\uiutl\sexcodes.cpp(51) : warning C4700: local variable 'first' used without having been initialized
+Setup.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Setup.cpp(89) : warning C4309: 'argument' : truncation of constant value
+Setpath.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(11) : error C2369: 'buf' : redefinition; different subscripts
+        c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(10) : see declaration of 'buf'
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(15) : error C2065: 'theFolders' : undeclared identifier
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(15) : error C2228: left of '.GetFolder' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(15) : error C2143: syntax error : missing ')' before ';'
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(15) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(21) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(24) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(27) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(30) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(34) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(37) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(40) : error C2228: left of '.GetCurFolder' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(40) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(40) : error C3861: 'theFolders': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(42) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(43) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(47) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(49) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(50) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(52) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(53) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(55) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\UIUTL\Setpath.cpp(56) : error C3861: 'buf': identifier not found, even with argument-dependent lookup
+SelectFolder.cpp
+c:\Astrow32Dev\Astrow32\Astrow\Asx\Folders.h(25) : error C2071: 'CFolders::theFolders' : illegal storage class
+c:\Astrow32Dev\Astrow32\Astrow\Asx\Folders.h(25) : error C2079: 'CFolders::theFolders' uses undefined class 'CFolders'
+c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h(29) : error C2059: syntax error : 'string'
+c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h(29) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(181) : error C2071: 'CFolders::birth_inf' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(181) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(181) : error C2071: 'CFolders::alt_inf' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(181) : error C2229: class 'CFolders' has an illegal zero-sized array
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(181) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(184) : error C2059: syntax error : 'string'
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(184) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(191) : error C2071: 'CFolders::date_ptr' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(191) : error C2229: class 'CFolders' has an illegal zero-sized array
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(192) : error C2071: 'CFolders::trans_ptr' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(193) : error C2071: 'CFolders::moon_series' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(193) : error C2071: 'CFolders::prog' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(193) : error C2071: 'CFolders::prog_moon_series' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(194) : error C2071: 'CFolders::birth_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(194) : error C2071: 'CFolders::birth_rect_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(194) : error C2071: 'CFolders::comp_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(194) : error C2071: 'CFolders::comp_rect_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(195) : error C2071: 'CFolders::trans_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(195) : error C2071: 'CFolders::trans_data_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\ASTRO.H(195) : error C2071: 'CFolders::prog_ok' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\Useri.h(186) : error C2071: 'CFolders::birth_rec' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\Useri.h(186) : error C2071: 'CFolders::comp_rec' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\Useri.h(186) : error C2071: 'CFolders::trans_rec' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\Useri.h(187) : error C2071: 'CFolders::reloc_data' : illegal storage class
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2159: more than one storage class specified
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2236: unexpected 'struct' 'CFolders::AryItem'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2059: syntax error : '{'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(33) : error C2501: 'CFolders::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2146: syntax error : missing ';' before identifier 'all'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'CFolders::AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'CFolders::AryGroup::all' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2146: syntax error : missing ';' before identifier 'text'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'CFolders::AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'CFolders::AryGroup::text' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2146: syntax error : missing ';' before identifier 'graph'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'CFolders::AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'CFolders::AryGroup::graph' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2146: syntax error : missing ';' before identifier 'grid'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'CFolders::AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'CFolders::AryGroup::grid' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2143: syntax error : missing ';' before '&'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'CFolders::AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'CFolders::AryGroup::get' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2059: syntax error : 'return'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2143: syntax error : missing ')' before ';'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(65) : error C2628: 'CFolders::FileListArray' followed by 'void' is illegal (did you forget a ';'?)
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(66) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(70) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(71) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(72) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(73) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(74) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(75) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(76) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(78) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(96) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(97) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(99) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(100) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(104) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(105) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(106) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(107) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(110) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(114) : error C2146: syntax error : missing ';' before identifier 'AstFileList'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(114) : error C2501: 'AstFileList' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(118) : error C2065: 'XPFILE_DB' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(118) : error C2065: 'p' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(119) : error C2448: 'isDelFile' : function-style initializer appears to be a function definition
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(123) : error C3861: 'XPFILE_DB': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(123) : error C3861: 'p': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(124) : error C2448: 'isGraphFile' : function-style initializer appears to be a function definition
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(128) : error C3861: 'XPFILE_DB': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(128) : error C3861: 'p': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(129) : error C2448: 'isGridFile' : function-style initializer appears to be a function definition
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(134) : error C3861: 'XPFILE_DB': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(134) : error C3861: 'p': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(135) : error C2448: 'isTextFile' : function-style initializer appears to be a function definition
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(139) : error C3861: 'XPFILE_DB': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(139) : error C3861: 'p': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(140) : error C2448: 'mrkDelFile' : function-style initializer appears to be a function definition
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(145) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(146) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(148) : error C2065: 'ptr' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(148) : error C2062: type 'int' unexpected
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(150) : error C3861: 'ptr': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(150) : error C2062: type 'int' unexpected
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(43) : error C2065: 'theFolders' : undeclared identifier
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(43) : error C2228: left of '.toCombo' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(54) : error C2065: 'DEFAULT_FLD' : undeclared identifier
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(55) : error C2228: left of '.ChangeFolder' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(55) : error C3861: 'theFolders': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(56) : error C2228: left of '.GetCurFolder' must have class/struct/union type
+        type is 'int'
+c:\Astrow32Dev\Astrow32\Astrow\Asx\SelectFolder.cpp(60) : error C3861: 'FlistDoupdate': identifier not found, even with argument-dependent lookup
+Scanfile.cpp
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2159: more than one storage class specified
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2236: unexpected 'struct' 'AryItem'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2143: syntax error : missing ';' before '{'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(22) : error C2447: '{' : missing function header (old-style formal list?)
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(33) : error C2501: 'AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2146: syntax error : missing ';' before identifier 'all'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(36) : error C2501: 'AryGroup::all' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2146: syntax error : missing ';' before identifier 'text'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(37) : error C2501: 'AryGroup::text' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2146: syntax error : missing ';' before identifier 'graph'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(38) : error C2501: 'AryGroup::graph' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2146: syntax error : missing ';' before identifier 'grid'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(39) : error C2501: 'AryGroup::grid' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2143: syntax error : missing ';' before '&'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'AryGroup::AryItem' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : error C2501: 'AryGroup::get' : missing storage-class or type specifiers
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(40) : warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2059: syntax error : 'return'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(64) : error C2143: syntax error : missing ')' before ';'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(65) : error C2628: 'FileListArray' followed by 'void' is illegal (did you forget a ';'?)
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(66) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(70) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(71) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(72) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(73) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(74) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(75) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(76) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(78) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(88) : error C2065: 'is_dirty' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(89) : error C3861: 'is_dirty': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(92) : error C2065: '_in_mem' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(93) : error C3861: '_in_mem': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2065: 'arraygroup' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2228: left of '.get' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2065: 'fld' : undeclared identifier
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C2228: left of '.ar' must have class/struct/union type
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(94) : error C3861: 'fldcheck': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2228: left of '.get' must have class/struct/union type
+        type is ''unknown-type''
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C2228: left of '.count' must have class/struct/union type
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'arraygroup': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'fldcheck': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(95) : error C3861: 'fld': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(96) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(97) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(99) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(100) : error C2061: syntax error : identifier 'fld'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : error C3861: 'fld': identifier not found, even with argument-dependent lookup
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : error C2182: 'scanFiles' : illegal use of type 'void'
+c:\Astrow32Dev\Astrow32\INC\Filelst.hpp(103) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+sat404.cpp
+Rwfdata.cpp
+c:\Astrow32Dev\Astrow32\UIUTL\Rwfdata.cpp(16) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+Rtftoast.cpp
+c:\Astrow32Dev\TBT32\RTFTOAST.CPP(120) : warning C4101: 'i' : unreferenced local variable
+c:\Astrow32Dev\TBT32\RTFTOAST.CPP(191) : warning C4305: 'argument' : truncation from 'int' to 'char'
+c:\Astrow32Dev\TBT32\RTFTOAST.CPP(191) : warning C4309: 'argument' : truncation of constant value
+RTFFuncs.cpp
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(38) : warning C4312: 'type cast' : conversion from 'DWORD' to 'StreamData *' of greater size
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(40) : warning C4267: '=' : conversion from 'size_t' to 'LONG', possible loss of data
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(56) : warning C4312: 'type cast' : conversion from 'DWORD' to 'CString *' of greater size
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(72) : warning C4311: 'type cast' : pointer truncation from 'CString *' to 'DWORD'
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(100) : warning C4311: 'type cast' : pointer truncation from 'StreamData *__w64 ' to 'DWORD'
+c:\Astrow32Dev\TBT32\RTFFuncs.cpp(117) : warning C4311: 'type cast' : pointer truncation from 'StreamData *__w64 ' to 'DWORD'
+rstar.cpp
+rplanet.cpp
+c:\Astrow32Dev\Astrow32\newplanets\rplanet.cpp(19) : warning C4101: 'a' : unreferenced local variable
+c:\Astrow32Dev\Astrow32\newplanets\rplanet.cpp(19) : warning C4101: 's' : unreferenced local variable
+c:\Astrow32Dev\Astrow32\newplanets\rplanet.cpp(19) : warning C4101: 'b' : unreferenced local variable
+ReturnData.cpp
+Return.cpp
+Repstyle.cpp
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(30) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(32) : warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(34) : warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(36) : warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(38) : warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+c:\Astrow32Dev\Astrow32\DLG\Repstyle.cpp(72) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Reprnres.cpp
+ReportStyles.cpp
+RelocScr.cpp
+Reghouse.cpp
+RectifyData.cpp
+Realoc.cpp
+
+Build log was saved at "file://c:\Astrow32Dev\Astrow32\Astrow\Asx\Debug\BuildLog.htm"
+Astrow - 233 error(s), 69 warning(s)
+
+
+---------------------- Done ----------------------
+
+
+

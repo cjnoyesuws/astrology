@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1665864438 source:/home/cnoyes/astrology/DbTest/main.cpp
+	<iostream>
+	"sqlite3pp.h"
+	<stdio.h>
+	<stdlib.h>
+	"ConfigLoader.h"
+	"TextManager.h"
+
+1653796713 source:/home/cnoyes/astrology/astroweb/apputil/ConfigData.cpp
+	<string>
+	"ConfigData.h"
+
+1665329767 /home/cnoyes/astrology/astroweb/include/ConfigData.h
+	<string>
+
+1665330250 source:/home/cnoyes/astrology/astroweb/apputil/ConfigLoader.cpp
+	<string>
+	<stdio.h>
+	"ConfigData.h"
+	"ConfigLoader.h"
+	<cstring>
+
+1653800153 /home/cnoyes/astrology/astroweb/include/ConfigLoader.h
+	<string>
+	"ConfigData.h"
+
+1665281556 /home/cnoyes/astrology/astroweb/include/sqlite3pp.h
+	<functional>
+	<iterator>
+	<stdexcept>
+	<string>
+	<tuple>
+	<sqlite3ext.h>
+	<sqlite3.h>
+	"sqlite3pp.ipp"
+
+1665281962 /home/cnoyes/astrology/astroweb/include/sqlite3pp.ipp
+	<cstring>
+	<memory>
+
+1665881607 /home/cnoyes/astrology/astroweb/include/TextManager.h
+	"ConfigData.h"
+	"TextGetter.h"
+
+1665864619 /home/cnoyes/astrology/astroweb/include/TextGetter.h
+	<exception>
+	<iostream>
+	"sqlite3pp.h"
+	<bitset>
+
+1665816647 source:/home/cnoyes/astrology/astroweb/reports/TextManager.cpp
+	"TextManager.h"
+	"TextGetter.h"
+	"errors.fns"
+	"sqlite3pp.h"
+	"vector"
+	"exception"
+
+1651952705 /home/cnoyes/astrology/astroweb/include/errors.fns
+
+1665812236 source:/home/cnoyes/astrology/astroweb/reports/TextGetter.cpp
+	"stdafx.h"
+	"TextGetter.h"
+	"errors.fns"
+	"report.h"
+	<assert.h>
+
+1651723084 /home/cnoyes/astrology/astroweb/include/stdafx.h
+
+1651536738 /home/cnoyes/astrology/astroweb/include/report.h
+
+1654217329 source:/home/cnoyes/astrology/astroweb/apputil/strclip.cpp
+	<string.h>
+
+1653933648 source:/home/cnoyes/astrology/astroweb/apputil/charcons.cpp
+	<stdio.h>
+	"charcons.h"
+
+1653933667 /home/cnoyes/astrology/astroweb/include/charcons.h
+

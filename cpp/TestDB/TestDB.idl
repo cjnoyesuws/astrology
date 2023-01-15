@@ -1,0 +1,18 @@
+// TestDB.idl : IDL source for TestDB
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TestDB.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(43336CF6-721F-43BB-A6C0-A4B4AAE62FF7),
+	version(1.0),
+	helpstring("TestDB 1.0 Type Library")
+]
+library TestDBLib
+{
+	importlib("stdole2.tlb");
+};

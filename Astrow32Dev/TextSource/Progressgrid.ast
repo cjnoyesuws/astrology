@@ -1,0 +1,47 @@
+@ Progression Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Progressed Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__MISC
+$e Decan|$f'<Critical Degree>|''$h'<Anaretic Degree>|''
+# CH__PLANET
+{$^$1:}|$9|$a motion|Declination: $x° $y'|
+# CH__PLAN_HOUSE
+Natal $3 House|$4'On House Cusp|'Not On Cusp|'$6'Intercepted|''
+# CH__ASPECT_HD
+
+{ASPECTS TO NATAL PLANETS:}$_
+# CHP_ASPECT_PRHD
+
+{ASPECTS TO PROGRESSED PLANETS:}$_
+# CH__HOUSE_HEAD
+[YOUR HOUSE CUSPS ARE:]$_
+@TB$_
+# CHP_PRHOUSE_HEAD
+[YOUR PROGRESSED HOUSE CUSPS ARE:]$_
+@TB$_ 
+# CHP_MS_HEAD
+[MOON SERIES]:$_
+@TB$_
+# CHP_MS_MISC
+$e Decan|$f'<Critical Degree>|'$h'<Anaretic Degree>|''
+# CHP_MS_PLANET
+{$^$K:}|$9|$a|Declination: $x° $y'|
+# CHP_PLAN_HOUSE
+in $2 Natal House|$4'On House Cusp|'Not On House Cusp|'$6'Intercepted|''
+# CH__MISC
+$e Decan|''$f'<Critical Degree>|''$h'<Anaretic Degree>|''
+# CH__PLAN_EXT
+Decan: $1|Decan Ruler:$3|$4'   Decan Sub-Ruler: |''$6@TR
+Navasma: $7|Navasma Sign: $9|Duad: $a|Duad Ruler: $c|$d'Duad Sub-Ruler: |''$f@TR
+$g'Combust|''$i'Home|''$k'Detriment|''$m'Exalted-Exact|'Exalted|''$o'Fall-Exact|'Fall|''$q'In Sign Ruled--Ruler: ''$s@TR
+# CH__HOUSE_CS
+House Cusp #$^$1:|$2|House Cusp #$^$3:|$4@TR$_
+# CH__MIDPT_HD
+
+{MIDPOINTS:}$_
+$_

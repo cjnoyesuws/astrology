@@ -1,0 +1,42 @@
+// xtest.odl : type library source for xtest.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (xtest.tlb).
+
+[ uuid(55100983-843B-11D1-9D9B-0000C00DEE96), version(1.0) ]
+library Xtest
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CXtestDoc
+	
+	[ uuid(55100984-843B-11D1-9D9B-0000C00DEE96) ]
+	dispinterface IXtest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CXtestDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CXtestDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CXtestDoc
+	
+	[ uuid(55100982-843B-11D1-9D9B-0000C00DEE96) ]
+	coclass Document
+	{
+		[default] dispinterface IXtest;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

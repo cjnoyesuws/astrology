@@ -1,0 +1,6 @@
+extern  int alert_box(const char *title, const char *fmt, ... );
+extern  int error_message(const char *fmt, ... );
+extern  int alert_box_ext(const char *title, unsigned flags, const char *fmt, ... );
+extern  void do_mem_error(int fatal);
+extern  void do_error(const char *file);
+extern  void *reallocx( void *p, unsigned bytes );

@@ -1,0 +1,59 @@
+**// tester.idl : IDL source for tester.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (tester.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+	[
+		object,
+		uuid(C4B368C0-4EA8-11D3-9DE7-0000C00DEE96),
+		dual,
+		helpstring("Ischecd Interface"),
+		pointer_default(unique)
+	]
+	interface Ischecd : IDispatch
+	{
+	};
+	[
+		object,
+		uuid(C4B368C3-4EA8-11D3-9DE7-0000C00DEE96),
+		dual,
+		helpstring("ISchdule Interface"),
+		pointer_default(unique)
+	]
+	interface ISchdule : IDispatch
+	{
+		[id(1), helpstring("method GetSchedule")] HRESULT GetSchedule(char  *id, char *date, int max, SCHED *pSched);
+	};
+
+[
+	uuid(28FD5C22-4EA3-11D3-9DE7-0000C00DEE96),
+	version(1.0),
+	helpstring("tester 1.0 Type Library")
+]
+library TESTERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(C4B368C1-4EA8-11D3-9DE7-0000C00DEE96),
+		helpstring("schecd Class")
+	]
+	coclass schecd
+	{
+		[default] interface Ischecd;
+	};
+	[
+		uuid(C4B368C5-4EA8-11D3-9DE7-0000C00DEE96),
+		helpstring("Schdule Class")
+	]
+	coclass Schdule
+	{
+		[default] interface ISchdule;
+	};
+};

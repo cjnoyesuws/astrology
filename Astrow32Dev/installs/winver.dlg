@@ -1,0 +1,153 @@
+Document Type: DLG
+item: Custom Dialog
+  Name=Welcome
+  Display Variable=DISPLAY
+  item: Dialog
+    Title=%APPTITLE% Installation
+    Title French=Installation de %APPTITLE%
+    Title German=Installation von %APPTITLE%
+    Title Spanish=Instalación de %APPTITLE%
+    Title Italian=Installazione di %APPTITLE%
+    Width=271
+    Height=224
+    Font Name=Helv
+    Font Size=8
+    item: Static
+      Rectangle=85 8 257 42
+      Create Flags=01010000000000000000000000000000
+      Flags=0000000000000001
+      Name=Times New Roman
+      Font Style=-24 0 0 0 700 255 0 0 0 3 2 1 18
+      Text=Select Windows Version
+      Text French=Bienvenue !
+      Text German=Willkommen!
+      Text Spanish=¡Bienvenido!
+      Text Italian=Benvenuti!
+    end
+    item: Push Button
+      Rectangle=150 187 195 202
+      Variable=DIRECTION
+      Value=N
+      Create Flags=01010000000000010000000000000001
+      Text=&Next >
+      Text French=&Suite >
+      Text German=&Weiter >
+      Text Spanish=&Siguiente >
+      Text Italian=&Avanti >
+    end
+    item: Push Button
+      Rectangle=105 187 150 202
+      Variable=DISABLED
+      Value=!
+      Create Flags=01010000000000010000000000000000
+      Text=< &Back
+      Text French=< &Retour
+      Text German=< &Zurück
+      Text Spanish=< &Atrás
+      Text Italian=< &Indietro
+    end
+    item: Push Button
+      Rectangle=211 187 256 202
+      Action=3
+      Create Flags=01010000000000010000000000000000
+      Text=&Cancel
+      Text French=&Annuler
+      Text German=&Abbrechen
+      Text Spanish=&Cancelar
+      Text Italian=&Annulla
+    end
+    item: Static
+      Rectangle=8 180 256 181
+      Action=3
+      Create Flags=01010000000000000000000000000111
+    end
+    item: Radio Button
+      Control Name=WIN9X
+      Rectangle=82 37 252 52
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows 95, 98 and NT
+      Text=
+    end
+    item: Radio Button
+      Control Name=WINME
+      Rectangle=82 60 253 74
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows ME (Milenium Edition)
+      Text=
+    end
+    item: Radio Button
+      Control Name=WIN2000
+      Rectangle=83 84 244 98
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows 2000
+      Text=
+    end
+    item: Radio Button
+      Control Name=WINXP
+      Rectangle=84 108 247 122
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows XP
+      Text=
+    end
+  end
+  item: Dialog
+    Title=Select Windows Version
+    Width=262
+    Height=207
+    Font Name=Helv
+    Font Size=8
+    item: Static
+      Rectangle=6 17 248 34
+      Create Flags=01010000000000000000000000000000
+      Flags=0000000000000001
+      Name=Arial
+      Font Style=-16 0 0 0 400 0 0 0 0 3 2 1 34
+      Text=Please Select the Version of Windows That you are Running.
+    end
+    item: Radio Button
+      Control Name=WIN9x
+      Rectangle=25 85 223 100
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows 95, 98 and NT
+      Text=
+    end
+    item: Radio Button
+      Control Name=WIN2000
+      Rectangle=26 57 211 72
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows 2000
+      Text=
+    end
+    item: Radio Button
+      Control Name=WINXP
+      Rectangle=24 111 218 126
+      Variable=WINVER
+      Create Flags=01010000000000010000000000001001
+      Text=Windows XP
+      Text=
+    end
+    item: Push Button
+      Control Name=next
+      Rectangle=188 156 223 171
+      Variable=DIRECTION
+      Value=1
+      Action=1
+      Create Flags=01010000000000010000000000000001
+      Text=Next
+    end
+    item: Push Button
+      Control Name=back
+      Rectangle=152 156 187 171
+      Variable=DIRECTION
+      Value=-1
+      Create Flags=01010000000000010000000000000000
+      Text=Back
+    end
+  end
+end

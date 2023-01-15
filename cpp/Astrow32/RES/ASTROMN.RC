@@ -1,0 +1,237 @@
+#include "astromn.h"
+
+MAINMENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		POPUP "&New"
+		BEGIN
+			MENUITEM "&File List", IDM_FNEWFLST
+			MENUITEM "&Cover Page", IDM_FNEWCPG
+			MENUITEM "&Comment File", IDM_FNEWCFL
+		END
+		POPUP "&Open"
+		BEGIN
+			MENUITEM "&Birth Data", IDM_FOPENBDAT
+			MENUITEM "File &List", IDM_FOPENFLST
+			MENUITEM "&Cover Page", IDM_FOPENCPG
+			MENUITEM "Comment &File", IDM_FOPENCFL
+		END
+		MENUITEM "&Save", IDM_FSAVE
+		MENUITEM "Save &As...", IDM_FSAVEAS
+		MENUITEM "&View...", IDM_FVIEW
+		MENUITEM "&Edit...", IDM_FEDIT
+		MENUITEM "&Kill...", IDM_FKILL
+		MENUITEM SEPARATOR
+		MENUITEM "&Print...", IDM_FPRINT
+
+		MENUITEM "P&age Setup...", IDM_FPRPAGESETUP
+		POPUP "P&rint Setup...",
+		BEGIN
+		      MENUITEM "&Graphics...", IDM_FPSETUPGRA
+		      MENUITEM "&Text...", IDM_FPSETUPTXT
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", IDM_FEXIT
+
+	END
+	POPUP "&Edit"
+	BEGIN
+		MENUITEM "&Undo", IDM_EUNDO
+		MENUITEM "&Redo", IDM_EREDO
+		MENUITEM SEPARATOR
+		MENUITEM "Cu&t", IDM_ECUT
+		MENUITEM "C&opy", IDM_ECOPY
+		MENUITEM "&Paste", IDM_EPASTE
+		MENUITEM "&Delete", IDM_EDEL
+		MENUITEM SEPARATOR
+		MENUITEM "&Find", IDM_EFIND
+		MENUITEM "&Next", IDM_ENEXT
+	END
+	POPUP "&Data"
+	BEGIN
+		MENUITEM "&Birth Info...", IDM_DBIRTHI
+		MENUITEM "&Compatiblity Info...", IDM_DCOMPATI
+		MENUITEM "&Transits Info...", IDM_DTRANSI
+		MENUITEM "Transits &Data...", IDM_DTRANSD
+		MENUITEM "&Progressions Data...", IDM_DPROGD
+		MENUITEM "&Birth Rectification...", IDM_DBIRTHR
+		MENUITEM "&Compatiblity Rectification...", IDM_DCOMPATR
+		MENUITEM "Return Data...", IDM_DRETURND
+		MENUITEM "Relocations Data...", IDM_DRELOCD
+	END
+	POPUP "&Chart"
+	BEGIN
+		POPUP "Compile &Natal"
+		BEGIN
+			MENUITEM "&Default Chart...", IDM_CDEF
+			MENUITEM "Birth &Signs Only", IDM_CBSO
+			MENUITEM "Birth Signs & &Houses", IDM_CBSH
+			MENUITEM "Birth Signs, Houses, & &Aspects...", IDM_CBSHA
+			MENUITEM "&Complete Chart...", IDM_CCOMPLETE
+			MENUITEM "Complete Chart w/&Basic Midpoints...", IDM_CCMPBASM
+			MENUITEM "Complete Chart with &Full Midpoints...", IDM_CCMPFLM
+			MENUITEM "&Numeric Chart...", IDM_CNUMERIC
+		END
+
+		POPUP "&Other Charts"
+		BEGIN
+			MENUITEM "&Compatibility...", IDM_CCOMPAT
+			MENUITEM "&Transits...", IDM_CTRANS
+			MENUITEM "&Progression...", IDM_CPROGR
+			MENUITEM "C&omposite...", IDM_CCOMPOS
+			MENUITEM "Co&mposite Transits...", IDM_CCMTR
+			MENUITEM "&Relocation...", IDM_CRELOC
+		END
+
+		POPUP "&Specialty Charts..."
+		BEGIN
+			MENUITEM "Returns...", IDM_CRETURN
+			MENUITEM "Fixed Star...", IDM_CFIXED
+			MENUITEM "Arabic Points...", IDM_CARABIC
+			MENUITEM "Heliocentric...", IDM_CHELIO
+			MENUITEM "Problem...", IDM_CPROB
+		END
+
+
+	END
+
+	POPUP "O&ptions"
+	BEGIN
+		MENUITEM "&Setup...", IDM_OSETUP
+		MENUITEM "Text &File Conversion...", IDM_OTEXT
+		MENUITEM "&Graphics Options...", IDM_OGRAPHICS
+		MENUITEM "G&raphic File Conversion...", IDM_OGRPHFIL
+		MENUITEM "&Viewer Setup...", IDM_OVIEW
+		MENUITEM "&Editor Setup...", IDM_OEDIT
+		MENUITEM "Aspect &Orbs...", IDM_OEORBS
+		POPUP "&Chart Options"
+		BEGIN
+			MENUITEM "&Natal...", IDM_ONATAL
+			MENUITEM "&Compatibility...", IDM_OCOMPAT
+			MENUITEM "&Transits...", IDM_OTRANS
+			MENUITEM "&Progression...", IDM_OPROGR
+			MENUITEM "C&omposite...", IDM_OCOMPOS
+			MENUITEM "Co&mposite Transits...", IDM_OCMTR
+			MENUITEM "&Relocation...", IDM_ORELOC
+			MENUITEM "Returns...", IDM_ORETURN
+			MENUITEM "Fixed Star...", IDM_OFIXED
+			MENUITEM "Arabic Points...", IDM_OARABIC
+			MENUITEM "Numeric...", IDM_ONUMER
+			MENUITEM "Problem...", IDM_OPROB
+		END
+	END
+	POPUP "&Utilities"
+	BEGIN
+		MENUITEM "Run &Batch...", IDM_UBATCH
+		MENUITEM "&Load Macros...", IDM_UMACROS
+		MENUITEM "&Read File Into Data...", IDM_UPARSE
+		POPUP "Re&Index Databases"
+		BEGIN
+			MENUITEM "&Birth Database", IDM_UIBIRTH
+			MENUITEM "&Location Database", IDM_UILOCAT
+			MENUITEM "&All Databases", IDM_UIALLD
+		END
+		POPUP "Make &Popups"
+		BEGIN
+			MENUITEM "&Birth Popup", IDM_UPBIRTH
+			MENUITEM "&Location Popup", IDM_UPLOCAT
+			MENUITEM "&All Popups", IDM_UPALLD
+		END
+		POPUP "&Merge Databases"
+		BEGIN
+			MENUITEM "&Birth Popup...", IDM_UMBIRTH
+			MENUITEM "&Location Popup...", IDM_UMLOCAT
+		END
+		MENUITEM "Rebuild &File List", IDM_UBLDFLST
+		MENUITEM "&Clear File List Selection", IDM_UCLRSEL
+		MENUITEM "&Edit File List Entry...", IDM_UEDIT
+		MENUITEM "&Sort File List", IDM_USORT
+	END
+	POPUP "&Help"
+	BEGIN
+		MENUITEM "&Index", IDM_HINDEX
+		MENUITEM "&Astrology Help", IDM_HASTROL
+		MENUITEM "A&bout", IDM_HABOUT
+	END
+
+END
+
+
+FILET MENU
+BEGIN
+	POPUP "&File Types"
+	BEGIN
+		MENUITEM "&Birth Data...", IDM_FTBIRTH
+		MENUITEM "&Astrology Help...", IDM_FTASTHLPER
+		MENUITEM "&Text Report...", IDM_FTTEXT
+		MENUITEM "&Graphic Cartwheel...", IDM_FTGRAPH
+		MENUITEM "&Cover Page File...", IDM_FTCOVER
+		MENUITEM "&Comment File...", IDM_FTCOMMENT
+	END
+
+END
+
+GRAPH MENU
+BEGIN
+	POPUP "&Graphics"
+	BEGIN
+		MENUITEM "Show &Sign Names. ", IDM_SIGN_NAME
+		MENUITEM "Show &House Numbers. ", IDM_HOUSE_NUM
+		MENUITEM "Show House &Degrees. ", IDM_HOUSE_DEG
+		MENUITEM "Show &Aspects. ", IDM_SHOW_ASPT
+		MENUITEM "Use &Glyphs.",    IDM_USE_GLYPH
+		MENUITEM "Show Sign &Lines. ", IDM_SHOW_SLIN
+		MENUITEM "&Inner House Cusps  ",  IDM_USE_INHC
+		MENUITEM "Sign Tick Wheel",  IDM_SIGN_TICK
+		MENUITEM "Decan Tick Wheel",  IDM_DEC_TICK
+		MENUITEM "Degree Tick Wheel",  IDM_DEG_TICK
+		MENUITEM "House Numbers Outside",  IDM_HOUS_OUTS
+		MENUITEM "Plot Classical",  IDM_PLOT_CLASSIC
+		MENUITEM " +. Use &Next Chart.\t+ ", IDM_GNEXTC
+		MENUITEM " -. Use &Previous Chart.\t- ", IDM_GSHPREVC
+		MENUITEM " =. Use &First Chart.\t=",     IDM_GSHFIRST
+		MENUITEM " <. &Decrease House Cusps 1 Deg.\t<" , IDM_GDECHSE
+		MENUITEM " >. &Increase House Cusps 1 Deg.\t>",  IDM_GINCHSE
+		MENUITEM " @. Use &Regular House Cusps. \t@",    IDM_GREGHSE
+	END
+	POPUP "&View"
+	BEGIN
+		MENUITEM "Zoom &In.", IDM_ZOOMIN
+		MENUITEM "Zoom &Out.", IDM_ZOOMOUT
+		MENUITEM "Fit Window.", IDM_FITWIN
+	END
+END
+
+BIRTH MENU
+BEGIN
+	POPUP "&Birth Database"
+	BEGIN
+		MENUITEM "Get A Birth From Database.", IDM_BDBGET, GRAYED
+		MENUITEM "Add A New Birth To Database.", IDM_BDBADD, GRAYED
+		MENUITEM "Replace A Birth In Database.", IDM_BDBREPLACE, GRAYED
+		MENUITEM "Delete A Birth In Database.", IDM_BDBDEL, GRAYED
+		MENUITEM "Make Popup.", IDM_BDBMKPOP
+		MENUITEM "Return.", IDM_BDBRETURN
+	END
+END
+
+LOCAT MENU
+BEGIN
+	POPUP "&Location Database"
+	BEGIN
+		MENUITEM "Get A Location From Database.", IDM_LDBGET, GRAYED
+		MENUITEM "Add A New Location To Database.", IDM_LDBADD, GRAYED
+		MENUITEM "Replace A Location In Database.", IDM_LDBREPLACE, GRAYED
+		MENUITEM "Delete A Location From Database.", IDM_LDBDEL, GRAYED
+		MENUITEM "Get Saved Location.", IDM_LDBGETSV, GRAYED
+		MENUITEM "Return.", IDM_LDBRETURN
+	END
+END
+
+MDIMENU MENU
+BEGIN
+	 MENUITEM "&Arange", IDM_WARRANGE
+	 MENUITEM "&Cascade", IDM_WCASCADE
+	 MENUITEM "T&ile", IDM_WTILE
+END

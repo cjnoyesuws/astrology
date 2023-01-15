@@ -1,0 +1,6 @@
+extern  short x_open_files( char *file, short dim );
+extern  short close_files( short num );
+extern  short get_transfer_text_asp( short col, short row, short deep, short num, FILE *stream );
+extern  char *make_date( struct DATES *dp );
+extern short fdata_write( FILE *stream, unsigned short type );
+

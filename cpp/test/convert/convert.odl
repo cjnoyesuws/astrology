@@ -1,0 +1,44 @@
+// convert.odl : type library source for convert.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (convert.tlb).
+
+[ uuid(8132BC1A-528E-4329-92B9-572650567062), version(1.0) ]
+library Convert
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+
+	//  Primary dispatch interface for CWordDoc
+	
+	[ uuid(E776BB73-165A-465B-95D0-BF566B2164DC) ]
+	dispinterface IWordDoc
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CWordDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CWordDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CWordDoc
+
+	[ uuid(0D3484D7-AA62-4979-B4E0-A7785EB11E2F) ]
+	coclass WordDoc
+	{
+		[default] dispinterface IWordDoc;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

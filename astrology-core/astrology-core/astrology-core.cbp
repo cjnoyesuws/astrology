@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="astrology-core" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/astrology-core" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/astrology-core" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DDELUXE=1" />
+			<Add option="-DPRO=1" />
+			<Add option="-DNEW=1" />
+			<Add directory="/home/cnoyes/astrology/astroweb/include" />
+		</Compiler>
+		<Unit filename="../../astroweb/apputil/charcons.cpp" />
+		<Unit filename="../../astroweb/apputil/dataname.cpp" />
+		<Unit filename="../../astroweb/apputil/errors.cpp" />
+		<Unit filename="../../astroweb/apputil/globals.cpp" />
+		<Unit filename="../../astroweb/core/anomaly.cpp" />
+		<Unit filename="../../astroweb/core/ascend.cpp" />
+		<Unit filename="../../astroweb/core/astduad.cpp" />
+		<Unit filename="../../astroweb/core/asthelio.cpp" />
+		<Unit filename="../../astroweb/core/astutl.cpp" />
+		<Unit filename="../../astroweb/core/cmphouse.cpp" />
+		<Unit filename="../../astroweb/core/dohouse.cpp" />
+		<Unit filename="../../astroweb/core/eqhouse.cpp" />
+		<Unit filename="../../astroweb/core/house.cpp" />
+		<Unit filename="../../astroweb/core/hstoramc.cpp" />
+		<Unit filename="../../astroweb/core/jtype.cpp" />
+		<Unit filename="../../astroweb/core/julian.cpp" />
+		<Unit filename="../../astroweb/core/julutil.cpp" />
+		<Unit filename="../../astroweb/core/kochhous.cpp" />
+		<Unit filename="../../astroweb/core/mctosidt.cpp" />
+		<Unit filename="../../astroweb/core/moon.cpp" />
+		<Unit filename="../../astroweb/core/morhouse.cpp" />
+		<Unit filename="../../astroweb/core/pelemenx.cpp" />
+		<Unit filename="../../astroweb/core/pertjs.cpp" />
+		<Unit filename="../../astroweb/core/pertmvm.cpp" />
+		<Unit filename="../../astroweb/core/perturnp.cpp" />
+		<Unit filename="../../astroweb/core/plachous.cpp" />
+		<Unit filename="../../astroweb/core/planets.cpp" />
+		<Unit filename="../../astroweb/core/plutocrx.cpp" />
+		<Unit filename="../../astroweb/core/reghouse.cpp" />
+		<Unit filename="../../astroweb/core/sidereal.cpp" />
+		<Unit filename="../../astroweb/core/sun.cpp" />
+		<Unit filename="../../astroweb/engine/anomaly.cpp" />
+		<Unit filename="../../astroweb/engine/arabpt.cpp" />
+		<Unit filename="../../astroweb/engine/aspects.cpp" />
+		<Unit filename="../../astroweb/engine/asteroidcalc.cpp" />
+		<Unit filename="../../astroweb/engine/asthelio.cpp" />
+		<Unit filename="../../astroweb/engine/astmisc.cpp" />
+		<Unit filename="../../astroweb/engine/compat.cpp" />
+		<Unit filename="../../astroweb/engine/compos.cpp" />
+		<Unit filename="../../astroweb/engine/docalc.cpp" />
+		<Unit filename="../../astroweb/engine/harmonic.cpp" />
+		<Unit filename="../../astroweb/engine/intrhous.cpp" />
+		<Unit filename="../../astroweb/engine/loadorbs.cpp" />
+		<Unit filename="../../astroweb/engine/memmgr.cpp" />
+		<Unit filename="../../astroweb/engine/midpoint.cpp" />
+		<Unit filename="../../astroweb/engine/misccalc.cpp" />
+		<Unit filename="../../astroweb/engine/mktmdt.cpp" />
+		<Unit filename="../../astroweb/engine/polarfixup.cpp" />
+		<Unit filename="../../astroweb/engine/progress.cpp" />
+		<Unit filename="../../astroweb/engine/realoc.cpp" />
+		<Unit filename="../../astroweb/engine/solararc.cpp" />
+		<Unit filename="../../astroweb/engine/transits.cpp" />
+		<Unit filename="../../astroweb/include/astro.h" />
+		<Unit filename="../../astroweb/include/dataext.h" />
+		<Unit filename="../../astroweb/include/useri.h" />
+		<Unit filename="../../astroweb/jplcore/Anomaly.cpp" />
+		<Unit filename="../../astroweb/jplcore/aa.cpp" />
+		<Unit filename="../../astroweb/jplcore/angles.cpp" />
+		<Unit filename="../../astroweb/jplcore/arcdot.cpp" />
+		<Unit filename="../../astroweb/jplcore/deltat.cpp" />
+		<Unit filename="../../astroweb/jplcore/domoon.cpp" />
+		<Unit filename="../../astroweb/jplcore/ear404.cpp" />
+		<Unit filename="../../astroweb/jplcore/epsiln.cpp" />
+		<Unit filename="../../astroweb/jplcore/fk4fk5.cpp" />
+		<Unit filename="../../astroweb/jplcore/gplan.cpp" />
+		<Unit filename="../../astroweb/jplcore/jup404.cpp" />
+		<Unit filename="../../astroweb/jplcore/kep.h" />
+		<Unit filename="../../astroweb/jplcore/kepler.cpp" />
+		<Unit filename="../../astroweb/jplcore/lonlat.cpp" />
+		<Unit filename="../../astroweb/jplcore/mar404.cpp" />
+		<Unit filename="../../astroweb/jplcore/mer404.cpp" />
+		<Unit filename="../../astroweb/jplcore/messierele.cpp" />
+		<Unit filename="../../astroweb/jplcore/mlat404.cpp" />
+		<Unit filename="../../astroweb/jplcore/mlr404.cpp" />
+		<Unit filename="../../astroweb/jplcore/nep404.cpp" />
+		<Unit filename="../../astroweb/jplcore/newplan.cpp" />
+		<Unit filename="../../astroweb/jplcore/newplanets.cpp" />
+		<Unit filename="../../astroweb/jplcore/newsun.cpp" />
+		<Unit filename="../../astroweb/jplcore/nutate.cpp" />
+		<Unit filename="../../astroweb/jplcore/plantbl.h" />
+		<Unit filename="../../astroweb/jplcore/plu404.cpp" />
+		<Unit filename="../../astroweb/jplcore/precess.cpp" />
+		<Unit filename="../../astroweb/jplcore/protos.h" />
+		<Unit filename="../../astroweb/jplcore/read.me" />
+		<Unit filename="../../astroweb/jplcore/rplanet.cpp" />
+		<Unit filename="../../astroweb/jplcore/rstar.cpp" />
+		<Unit filename="../../astroweb/jplcore/sat404.cpp" />
+		<Unit filename="../../astroweb/jplcore/sidrlt.cpp" />
+		<Unit filename="../../astroweb/jplcore/starele.cpp" />
+		<Unit filename="../../astroweb/jplcore/stdafx.cpp" />
+		<Unit filename="../../astroweb/jplcore/stdafx.h" />
+		<Unit filename="../../astroweb/jplcore/sun.cpp" />
+		<Unit filename="../../astroweb/jplcore/ura404.cpp" />
+		<Unit filename="../../astroweb/jplcore/utilfnc.cpp" />
+		<Unit filename="../../astroweb/jplcore/vearth.cpp" />
+		<Unit filename="../../astroweb/jplcore/ven404.cpp" />
+		<Unit filename="../../astroweb/jplcore/zatan2.cpp" />
+		<Unit filename="../../astroweb/newplanets/kep.h" />
+		<Unit filename="../../astroweb/newplanets/plantbl.h" />
+		<Unit filename="../../astroweb/newplanets/protos.h" />
+		<Unit filename="../../astroweb/newplanets/stdafx.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stdafx.h" />
+		<Extensions>
+			<code_completion>
+				<search_path add="../../astroweb/include" />
+				<search_path add="/home/cnoyes/astrology/astroweb/include" />
+			</code_completion>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

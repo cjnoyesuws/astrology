@@ -1,0 +1,21 @@
+// MAKEHELP.BAT generated Help Map file.  Used by ASTROVIEW.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_VIEW_LARGERFONTS                    0x18003
+HID_VIEW_SMALLERFONTS                   0x18004
+HID_OPTIONS_VIEWERSETUP                 0x18005
+HID_OPTIONS_CONVERSIONSETUP             0x18006
+HID_EDIT_SEARCH                         0x18007
+HID_EDIT_SEARCHCONTINUE                 0x18008
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_ASTROVTYPE                         0x20081
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_FIND                               0x20082
+ 
+// Frame Controls (IDW_*) 

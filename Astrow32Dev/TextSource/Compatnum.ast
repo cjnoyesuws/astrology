@@ -1,0 +1,28 @@
+@ Compatibility Chart
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Compatibility Printout For Names: {$1} and {$2}, Comment: {$3}.
+# CH__ASPECT
+$4's $0|$1|$9's $2|Orb: $3 Degrees$_
+# CH__PLAN_HOUSE
+Tabs|66|3|20|35|50|$_
+[$^$8'S $^$1:]$_
+$_
+in $c's $3 House|$4'On House Cusp|'Not On House Cusp|'$6'Intercepted''$_
+# CH__ASPECT_HD
+Tabs|66|3|20|35|50|$_
+{ASPECTS:}$_
+# CH__HOUSE_HEAD
+tabs|66|3|19|34|53|$_
+[$^$1'S HOUSE CUSPS ARE:]$_
+@TB$_
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--$
+# CH__COMP_REL
+
+[$^$1 RELATIVE TO $^$2:]$_
+$_

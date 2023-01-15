@@ -1,0 +1,38 @@
+@ Solar direced Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Solar Directd Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__ASPECT
+
+Your Natal $0 is $1 to Your Natal $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+# CHSO_ASPECT
+
+Your Natal $0 is $1 to Your Solar $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+
+# CH__MISC
+$c'It is in the ''$e.$d' Decan.''$f' It is in a <Critical Degree> making it a planet to watch.''$h' This is an <Anaretic Degree> indicating an <Urgent> need to work with the energies of this planet.''$_
+# CH__PLANET
+
+
+[YOUR $^$P $^$1:]$_
+$_
+Your $p $1 is $5'on the cusp Between ''$4$6' and ','$8$7','' $2.$^$3 Degrees, and is in $a motion.$_
+# CH__PLAN_HOUSE
+$_
+Your $9 $1 is in Your Natal $3 House, $4'On House Cusp and More Important'Not On House Cusp and Less Important'$6', Intercepted.'.'
+# CH__ASPECT_HD
+
+{ASPECTS:}$_
+# CH__HOUSE_HEAD
+[YOUR HOUSE CUSPS ARE:]$_
+$_
+# CHH_BIRTH
+Birth Date: {$2}, Time: {$3}. Country: {$4}, State or Region: {$5}, Location: {$6}. Geographic Coordinates {$7.$8 $9, $b.$c $d}, Time Zone = {$f}, Special Code = {$g}. GMT Difference = {$h:$k}.
+
+Sidereal Time Used For House Calculations Was {$m:$n:$o}.$_
+# CHSO_DATA
+Solar Direction System: $5'Day for a Year'Degree for a Year'Nabod System' Directed: Years, {$2} Months, {$3} Days {$4} $a'Target Date''.

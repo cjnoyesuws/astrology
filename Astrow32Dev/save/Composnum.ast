@@ -1,0 +1,46 @@
+@ Tableau composé 
+@ #débuts chaque article. 
+@ $$ = $ 
+@ $ _ = aucune page fracture à fin de ligne 
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+Impression composée pour les noms: {$1} et {$2}, Commentaire: {$3}.
+# CH__ASPECT
+$0|$1|$2|Orbe: $3 Degrees$_
+# CH__MISC
+$e$d' Decan |''$f'Critical |''$h'Anaretic "$ _
+# CH__PLANET
+Étiquettes |60|3|12|24|36|$_
+[VOTRE $ COMPOSÉ ^ $1:] $ _
+$_
+$9|$b'Direct'Retrograde'Still' |$_
+# CH__PLAN_HOUSE
+$_
+Maison: $2 |$4'On Cuspide de Maison |'Pas sur cuspide de maison |'$6'Intercepted "$ _
+# CH__ASPECT_HD
+Étiquettes |60|3|12|24|36|$_
+
+{ASPECTS:} $ _
+$_
+# CHH_COMPAT_YB
+NAISSANCE POUR $ ^ $1--
+# CH__HOUSE_HEAD
+étiquettes |60|3|19|34|53|$_
+[VOS CUSPIDES DE MAISON COMPOSÉES SONT:] $ _
+@ TB$_
+# CH__HS_SGN_HED
+
+# CH__HOUSE_SIGN
+
+# CH__PLAN_EXT
+Étiquettes |66|6|10|15|31|45|60|$_
+Decan: |$1|Souverain Decan: |$3$4' Sous-souverain Decan: "$6 $ _
+Navasma: |$7|Navasma signent: |$9$_
+Duad: |$un |Souverain Duad: |$c$d' Sous-souverain Duad: F$_ $"
+$g'Combust |''$i'Home |''$k'Detriment |''$m'Exalted-exact |'Exalté |''$o'Fall-exact |'Chute |''$le Signe du q'In a Gouverné--Souverain: S$_ $"
+$_
+# CHH_COMPAT_YB
+NAISSANCE POUR $ ^ $1--
+# CHH_RELOC_DAT
+Le tableau est Calculé À: Pays: {$2}, Etat ou Région: {$3}, Emplacement: {$4}. Coordonnées géographiques {$5.$6 $7, $9.$un $ b}, Zone Time = {$ d}, Code Spécial = {$ e} Différence GMT = {f:$i $}.

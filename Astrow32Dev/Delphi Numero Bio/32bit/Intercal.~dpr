@@ -1,0 +1,24 @@
+program Intercal;
+
+uses
+  Forms,
+  Calendar in '..\Calendar.pas' {frmCal},
+  Numbers in '..\Numbers.pas',
+  PerpCal in '..\Perpcal.pas',
+  doclck in '..\doclck.pas',
+  ldrched in '..\ldrched.pas',
+  NumDll in '..\numdll.pas',
+  poputxt in '..\poputxt.pas' {frmPopupText},
+  Demo in '..\demo.pas' {demofrm};
+
+{$R *.RES}
+
+begin
+{$IFDEF WIN32} Application.Initialize; {$ENDIF}
+  Application.Title := 'Interactive Calendar For Windows';
+  Application.HelpFile := 'Numero.hlp';
+  Application.CreateForm(TfrmCal, frmCal);
+  Application.CreateForm(TfrmPopupText, frmPopupText);
+  Application.CreateForm(Tdemofrm, demofrm);
+  Application.Run;
+end.

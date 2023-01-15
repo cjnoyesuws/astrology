@@ -1,0 +1,52 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: TabCtrl, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating command line "rc.exe /d "NDEBUG" /l 0x409 /I "Release" /fo"Release/TabCtrl.res" .\TabCtrl.rc"
+Creating temporary file "c:\Astrow32Dev\TabCtrl\Release\RSP000001.rsp" with contents
+[
+/OUT:"Release/TabCtrl.ocx" /INCREMENTAL:NO /NOLOGO /DLL /DEF:".\TabCtrl.def" /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:"Release/TabCtrl.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /IMPLIB:"Release/TabCtrl.lib" /MACHINE:X86  DelayImp.lib DelayImp.lib
+.\Release\stdafx.obj
+.\Release\TabCtrl.obj
+.\Release\TabCtrlCtrl.obj
+.\Release\TabCtrlPropPage.obj
+.\Release\TabCtrl.res
+]
+Creating command line "link.exe @c:\Astrow32Dev\TabCtrl\Release\RSP000001.rsp"
+Creating temporary file "c:\Astrow32Dev\TabCtrl\Release\BAT000002.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\Astrow32Dev\TabCtrl\Release\TabCtrl.ocx"
+copy "TabCtrl.lic" Release
+
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "Performing registration"
+exit 1
+:VCEnd
+]
+Creating command line "c:\Astrow32Dev\TabCtrl\Release\BAT000002.bat"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling resources...
+Linking...
+   Creating library Release/TabCtrl.lib and object Release/TabCtrl.exp
+LINK : warning LNK4089: all references to 'urlmon.dll' discarded by /OPT:REF
+Performing registration
+        1 file(s) copied.
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Astrow32Dev\TabCtrl\Release\BuildLog.htm"
+TabCtrl - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

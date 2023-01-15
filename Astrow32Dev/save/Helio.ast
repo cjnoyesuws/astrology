@@ -1,0 +1,12 @@
+@ Rapports héliocentriques
+@ #débuts chaque article.
+@ $$ = $
+@ $ _ = aucune page fracture à fin de ligne
+@ $ ^ = Casquettes dans le texte ou la gauche remplit des nombres d'espace ou 0
+@
+# CHH_TITLE
+deftabsNatal Impression du Tableau Héliocentrique Numérique Pour Nom: {$1}, Commentaire: {$2}.$_
+# CH__PLANET
+Étiquettes |60|4|15|35|45|55|$_
+$k |$9|Déclinaison: X° $ $ y' |$c'Decan: E$_ $"
+

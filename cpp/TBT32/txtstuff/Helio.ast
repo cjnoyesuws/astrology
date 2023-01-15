@@ -1,0 +1,12 @@
+@ Heliocentric Reports
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+deftabsNatal Numeric Heliocentric Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CH__PLANET
+Tabs|60|3|5|15|24|$_
+|$k |$9 $c'|Decan: ''$e
+

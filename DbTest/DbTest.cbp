@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DbTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DbTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="/lib64/mariadb/libmariadbcpp.so" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DbTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexceptions" />
+			<Add option="-DTEXTMANAGER" />
+			<Add directory="/home/cnoyes/astrology/astroweb/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sqlite3" />
+		</Linker>
+		<Unit filename="../astroweb/apputil/ConfigData.cpp" />
+		<Unit filename="../astroweb/apputil/ConfigLoader.cpp" />
+		<Unit filename="../astroweb/apputil/charcons.cpp" />
+		<Unit filename="../astroweb/apputil/strclip.cpp" />
+		<Unit filename="../astroweb/reports/Chrthead.cpp" />
+		<Unit filename="../astroweb/reports/Cmprnres.cpp" />
+		<Unit filename="../astroweb/reports/Coprnres.cpp" />
+		<Unit filename="../astroweb/reports/Coprnsum.cpp" />
+		<Unit filename="../astroweb/reports/Ctprnres.cpp" />
+		<Unit filename="../astroweb/reports/Dopoptxt.cpp" />
+		<Unit filename="../astroweb/reports/Heprnres.cpp" />
+		<Unit filename="../astroweb/reports/Mktmdt.cpp" />
+		<Unit filename="../astroweb/reports/Nhprnres.cpp" />
+		<Unit filename="../astroweb/reports/Nmprnres.cpp" />
+		<Unit filename="../astroweb/reports/Nxprnres.cpp" />
+		<Unit filename="../astroweb/reports/Ochthed.cpp" />
+		<Unit filename="../astroweb/reports/Opmkprs.cpp" />
+		<Unit filename="../astroweb/reports/Oprnres.cpp" />
+		<Unit filename="../astroweb/reports/Oprnsumm.cpp" />
+		<Unit filename="../astroweb/reports/Outchthd.cpp" />
+		<Unit filename="../astroweb/reports/Outqry.cpp" />
+		<Unit filename="../astroweb/reports/Outreprn.cpp" />
+		<Unit filename="../astroweb/reports/Oututil.cpp" />
+		<Unit filename="../astroweb/reports/Prnrect.cpp" />
+		<Unit filename="../astroweb/reports/Prnres.cpp" />
+		<Unit filename="../astroweb/reports/Prnsumm.cpp" />
+		<Unit filename="../astroweb/reports/Progress.cpp" />
+		<Unit filename="../astroweb/reports/Prprnres.cpp" />
+		<Unit filename="../astroweb/reports/Reprnres.cpp" />
+		<Unit filename="../astroweb/reports/Table.cpp" />
+		<Unit filename="../astroweb/reports/TextGetter.cpp" />
+		<Unit filename="../astroweb/reports/TextManager.cpp" />
+		<Unit filename="../astroweb/reports/Trprnres.cpp" />
+		<Unit filename="../astroweb/reports/WrImpDat.CPP" />
+		<Unit filename="../astroweb/reports/Wrbindat.cpp" />
+		<Unit filename="../astroweb/reports/Wrcsvda2.cpp" />
+		<Unit filename="../astroweb/reports/Wrcsvdat.cpp" />
+		<Unit filename="../astroweb/reports/Wrcsvdax.cpp" />
+		<Unit filename="../astroweb/reports/Wrtabdax.cpp" />
+		<Unit filename="../astroweb/reports/gCmprnres.cpp" />
+		<Unit filename="../astroweb/reports/gCtprnres.cpp" />
+		<Unit filename="../astroweb/reports/gNhprnres.cpp" />
+		<Unit filename="../astroweb/reports/gNmprnres.cpp" />
+		<Unit filename="../astroweb/reports/gNxprnres.cpp" />
+		<Unit filename="../astroweb/reports/gPrprnres.cpp" />
+		<Unit filename="../astroweb/reports/gTrprnres.cpp" />
+		<Unit filename="../astroweb/reports/ghrmprnres.cpp" />
+		<Unit filename="../astroweb/reports/gsoprnres.cpp" />
+		<Unit filename="../astroweb/reports/hrmprnres.cpp" />
+		<Unit filename="../astroweb/reports/soprnres.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

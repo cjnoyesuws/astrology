@@ -1,0 +1,42 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(AE6B81CB-38A6-4171-B2F2-A1F47658EEE4),
+	dual,
+	helpstring("IAstInstCalc Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\astrow32dev\\instcalc\\astinstcalc2.h"
+interface IAstInstCalc : IDispatch {
+#line 16 "c:\\astrow32dev\\instcalc\\astinstcalc2.h"
+	[propget,id(1),helpstring("property Value")] HRESULT  Value([out,retval] VARIANT *pVal);
+	[propput,id(2),helpstring("property Index")] HRESULT  Index([in] LONG newVal);
+	[id(3),helpstring("method StartAt")] HRESULT  StartAt([in]LONG month, [in]LONG day, [in]LONG year, [in]LONG hour);
+};
+
+
+[ version(1.0), uuid(C4EF3B73-E7FA-46F1-9DCE-EBBA34FC2CAF), helpstring("instcalc 1.0 Type Library") ]
+library instcalc
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(53F0DCB8-C083-4931-B261-2D15BE63035D),
+		helpstring("AstInstCalc Class")
+	] 
+#line 34 "c:\\astrow32dev\\instcalc\\astinstcalc2.h"
+	coclass CAstInstCalc {
+		interface IAstInstCalc;
+	};
+
+}
+

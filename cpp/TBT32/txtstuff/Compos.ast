@@ -1,0 +1,48 @@
+@ Composite Chart 
+@ # starts each item. 
+@ $$ = $ 
+@ $_ = no page break at end of line 
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Composite Printout For Names: {$1} and {$2}, Comment: {$3}.
+# CH__ASPECT
+
+Your Composite $0 is $1 to $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+# CH__MISC
+$_
+$c'It is in the ''$e$d' Decan.''$f' It is in a <Critical Degree> making it a planet to watch.''$h' This is an <Anaretic Degree> indicating an <Urgent> need to work with the energies of this planet.''$_
+# CH__PLANET
+
+[YOUR COMPOSITE $^$1:]$_
+$_
+Your $1 is $5'on the cusp Between ''$4$6' and ','$8$7','' $2.$^$3 Degrees.$_
+# CH__PLAN_HOUSE
+$_
+Your $1 is in the $3 House$4', On House Cusp and More Important', Not On House Cusp and Less Important'$6', Intercepted.'.'
+# CH__ASPECT_HD
+
+{ASPECTS:}$_
+$_
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--$
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|
+
+[YOUR COMPOSITE HOUSE CUSPS ARE:]$_
+# CH__HS_SGN_HED
+$_
+[YOUR COMPOSITE HOUSE CUSPS AND THE SIGNS THEY'RE IN:]$_
+# CH__HOUSE_SIGN
+
+Your $8 House Cusp is $2 $4'on the Cusp Between ''$3$5' and ''$7.$_
+# CH__PLAN_EXT
+$_
+Decan of this Planet is $1 and its Ruled by: $3$4' and is Sub-Ruled by: ''$6.$_
+Navasma of this Planet is: $7 The Sign of the Navasma is: $9$_
+Duad of this Planet is $a and its Ruled by: $c $d'and is Sub-Ruled by:'' $f$_
+$g'The Planet is Combust. ''$i'The Planet is In Its Home Sign. ''$k'The Planet is In Its Sign of Detriment. ''$m'The Planet is in Its Exalted Sign and in an Exact Degree. 'The Planet is in Its Exalted Sign. ''$o'The Planet is in Its Fall Sign and in an Exact Degree. 'The Planet is in Its Fall Sign. ''$Q'The Planet is in the Sign of its Ruler.''
+# CHH_COMPAT_YB
+BIRTH FOR $^$1--$
+# CHH_RELOC_DAT
+Chart is Calculated At: Country: {$2}, State or Region: {$3}, Location: {$4}. Geographic Coordinates {$5.$6 $7, $9.$a $b}, Time Zone = {$d}, Special Code = {$e} GMT Difference = {$f:$i}.

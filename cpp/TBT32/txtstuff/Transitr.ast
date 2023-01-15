@@ -1,0 +1,51 @@
+@ Transits Report
+@ # starts each item.
+@ $$ = $
+@ $_ = no page break at end of line
+@ $^ = Caps in text or left fill numbers with space or 0
+@
+# CHH_TITLE
+Transit Chart Printout For Name: {$1}, Comment: {$2}.$_
+# CHH_BIRTH
+ Date: {$2}, Time: {$3}. Country: {$4}, State or Region: {$5}, Location: {$6}. Geographic Coordinates {$7.$8 $9, $b.$c $d}, Time Zone = {$f}, Special Code = {$g}. GMT Difference = {$h:$k}.
+
+Sidereal Time Used For House Calculations Was {$m:$n:$o}.
+
+# CHT_TRANS_PARAM
+Transits Parameters Are--Number of Transits: {$1}, Starting Planet: {$2}, Ending Planet: {$3}, Separation Period: {$4} Months and {$5} Days.
+
+# CHT_TRANS_NOTE
+{NOTE:} ... indicates text shown in an earlier transit.
+# CHT_TRANS_YB
+YOUR BIRTH--Birth$
+# CHT_TRANS_TD
+TRANSITS--Starting$
+# CH__ASPECT
+
+Your Transiting $0 is $1 to Your Natal $2 With an Orb of $3 Degrees$6' (Exact Orb).'.' (Wide Orb).'$_
+# CH__PLANET
+
+[YOUR $^$1:]$_
+$_
+Your transiting $1 is $5'on the cusp Between''$4$6' and ','$8$7','' $2.$^$3 Degrees, and is in $a motion.$_
+# CH__PLAN_HOUSE
+Your transiting $1 is in Your Natal $3 House$4', On House Cusp and More Important', Not On House Cusp and Less Important'$6', Intercepted.'.'
+# CH__ASPECT_HD
+
+{ASPECTS:}$_
+# CH__HOUSE_HEAD
+tabs|60|3|19|34|53|
+
+[YOUR NATAL HOUSE CUSPS ARE:]$_
+$_
+# CHT_HOUSE_TRHEAD
+tabs|60|3|19|34|53|
+
+[YOUR HOUSE CUSPS FOR THE TRANSIT ARE:]$_
+
+$_
+# CHT_TRANS_ID
+$_
+
+[***** TRANSIT NUMBER: $1 *****]$_
+[Date for Transits: $2]$_

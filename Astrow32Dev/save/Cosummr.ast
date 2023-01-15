@@ -1,0 +1,143 @@
+@ les variables sont codées comme $ C où C est la variable.
+@ la variable peut être ou une casquette ou une lettre bas de casse ou un nombre
+@ $ $ = signe du dolar
+@ $ ^ = fait le résultat de la ficelle de prochaines casquettes variables ou gauche remplit un nombre
+@ variable avec ou 0 ou espace qui
+# CHS_SUMARY_TITLE
+
+ÉTIQUETTES |48|3|18|24|43|$_
+[RÉSUMÉ:] $ _
+
+# CHS_GENDER_COUNT
+
+{Compte de Planètes dans les Genres:} $ _
+<$^$1...>$_
+@ TB
+Signes masculins |$^$3|Signes féminins |$^$4@TB$_
+
+<$^$2...>$_
+@ TB
+Signes masculins |$^$5|Signes féminins |$^$6@TB$_
+# CHS_ELEMENT_COUNT
+
+{Compte de Planètes dans les Éléments:} $ _
+<$^$1...>$_
+@ TB
+Signes du feu |$^$3|Le monde signe |$^$4@TR$_
+Signes de l'air |$^$5|Signes de l'eau |$^$6@TB$_
+
+<$^$2...>$_
+@ TB
+Signes du feu |$^$7|Le monde signe |$^$8@TR$_
+Signes de l'air |$^$9|Signes de l'eau |$^$A@TB$_
+# CHS_QUALITIES_COUNT
+
+{Compte de Planètes dans les Qualités:} $ _
+<$^$1...>$_
+@ TB
+Signes pourpres |$^$3|Signes arrangés |$^$4@TR$_
+Signes mutables |$^$5|@ TB$_
+
+<$^$2...>$_
+@ TB
+Signes pourpres |$^$6|Signes arrangés |$^$7@TR$_
+Signes mutables |$^$8|@ TB$_
+# CHS_HEMISPHERES_COUNT
+
+{Compte de Planètes dans Plusieurs Hémisphères:} $ _
+<$^$1...>$_
+@ TB
+Maisons Nord |$^$3|Maisons du sud |$^$4@TR$_
+Maisons de l'est |$^$5|Maisons ouest |$^$6@TB$_
+
+<$^$2...>$_
+@ TB
+Maisons Nord |$^$7|Maisons du sud |$^$8@TR$_
+Maisons de l'est |$^$9|Maisons ouest |$^$A@TB$_
+# CHS_FUNCTIONAL_COUNT
+
+{Compte de Maisons Utilitaires:} $ _
+<$^$1...>$_
+@ TB
+Maisons individuelles |$^$3|Maisons relatives |$^$4@TR$_
+Maisons temporelles |$^$5|Maisons terminales |$^$6@TB$_
+
+<$^$2...>$_
+@ TB
+Maisons individuelles |$^$7|Maisons relatives |$^$8@TR$_
+Maisons temporelles |$^$9|Maisons terminales |$^$A@TB$_
+# CHS_MODAL_COUNT
+
+{Compte de Maisons Modales:} $ _
+<$^$1...>$_
+@ TB
+Cadent loge |$^$3|Maisons anguleuses |$^$4@TR$_
+Succedent loge |$^$5|@ TB$_
+
+<$^$2...>$_
+@ TB
+Cadent loge |$^$6|Maisons anguleuses |$^$7@TR$_
+Succedent loge |$^$8|@ TB$_
+# CHS_ASPECT_COUNT
+
+{Compte d'Aspects:} $ _
+<$^$1...>$_
+@ TB
+Conjoint |$^$3|Sextile |$^$4@TR$_
+Trine |$^$5|S'opposé |$^$6@TR$_
+Rendu carré |$^$7|Semisextile |$^$8@TR$_
+Sesquiquadrate |$^$9|Semisquare |$^$a@TR$_
+Quincunx |$^$b |Biquintile |$^$c@TR$_
+Quintile |$^$d |Tredecile |$^$e@TR$_
+Decile |$^$f |@ TB$_
+
+<$^$2...>$_
+@ TB
+Conjoint |$^$H |Sextile |$^$I@TR$_
+Trine |$^$J |S'opposé |$^$K@TR$_
+Rendu carré |$^$L |Semisextile |$^$M@TR$_
+Sesquiquadrate |$^$N |Semisquare |$^$O@TR$_
+Quincunx |$^$P |Biquintile |$^$Q@TR$_
+Quintile |$^$R |Tredecile |$^$S@TR$_
+Decile |$^$T |@ TB$_
+# CHS_SIGN_COUNT
+
+{Compte de Signes:} $ _
+<$^$1...>$_
+@ TB
+Bélier |$^$3|Taureau |$^$4@TR$_
+Gémeaux |$^$5|Cancer |$^$6@TR$_
+Leo |$^$7|Vierge |$^$8@TR$_
+Balance |$^$9|Scorpion |$^$a@TR$_
+Sagittaire |$^$b |Capricorne |$^$c@TR$_
+Verseau |$^$d |Poisson |$^$e@TB$_
+
+<$^$2...>$_
+@ TB
+Bélier |$^$f |Taureau |$^$g@TR$_
+Gémeaux |$^$h |Cancer |$^$i@TR$_
+Leo |$^$j |Vierge |$^$k@TR$_
+Balance |$^$l |Scorpion |$^$m@TR$_
+Sagittaire |$^$n |Capricorne |$^$o@TR$_
+Verseau |$^$p |Poisson |$^$q@TB$_
+# CHS_HOUSE_COUNT
+
+{Compte de Maisons:} $ _
+<$^$1...>$_
+@ TB
+Maison #1 |$^$3|Maison #2 |$^$4@TR$_
+Maison #3 |$^$5|Maison #4 |$^$6@TR$_
+Maison #5 |$^$7|Maison #6 |$^$8@TR$_
+Maison #7 |$^$9|Maison #8 |$^$a@TR$_
+Maison #9 |$^$b |Maison #10 |$^$c@TR$_
+Maison #11 |$^$d |Maison #12 |$^$e@TB$_
+
+<$^$2...>$_
+@ TB
+Maison #1 |$^$f |Maison #2 |$^$g@TR$_
+Maison #3 |$^$h |Maison #4 |$^$i@TR$_
+Maison #5 |$^$j |Maison #6 |$^$k@TR$_
+Maison #7 |$^$l |Maison #8 |$^$m@TR$_
+Maison #9 |$^$n |Maison #10 |$^$o@TR$_
+Maison #11 |$^$p |Maison #12 |$^$q@TB$_
+

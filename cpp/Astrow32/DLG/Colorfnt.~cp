@@ -1,0 +1,90 @@
+#include <zapp.hpp>
+#pragma hdrstop("\WPRO\ZAPP.PCH")
+#include "inifile.hpp"
+#pragma warning( once : 4135; once : 4136; once : 4100; once : 4309; disable : 4505 )
+
+int saveColorToIni(char *sec, char *entry, zColor &c  )
+{
+ char buf[40];
+
+ sprintf( buf, "%lx", (DWORD)c );
+ return( WritePrivateProfileString( sec, entry, buf, APPNAME ) );
+}
+
+int readColorFromIni(char *sec, char *entry, zColor &c  )
+{
+ unsigned long lx;
+ int r;
+ char buf[40], buf2[40];
+
+ sprintf( buf2, "%lx", (DWORD)c );
+ r = GetPrivateProfileString( sec, entry, buf2, buf, 19, APPNAME );
+ sscanf( buf, "%lx", &lx );
+ c = zColor(lx);
+ return( r );
+}
+
+int saveFontToIni(char *sec, char *entry, zFontSpec *f  )
+{
+ LPLOGFONT lpf;
+ char buf[150];
+
+ lpf = (LPLOGFONT)*f;
+ sprintf( buf, "%s,%d,%d,%d,%d,%d,%d", lpf->lfFaceName,
+   lpf->lfPitchAndFamily, lpf->lfHeight, lpf->lfWeight, lpf->lfItalic,
+   lpf->lfUnderline, f->pointSize() );
+ return( WritePrivateProfileString( sec, entry, buf, APPNAME ) );
+}
+
+int readFontFromIni(char *sec, char *entry, zFontSpec *f )
+{
+ LPLOGFONT lpf;
+ int r, u, i, fm;
+ char buf[150], buf2[150];
+
+ lpf = (LPLOGFONT)*f;
+ sprintf( buf2, "%s,%d,%d,%d,%d,%d,%d", lpf->lfFaceName,
+   lpf->lfPitchAndFamily, lpf->lfHeight, lpf->lfWeight, lpf->lfItalic,
+   lpf->lfUnderline, f->pointSize() );
+ r = GetPrivateProfileString( sec, entry, buf2, buf, 99, APPNAME );
+ sscanf( buf, "%[^,],%d,%d,%d,%d,%d,%d", lpf->lfFaceName,
+   &fm, &lpf->lfHeight, &lpf->lfWeight, &i, &u, &f->pointSize() );
+ lpf->lfUnderline = u;
+ lpf->lfItalic= i;
+ lpf->lfPitchAndFamily = fm;
+ return( r );
+}
+
+
+int saveFontColorToIni(char *sec, char *entry, zFontSpec *f, zColor &c  )
+{
+ int r;
+ char buf[40], buf2[40];
+
+ strcpy( buf, entry );
+ strcat( buf, "Color" );
+ strcpy( buf2, entry );
+ strcat( buf2, "Font" );
+ r = saveColorToIni(sec, buf, c );
+ if ( !r )
+    return( 0 );
+ return( saveFontToIni(sec, buf2, f ) );
+}
+
+int readFontColorFromIni(char *sec, char *entry, zFontSpec *f, zColor &c  )
+{
+ int r;
+ char buf[40], buf2[40];
+
+ strcpy( buf, entry );
+ strcat( buf, "Color" );
+ strcpy( buf2, entry );
+ strcat( buf2, "Font" );
+ r = readColorFromIni(sec, buf, c );
+ if ( !r )
+    return( 0 );
+ return( readFontFromIni(sec, buf2, f ) );
+}
+
+
+

@@ -1,0 +1,22 @@
+<%
+Set myMail=Server.CreateObject("CDO.Message")
+
+myMail.Subject="Sending email with CDO"
+myMail.From="me@example.com"
+myMail.To="you@example.com"
+
+myMail.TextBody="This is a message."
+
+myMail.Configuration.Fields.Item("http://schemas.microsoft.com/cdo/configuration/sendusing")=2
+myMail.Configuration.Fields.Item("http://schemas.microsoft.com/cdo/configuration/smtpserver")="smtp.YourDomain.com"
+myMail.Configuration.Fields.Item("http://schemas.microsoft.com/cdo/configuration/smtpserverport")=25 
+
+'Authentication
+myMail.Configuration.Fields("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1
+myMail.Configuration.Fields("http://schemas.microsoft.com/cdo/configuration/sendusername") = "Account@YourDomain.com"
+myMail.Configuration.Fields("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "Password"
+myMail.Configuration.Fields.Update
+
+myMail.Send
+%>
+

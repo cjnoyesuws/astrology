@@ -1,0 +1,18 @@
+# CHR_RETURN_HD
+
+[$2'SUN'MOON' RETURNS:]
+tabs|60|2|8|30|
+|{DATE:|TIME:}$_
+# CHR_RETURN_ITM
+$5:|$2|$3$_
+# CHH_TITLE
+deftabs{$2'Solar'Lunar' Return} Printout For Name: {$1}, Comment: {$3}.$_
+# CHR_RETURN_DATA
+Starting Date: {$2}, Ending Date: {$3}.
+
+$4'Progressed ''{$5}$6' Years, ''{$7}$8' Months and ''{$9}$a' days. Progression System is ''{$b'"Secondary (Day for a Year)"'"Tertiary (Day for a Lunar Month)"'"Minor (Lunar Month for a Year)"''}$f'.
+''$_
+# CHH_BIRTH
+Birth Date: {$2}, Time: {$3}. Country: {$4}, State or Region: {$5}, Location: {$6}. Geographic Coordinates {$7.$8 $9, $b.$c $d}, Time Zone = {$f}, Special Code = {$g}. GMT Difference = {$h:$k}.$_
+$_
+
